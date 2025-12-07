@@ -1,5 +1,10 @@
 # 🚀 Quantum Markets - Build Capital-Efficient Decision Markets on Flare!
 
+## 🎥 Demo & Presentation
+
+- **Video Demo**: [Watch on Loom](https://www.loom.com/share/b120c2ce77164beea6b6b5e321671e9c)
+- **Presentation**: [Download PPT](https://www.dropbox.com/scl/fi/w7dq3g4mtd6ymdhruqvi3/Quantum-Markets-Capital-Efficient-Decision-Markets-on-Flare.pdf?rlkey=8rk3zlg9bltg19nzgzwcix4o6&e=2&st=ew4d4dob&dl=0)
+
 Welcome to **Quantum Markets**! This is a complete, production-ready implementation of capital-efficient decision markets built on Solidity and deployed on the Flare blockchain.
 
 Think of this as your one-stop shop for building prediction markets where users can deposit once and trade on unlimited proposals - no more spreading your capital thin across hundreds of markets! 🎯
