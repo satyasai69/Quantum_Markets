@@ -1,0 +1,14 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Quantum Market Logo - Design 6: Geometric Q with Market Grid -->
+  <defs>
+    <style>
+      .logo-path { fill: currentColor; }
+    </style>
+  </defs>
+  <!-- Geometric Q shape -->
+  <path class="logo-path" d="M16 6C11 6 7 10 7 15C7 20 11 24 16 24C21 24 25 20 25 15C25 10 21 6 16 6Z" stroke="currentColor" stroke-width="2" fill="none"/>
+  <path class="logo-path" d="M20 12L25 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <!-- Market grid pattern -->
+  <path d="M6 26L26 26M6 28L26 28" stroke="currentColor" stroke-width="1" opacity="0.3" stroke-linecap="round"/>
+</svg>
+

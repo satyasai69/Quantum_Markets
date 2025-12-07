@@ -1,0 +1,33 @@
+(globalThis.TURBOPACK_CHUNK_LISTS || (globalThis.TURBOPACK_CHUNK_LISTS = [])).push({
+    script: typeof document === "object" ? document.currentScript : undefined,
+    chunks: [
+  "static/chunks/[root-of-the-server]__7e724904._.css",
+  "static/chunks/node_modules_acbd6b01._.js",
+  "static/chunks/node_modules_@privy-io_js-sdk-core_dist_esm_a94fb5e3._.js",
+  "static/chunks/node_modules_jose_dist_browser_b303ba59._.js",
+  "static/chunks/node_modules_viem__esm_utils_a1b1d93c._.js",
+  "static/chunks/node_modules_viem__esm_actions_6f4f7d90._.js",
+  "static/chunks/node_modules_viem__esm_zksync_edb1ebdd._.js",
+  "static/chunks/node_modules_viem__esm_1a1823bf._.js",
+  "static/chunks/node_modules_66167537._.js",
+  "static/chunks/node_modules_7f814632._.js",
+  "static/chunks/node_modules_ab5eb4c7._.js",
+  "static/chunks/node_modules_@privy-io_react-auth_dist_esm_5967d6b4._.js",
+  "static/chunks/node_modules_@coinbase_wallet-sdk_dist_51e034e5._.js",
+  "static/chunks/node_modules_@headlessui_react_dist_fdc0ee26._.js",
+  "static/chunks/node_modules_@walletconnect_utils_dist_index_cac7e0a0.js",
+  "static/chunks/node_modules_@walletconnect_core_dist_index_315b943b.js",
+  "static/chunks/node_modules_@walletconnect_sign-client_dist_index_7a86d744.js",
+  "static/chunks/node_modules_x402_dist_esm_170a4400._.js",
+  "static/chunks/node_modules_zod_v3_511383c7._.js",
+  "static/chunks/node_modules_@solana-program_token_dist_src_index_mjs_2c09a0b9._.js",
+  "static/chunks/node_modules_@solana-program_token-2022_dist_src_index_mjs_77533f1c._.js",
+  "static/chunks/node_modules_styled-components_d8911839._.js",
+  "static/chunks/node_modules_@walletconnect_25646204._.js",
+  "static/chunks/node_modules_@solana_476de67b._.js",
+  "static/chunks/node_modules_@radix-ui_6a561223._.js",
+  "static/chunks/node_modules_25bcc4a0._.js",
+  "static/chunks/_46b10ff5._.js"
+],
+    source: "dynamic"
+});

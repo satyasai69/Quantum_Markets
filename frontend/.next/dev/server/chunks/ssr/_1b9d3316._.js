@@ -1,0 +1,4671 @@
+module.exports = [
+"[project]/components/auth-button.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>AuthButton
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$privy$2d$io$2f$react$2d$auth$2f$dist$2f$esm$2f$usePrivy$2d$BSIhOAz8$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__u__as__usePrivy$3e$__ = __turbopack_context__.i("[project]/node_modules/@privy-io/react-auth/dist/esm/usePrivy-BSIhOAz8.mjs [app-ssr] (ecmascript) <export u as usePrivy>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$out$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__LogOut$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/log-out.js [app-ssr] (ecmascript) <export default as LogOut>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/user.js [app-ssr] (ecmascript) <export default as User>");
+"use client";
+;
+;
+;
+function AuthButton() {
+    const { login, logout, authenticated, user } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$privy$2d$io$2f$react$2d$auth$2f$dist$2f$esm$2f$usePrivy$2d$BSIhOAz8$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__u__as__usePrivy$3e$__["usePrivy"])();
+    if (authenticated && user) {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "flex items-center gap-2",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex items-center gap-2 px-3 py-1.5 bg-muted rounded-full border border-border",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__["User"], {
+                            size: 14,
+                            className: "text-muted-foreground"
+                        }, void 0, false, {
+                            fileName: "[project]/components/auth-button.tsx",
+                            lineNumber: 13,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                            className: "text-sm font-medium",
+                            children: user.wallet?.address ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+                                children: [
+                                    user.wallet.address.slice(0, 6),
+                                    "...",
+                                    user.wallet.address.slice(-4)
+                                ]
+                            }, void 0, true) : user.email?.address || "User"
+                        }, void 0, false, {
+                            fileName: "[project]/components/auth-button.tsx",
+                            lineNumber: 14,
+                            columnNumber: 21
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/components/auth-button.tsx",
+                    lineNumber: 12,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                    onClick: logout,
+                    className: "p-2 hover:bg-muted rounded-lg transition-colors text-muted-foreground hover:text-foreground",
+                    title: "Logout",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$out$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__LogOut$3e$__["LogOut"], {
+                        size: 18
+                    }, void 0, false, {
+                        fileName: "[project]/components/auth-button.tsx",
+                        lineNumber: 29,
+                        columnNumber: 21
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/components/auth-button.tsx",
+                    lineNumber: 24,
+                    columnNumber: 17
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/auth-button.tsx",
+            lineNumber: 11,
+            columnNumber: 13
+        }, this);
+    }
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+        onClick: login,
+        className: "px-4 py-2 bg-muted/50 dark:bg-muted/30 border border-border text-foreground rounded-lg text-sm font-medium hover:bg-muted dark:hover:bg-muted/60 hover:border-border/80 dark:hover:border-border/60 transition-all duration-200",
+        children: "Login/SignUp"
+    }, void 0, false, {
+        fileName: "[project]/components/auth-button.tsx",
+        lineNumber: 36,
+        columnNumber: 9
+    }, this);
+}
+}),
+"[project]/components/app-header.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>AppHeader
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$themes$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next-themes/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sun$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Sun$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/sun.js [app-ssr] (ecmascript) <export default as Sun>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$moon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Moon$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/moon.js [app-ssr] (ecmascript) <export default as Moon>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/search.js [app-ssr] (ecmascript) <export default as Search>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bell$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Bell$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/bell.js [app-ssr] (ecmascript) <export default as Bell>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$left$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowLeft$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-left.js [app-ssr] (ecmascript) <export default as ArrowLeft>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$auth$2d$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/auth-button.tsx [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+;
+;
+function AppHeader({ title = "Quantum Market", showBackButton = false, onBackClick, userBalance: propUserBalance }) {
+    const { theme, setTheme, resolvedTheme } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$themes$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTheme"])();
+    // Use prop if provided, otherwise use default mock balance
+    // In a real app, this would come from an API or context
+    const [userBalance, setUserBalance] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(propUserBalance ?? 1000);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        // Update balance if prop changes
+        if (propUserBalance !== undefined) {
+            setUserBalance(propUserBalance);
+        }
+    }, [
+        propUserBalance
+    ]);
+    const toggleTheme = ()=>{
+        const currentTheme = resolvedTheme || theme || "light";
+        setTheme(currentTheme === "dark" ? "light" : "dark");
+    };
+    const isDark = resolvedTheme === "dark" || theme === "dark";
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
+        className: "sticky top-0 z-50 border-b border-border/80 bg-background/80 backdrop-blur-md",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: `mx-auto px-6 py-3 flex items-center justify-between ${showBackButton ? "max-w-4xl" : "max-w-7xl"}`,
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex items-center gap-3",
+                    children: [
+                        showBackButton && onBackClick && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                            onClick: onBackClick,
+                            className: "p-2 hover:bg-muted rounded-lg transition-colors",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$left$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowLeft$3e$__["ArrowLeft"], {
+                                size: 20
+                            }, void 0, false, {
+                                fileName: "[project]/components/app-header.tsx",
+                                lineNumber: 46,
+                                columnNumber: 15
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/components/app-header.tsx",
+                            lineNumber: 42,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                            href: "/",
+                            className: "flex items-center gap-3 hover:opacity-80 transition-opacity cursor-pointer",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                    src: "/logo.jpg",
+                                    alt: "Quantum Market",
+                                    width: 28,
+                                    height: 28,
+                                    className: "rounded object-contain",
+                                    priority: true
+                                }, void 0, false, {
+                                    fileName: "[project]/components/app-header.tsx",
+                                    lineNumber: 50,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "text-base font-semibold tracking-tight",
+                                    children: title
+                                }, void 0, false, {
+                                    fileName: "[project]/components/app-header.tsx",
+                                    lineNumber: 58,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/app-header.tsx",
+                            lineNumber: 49,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/components/app-header.tsx",
+                    lineNumber: 40,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex items-center gap-3",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex items-center gap-0.5",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    className: "p-2 hover:bg-muted rounded-lg transition-colors text-muted-foreground hover:text-foreground",
+                                    title: "Search",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__["Search"], {
+                                        size: 18
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/app-header.tsx",
+                                        lineNumber: 66,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/components/app-header.tsx",
+                                    lineNumber: 65,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    className: "p-2 hover:bg-muted rounded-lg transition-colors text-muted-foreground hover:text-foreground relative",
+                                    title: "Notifications",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bell$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Bell$3e$__["Bell"], {
+                                            size: 18
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/app-header.tsx",
+                                            lineNumber: 69,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "absolute top-1.5 right-1.5 w-2 h-2 bg-foreground rounded-full animate-pulse"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/app-header.tsx",
+                                            lineNumber: 70,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/app-header.tsx",
+                                    lineNumber: 68,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: toggleTheme,
+                                    className: "p-2 hover:bg-muted rounded-lg transition-colors text-muted-foreground hover:text-foreground",
+                                    title: isDark ? "Switch to light mode" : "Switch to dark mode",
+                                    children: isDark ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sun$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Sun$3e$__["Sun"], {
+                                        size: 18
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/app-header.tsx",
+                                        lineNumber: 77,
+                                        columnNumber: 25
+                                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$moon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Moon$3e$__["Moon"], {
+                                        size: 18
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/app-header.tsx",
+                                        lineNumber: 77,
+                                        columnNumber: 45
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/components/app-header.tsx",
+                                    lineNumber: 72,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/app-header.tsx",
+                            lineNumber: 64,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex items-center gap-2 pl-2",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex items-center gap-2 px-3 py-1.5 rounded-md bg-muted/50 border border-border/50",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "text-xs font-medium text-muted-foreground",
+                                            children: "Balance"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/app-header.tsx",
+                                            lineNumber: 85,
+                                            columnNumber: 15
+                                        }, this),
+                                        propUserBalance !== undefined ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "text-sm font-semibold font-mono text-foreground",
+                                            children: [
+                                                userBalance.toFixed(4),
+                                                " FLR"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/app-header.tsx",
+                                            lineNumber: 87,
+                                            columnNumber: 17
+                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "text-sm font-semibold font-mono text-muted-foreground",
+                                            children: "..."
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/app-header.tsx",
+                                            lineNumber: 89,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/app-header.tsx",
+                                    lineNumber: 84,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$auth$2d$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                                    fileName: "[project]/components/app-header.tsx",
+                                    lineNumber: 92,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/app-header.tsx",
+                            lineNumber: 82,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/components/app-header.tsx",
+                    lineNumber: 62,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/app-header.tsx",
+            lineNumber: 39,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/components/app-header.tsx",
+        lineNumber: 38,
+        columnNumber: 5
+    }, this);
+}
+}),
+"[project]/components/ui/chart.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "ChartContainer",
+    ()=>ChartContainer,
+    "ChartLegend",
+    ()=>ChartLegend,
+    "ChartLegendContent",
+    ()=>ChartLegendContent,
+    "ChartStyle",
+    ()=>ChartStyle,
+    "ChartTooltip",
+    ()=>ChartTooltip,
+    "ChartTooltipContent",
+    ()=>ChartTooltipContent
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$ResponsiveContainer$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/component/ResponsiveContainer.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$Tooltip$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/component/Tooltip.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$Legend$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/component/Legend.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/utils.ts [app-ssr] (ecmascript)");
+'use client';
+;
+;
+;
+;
+// Format: { THEME_NAME: CSS_SELECTOR }
+const THEMES = {
+    light: '',
+    dark: '.dark'
+};
+const ChartContext = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createContext"](null);
+function useChart() {
+    const context = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useContext"](ChartContext);
+    if (!context) {
+        throw new Error('useChart must be used within a <ChartContainer />');
+    }
+    return context;
+}
+function ChartContainer({ id, className, children, config, ...props }) {
+    const uniqueId = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useId"]();
+    const chartId = `chart-${id || uniqueId.replace(/:/g, '')}`;
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(ChartContext.Provider, {
+        value: {
+            config
+        },
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            "data-slot": "chart",
+            "data-chart": chartId,
+            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border flex aspect-video justify-center text-xs [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-sector]:outline-hidden [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-surface]:outline-hidden", className),
+            ...props,
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(ChartStyle, {
+                    id: chartId,
+                    config: config
+                }, void 0, false, {
+                    fileName: "[project]/components/ui/chart.tsx",
+                    lineNumber: 63,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$ResponsiveContainer$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ResponsiveContainer"], {
+                    children: children
+                }, void 0, false, {
+                    fileName: "[project]/components/ui/chart.tsx",
+                    lineNumber: 64,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/ui/chart.tsx",
+            lineNumber: 54,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/components/ui/chart.tsx",
+        lineNumber: 53,
+        columnNumber: 5
+    }, this);
+}
+const ChartStyle = ({ id, config })=>{
+    const colorConfig = Object.entries(config).filter(([, config])=>config.theme || config.color);
+    if (!colorConfig.length) {
+        return null;
+    }
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("style", {
+        dangerouslySetInnerHTML: {
+            __html: Object.entries(THEMES).map(([theme, prefix])=>`
+${prefix} [data-chart=${id}] {
+${colorConfig.map(([key, itemConfig])=>{
+                    const color = itemConfig.theme?.[theme] || itemConfig.color;
+                    return color ? `  --color-${key}: ${color};` : null;
+                }).join('\n')}
+}
+`).join('\n')
+        }
+    }, void 0, false, {
+        fileName: "[project]/components/ui/chart.tsx",
+        lineNumber: 82,
+        columnNumber: 5
+    }, ("TURBOPACK compile-time value", void 0));
+};
+const ChartTooltip = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$Tooltip$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Tooltip"];
+function ChartTooltipContent({ active, payload, className, indicator = 'dot', hideLabel = false, hideIndicator = false, label, labelFormatter, labelClassName, formatter, color, nameKey, labelKey }) {
+    const { config } = useChart();
+    const tooltipLabel = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"](()=>{
+        if (hideLabel || !payload?.length) {
+            return null;
+        }
+        const [item] = payload;
+        const key = `${labelKey || item?.dataKey || item?.name || 'value'}`;
+        const itemConfig = getPayloadConfigFromPayload(config, item, key);
+        const value = !labelKey && typeof label === 'string' ? config[label]?.label || label : itemConfig?.label;
+        if (labelFormatter) {
+            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])('font-medium', labelClassName),
+                children: labelFormatter(value, payload)
+            }, void 0, false, {
+                fileName: "[project]/components/ui/chart.tsx",
+                lineNumber: 146,
+                columnNumber: 9
+            }, this);
+        }
+        if (!value) {
+            return null;
+        }
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])('font-medium', labelClassName),
+            children: value
+        }, void 0, false, {
+            fileName: "[project]/components/ui/chart.tsx",
+            lineNumber: 156,
+            columnNumber: 12
+        }, this);
+    }, [
+        label,
+        labelFormatter,
+        payload,
+        hideLabel,
+        labelClassName,
+        config,
+        labelKey
+    ]);
+    if (!active || !payload?.length) {
+        return null;
+    }
+    const nestLabel = payload.length === 1 && indicator !== 'dot';
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])('border-border/50 bg-background grid min-w-[8rem] items-start gap-1.5 rounded-lg border px-2.5 py-1.5 text-xs shadow-xl', className),
+        children: [
+            !nestLabel ? tooltipLabel : null,
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "grid gap-1.5",
+                children: payload.map((item, index)=>{
+                    const key = `${nameKey || item.name || item.dataKey || 'value'}`;
+                    const itemConfig = getPayloadConfigFromPayload(config, item, key);
+                    const indicatorColor = color || item.payload.fill || item.color;
+                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])('[&>svg]:text-muted-foreground flex w-full flex-wrap items-stretch gap-2 [&>svg]:h-2.5 [&>svg]:w-2.5', indicator === 'dot' && 'items-center'),
+                        children: formatter && item?.value !== undefined && item.name ? formatter(item.value, item.name, item, index, item.payload) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+                            children: [
+                                itemConfig?.icon ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(itemConfig.icon, {}, void 0, false, {
+                                    fileName: "[project]/components/ui/chart.tsx",
+                                    lineNumber: 200,
+                                    columnNumber: 21
+                                }, this) : !hideIndicator && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])('shrink-0 rounded-[2px] border-(--color-border) bg-(--color-bg)', {
+                                        'h-2.5 w-2.5': indicator === 'dot',
+                                        'w-1': indicator === 'line',
+                                        'w-0 border-[1.5px] border-dashed bg-transparent': indicator === 'dashed',
+                                        'my-0.5': nestLabel && indicator === 'dashed'
+                                    }),
+                                    style: {
+                                        '--color-bg': indicatorColor,
+                                        '--color-border': indicatorColor
+                                    }
+                                }, void 0, false, {
+                                    fileName: "[project]/components/ui/chart.tsx",
+                                    lineNumber: 203,
+                                    columnNumber: 23
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])('flex flex-1 justify-between leading-none', nestLabel ? 'items-end' : 'items-center'),
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "grid gap-1.5",
+                                            children: [
+                                                nestLabel ? tooltipLabel : null,
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-muted-foreground",
+                                                    children: itemConfig?.label || item.name
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/ui/chart.tsx",
+                                                    lineNumber: 231,
+                                                    columnNumber: 23
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/ui/chart.tsx",
+                                            lineNumber: 229,
+                                            columnNumber: 21
+                                        }, this),
+                                        item.value && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "text-foreground font-mono font-medium tabular-nums",
+                                            children: item.value.toLocaleString()
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/ui/chart.tsx",
+                                            lineNumber: 236,
+                                            columnNumber: 23
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/ui/chart.tsx",
+                                    lineNumber: 223,
+                                    columnNumber: 19
+                                }, this)
+                            ]
+                        }, void 0, true)
+                    }, item.dataKey, false, {
+                        fileName: "[project]/components/ui/chart.tsx",
+                        lineNumber: 188,
+                        columnNumber: 13
+                    }, this);
+                })
+            }, void 0, false, {
+                fileName: "[project]/components/ui/chart.tsx",
+                lineNumber: 181,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/ui/chart.tsx",
+        lineNumber: 174,
+        columnNumber: 5
+    }, this);
+}
+const ChartLegend = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$Legend$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Legend"];
+function ChartLegendContent({ className, hideIcon = false, payload, verticalAlign = 'bottom', nameKey }) {
+    const { config } = useChart();
+    if (!payload?.length) {
+        return null;
+    }
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])('flex items-center justify-center gap-4', verticalAlign === 'top' ? 'pb-3' : 'pt-3', className),
+        children: payload.map((item)=>{
+            const key = `${nameKey || item.dataKey || 'value'}`;
+            const itemConfig = getPayloadConfigFromPayload(config, item, key);
+            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: '[&>svg]:text-muted-foreground flex items-center gap-1.5 [&>svg]:h-3 [&>svg]:w-3',
+                children: [
+                    itemConfig?.icon && !hideIcon ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(itemConfig.icon, {}, void 0, false, {
+                        fileName: "[project]/components/ui/chart.tsx",
+                        lineNumber: 290,
+                        columnNumber: 15
+                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "h-2 w-2 shrink-0 rounded-[2px]",
+                        style: {
+                            backgroundColor: item.color
+                        }
+                    }, void 0, false, {
+                        fileName: "[project]/components/ui/chart.tsx",
+                        lineNumber: 292,
+                        columnNumber: 15
+                    }, this),
+                    itemConfig?.label
+                ]
+            }, item.value, true, {
+                fileName: "[project]/components/ui/chart.tsx",
+                lineNumber: 283,
+                columnNumber: 11
+            }, this);
+        })
+    }, void 0, false, {
+        fileName: "[project]/components/ui/chart.tsx",
+        lineNumber: 271,
+        columnNumber: 5
+    }, this);
+}
+// Helper to extract item config from a payload.
+function getPayloadConfigFromPayload(config, payload, key) {
+    if (typeof payload !== 'object' || payload === null) {
+        return undefined;
+    }
+    const payloadPayload = 'payload' in payload && typeof payload.payload === 'object' && payload.payload !== null ? payload.payload : undefined;
+    let configLabelKey = key;
+    if (key in payload && typeof payload[key] === 'string') {
+        configLabelKey = payload[key];
+    } else if (payloadPayload && key in payloadPayload && typeof payloadPayload[key] === 'string') {
+        configLabelKey = payloadPayload[key];
+    }
+    return configLabelKey in config ? config[configLabelKey] : config[key];
+}
+;
+}),
+"[project]/components/price-chart.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>PriceChart,
+    "generateMockPriceData",
+    ()=>generateMockPriceData
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$chart$2f$LineChart$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/chart/LineChart.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$Line$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/cartesian/Line.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$XAxis$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/cartesian/XAxis.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$YAxis$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/cartesian/YAxis.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$CartesianGrid$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/cartesian/CartesianGrid.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$Legend$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/component/Legend.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$chart$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/chart.tsx [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+function generateMockPriceData(options, timePeriod = "1M") {
+    const data = [];
+    const totalPool = options.reduce((sum, opt)=>sum + opt.amountBet, 0);
+    // Current probabilities
+    const currentProbs = options.map((opt)=>opt.amountBet / totalPool * 100);
+    // Determine number of data points and interval based on time period
+    let totalPoints;
+    let intervalMinutes;
+    switch(timePeriod){
+        case "1H":
+            totalPoints = 12; // 1 point per 5 minutes (12 points = 60 minutes)
+            intervalMinutes = 5;
+            break;
+        case "1D":
+            totalPoints = 24; // 1 point per hour
+            intervalMinutes = 60;
+            break;
+        case "1W":
+            totalPoints = 7; // 1 point per day
+            intervalMinutes = 24 * 60;
+            break;
+        case "1M":
+            totalPoints = 30; // 1 point per day
+            intervalMinutes = 24 * 60;
+            break;
+        default:
+            totalPoints = 30;
+            intervalMinutes = 24 * 60;
+    }
+    for(let i = totalPoints; i >= 0; i--){
+        const date = new Date();
+        date.setMinutes(date.getMinutes() - i * intervalMinutes);
+        // Format time label based on time period
+        let timeLabel;
+        if (i === 0) {
+            timeLabel = "Now";
+        } else {
+            switch(timePeriod){
+                case "1H":
+                    // Show minutes ago or time
+                    if (i === totalPoints) {
+                        timeLabel = `${totalPoints * 5}m ago`;
+                    } else {
+                        const hours = date.getHours();
+                        const minutes = date.getMinutes();
+                        timeLabel = `${hours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}`;
+                    }
+                    break;
+                case "1D":
+                    // Show hours ago or time
+                    if (i === totalPoints) {
+                        timeLabel = `${totalPoints}h ago`;
+                    } else {
+                        const hours = date.getHours();
+                        const minutes = date.getMinutes();
+                        timeLabel = `${hours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}`;
+                    }
+                    break;
+                case "1W":
+                    // Show day name or date
+                    if (i === totalPoints) {
+                        timeLabel = `${totalPoints}d ago`;
+                    } else {
+                        const dayName = date.toLocaleDateString("en-US", {
+                            weekday: "short"
+                        });
+                        timeLabel = dayName;
+                    }
+                    break;
+                case "1M":
+                    // Show date
+                    if (i === totalPoints) {
+                        timeLabel = `${totalPoints}d ago`;
+                    } else if (i <= 7) {
+                        timeLabel = `${i}d ago`;
+                    } else {
+                        const month = date.toLocaleDateString("en-US", {
+                            month: "short"
+                        });
+                        const day = date.getDate();
+                        timeLabel = `${month} ${day}`;
+                    }
+                    break;
+                default:
+                    timeLabel = `${i}d ago`;
+            }
+        }
+        const point = {
+            time: timeLabel
+        };
+        // Generate price data with some variation (simulating market movement)
+        options.forEach((option, idx)=>{
+            const baseProb = currentProbs[idx];
+            // Add some random variation that decreases as we go back in time
+            // More variation in recent periods, less in past
+            const variation = (Math.random() - 0.5) * 15 * (1 - i / totalPoints);
+            const yesPrice = Math.max(5, Math.min(95, baseProb + variation));
+            // Store Yes price (No price is always 100 - Yes)
+            point[option.name] = Number(yesPrice.toFixed(1));
+        });
+        data.push(point);
+    }
+    return data;
+}
+const colors = [
+    "#10b981",
+    "#3b82f6",
+    "#8b5cf6",
+    "#f59e0b",
+    "#ec4899",
+    "#06b6d4"
+];
+function PriceChart({ options, data: initialData }) {
+    const [timePeriod, setTimePeriod] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("1M");
+    // Generate data based on selected time period
+    const chartData = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>{
+        return generateMockPriceData(options, timePeriod);
+    }, [
+        options,
+        timePeriod
+    ]);
+    const chartConfig = {};
+    options.forEach((option, idx)=>{
+        chartConfig[option.name] = {
+            label: option.name,
+            color: colors[idx % colors.length]
+        };
+    });
+    const timePeriods = [
+        {
+            value: "1H",
+            label: "1 Hour"
+        },
+        {
+            value: "1D",
+            label: "1 Day"
+        },
+        {
+            value: "1W",
+            label: "1 Week"
+        },
+        {
+            value: "1M",
+            label: "1 Month"
+        }
+    ];
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "w-full h-[450px] p-6 rounded-lg border border-border bg-background",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "mb-4 flex items-center justify-between",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                className: "text-lg font-semibold mb-1",
+                                children: "Price History"
+                            }, void 0, false, {
+                                fileName: "[project]/components/price-chart.tsx",
+                                lineNumber: 169,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-sm text-muted-foreground",
+                                children: "Track price movements over time (in cents)"
+                            }, void 0, false, {
+                                fileName: "[project]/components/price-chart.tsx",
+                                lineNumber: 170,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/price-chart.tsx",
+                        lineNumber: 168,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex gap-2",
+                        children: timePeriods.map((period)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                onClick: ()=>setTimePeriod(period.value),
+                                className: `px-3 py-1.5 rounded-md text-xs font-medium whitespace-nowrap transition-all duration-200 ${timePeriod === period.value ? "bg-foreground text-background" : "text-muted-foreground hover:text-foreground hover:bg-muted/50"}`,
+                                children: period.label
+                            }, period.value, false, {
+                                fileName: "[project]/components/price-chart.tsx",
+                                lineNumber: 174,
+                                columnNumber: 13
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/components/price-chart.tsx",
+                        lineNumber: 172,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/price-chart.tsx",
+                lineNumber: 167,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$chart$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ChartContainer"], {
+                config: chartConfig,
+                className: "h-[320px]",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$chart$2f$LineChart$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["LineChart"], {
+                    data: chartData,
+                    margin: {
+                        top: 5,
+                        right: 30,
+                        left: 20,
+                        bottom: 5
+                    },
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$CartesianGrid$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CartesianGrid"], {
+                            strokeDasharray: "3 3",
+                            className: "stroke-muted"
+                        }, void 0, false, {
+                            fileName: "[project]/components/price-chart.tsx",
+                            lineNumber: 190,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$XAxis$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["XAxis"], {
+                            dataKey: "time",
+                            className: "text-xs",
+                            tick: {
+                                fill: "currentColor"
+                            },
+                            interval: "preserveStartEnd",
+                            angle: timePeriod === "1D" || timePeriod === "1H" ? -45 : 0,
+                            textAnchor: timePeriod === "1D" || timePeriod === "1H" ? "end" : "middle",
+                            height: timePeriod === "1D" || timePeriod === "1H" ? 60 : 30
+                        }, void 0, false, {
+                            fileName: "[project]/components/price-chart.tsx",
+                            lineNumber: 191,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$YAxis$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["YAxis"], {
+                            domain: [
+                                0,
+                                100
+                            ],
+                            className: "text-xs",
+                            tick: {
+                                fill: "currentColor"
+                            },
+                            label: {
+                                value: "Price (¢)",
+                                angle: -90,
+                                position: "insideLeft"
+                            }
+                        }, void 0, false, {
+                            fileName: "[project]/components/price-chart.tsx",
+                            lineNumber: 200,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$chart$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ChartTooltip"], {
+                            content: ({ active, payload })=>{
+                                if (!active || !payload?.length) return null;
+                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "rounded-lg border bg-background p-3 shadow-lg",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "grid gap-2",
+                                        children: payload.map((entry, idx)=>{
+                                            const yesPrice = typeof entry.value === "number" ? entry.value : 0;
+                                            const noPrice = 100 - yesPrice;
+                                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "space-y-1",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex items-center gap-2 mb-1",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "h-2.5 w-2.5 rounded-full",
+                                                                style: {
+                                                                    backgroundColor: entry.color
+                                                                }
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/price-chart.tsx",
+                                                                lineNumber: 219,
+                                                                columnNumber: 29
+                                                            }, void 0),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "text-xs font-semibold",
+                                                                children: entry.dataKey?.toString()
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/price-chart.tsx",
+                                                                lineNumber: 223,
+                                                                columnNumber: 29
+                                                            }, void 0)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/components/price-chart.tsx",
+                                                        lineNumber: 218,
+                                                        columnNumber: 27
+                                                    }, void 0),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex items-center justify-between gap-4 pl-7",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "text-xs text-muted-foreground",
+                                                                children: "Yes:"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/price-chart.tsx",
+                                                                lineNumber: 228,
+                                                                columnNumber: 29
+                                                            }, void 0),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "text-xs font-mono font-semibold text-green-600 dark:text-green-400",
+                                                                children: [
+                                                                    yesPrice.toFixed(1),
+                                                                    "¢"
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/components/price-chart.tsx",
+                                                                lineNumber: 229,
+                                                                columnNumber: 29
+                                                            }, void 0)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/components/price-chart.tsx",
+                                                        lineNumber: 227,
+                                                        columnNumber: 27
+                                                    }, void 0),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex items-center justify-between gap-4 pl-7",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "text-xs text-muted-foreground",
+                                                                children: "No:"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/price-chart.tsx",
+                                                                lineNumber: 234,
+                                                                columnNumber: 29
+                                                            }, void 0),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "text-xs font-mono font-semibold text-red-600 dark:text-red-400",
+                                                                children: [
+                                                                    noPrice.toFixed(1),
+                                                                    "¢"
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/components/price-chart.tsx",
+                                                                lineNumber: 235,
+                                                                columnNumber: 29
+                                                            }, void 0)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/components/price-chart.tsx",
+                                                        lineNumber: 233,
+                                                        columnNumber: 27
+                                                    }, void 0)
+                                                ]
+                                            }, idx, true, {
+                                                fileName: "[project]/components/price-chart.tsx",
+                                                lineNumber: 217,
+                                                columnNumber: 25
+                                            }, void 0);
+                                        })
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/price-chart.tsx",
+                                        lineNumber: 212,
+                                        columnNumber: 19
+                                    }, void 0)
+                                }, void 0, false, {
+                                    fileName: "[project]/components/price-chart.tsx",
+                                    lineNumber: 211,
+                                    columnNumber: 17
+                                }, void 0);
+                            }
+                        }, void 0, false, {
+                            fileName: "[project]/components/price-chart.tsx",
+                            lineNumber: 206,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$Legend$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Legend"], {
+                            wrapperStyle: {
+                                paddingTop: "20px"
+                            },
+                            iconType: "line"
+                        }, void 0, false, {
+                            fileName: "[project]/components/price-chart.tsx",
+                            lineNumber: 247,
+                            columnNumber: 11
+                        }, this),
+                        options.map((option, idx)=>{
+                            const color = colors[idx % colors.length];
+                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$Line$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Line"], {
+                                type: "monotone",
+                                dataKey: option.name,
+                                stroke: color,
+                                strokeWidth: 2.5,
+                                dot: false,
+                                activeDot: {
+                                    r: 5,
+                                    fill: color
+                                }
+                            }, option.name, false, {
+                                fileName: "[project]/components/price-chart.tsx",
+                                lineNumber: 254,
+                                columnNumber: 15
+                            }, this);
+                        })
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/components/price-chart.tsx",
+                    lineNumber: 189,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/components/price-chart.tsx",
+                lineNumber: 188,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/price-chart.tsx",
+        lineNumber: 166,
+        columnNumber: 5
+    }, this);
+}
+}),
+"[project]/src/config/contracts.ts [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * Contract addresses deployed on Flare Testnet (Coston2)
+ * Chain ID: 114
+ */ __turbopack_context__.s([
+    "CHAIN_CONFIG",
+    ()=>CHAIN_CONFIG,
+    "CONTRACTS",
+    ()=>CONTRACTS
+]);
+const CONTRACTS = {
+    // Core Contracts
+    MARKET: "0x1804c8AB1F12E6bbf3894d4083f33e07309d1f38",
+    MARKET_UTILS_SWAP_HOOK: "0x955b741592FAF9388BEC58D25A6aC8B0Cd9c00c0",
+    BASIC_RESOLVER: "0x3fEa484D7E954D13811ED91721112239F7435898",
+    FLARE_HYBRID_RESOLVER: "0x23294167cDB8041d6b15FA9eb7E1bB3A962ea015",
+    USDC: "0xb34e3Dfd595cD28aD15D76dCA86eF7D54b772Db5",
+    // Uniswap V4 Infrastructure
+    POOL_MANAGER: "0x9A9bc340103C462365Db54E423f95784C664d3Df",
+    POSITION_MANAGER: "0xf25592fbe1597E58E5235a6A309a83ce3d8b5bfe",
+    UNIVERSAL_ROUTER: "0x2b45002683704d4d14CB5D979a4C93d02844884a",
+    PERMIT2: "0xC5052054DBDC35f84D279CB321bE98480d807f6F",
+    WFLR: "0xF6398711b650CD1C0601f0c03d4E3f8C461c9AA0",
+    // Flare Infrastructure
+    FTSO_REGISTRY: "0x48Da21ce34966A64E267CeFb78012C0282D0Ac87",
+    FDC: "0x48aC463d7975828989331F4De43341627b9c5f1D"
+};
+const CHAIN_CONFIG = {
+    id: 114,
+    name: "Flare Testnet (Coston2)",
+    network: "flare-coston2",
+    nativeCurrency: {
+        decimals: 18,
+        name: "Flare",
+        symbol: "FLR"
+    },
+    rpcUrls: {
+        default: {
+            http: [
+                "https://coston2-api.flare.network/ext/C/rpc"
+            ]
+        },
+        public: {
+            http: [
+                "https://coston2-api.flare.network/ext/C/rpc"
+            ]
+        }
+    },
+    blockExplorers: {
+        default: {
+            name: "Coston2 Explorer",
+            url: "https://coston2-explorer.flare.network"
+        }
+    },
+    testnet: true
+};
+}),
+"[project]/src/abis/Market.json (json)", ((__turbopack_context__) => {
+
+__turbopack_context__.v(JSON.parse("{\"abi\":[{\"type\":\"constructor\",\"inputs\":[{\"name\":\"admin\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_poolManager\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_positionManager\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_permit2\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_swapHook\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_usdc\",\"type\":\"address\",\"internalType\":\"address\"}],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"POOL_FEE\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint24\",\"internalType\":\"uint24\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"acceptedProposals\",\"inputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"changeFee\",\"inputs\":[{\"name\":\"newFee\",\"type\":\"uint24\",\"internalType\":\"uint24\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"claimVirtualTokenForProposal\",\"inputs\":[{\"name\":\"depositor\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"proposalId\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"createMarket\",\"inputs\":[{\"name\":\"creator\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"resolver\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"minDeposit\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"deadline\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"title\",\"type\":\"string\",\"internalType\":\"string\"}],\"outputs\":[{\"name\":\"marketId\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"createProposal\",\"inputs\":[{\"name\":\"marketId\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"title\",\"type\":\"string\",\"internalType\":\"string\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"createProposalWithResolution\",\"inputs\":[{\"name\":\"marketId\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"title\",\"type\":\"string\",\"internalType\":\"string\"},{\"name\":\"resolutionConfigData\",\"type\":\"bytes\",\"internalType\":\"bytes\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"depositToMarket\",\"inputs\":[{\"name\":\"depositor\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"marketId\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"amount\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"deposits\",\"inputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"getAllMarketIds\",\"inputs\":[],\"outputs\":[{\"name\":\"marketIds\",\"type\":\"uint256[]\",\"internalType\":\"uint256[]\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"getAllMarketsInfo\",\"inputs\":[],\"outputs\":[{\"name\":\"marketIds\",\"type\":\"uint256[]\",\"internalType\":\"uint256[]\"},{\"name\":\"marketsData\",\"type\":\"tuple[]\",\"internalType\":\"struct MarketConfig[]\",\"components\":[{\"name\":\"id\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"createdAt\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"minDeposit\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"deadline\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"creator\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"marketToken\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"resolver\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"status\",\"type\":\"uint8\",\"internalType\":\"enum MarketStatus\"},{\"name\":\"title\",\"type\":\"string\",\"internalType\":\"string\"}]}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"getMarketInfoWithProposals\",\"inputs\":[{\"name\":\"marketId\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[{\"name\":\"market\",\"type\":\"tuple\",\"internalType\":\"struct MarketConfig\",\"components\":[{\"name\":\"id\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"createdAt\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"minDeposit\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"deadline\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"creator\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"marketToken\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"resolver\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"status\",\"type\":\"uint8\",\"internalType\":\"enum MarketStatus\"},{\"name\":\"title\",\"type\":\"string\",\"internalType\":\"string\"}]},{\"name\":\"proposalIds\",\"type\":\"uint256[]\",\"internalType\":\"uint256[]\"},{\"name\":\"proposalData\",\"type\":\"tuple[]\",\"internalType\":\"struct Market.ProposalInfo[]\",\"components\":[{\"name\":\"id\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"createdAt\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"creator\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"title\",\"type\":\"string\",\"internalType\":\"string\"},{\"name\":\"vusdAddress\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"yesTokenAddress\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"noTokenAddress\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"yesPrice\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"noPrice\",\"type\":\"uint256\",\"internalType\":\"uint256\"}]}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"getMarketInfoWithProposalsAndUserBalances\",\"inputs\":[{\"name\":\"marketId\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"user\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[{\"name\":\"market\",\"type\":\"tuple\",\"internalType\":\"struct MarketConfig\",\"components\":[{\"name\":\"id\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"createdAt\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"minDeposit\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"deadline\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"creator\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"marketToken\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"resolver\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"status\",\"type\":\"uint8\",\"internalType\":\"enum MarketStatus\"},{\"name\":\"title\",\"type\":\"string\",\"internalType\":\"string\"}]},{\"name\":\"userMarketDepositBalance\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"proposalIds\",\"type\":\"uint256[]\",\"internalType\":\"uint256[]\"},{\"name\":\"proposalData\",\"type\":\"tuple[]\",\"internalType\":\"struct Market.ProposalInfoWithBalances[]\",\"components\":[{\"name\":\"id\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"createdAt\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"creator\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"title\",\"type\":\"string\",\"internalType\":\"string\"},{\"name\":\"vusdAddress\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"yesTokenAddress\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"noTokenAddress\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"yesPrice\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"noPrice\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"yesBalance\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"noBalance\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"vusdBalance\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"claimableVUSD\",\"type\":\"uint256\",\"internalType\":\"uint256\"}]}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"getProposalInfo\",\"inputs\":[{\"name\":\"proposalId\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[{\"name\":\"marketId\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"createdAt\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"creator\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"title\",\"type\":\"string\",\"internalType\":\"string\"},{\"name\":\"vusdAddress\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"yesTokenAddress\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"noTokenAddress\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"yesPrice\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"noPrice\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"getProposalPrices\",\"inputs\":[{\"name\":\"proposalId\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[{\"name\":\"yesPrice\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"noPrice\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"getUserDeposit\",\"inputs\":[{\"name\":\"proposalId\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"user\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[{\"name\":\"totalDeposited\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"alreadyClaimed\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"available\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"getUserProposalBalances\",\"inputs\":[{\"name\":\"proposalId\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"user\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[{\"name\":\"yesBalance\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"noBalance\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"vusdBalance\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"getUserProposalCompleteInfo\",\"inputs\":[{\"name\":\"proposalId\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"user\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[{\"name\":\"marketDepositBalance\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"claimableVUSD\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"currentVUSDBalance\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"yesBalance\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"noBalance\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"yesPrice\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"noPrice\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"getUserProposalPosition\",\"inputs\":[{\"name\":\"proposalId\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"user\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[{\"name\":\"yesBalance\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"noBalance\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"vusdBalance\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"totalDeposited\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"availableDeposit\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"getUserVUSDInfo\",\"inputs\":[{\"name\":\"proposalId\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"user\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[{\"name\":\"claimableVUSD\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"currentVUSDBalance\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"graduateMarket\",\"inputs\":[{\"name\":\"marketId\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"hook\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"address\",\"internalType\":\"contract MarketUtilsSwapHook\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"id\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"address\",\"internalType\":\"contract Id\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"marketMax\",\"inputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[{\"name\":\"yesPrice\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"proposalId\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"marketProposals\",\"inputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"markets\",\"inputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[{\"name\":\"id\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"createdAt\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"minDeposit\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"deadline\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"creator\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"marketToken\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"resolver\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"status\",\"type\":\"uint8\",\"internalType\":\"enum MarketStatus\"},{\"name\":\"title\",\"type\":\"string\",\"internalType\":\"string\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"mintYesNo\",\"inputs\":[{\"name\":\"proposalId\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"amount\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"owner\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"address\",\"internalType\":\"address\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"permit2\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"address\",\"internalType\":\"contract IPermit2\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"poolManager\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"address\",\"internalType\":\"contract IPoolManager\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"positionManager\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"address\",\"internalType\":\"contract IPositionManager\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"proposalDepositClaims\",\"inputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"proposals\",\"inputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[{\"name\":\"id\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"marketId\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"createdAt\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"creator\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"vUSD\",\"type\":\"address\",\"internalType\":\"contract VUSD\"},{\"name\":\"yesToken\",\"type\":\"address\",\"internalType\":\"contract DecisionToken\"},{\"name\":\"noToken\",\"type\":\"address\",\"internalType\":\"contract DecisionToken\"},{\"name\":\"yesPoolKey\",\"type\":\"tuple\",\"internalType\":\"struct PoolKey\",\"components\":[{\"name\":\"currency0\",\"type\":\"address\",\"internalType\":\"Currency\"},{\"name\":\"currency1\",\"type\":\"address\",\"internalType\":\"Currency\"},{\"name\":\"fee\",\"type\":\"uint24\",\"internalType\":\"uint24\"},{\"name\":\"tickSpacing\",\"type\":\"int24\",\"internalType\":\"int24\"},{\"name\":\"hooks\",\"type\":\"address\",\"internalType\":\"contract IHooks\"}]},{\"name\":\"noPoolKey\",\"type\":\"tuple\",\"internalType\":\"struct PoolKey\",\"components\":[{\"name\":\"currency0\",\"type\":\"address\",\"internalType\":\"Currency\"},{\"name\":\"currency1\",\"type\":\"address\",\"internalType\":\"Currency\"},{\"name\":\"fee\",\"type\":\"uint24\",\"internalType\":\"uint24\"},{\"name\":\"tickSpacing\",\"type\":\"int24\",\"internalType\":\"int24\"},{\"name\":\"hooks\",\"type\":\"address\",\"internalType\":\"contract IHooks\"}]},{\"name\":\"title\",\"type\":\"string\",\"internalType\":\"string\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"redeemRewards\",\"inputs\":[{\"name\":\"marketId\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"user\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"redeemYesNo\",\"inputs\":[{\"name\":\"proposalId\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"amount\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"renounceOwnership\",\"inputs\":[],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"resolveMarket\",\"inputs\":[{\"name\":\"marketId\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"yesOrNo\",\"type\":\"bool\",\"internalType\":\"bool\"},{\"name\":\"proof\",\"type\":\"bytes\",\"internalType\":\"bytes\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"transferOwnership\",\"inputs\":[{\"name\":\"newOwner\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"updatePostSwap\",\"inputs\":[{\"name\":\"poolKey\",\"type\":\"tuple\",\"internalType\":\"struct PoolKey\",\"components\":[{\"name\":\"currency0\",\"type\":\"address\",\"internalType\":\"Currency\"},{\"name\":\"currency1\",\"type\":\"address\",\"internalType\":\"Currency\"},{\"name\":\"fee\",\"type\":\"uint24\",\"internalType\":\"uint24\"},{\"name\":\"tickSpacing\",\"type\":\"int24\",\"internalType\":\"int24\"},{\"name\":\"hooks\",\"type\":\"address\",\"internalType\":\"contract IHooks\"}]},{\"name\":\"avgTick\",\"type\":\"int24\",\"internalType\":\"int24\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"usdc\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"address\",\"internalType\":\"contract USDC\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"validateSwap\",\"inputs\":[{\"name\":\"poolKey\",\"type\":\"tuple\",\"internalType\":\"struct PoolKey\",\"components\":[{\"name\":\"currency0\",\"type\":\"address\",\"internalType\":\"Currency\"},{\"name\":\"currency1\",\"type\":\"address\",\"internalType\":\"Currency\"},{\"name\":\"fee\",\"type\":\"uint24\",\"internalType\":\"uint24\"},{\"name\":\"tickSpacing\",\"type\":\"int24\",\"internalType\":\"int24\"},{\"name\":\"hooks\",\"type\":\"address\",\"internalType\":\"contract IHooks\"}]}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"event\",\"name\":\"MarketCreated\",\"inputs\":[{\"name\":\"marketId\",\"type\":\"uint256\",\"indexed\":true,\"internalType\":\"uint256\"},{\"name\":\"createdAt\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"},{\"name\":\"creator\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"title\",\"type\":\"string\",\"indexed\":false,\"internalType\":\"string\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"MarketSettled\",\"inputs\":[{\"name\":\"marketId\",\"type\":\"uint256\",\"indexed\":true,\"internalType\":\"uint256\"},{\"name\":\"passed\",\"type\":\"bool\",\"indexed\":false,\"internalType\":\"bool\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"OwnershipTransferred\",\"inputs\":[{\"name\":\"previousOwner\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"},{\"name\":\"newOwner\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"ProposalCreated\",\"inputs\":[{\"name\":\"marketId\",\"type\":\"uint256\",\"indexed\":true,\"internalType\":\"uint256\"},{\"name\":\"proposalId\",\"type\":\"uint256\",\"indexed\":true,\"internalType\":\"uint256\"},{\"name\":\"createdAt\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"},{\"name\":\"creator\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"}],\"anonymous\":false},{\"type\":\"error\",\"name\":\"MarketClosed\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"MarketNotSettled\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"OwnableInvalidOwner\",\"inputs\":[{\"name\":\"owner\",\"type\":\"address\",\"internalType\":\"address\"}]},{\"type\":\"error\",\"name\":\"OwnableUnauthorizedAccount\",\"inputs\":[{\"name\":\"account\",\"type\":\"address\",\"internalType\":\"address\"}]},{\"type\":\"error\",\"name\":\"ProposalNotTradable\",\"inputs\":[]}],\"bytecode\":{\"object\":\"0x610120806040523461022c5760c081617c4480380380916100208285610257565b83398101031261022c576100338161027a565b906100406020820161027a565b61004c6040830161027a565b6100586060840161027a565b9161007160a061006a6080870161027a565b950161027a565b946001600160a01b03168015610244575f80546001600160a01b031981168317825560405192916001600160a01b03909116907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09080a36001805462ffffff60a01b191661017760a31b17905560d78181016001600160401b03811183821017610230578291617b6d833903905ff0801561022157600180546001600160a01b0319166001600160a01b0392831617905590811660805290811660a05290811660c05290811660e0819052911661010052803b1561022c575f809160246040518094819363189acdbd60e31b83523060048401525af1801561022157610211575b6040516178de908161028f823960805181818161024001528181610725015281816108f7015281816113810152818161194301528181611d4b0152611d8e015260a05181818161258001528181614fd301526155d4015260c051818181612c660152615566015260e05181818161253b01528181614682015261498801526101005181818161040501528181610e160152818161155a0152612a230152f35b5f61021b91610257565b5f610172565b6040513d5f823e3d90fd5b5f80fd5b634e487b7160e01b5f52604160045260245ffd5b631e4fbdf760e01b5f525f60045260245ffd5b601f909101601f19168101906001600160401b0382119082101761023057604052565b51906001600160a01b038216820361022c5756fe60806040526004361015610011575f80fd5b5f803560e01c8063013cf08b14612ea157806302d52fa414612e545780630fc7b7e514612c9557806312261ee714612c51578063139df20014612bc25780632c331aef14612a525780633e413bee14612a0d5780634e0552441461294a57806353a58de1146129055780635efb5e37146128c0578063606d9be0146128a35780636ac184641461274f578063715018a6146126f557806377416ed0146125af578063791b98bc1461256a5780637f5a7c7b14612525578063822edc59146123d75780638da5cb5b146123b05780638e8a9d8a146122385780638ed1b9451461220e578063917125ca146120d257806393b3744e14611a77578063a64a5745146117ac578063a67ab8b014611774578063ad2aa0b814611714578063af640d0f146116eb578063b1283e7714611630578063b5e23d2114611441578063b85ed6361461140d578063bc903cb8146112d4578063bf76b42f14611287578063c47bd5bd14611060578063c6323c2614610ba6578063c81577b0146107c9578063c9e50c9714610795578063d05320e714610754578063dc4c90d31461070f578063dd1b9c4a146106e9578063df5590b614610344578063f2fde38b146102be5763f7a94a67146101dd575f80fd5b346102bb5760203660031901126102bb57610205604080926004358152600460205220613370565b60a081015161021e906001600160a01b03161515613409565b6102af60e0820161028360a08251209184670de0b6b3a76400006102786102667f000000000000000000000000000000000000000000000000000000000000000096876146e6565b5050506001600160a01b031680613783565b0260c01c915161479f565b92670de0b6b3a76400006102a461026661010084019460a0865120906146e6565b0260c01c91516147ea565b82519182526020820152f35b80fd5b50346102bb5760203660031901126102bb576102d861322c565b6102e061465a565b6001600160a01b031680156103305781546001600160a01b03198116821783556001600160a01b03167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e08380a380f35b631e4fbdf760e01b82526004829052602482fd5b50346102bb5760a03660031901126102bb5761035e61322c565b90610367613216565b916084356001600160401b0381116106e55790610389839236906004016131d2565b93602060018060a01b0360015416600460405180978193635d1ca63160e01b83525af19384156106da5783946106a2575b5060076040516103c981612f81565b8581526020810192428452604082016044358152606083016064358152608084019660018060a01b03169687815260a085019160018060a01b037f000000000000000000000000000000000000000000000000000000000000000016835260c086019460018060a01b0316855260e08601938a85526101008701988d8a528c8c52600260205260408c209751885551600188015551600287015551600386015560018060a01b03905116600485019060018060a01b03166001600160601b0360a01b82541617905560018060a01b03905116600584019060018060a01b03166001600160601b0360a01b825416179055600683019160018060a01b039060018060a01b03905116166001600160601b0360a01b835416178255516104ec81613289565b6104f581613289565b815460ff60a01b191660a09190911b60ff60a01b161790559151805191909201916001600160401b03821161068e5761052e8354613078565b601f8111610649575b5091859391602097938896601f83116001146105c35795967f0bc2a35bcd8dc65c0c53de105d719e72b6e7c46f7fce1bb1e82db4546184c48e9691836105b8575b50508160011b915f199060031b1c19161790555b6105ad60405192839242845288840152606060408401526060830190613193565b0390a2604051908152f35b015190505f80610578565b9690601f198316848952828920985b81811061062f5750917f0bc2a35bcd8dc65c0c53de105d719e72b6e7c46f7fce1bb1e82db4546184c48e979891846001959410610617575b505050811b01905561058c565b01515f1960f88460031b161c191690555f808061060a565b838301518a556001909901988a9850928b01928b016105d2565b83865260208620601f840160051c81019160208510610684575b601f0160051c01905b8181106106795750610537565b86815560010161066c565b9091508190610663565b634e487b7160e01b85526041600452602485fd5b9093506020813d6020116106d2575b816106be60209383613004565b810103126106ce5751925f6103ba565b5f80fd5b3d91506106b1565b6040513d85823e3d90fd5b8280fd5b50346102bb57806003193601126102bb57602062ffffff60015460a01c16604051908152f35b50346102bb57806003193601126102bb576040517f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03168152602090f35b50346102bb5761076336613331565b919081526009602052604081209081548310156102bb5760206107868484613347565b90549060031b1c604051908152f35b50346102bb5760203660031901126102bb576040809160043581526003602052206001815491015482519182526020820152f35b50346102bb5760203660031901126102bb57600435906107e7613493565b508181526002602052604081209161087360076040519461080786612f81565b8054865260018101546020870152600281015460408701526003810154606087015260048101546001600160a01b0390811660808801526005820154811660a080890191909152600683015491821660c08901521c60ff1661086881613289565b60e0870152016130b0565b610100840152610885835115156138c0565b8152600960205260408120906040518083602082955493848152019084526020842092845b818110610b8d5750506108bf92500383613004565b8151916108cb8361344a565b926108d96040519485613004565b808452601f196108e88261344a565b01835b818110610b3f575050827f0000000000000000000000000000000000000000000000000000000000000000905b828110610a225761093d87878761094b886040519586956060875260608701906132a7565b908582036020870152613256565b8381036040850152825190818152602081016020808460051b840101950193915b8383106109795786860387f35b919395509193602080600192601f19858203018652885190815181528282015183820152848060a01b036040830151166040820152610100806109cd60608501516101206060860152610120850190613193565b93878060a01b036080820151166080850152878060a01b0360a08201511660a0850152878060a01b0360c08201511660c085015260e081015160e085015201519101529701930193019092869594929361096c565b80610a2f60019286613501565b5186526004602052610a4360408720613370565b610a7560e0820182670de0b6b3a7640000610278610a6560a08551208a6146e6565b505050888060a01b031680613783565b610aa8610100830183670de0b6b3a76400006102a4610a9860a08551208b6146e6565b505050898060a01b031680613783565b90825192604081015190868060a01b03606082015116610120820151888060a01b0360808401511691898060a01b0360a0850151169360c08b8060a01b03910151169460405198610af88a612f81565b8952602089015260408801526060870152608086015260a085015260c084015260e0830152610100820152610b2d8289613501565b52610b388188613501565b5001610918565b602090604051610b4e81612f81565b86815286838201528660408201526060808201528660808201528660a08201528660c08201528660e082015286610100820152828289010152016108eb565b84548352600194850194879450602090930192016108aa565b50346102bb5760403660031901126102bb57600435610bc3613216565b9080835260026020526040832090604051610bdd81612f81565b8254815260018301546020820152600283015460408201526003830154606082015260048301546001600160a01b0390811660808301526005840154811660a080840191909152600685015491821660c084015260e083019461010092610c589260079291901c60ff16610c5081613289565b8752016130b0565b91015283526005602052604083205483526004602052610c7a60408420613370565b9083608083019260018060a01b03845116926040516370a0823160e01b815260208160248160018060a01b038b16988960048301525afa90811561101c57849161102b575b50945164e8d4a51000860495906001600160a01b0316803b156110275760405163079cc67960e41b81526001600160a01b0389166004820152602481019290925284908290604490829084905af190811561101c578491611007575b505060038151610d2a81613289565b610d3381613289565b03610edd575060a00180516040516370a0823160e01b81526004810194909452602090849060249082906001600160a01b03165afa928315610e7a578293610ea6575b50516001600160a01b0316803b15610ea25760405163079cc67960e41b81526001600160a01b0386166004820152602481018490529082908290604490829084905af18015610e7a57610e85575b505091610dde60209264e8d4a51000610e11950490613776565b905b60405163a9059cbb60e01b81526001600160a01b039091166004820152602481019190915291829081906044820190565b0381857f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03165af18015610e7a57610e4e575080f35b610e6f9060203d602011610e73575b610e678183613004565b810190613829565b5080f35b503d610e5d565b6040513d84823e3d90fd5b81610e9291959395613004565b610e9e5791835f610dc4565b8380fd5b5080fd5b915091506020813d602011610ed5575b81610ec360209383613004565b810103126106ce57849051915f610d76565b3d9150610eb6565b600491925051610eec81613289565b610ef581613289565b03610ff85760c00180516040516370a0823160e01b81526004810193909352859190602090849060249082906001600160a01b03165afa928315610e7a578293610fc1575b50516001600160a01b0316803b15610ea25760405163079cc67960e41b81526001600160a01b0386166004820152602481018490529082908290604490829084905af18015610e7a57610fa8575b505091610fa260209264e8d4a51000610e11950490613776565b90610de0565b81610fb591959395613004565b610e9e5791835f610f88565b915091506020813d602011610ff0575b81610fde60209383613004565b810103126106ce57849051915f610f3a565b3d9150610fd1565b630ff84df760e11b8552600485fd5b8161101191613004565b6106e557825f610d1b565b6040513d86823e3d90fd5b8480fd5b9350506020833d602011611058575b8161104760209383613004565b810103126106ce578692515f610cbf565b3d915061103a565b50346102bb5760403660031901126102bb57600435602461107f613216565b91808452600460205261109460408520613370565b93602060a086016110af60018060a01b038251161515613409565b516040516370a0823160e01b81526001600160a01b0396871660048201819052969095869290918391165afa92831561127a578193611245575b5060c08501516040516370a0823160e01b815260048101869052939490602090859060249082906001600160a01b03165afa938415610e7a57829461120e575b5060808601516040516370a0823160e01b815260048101839052929190602090849060249082906001600160a01b03165afa928315610e7a5782936111d7575b50602060a09701518252600660205260408220815f5260205260405f2054938252600760205260408220905f5260205260405f20548084115f146111d0576111b2915083613769565b925b6040519485526020850152604084015260608301526080820152f35b50926111b4565b9692506020873d602011611206575b816111f360209383613004565b810103126106ce57955191956020611169565b3d91506111e6565b919093506020823d60201161123d575b8161122b60209383613004565b810103126106ce579051926024611129565b3d915061121e565b92506020833d602011611272575b8161126060209383613004565b810103126106ce5760249251926110e9565b3d9150611253565b50604051903d90823e3d90fd5b50346102bb5760203660031901126102bb5760043562ffffff81168103610ea2576112b061465a565b6001805462ffffff60a01b191660a09290921b62ffffff60a01b1691909117905580f35b50346102bb5760203660031901126102bb5760406112fc916004358152600460205220613370565b60a081018051611316906001600160a01b03161515613409565b60208201519060408301519260018060a01b036060820151169061012081015160018060a01b036080830151169360018060a01b039051166113ee60018060a01b0360c085015116926113c860e086016113a760a08251209188670de0b6b3a76400006102786102667f000000000000000000000000000000000000000000000000000000000000000096876146e6565b96670de0b6b3a76400006102a461026661010084019460a0865120906146e6565b95604051998a998a5260208a015260408901526101206060890152610120880190613193565b94608087015260a086015260c085015260e08401526101008301520390f35b50346102bb57806003193601126102bb5761143d611429614532565b604051918291602083526020830190613256565b0390f35b50346102bb5760603660031901126102bb5761145b61322c565b602435906044359180845260026020526040842060405161147b81612f81565b8154815260018201546020820152600282015460408201526003820154606082015260048201546001600160a01b0390811660808301526005830154811660a080840191909152600684015491821660c084015260e0830193610100926114f69260079291901c60ff166114ee81613289565b8652016130b0565b9101526003815161150681613289565b61150f81613289565b14908115611611575b81156115f3575b506115e5576040516323b872dd60e01b81526001600160a01b03831660048201523060248201526044810184905260208180606481010381887f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03165af180156115da576115bd575b5083526006602052604083209060018060a01b03165f526020526115b860405f20918254613776565b905580f35b6115d59060203d602011610e7357610e678183613004565b61158f565b6040513d87823e3d90fd5b62b5f6bf60e41b8452600484fd5b600291505161160181613289565b61160a81613289565b145f61151f565b90506004815161162081613289565b61162981613289565b1490611518565b50346102bb5760203660031901126102bb576040906004358152600260205220805461143d600183015492600281015490600381015460018060a01b0360048301541660018060a01b036005840154169060068401549261169a600760ff8660a01c1696016130b0565b95604051998a998a5260208a015260408901526060880152608087015260a086015260018060a01b031660c08501526116d281613289565b60e0840152610120610100840152610120830190613193565b50346102bb57806003193601126102bb576001546040516001600160a01b039091168152602090f35b50346102bb5760603660031901126102bb576024356001600160401b038111610ea2576117459036906004016131d2565b604435906001600160401b0382116106e5576117686117719236906004016131d2565b906004356139d6565b80f35b50346102bb57366003190160c08112610ea25760a0136102bb5760a4358060020b8103610ea257611771906117a7614680565b6138ff565b50346102bb5760403660031901126102bb576004356117c9613216565b9181815260046020526117de60408220613370565b60a0810180519092906117fb906001600160a01b03161515613409565b60208281015182526006815260408083206001600160a01b0388165f818152918452828220549785526007845282852090825290925290205480851115611a6f576118469085613769565b925b64e8d4a5100084029380850464e8d4a510001490151715611a5b5760808301516040516370a0823160e01b81526001600160a01b03978816600482018190529790929160209184916024918391165afa9182156106da578392611a26575b50516040516370a0823160e01b8152600481018890529190602090839060249082906001600160a01b03165afa9182156106da5783926119f2575b5060c08401516040516370a0823160e01b81526004810198909852602090889060249082906001600160a01b03165afa9283156119e657926119b1575b60e0965061198a87850161196960a08251209187670de0b6b3a76400006102786102667f000000000000000000000000000000000000000000000000000000000000000096876146e6565b95670de0b6b3a76400006102a461026661010084019460a0865120906146e6565b94604051968752602087015260408601526060850152608084015260a083015260c0820152f35b91506020863d6020116119de575b816119cc60209383613004565b810103126106ce5760e095519161191e565b3d91506119bf565b604051903d90823e3d90fd5b9091506020813d602011611a1e575b81611a0e60209383613004565b810103126106ce5751905f6118e1565b3d9150611a01565b91506020823d602011611a53575b81611a4160209383613004565b810103126106ce5790519060206118a6565b3d9150611a34565b634e487b7160e01b82526011600452602482fd5b508092611848565b50346102bb5760403660031901126102bb5760043590611a95613216565b90611a9e613493565b5082815260026020526040812092611b2a600760405195611abe87612f81565b8054875260018101546020880152600281015460408801526003810154606088015260048101546001600160a01b0390811660808901526005820154811660a0808a0191909152600683015491821660c08a01521c60ff16611b1f81613289565b60e0880152016130b0565b610100850152611b3c845115156138c0565b80825260066020526040822060018060a01b0384165f5260205260405f20549082526009602052604082206040518082602082945493848152019086526020862092865b8181106120b9575050611b9592500382613004565b8051611ba08161344a565b94611bae6040519687613004565b818652601f19611bbd8361344a565b01855b81811061204f575050845b828110611d0b57611bf1888888611c0489896040519687966080885260808801906132a7565b9160208701528582036040870152613256565b8381036060850152825190818152602081016020808460051b840101950193915b838310611c325786860387f35b919395509193602080600192601f19858203018652885190815181528282015183820152848060a01b03604083015116604082015261018080611c8660608501516101a060608601526101a0850190613193565b93878060a01b036080820151166080850152878060a01b0360a08201511660a0850152878060a01b0360c08201511660c085015260e081015160e0850152610100810151610100850152610120810151610120850152610140810151610140850152610160810151610160850152015191015297019301930190928695949293611c25565b611d158185613501565b5180875260046020526024611d2c60408920613370565b91611d6f60e0840184670de0b6b3a764000061027861026660a08551207f00000000000000000000000000000000000000000000000000000000000000006146e6565b611db2610100850185670de0b6b3a76400006102a461026660a08551207f00000000000000000000000000000000000000000000000000000000000000006146e6565b60a08501516040516370a0823160e01b81526001600160a01b038981166004830152909560209287928391165afa918215612044578b92612010575b60c08601516040516370a0823160e01b81526001600160a01b038a8116600483015290965060209187916024918391165afa938415612005578c94611fd1575b60808701516040516370a0823160e01b81526001600160a01b038b8116600483015290975060209188916024918391165afa958615611fc6578d96611f93575b508c52600760209081526040808e206001600160a01b038b165f9081529252902054808c1115611f8b57611ea2908c613769565b955b64e8d4a5100087029680880464e8d4a510001490151715611f775780516040808301516060840151610120850151608086015160a087015160c090970151945160019e9d909c909b909a90999098909790966001600160a01b039687169691821695928216949091169190611f188e612fb1565b8d5260208d015260408c015260608b015260808a015260a089015260c088015260e0870152610100860152610120850152610140840152610160830152610180820152611f65828a613501565b52611f708189613501565b5001611bcb565b634e487b7160e01b8d52601160045260248dfd5b508b95611ea4565b9095506020813d8211611fbe575b81611fae60209383613004565b810103126106ce5751945f611e6e565b3d9150611fa1565b6040513d8f823e3d90fd5b93506020853d8211611ffd575b81611feb60209383613004565b810103126106ce576024945193611e2e565b3d9150611fde565b6040513d8e823e3d90fd5b91506020843d821161203c575b8161202a60209383613004565b810103126106ce576024935191611dee565b3d915061201d565b6040513d8d823e3d90fd5b60209060405161205e81612fb1565b88815288838201528860408201526060808201528860808201528860a08201528860c08201528860e0820152886101008201528861012082015288610140820152886101608201528861018082015282828b01015201611bc0565b8454835260019485019486945060209093019201611b80565b50346102bb57806120e236613331565b90825260046020526120f660408320613370565b60a08101516001600160a01b0316803b156121f45760405163079cc67960e41b8152336004820152602481018490529084908290604490829084905af190811561101c5784916121f9575b505060c08101516001600160a01b0316803b156121f45760405163079cc67960e41b8152336004820152602481018490529084908290604490829084905af190811561101c5784916121db575b5050608001516040516323b872dd60e01b81523060048201523360248201526044810192909252909160209183916064918391906001600160a01b03165af18015610e7a57610e4e575080f35b816121e591613004565b6121f057825f61218e565b5050fd5b505050fd5b8161220391613004565b6121f057825f612141565b50346102bb5760203660031901126102bb5760406020916004358152600583522054604051908152f35b50346102bb57366003190160a08112610ea25760a090612256614680565b126102bb5760405161226781612fcd565b6004356001600160a01b03811681036106e55781526024356001600160a01b03811681036106e557602082015260443562ffffff811681036106e55760408201526064358060020b81036106e5576060820152608435906001600160a01b03821682036106e55760a0916080820152208152600860205260408120548152600460205260206122f860408320613370565b0151815260026020526040812060405161231181612f81565b8154815260018201546020820152600282015460408201526003820154606082015260048201546001600160a01b0390811660808301526005830154811660a080840191909152600684015491821660c084015260e0830193610100926123849260079291901c60ff166114ee81613289565b9101525161239181613289565b61239a81613289565b6123a15780f35b63f884e6ff60e01b8152600490fd5b50346102bb57806003193601126102bb57546040516001600160a01b039091168152602090f35b50346102bb5760603660031901126102bb5760043560243580151590818103610e9e576044356001600160401b038111611027576124199036906004016131d2565b918385526002602052600660408620018054600160ff8260a01c1661243d81613289565b0361252157612485946020918789526005835260408920548960405180998195829463fb6cc44b60e01b84526004840152896024840152606060448401526064830190613193565b03926001600160a01b03165af1928315612516577f567004967c94ba65aa833c6d0374e264519bd15a847340c358d34c2e4a5e5d5d946020946124fb575b50156124e557805460ff60a01b1916600360a01b1790555b604051908152a280f35b805460ff60a01b1916600160a21b1790556124db565b61251190853d8711610e7357610e678183613004565b6124c3565b6040513d88823e3d90fd5b8680fd5b50346102bb57806003193601126102bb576040517f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03168152602090f35b50346102bb57806003193601126102bb576040517f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03168152602090f35b50346102bb57806125bf36613331565b90825260046020526125d360408320613370565b60808101516040516323b872dd60e01b815233600482015230602482015260448101849052906020908290606490829088906001600160a01b03165af1801561101c576126d8575b5060a08101516001600160a01b0316803b156121f4576040516340c10f1960e01b8152336004820152602481018490529084908290604490829084905af190811561101c5784916126c3575b505060c001516001600160a01b0316803b156121f0576040516340c10f1960e01b8152336004820152602481019290925282908290604490829084905af18015610e7a576126b25750f35b816126bc91613004565b6102bb5780f35b816126cd91613004565b6121f057825f612667565b6126f09060203d602011610e7357610e678183613004565b61261b565b50346102bb57806003193601126102bb5761270e61465a565b80546001600160a01b03198116825581906001600160a01b03167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e08280a380f35b50346102bb5760403660031901126102bb57602460043561276e613216565b818452600460205261278260408520613370565b60a081015161279b906001600160a01b03161515613409565b60808101516040516370a0823160e01b81526001600160a01b038481166004830152909560209287928391165afa9384156115da57859461286e575b5060209081015185526006815260408086206001600160a01b03939093165f8181529383528184205494875260078352818720908452909152902054808211156128655761282491613769565b905b64e8d4a5100082029180830464e8d4a510001490151715612851576040809350519182526020820152f35b634e487b7160e01b83526011600452602483fd5b50508190612826565b9093506020813d60201161289b575b8161288a60209383613004565b810103126106ce57519260206127d7565b3d915061287d565b50346102bb5760203660031901126102bb57611771600435613796565b50346102bb5760403660031901126102bb5760406128dc613216565b9160043581526007602052209060018060a01b03165f52602052602060405f2054604051908152f35b50346102bb5760403660031901126102bb576040612921613216565b9160043581526006602052209060018060a01b03165f52602052602060405f2054604051908152f35b50346102bb5760403660031901126102bb57600435612967613216565b8183526004602052602061297d60408520613370565b60a0810151612996906001600160a01b03161515613409565b015183526006602090815260408085206001600160a01b03939093165f81815293835281842054948652600783528186209084529091529020549182821115612a04575061143d6129e78383613769565b604051938493846040919493926060820195825260208201520152565b61143d906129e7565b50346102bb57806003193601126102bb576040517f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03168152602090f35b50346106ce5760403660031901126106ce57612a6c61322c565b60243590815f526004602052612a8460405f20613370565b6020818101515f9081526006825260408082206001600160a01b03861680845290845281832054878452600785528284209184529352902054612ac691613769565b928315612b8a575f52600760205260405f2060018060a01b0383165f5260205260405f20612af5848254613776565b9055608001516001600160a01b03169164e8d4a510008082029182049003612b7657823b156106ce576040516340c10f1960e01b81526001600160a01b039290921660048301526024820152905f908290604490829084905af18015612b6b57612b5d575080f35b612b6991505f90613004565b005b6040513d5f823e3d90fd5b634e487b7160e01b5f52601160045260245ffd5b60405162461bcd60e51b815260206004820152601060248201526f4e6f7468696e6720746f20636c61696d60801b6044820152606490fd5b346106ce575f3660031901126106ce57612bf1612bdd613515565b604051928392604084526040840190613256565b8281036020840152815180825260208201916020808360051b8301019401925f915b838310612c205786860387f35b919395509193602080612c3f600193601f1986820301875289516132a7565b97019301930190928695949293612c13565b346106ce575f3660031901126106ce576040517f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03168152602090f35b346106ce5760403660031901126106ce576024612cb0613216565b6004355f526004602052612cc660405f20613370565b90602060a08301612ce160018060a01b038251161515613409565b516040516370a0823160e01b81526001600160a01b03938416600482018190529095909386928391165afa918215612b6b575f92612e1f575b60c08101516040516370a0823160e01b8152600481018490529450602090859060249082906001600160a01b03165afa938415612b6b575f94612dea575b50608001516040516370a0823160e01b81526004810192909252602090829060249082906001600160a01b03165afa8015612b6b575f90612db6575b61143d9150604051938493846040919493926060820195825260208201520152565b506020813d602011612de2575b81612dd060209383613004565b810103126106ce5761143d9051612d94565b3d9150612dc3565b9093506020813d602011612e17575b81612e0660209383613004565b810103126106ce5751926020612d58565b3d9150612df9565b91506020833d602011612e4c575b81612e3a60209383613004565b810103126106ce576024925191612d1a565b3d9150612e2d565b346106ce5760403660031901126106ce576024356001600160401b0381116106ce57612e87612b699136906004016131d2565b60405190612e96602083613004565b5f82526004356139d6565b346106ce5760203660031901126106ce576004355f52600460205260405f20805461143d600183015492612f6d600282015491612f6260018060a01b0360038301541660018060a01b0360048401541660018060a01b0360058501541660018060a01b0360068601541691612f1860078701613025565b93612f31600d612f2a600a8a01613025565b98016130b0565b986040519c8d9c8d5260208d015260408c015260608b015260808a015260a089015260c088015260e0870190613150565b610180850190613150565b610240610220840152610240830190613193565b61012081019081106001600160401b03821117612f9d57604052565b634e487b7160e01b5f52604160045260245ffd5b6101a081019081106001600160401b03821117612f9d57604052565b60a081019081106001600160401b03821117612f9d57604052565b61014081019081106001600160401b03821117612f9d57604052565b90601f801991011681019081106001600160401b03821117612f9d57604052565b9060405161303281612fcd565b82546001600160a01b0390811682526001840154808216602084015260a081901c62ffffff16604084015260b81c600290810b6060840152909301549092166080830152565b90600182811c921680156130a6575b602083101461309257565b634e487b7160e01b5f52602260045260245ffd5b91607f1691613087565b9060405191825f8254926130c384613078565b808452936001811690811561312e57506001146130ea575b506130e892500383613004565b565b90505f9291925260205f20905f915b8183106131125750509060206130e8928201015f6130db565b60209193508060019154838589010152019101909184926130f9565b9050602092506130e894915060ff191682840152151560051b8201015f6130db565b80516001600160a01b03908116835260208083015182169084015260408083015162ffffff169084015260608083015160020b9084015260809182015116910152565b805180835260209291819084018484015e5f828201840152601f01601f1916010190565b6001600160401b038111612f9d57601f01601f191660200190565b81601f820112156106ce576020813591016131ec826131b7565b926131fa6040519485613004565b828452828201116106ce57815f92602092838601378301015290565b602435906001600160a01b03821682036106ce57565b600435906001600160a01b03821682036106ce57565b35906001600160a01b03821682036106ce57565b90602080835192838152019201905f5b8181106132735750505090565b8251845260209384019390920191600101613266565b6005111561329357565b634e487b7160e01b5f52602160045260245ffd5b9061012061010061332e938051845260208101516020850152604081015160408501526060810151606085015260018060a01b03608082015116608085015260018060a01b0360a08201511660a085015260018060a01b0360c08201511660c085015260e081015161331881613289565b60e0850152015191816101008201520190613193565b90565b60409060031901126106ce576004359060243590565b805482101561335c575f5260205f2001905f90565b634e487b7160e01b5f52603260045260245ffd5b9060405161337d81612fe8565b82548152600183015460208201526002830154604082015260038301546001600160a01b0390811660608301526004840154811660808301526005840154811660a083015260068401541660c08201529182906101209061340490600d906133e760078201613025565b60e08601526133f8600a8201613025565b610100860152016130b0565b910152565b1561341057565b60405162461bcd60e51b8152602060048201526012602482015271141c9bdc1bdcd85b081b9bdd08199bdd5b9960721b6044820152606490fd5b6001600160401b038111612f9d5760051b60200190565b9061346b8261344a565b6134786040519182613004565b8281528092613489601f199161344a565b0190602036910137565b604051906134a082612f81565b6060610100835f81525f60208201525f60408201525f838201525f60808201525f60a08201525f60c08201525f60e08201520152565b5f198114612b765760010190565b80511561335c5760200190565b80516001101561335c5760400190565b805182101561335c5760209160051b010190565b60015460405163af640d0f60e01b81529190602090839060049082906001600160a01b03165afa918215612b6b575f92613735575b5081156136e1575f9060015b838111156136ac575061356882613461565b926135728361344a565b926135806040519485613004565b80845261358f601f199161344a565b015f5b818110613695575050825f60015b838111156135ae5750505050565b805f52600260205260405f20546135ce575b6135c9906134d6565b6135a0565b9061368d81836135e16135c9948b613501565b52835f52600260205260405f2061366c60076040519261360084612f81565b8054845260018101546020850152600281015460408501526003810154606085015260048101546001600160a01b0390811660808601526005820154811660a080870191909152600683015491821660c08701521c60ff1661366181613289565b60e0850152016130b0565b61010082015261367c8287613501565b526136878186613501565b506134d6565b9190506135c0565b6020906136a0613493565b82828801015201613592565b805f52600260205260405f20546136cc575b6136c7906134d6565b613556565b916136d96136c7916134d6565b9290506136be565b604051602092506136f28382613004565b5f81525f368137604051926137078185613004565b5f8452601f1981015f5b81811061371f575050509190565b8290613729613493565b82828901015201613711565b9091506020813d602011613761575b8161375160209383613004565b810103126106ce5751905f61354a565b3d9150613744565b91908203918211612b7657565b91908201809211612b7657565b81810292918115918404141715612b7657565b805f52600260205260405f2060038101544211156137e5575f9182526003602090815260408084206006909301805460ff60a01b1916600160a01b179055600192909201546005909152912055565b606460405162461bcd60e51b815260206004820152602060248201527f4d61726b657420646561646c696e65206e6f742079657420726561636865642e6044820152fd5b908160209103126106ce575180151581036106ce5790565b91908260a09103126106ce5760405161385981612fcd565b809261386481613242565b825261387260208201613242565b6020830152604081013562ffffff811681036106ce5760408301526060810135908160020b82036106ce57606083019190915260800135906001600160a01b03821682036106ce5760800152565b156138c757565b60405162461bcd60e51b815260206004820152601060248201526f13585c9ad95d081b9bdd08199bdd5b9960821b6044820152606490fd5b60a061390c366004613841565b2090815f52600860205260405f205490815f52600460205260405f209260a061393760078601613025565b20036139d157613983670de0b6b3a764000061396560019361395e858060a01b0391615222565b1680613783565b0260c01c613974366004613841565b61397d86613370565b9061479f565b92019182545f52600360205260405f20805482116139c2575b50505054805f526002602052600360405f20015442116139b95750565b6130e890613796565b600191815501555f808061399c565b505050565b90915f928391838552600260205260408520916040516139f581612f81565b8354815260018401546020820152600284015490604081019182526003850154606082015260018060a01b03600486015416608082015260018060a01b0360058601541660a0820152610100613a76600760068801549760ff60c086019960018060a01b0381168b5260a01c16613a6b81613289565b60e0860152016130b0565b910152600154604051635d1ca63160e01b81529760209189916004918391906001600160a01b03165af1968715612b6b575f976144fe575b505f86815260066020908152604080832033808552908352818420548b855260078452828520918552925290912054613ae691613769565b8151116144b9578051875f52600760205260405f2060018060a01b0333165f52602052613b1860405f20918254613776565b9055518060011b81810460021482151715612b76576003613b3e91048060011c92613769565b908160011c90604051610fb3808201908282106001600160401b03831117612f9d5760209183916168f683393081520301905ff08015612b6b576001600160a01b03169264e8d4a510008082029180159083049091141715612b7657833b156106ce576040516340c10f1960e01b815230600482015260248101919091525f8160448183885af18015612b6b576144a4575b50604051916110ab808401938085106001600160401b038611176144905760408161584b96848883398c81523060208201520301908af09384156144855760405191808301918383106001600160401b038411176144715791839160409383396001815230602082015203019089f09283156144665764e8d4a5100083029280840464e8d4a5100014901517156143ef576001600160a01b031692833b15614418576040516340c10f1960e01b815230600482015260248101849052898160448183895af1801561441c57908a91614451575b50506001600160a01b031690813b15614418576040516340c10f1960e01b815230600482015260248101849052898160448183875af1801561441c57908a9161443c575b5050833b15614418576040516340c10f1960e01b815233600482015260248101849052898160448183895af1801561441c57908a91614427575b5050813b15614418576040516340c10f1960e01b815233600482015260248101849052898160448183875af1801561441c57908a91614403575b505064e8d4a5100081029080820464e8d4a5100014901517156143ef5790613d9682613d8e8594879689600d9a996148fd565b9386846148fd565b9260a083208a5260086020528b60408b205560a084208a5260086020528b60408b205560405194613dc686612fe8565b8c86528c8b8d602089019081526040808a019242845260608b019433865260808c0196875260a08c0197885260c08c0198895260e08c01998a526101008c019a8b526101208c019d8e5281526004602052209851895551600189015551600288015560018060a01b03905116600387019060018060a01b03166001600160601b0360a01b82541617905560018060a01b03905116600486019060018060a01b03166001600160601b0360a01b82541617905560018060a01b03905116600585019060018060a01b03166001600160601b0360a01b82541617905560018060a01b03905116600684019060018060a01b03166001600160601b0360a01b8254161790555160018060a01b03815116600784019060018060a01b03166001600160601b0360a01b8254161790556008830160018060a01b0360018060a01b03602084015116166001600160601b0360a01b825416178155613f4862ffffff604084015116829081549062ffffff60a01b9060a01b169062ffffff60a01b1916179055565b606082810151825462ffffff60b81b191662ffffff60b81b60b892831b8116919091179093556080938401516009870180546001600160a01b03199081166001600160a01b039384161790915595518051600a8901805489169184169190911790556020810151600b8901805460408401519684015190951b9096166001600160d01b03199094169083161760a09490941b62ffffff60a01b16939093179190911790925590910151600c840180549190921692169190911790559151805191909201916001600160401b0382116143db5781906140268454613078565b601f811161438b575b50602090601f831160011461432957879261431e575b50508160011b915f199060031b1c19161790555b805191826140ef575b505050818152600960205260408120805491680100000000000000008310156140db57509061409691600182018155613347565b81549060031b9084821b915f19901b19161790557fd3c39c472d4a3a9920aec93d2b301c144698a2f61a9f836f23877daad849753e60408051428152336020820152a3565b634e487b7160e01b81526041600452602490fd5b60018060a01b03905116918101916020830191602081850312611027576020810151906001600160401b03821161431a5701926101209084900312610e9e5760405161413a81612f81565b6020840151600581101561431a5781526141566040850161520e565b926020820193845261416a6060860161520e565b94604083019586526080810151916060840192835260a08201516080850190815260c08301516001600160401b0381116143165760209084010182601f8201121561431657828160206141bf935191016148ad565b9060a0860191825260e08401516001600160401b03811161430e578360206141e9928701016148e3565b9260c087019384526101008501516001600160401b03811161431257610120916020614217928801016148e3565b9460e088019586520151946101008701958652873b1561430e57938a99989694938d938b9997938a966040519c8d9b8c9a8b9963941f58cf60e01b8b5260048b015260248a01604090525161426b81613289565b60448a0152516001600160a01b0390811660648a015290511660848801525160a48701525160c48601525161012060e48601526142ad90610164860190613193565b9051848203604319016101048601526142c69190613193565b9051838203604319016101248501526142df9190613193565b905161014483015203926207a120f16142f9575b80614062565b8161430391613004565b6102bb57805f6142f3565b8a80fd5b8b80fd5b8980fd5b8580fd5b015190505f80614045565b8488528188209250601f198416885b818110614373575090846001959493921061435b575b505050811b019055614059565b01515f1960f88460031b161c191690555f808061434e565b92936020600181928786015181550195019301614338565b90915083875260208720601f840160051c810191602085106143d1575b90601f859493920160051c01905b8181106143c3575061402f565b8881558493506001016143b6565b90915081906143a8565b634e487b7160e01b86526041600452602486fd5b634e487b7160e01b89526011600452602489fd5b8161440d91613004565b61441857885f613d5b565b8880fd5b6040513d8c823e3d90fd5b8161443191613004565b61441857885f613d21565b8161444691613004565b61441857885f613ce7565b8161445b91613004565b61441857885f613ca3565b6040513d8a823e3d90fd5b634e487b7160e01b8c52604160045260248cfd5b6040513d8b823e3d90fd5b634e487b7160e01b8a52604160045260248afd5b6144b19197505f90613004565b5f955f613bd0565b60405162461bcd60e51b815260206004820152601a60248201527f4d757374206465706f736974206d696e206c69717569646974790000000000006044820152606490fd5b9096506020813d60201161452a575b8161451a60209383613004565b810103126106ce5751955f613aae565b3d915061450d565b60015460405163af640d0f60e01b81529190602090839060049082906001600160a01b03165afa918215612b6b575f92614626575b50811561460c575f60015b838111156145d7575061458490613461565b915f60015b8281111561459657505050565b805f52600260205260405f20546145b6575b6145b1906134d6565b614589565b906145cf81836145c96145b19489613501565b526134d6565b9190506145a8565b805f52600260205260405f20546145f7575b6145f2906134d6565b614572565b906146046145f2916134d6565b9190506145e9565b905060405161461c602082613004565b5f81525f36813790565b9091506020813d602011614652575b8161464260209383613004565b810103126106ce5751905f614567565b3d9150614635565b5f546001600160a01b0316330361466d57565b63118cdaa760e01b5f523360045260245ffd5b7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b031633036146b257565b60405162461bcd60e51b815260206004820152600c60248201526b6d75737420626520686f6f6b60a01b6044820152606490fd5b9190602090604051828101918252600660408201526040815261470a606082613004565b519020604051631e2eaeaf60e01b8152600481019190915292839060249082906001600160a01b03165afa918215612b6b575f9261476b575b506001600160a01b0382169160a081901c60020b9162ffffff60b883901c81169260d01c1690565b9091506020813d602011614797575b8161478760209383613004565b810103126106ce5751905f614743565b3d915061477a565b5160a091909101516001600160a01b039081169116036147bc5790565b80156147d6576ec097ce7bc90715b34b9f10000000000490565b634e487b7160e01b5f52601260045260245ffd5b5160c0909101516001600160a01b039081169116036147bc5790565b603c9060020b02908160020b918203612b7657565b6040516060919061482c8382613004565b6002815291601f1901825f5b82811061484457505050565b806060602080938501015201614838565b9080602083519182815201916020808360051b8301019401925f915b83831061488057505050505090565b909192939460208061489e600193601f198682030187528951613193565b97019301930191939290614871565b9291926148b9826131b7565b916148c76040519384613004565b8294818452818301116106ce578281602093845f96015e010152565b9080601f830112156106ce57815161332e926020016148ad565b9192905f608060405161490f81612fcd565b82815260208101839052604081018390526060810183905201526001600160a01b03838116939082168410156152085790925b600154604051956001600160a01b0386811693919260a01c62ffffff16908290861661496d8a612fcd565b808a5260208a0186815260408b0193909352603c60608b01527f00000000000000000000000000000000000000000000000000000000000000006001600160a01b031660808b0152149384156151ec576149c96139c219614806565b965f906706f05b59d3b200005b8060601b90808204600160601b1490151715612b7657670de0b6b3a764000090048060601b908160b591600160881b8410156151c9575b50806901000000000000000000620100009210156151bc575b650100000000008110156151af575b63010000008110156151a2575b010260121c8082040160011c8082040160011c8082040160011c8082040160011c8082040160011c8082040160011c8082040160011c808092041090039260018060a01b0384169373fffd8963efd1fc6a506488495d951d516396168260018060a01b036401000276a2198701161161518f5760201b640100000000600160c01b0316938480156106ce578d9560ff826001600160801b031060071b83811c6001600160401b031060061b1783811c63ffffffff1060051b1783811c61ffff1060041b1783811c821060031b177f07060605060205000602030205040001060502050303040105050304000000006f8421084210842108cc6318c6db6d54be85831c1c601f161a17169160808310155f146151835750607e1982011c5b800280607f1c8160ff1c1c800280607f1c8160ff1c1c800280607f1c8160ff1c1c800280607f1c8160ff1c1c800280607f1c8160ff1c1c800280607f1c8160ff1c1c80029081607f1c8260ff1c1c80029283607f1c8460ff1c1c80029485607f1c8660ff1c1c80029687607f1c8860ff1c1c80029889607f1c8a60ff1c1c80029a8b607f1c8c60ff1c1c80029c8d80607f1c9060ff1c1c800260cd1c6604000000000000169d60cc1c6608000000000000169c60cb1c6610000000000000169b60ca1c6620000000000000169a60c91c6640000000000000169960c81c6680000000000000169860c71c670100000000000000169760c61c670200000000000000169660c51c670400000000000000169560c41c670800000000000000169460c31c671000000000000000169360c21c672000000000000000169260c11c674000000000000000169160c01c6780000000000000001690607f190160401b1717171717171717171717171717693627a301d71055774c85026f028f6481ab7f045a5af012a19d003aa919810160801d60020b906fdb2df09e81959a81455e260799a0632f0160801d60020b918282145f1461515f575090505b60020b5f811261513457614d31603c614d369205614806565b615222565b96614d408b615222565b92614d4a85615222565b991561512b57819788935b036151235750975b80836001600160a01b0380831690821611615118575b50506001600160a01b03888116988a9185168a116150b7575050614d9692615687565b975b614da061481b565b96614da961481b565b60405163f702040560e01b60208201529097614dc86024830187613150565b60c482015260c48152614ddc60e482613004565b614de5896134e4565b52614def886134e4565b50604051600160f91b6020820152600d60f81b60218201526002815295614e17602288613004565b60209a8b9460405194614e2a8787613004565b5f8652601f19870136888801376040519788978801614e4891613150565b60020b60c087015260020b60e08601526001600160801b031661010085015261012084015261014083015230610160830152610180820161018090526101a08201614e9291613193565b03601f1981018252614ea49082613004565b614ead846134e4565b52614eb7836134e4565b5087519051604080516001600160a01b039384168982015292909116828201528152614ee4606082613004565b614eed836134f1565b52614ef7826134f1565b506040519182918683016040905260608301614f1291613193565b828103601f19016040840152614f2791614855565b03601f1981018252614f399082613004565b42603c0194854211612b7657614fa85f94614f7b614f8f614fad95614fce9a60405193849263dd46508f60e01b8d850152604060248501526064840190613193565b90604483015203601f198101835282613004565b614f98866134f1565b52614fa2856134f1565b5061554f565b61554f565b60405180948192631592ca1b60e31b83528560048401526024830190614855565b0381837f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03165af18015612b6b5761500c57505090565b3d805f843e61501b8184613004565b82019181818403126106ce578051906001600160401b0382116106ce57019180601f840112156106ce578251926150518461344a565b9361505f6040519586613004565b808552838086019160051b830101928084116106ce57848301915b84831061508b575050505050505090565b82516001600160401b0381116106ce5786916150ac848480948901016148e3565b81520192019161507a565b909290916001600160a01b0381168a101561510c5782916150dc916150e29594615687565b9361564d565b6001600160801b0381166001600160801b038316105f1461510557505b97614d98565b90506150ff565b9150506150ff9261564d565b915092505f80614d73565b905097614d5d565b80978893614d55565b603a19019350627fffff198412627fffff851317612b7657614d36614d31603c8e9660020b05614806565b6001600160a01b0361517084615222565b161161517c5750614d18565b9050614d18565b905081607f031b614b5f565b846318521d4960e21b5f5260045260245ffd5b60101c9160081b91614a42565b60201c9160101b91614a35565b60401c9160201b91614a26565b68b50000000000000000925060201c6001600160801b0316905062010000614a0d565b5f966151f96139c3614806565b90671bc16d674ec800006149d6565b92614942565b51906001600160a01b03821682036106ce57565b60020b908160ff1d82810118620d89e8811161553c5763ffffffff9192600182167001fffcb933bd6fad37aa2d162d1a59400102600160801b189160028116615520575b60048116615504575b600881166154e8575b601081166154cc575b602081166154b0575b60408116615494575b60808116615478575b610100811661545c575b6102008116615440575b6104008116615424575b6108008116615408575b61100081166153ec575b61200081166153d0575b61400081166153b4575b6180008116615398575b62010000811661537c575b620200008116615361575b620400008116615346575b620800001661532d575b5f12615325575b0160201c90565b5f190461531e565b6b048a170391f7dc42444e8fa290910260801c90615317565b6d2216e584f5fa1ea926041bedfe9890920260801c9161530d565b916e5d6af8dedb81196699c329225ee6040260801c91615302565b916f09aa508b5b7a84e1c677de54f3e99bc90260801c916152f7565b916f31be135f97d08fd981231505542fcfa60260801c916152ec565b916f70d869a156d2a1b890bb3df62baf32f70260801c916152e2565b916fa9f746462d870fdf8a65dc1f90e061e50260801c916152d8565b916fd097f3bdfd2022b8845ad8f792aa58250260801c916152ce565b916fe7159475a2c29b7443b29c7fa6e889d90260801c916152c4565b916ff3392b0822b70005940c7a398e4b70f30260801c916152ba565b916ff987a7253ac413176f2b074cf7815e540260801c916152b0565b916ffcbe86c7900a88aedcffc83b479aa3a40260801c916152a6565b916ffe5dee046a99a2a811c461f1969c30530260801c9161529c565b916fff2ea16466c96a3843ec78b326b528610260801c91615293565b916fff973b41fa98c081472e6896dfb254c00260801c9161528a565b916fffcb9843d60f6159c9db58835c9266440260801c91615281565b916fffe5caca7e10e4e61c3624eaa0941cd00260801c91615278565b916ffff2e50f5f656932ef12357cf3c7fdcc0260801c9161526f565b916ffff97272373d413259a46990580e213a0260801c91615266565b826345c3193d60e11b5f5260045260245ffd5b60405163095ea7b360e01b81526001600160a01b037f00000000000000000000000000000000000000000000000000000000000000008116600483018190525f1960248401529216906020816044815f865af18015612b6b57615630575b50813b156106ce576040516387517c4560e01b815260048101919091526001600160a01b037f000000000000000000000000000000000000000000000000000000000000000081166024830152604482015265ffffffffffff6064820152905f908290608490829084905af18015612b6b576156265750565b5f6130e891613004565b6156489060203d602011610e7357610e678183613004565b6155ad565b61332e9261567c9290916001600160a01b0380831690821611615681575b90036001600160a01b0316906156d4565b615827565b9061566b565b61332e9261567c929091906001600160a01b03808216908316116156ce575b6156bc6001600160a01b0382811690841661575e565b9190036001600160a01b0316916157a7565b906156a6565b90606082901b905f19600160601b8409928280851094039380850394858411156106ce5714615757578190600160601b900981805f03168092046002816003021880820260020302808202600203028082026002030280820260020302808202600203028091026002030293600183805f03040190848311900302920304170290565b5091500490565b81810291905f1982820991838084109303928084039384600160601b11156106ce571461579e57600160601b910990828211900360a01b910360601c1790565b50505060601c90565b91818302915f19818509938380861095039480860395868511156106ce571461581f579082910981805f03168092046002816003021880820260020302808202600203028082026002030280820260020302808202600203028091026002030293600183805f03040190848311900302920304170290565b505091500490565b906001600160801b03821680920361583b57565b6393dafdf160e01b5f5260045ffdfe6080604052346103e9576110ab6040813803918261001c816103ed565b9384928339810103126103e95780519060028210156103e95760200151906001600160a01b03821682036103e95780159182156103ca5761005d60406103ed565b600381526259455360e81b6020820152925b156103ac5761007e60406103ed565b600381526259455360e81b60208201525b83516001600160401b0381116102bd57600354600181811c911680156103a2575b602082101461029f57601f811161033f575b50602094601f82116001146102dc579481929394955f926102d1575b50508160011b915f199060031b1c1916176003555b8051906001600160401b0382116102bd57600454600181811c911680156102b3575b602082101461029f57601f811161023c575b50602090601f83116001146101d35761015d9392915f91836101c8575b50508160011b915f199060031b1c191617600455610412565b5033156101b557335f81815260208181526040518281527fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef9190a360ff801960065416911617600655604051610bcd90816104be8239f35b63ec442f0560e01b5f525f60045260245ffd5b015190505f80610144565b90601f1983169160045f52815f20925f5b818110610224575091600193918561015d9796941061020c575b505050811b01600455610412565b01515f1960f88460031b161c191690555f80806101fe565b929360206001819287860151815501950193016101e4565b60045f527f8a35acfbc15ff81a39ae7d344fd709f28e8600b4aa8c65c6b64bfe7fe36bd19b601f840160051c81019160208510610295575b601f0160051c01905b81811061028a5750610127565b5f815560010161027d565b9091508190610274565b634e487b7160e01b5f52602260045260245ffd5b90607f1690610115565b634e487b7160e01b5f52604160045260245ffd5b015190505f806100de565b601f1982169560035f52805f20915f5b8881106103275750836001959697981061030f575b505050811b016003556100f3565b01515f1960f88460031b161c191690555f8080610301565b919260206001819286850151815501940192016102ec565b60035f527fc2575a0e9e593c00f959f8c92f12db2869c3395a3b0502d05e2516446f71f85b601f830160051c81019160208410610398575b601f0160051c01905b81811061038d57506100c2565b5f8155600101610380565b9091508190610377565b90607f16906100b0565b6103b660406103ed565b60028152614e4f60f01b602082015261008f565b6103d460406103ed565b60028152614e4f60f01b60208201529261006f565b5f80fd5b6040519190601f01601f191682016001600160401b038111838210176102bd57604052565b6001600160a01b0381165f9081525f8051602061108b833981519152602052604090205460ff166104b8576001600160a01b03165f8181525f8051602061108b83398151915260205260408120805460ff191660011790553391907f9f2df0fed2c77648de5860a4cc508cd0818c85b8b8a1ab4ceeef8d981c8956a6907f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d9080a4600190565b505f9056fe6080806040526004361015610012575f80fd5b5f3560e01c90816301ffc9a7146107d35750806306fdde0314610701578063095ea7b31461065957806318160ddd1461063c57806323b872dd14610604578063248a9ca3146105d15780632f2ff15d1461059357806330fa738c14610556578063313ce5671461053b57806336568abe146104f757806340c10f191461040957806342966c68146103ec57806370a08231146103b557806379cc67901461038557806391d148541461033c57806395d89b4114610221578063a217fddf14610207578063a9059cbb146101d6578063d53913931461019c578063d547741f146101575763dd62ed3e14610103575f80fd5b346101535760403660031901126101535761011c610850565b610124610866565b6001600160a01b039182165f908152600160209081526040808320949093168252928352819020549051908152f35b5f80fd5b346101535760403660031901126101535761019a600435610176610866565b90610195610190825f526005602052600160405f20015490565b6109c9565b610a8f565b005b34610153575f3660031901126101535760206040517f9f2df0fed2c77648de5860a4cc508cd0818c85b8b8a1ab4ceeef8d981c8956a68152f35b34610153576040366003190112610153576101fc6101f2610850565b602435903361091f565b602060405160018152f35b34610153575f3660031901126101535760206040515f8152f35b34610153575f366003190112610153576040515f6004548060011c90600181168015610332575b60208310811461031e5782855290811561030257506001146102ad575b50819003601f01601f191681019067ffffffffffffffff8211818310176102995761029582918260405282610826565b0390f35b634e487b7160e01b5f52604160045260245ffd5b905060045f527f8a35acfbc15ff81a39ae7d344fd709f28e8600b4aa8c65c6b64bfe7fe36bd19b5f905b8282106102ec57506020915082010182610265565b60018160209254838588010152019101906102d7565b90506020925060ff191682840152151560051b82010182610265565b634e487b7160e01b5f52602260045260245ffd5b91607f1691610248565b3461015357604036600319011261015357610355610866565b6004355f52600560205260405f209060018060a01b03165f52602052602060ff60405f2054166040519015158152f35b346101535760403660031901126101535761019a6103a1610850565b602435906103b082338361087c565b610b13565b34610153576020366003190112610153576001600160a01b036103d6610850565b165f525f602052602060405f2054604051908152f35b346101535760203660031901126101535761019a60043533610b13565b3461015357604036600319011261015357610422610850565b335f9081527f15a28d26fa1bf736cf7edc9922607171ccb09c3c73b808e7772a3013e068a5226020526040902054602435919060ff16156104e4576001600160a01b03169081156104d157600254908082018092116104bd5760207fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef915f9360025584845283825260408420818154019055604051908152a3005b634e487b7160e01b5f52601160045260245ffd5b63ec442f0560e01b5f525f60045260245ffd5b632fdab94f60e11b5f523360045260245ffd5b3461015357604036600319011261015357610510610866565b336001600160a01b0382160361052c5761019a90600435610a8f565b63334bd91960e11b5f5260045ffd5b34610153575f36600319011261015357602060405160128152f35b34610153575f3660031901126101535760ff60065416604051600282101561057f576020918152f35b634e487b7160e01b5f52602160045260245ffd5b346101535760403660031901126101535761019a6004356105b2610866565b906105cc610190825f526005602052600160405f20015490565b610a03565b346101535760203660031901126101535760206105fc6004355f526005602052600160405f20015490565b604051908152f35b34610153576060366003190112610153576101fc610620610850565b610628610866565b6044359161063783338361087c565b61091f565b34610153575f366003190112610153576020600254604051908152f35b3461015357604036600319011261015357610672610850565b6024359033156106ee576001600160a01b03169081156106db57335f52600160205260405f20825f526020528060405f20556040519081527f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b92560203392a3602060405160018152f35b634a1406b160e11b5f525f60045260245ffd5b63e602df0560e01b5f525f60045260245ffd5b34610153575f366003190112610153576040515f6003548060011c906001811680156107c9575b60208310811461031e5782855290811561030257506001146107745750819003601f01601f191681019067ffffffffffffffff8211818310176102995761029582918260405282610826565b905060035f527fc2575a0e9e593c00f959f8c92f12db2869c3395a3b0502d05e2516446f71f85b5f905b8282106107b357506020915082010182610265565b600181602092548385880101520191019061079e565b91607f1691610728565b34610153576020366003190112610153576004359063ffffffff60e01b821680920361015357602091637965db0b60e01b8114908115610815575b5015158152f35b6301ffc9a760e01b1490508361080e565b602060409281835280519182918282860152018484015e5f828201840152601f01601f1916010190565b600435906001600160a01b038216820361015357565b602435906001600160a01b038216820361015357565b6001600160a01b039081165f818152600160209081526040808320948616835293905291909120549291905f1984106108b6575b50505050565b8284106108fc5780156106ee576001600160a01b038216156106db575f52600160205260405f209060018060a01b03165f5260205260405f20910390555f8080806108b0565b508290637dc7a0d960e11b5f5260018060a01b031660045260245260445260645ffd5b6001600160a01b03169081156109b6576001600160a01b03169182156104d157815f525f60205260405f205481811061099d57817fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef92602092855f525f84520360405f2055845f525f825260405f20818154019055604051908152a3565b8263391434e360e21b5f5260045260245260445260645ffd5b634b637e8f60e11b5f525f60045260245ffd5b5f81815260056020908152604080832033845290915290205460ff16156109ed5750565b63e2517d3f60e01b5f523360045260245260445ffd5b5f8181526005602090815260408083206001600160a01b038616845290915290205460ff16610a89575f8181526005602090815260408083206001600160a01b0395909516808452949091528120805460ff19166001179055339291907f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d9080a4600190565b50505f90565b5f8181526005602090815260408083206001600160a01b038616845290915290205460ff1615610a89575f8181526005602090815260408083206001600160a01b0395909516808452949091528120805460ff19169055339291907ff6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b9080a4600190565b9091906001600160a01b031680156109b657805f525f60205260405f2054838110610b7d576020845f94957fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef938587528684520360408620558060025403600255604051908152a3565b915063391434e360e21b5f5260045260245260445260645ffdfea264697066735822122079e892db402b6f200a715fc593012184aefbca1c01c0630bc67b1c8f62611d2364736f6c634300081a003315a28d26fa1bf736cf7edc9922607171ccb09c3c73b808e7772a3013e068a52260806040523461033957610fb36020813803918261001c8161033d565b93849283398101031261033957516001600160a01b038116810361033957610044604061033d565b90600c82526b5669727475616c205553444360a01b6020830152610068604061033d565b6004815263159554d160e21b602082015282519091906001600160401b03811161024a57600354600181811c9116801561032f575b602082101461022c57601f81116102cc575b506020601f821160011461026957819293945f9261025e575b50508160011b915f199060031b1c1916176003555b8151916001600160401b03831161024a57600454600181811c91168015610240575b602082101461022c57601f81116101c9575b50602090601f84116001146101615761014693915f9183610156575b50508160011b915f199060031b1c191617600455610362565b50604051610b85908161040e8239f35b015190505f8061012d565b90601f1984169160045f52815f20925f5b8181106101b15750916001939186610146979410610199575b505050811b01600455610362565b01515f1960f88460031b161c191690555f808061018b565b92936020600181928786015181550195019301610172565b60045f527f8a35acfbc15ff81a39ae7d344fd709f28e8600b4aa8c65c6b64bfe7fe36bd19b601f850160051c81019160208610610222575b601f0160051c01905b8181106102175750610111565b5f815560010161020a565b9091508190610201565b634e487b7160e01b5f52602260045260245ffd5b90607f16906100ff565b634e487b7160e01b5f52604160045260245ffd5b015190505f806100c8565b601f1982169060035f52805f20915f5b8181106102b45750958360019596971061029c575b505050811b016003556100dd565b01515f1960f88460031b161c191690555f808061028e565b9192602060018192868b015181550194019201610279565b60035f527fc2575a0e9e593c00f959f8c92f12db2869c3395a3b0502d05e2516446f71f85b601f830160051c81019160208410610325575b601f0160051c01905b81811061031a57506100af565b5f815560010161030d565b9091508190610304565b90607f169061009d565b5f80fd5b6040519190601f01601f191682016001600160401b0381118382101761024a57604052565b6001600160a01b0381165f9081525f80516020610f93833981519152602052604090205460ff16610408576001600160a01b03165f8181525f80516020610f9383398151915260205260408120805460ff191660011790553391907f9f2df0fed2c77648de5860a4cc508cd0818c85b8b8a1ab4ceeef8d981c8956a6907f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d9080a4600190565b505f9056fe6080806040526004361015610012575f80fd5b5f3560e01c90816301ffc9a71461078b5750806306fdde03146106b9578063095ea7b31461061157806318160ddd146105f457806323b872dd146105bc578063248a9ca3146105895780632f2ff15d1461054b578063313ce5671461053057806336568abe146104ec57806340c10f19146103fe57806342966c68146103e157806370a08231146103aa57806379cc67901461037a57806391d148541461033157806395d89b4114610216578063a217fddf146101fc578063a9059cbb146101cb578063d539139314610191578063d547741f1461014c5763dd62ed3e146100f8575f80fd5b3461014857604036600319011261014857610111610808565b61011961081e565b6001600160a01b039182165f908152600160209081526040808320949093168252928352819020549051908152f35b5f80fd5b346101485760403660031901126101485761018f60043561016b61081e565b9061018a610185825f526005602052600160405f20015490565b610981565b610a47565b005b34610148575f3660031901126101485760206040517f9f2df0fed2c77648de5860a4cc508cd0818c85b8b8a1ab4ceeef8d981c8956a68152f35b34610148576040366003190112610148576101f16101e7610808565b60243590336108d7565b602060405160018152f35b34610148575f3660031901126101485760206040515f8152f35b34610148575f366003190112610148576040515f6004548060011c90600181168015610327575b602083108114610313578285529081156102f757506001146102a2575b50819003601f01601f191681019067ffffffffffffffff82118183101761028e5761028a829182604052826107de565b0390f35b634e487b7160e01b5f52604160045260245ffd5b905060045f527f8a35acfbc15ff81a39ae7d344fd709f28e8600b4aa8c65c6b64bfe7fe36bd19b5f905b8282106102e15750602091508201018261025a565b60018160209254838588010152019101906102cc565b90506020925060ff191682840152151560051b8201018261025a565b634e487b7160e01b5f52602260045260245ffd5b91607f169161023d565b346101485760403660031901126101485761034a61081e565b6004355f52600560205260405f209060018060a01b03165f52602052602060ff60405f2054166040519015158152f35b346101485760403660031901126101485761018f610396610808565b602435906103a5823383610834565b610acb565b34610148576020366003190112610148576001600160a01b036103cb610808565b165f525f602052602060405f2054604051908152f35b346101485760203660031901126101485761018f60043533610acb565b3461014857604036600319011261014857610417610808565b335f9081527f15a28d26fa1bf736cf7edc9922607171ccb09c3c73b808e7772a3013e068a5226020526040902054602435919060ff16156104d9576001600160a01b03169081156104c657600254908082018092116104b25760207fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef915f9360025584845283825260408420818154019055604051908152a3005b634e487b7160e01b5f52601160045260245ffd5b63ec442f0560e01b5f525f60045260245ffd5b632fdab94f60e11b5f523360045260245ffd5b346101485760403660031901126101485761050561081e565b336001600160a01b038216036105215761018f90600435610a47565b63334bd91960e11b5f5260045ffd5b34610148575f36600319011261014857602060405160128152f35b346101485760403660031901126101485761018f60043561056a61081e565b90610584610185825f526005602052600160405f20015490565b6109bb565b346101485760203660031901126101485760206105b46004355f526005602052600160405f20015490565b604051908152f35b34610148576060366003190112610148576101f16105d8610808565b6105e061081e565b604435916105ef833383610834565b6108d7565b34610148575f366003190112610148576020600254604051908152f35b346101485760403660031901126101485761062a610808565b6024359033156106a6576001600160a01b031690811561069357335f52600160205260405f20825f526020528060405f20556040519081527f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b92560203392a3602060405160018152f35b634a1406b160e11b5f525f60045260245ffd5b63e602df0560e01b5f525f60045260245ffd5b34610148575f366003190112610148576040515f6003548060011c90600181168015610781575b602083108114610313578285529081156102f7575060011461072c5750819003601f01601f191681019067ffffffffffffffff82118183101761028e5761028a829182604052826107de565b905060035f527fc2575a0e9e593c00f959f8c92f12db2869c3395a3b0502d05e2516446f71f85b5f905b82821061076b5750602091508201018261025a565b6001816020925483858801015201910190610756565b91607f16916106e0565b34610148576020366003190112610148576004359063ffffffff60e01b821680920361014857602091637965db0b60e01b81149081156107cd575b5015158152f35b6301ffc9a760e01b149050836107c6565b602060409281835280519182918282860152018484015e5f828201840152601f01601f1916010190565b600435906001600160a01b038216820361014857565b602435906001600160a01b038216820361014857565b6001600160a01b039081165f818152600160209081526040808320948616835293905291909120549291905f19841061086e575b50505050565b8284106108b45780156106a6576001600160a01b03821615610693575f52600160205260405f209060018060a01b03165f5260205260405f20910390555f808080610868565b508290637dc7a0d960e11b5f5260018060a01b031660045260245260445260645ffd5b6001600160a01b031690811561096e576001600160a01b03169182156104c657815f525f60205260405f205481811061095557817fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef92602092855f525f84520360405f2055845f525f825260405f20818154019055604051908152a3565b8263391434e360e21b5f5260045260245260445260645ffd5b634b637e8f60e11b5f525f60045260245ffd5b5f81815260056020908152604080832033845290915290205460ff16156109a55750565b63e2517d3f60e01b5f523360045260245260445ffd5b5f8181526005602090815260408083206001600160a01b038616845290915290205460ff16610a41575f8181526005602090815260408083206001600160a01b0395909516808452949091528120805460ff19166001179055339291907f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d9080a4600190565b50505f90565b5f8181526005602090815260408083206001600160a01b038616845290915290205460ff1615610a41575f8181526005602090815260408083206001600160a01b0395909516808452949091528120805460ff19169055339291907ff6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b9080a4600190565b9091906001600160a01b0316801561096e57805f525f60205260405f2054838110610b35576020845f94957fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef938587528684520360408620558060025403600255604051908152a3565b915063391434e360e21b5f5260045260245260445260645ffdfea2646970667358221220ff6f8f50e1c34488ae05ee6413b58f535ec3afa3f1f45122a0eb354ea6ca708164736f6c634300081a003315a28d26fa1bf736cf7edc9922607171ccb09c3c73b808e7772a3013e068a522a2646970667358221220db0034e7e02c1d7351cdc6f5d753b02b9fafdb860a44a129582f0c0e323d122964736f6c634300081a0033608080604052346016575f805560bc9081601b8239f35b5f80fdfe60808060405260043610156011575f80fd5b5f3560e01c9081635d1ca63114604d575063af640d0f14602f575f80fd5b346049575f36600319011260495760205f54604051908152f35b5f80fd5b346049575f3660031901126049575f54905f198214607257600160209201805f558152f35b634e487b7160e01b5f52601160045260245ffdfea2646970667358221220d4df3ca53db65fa4eefe0924074dfb63927eb910fec8b455853d7bcc5a2eab5c64736f6c634300081a0033\",\"sourceMap\":\"1864:36369:251:-:0;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;:::i;:::-;;;;;;:::i;:::-;;;;;;;;;:::i;:::-;;;;:::i;:::-;;-1:-1:-1;;;;;1864:36369:251;1273:26:23;;1269:95;;-1:-1:-1;1864:36369:251;;-1:-1:-1;;;;;;1864:36369:251;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;3052:40:23;;-1:-1:-1;3052:40:23;2278:4:251;1864:36369;;-1:-1:-1;;;;1864:36369:251;-1:-1:-1;;;1864:36369:251;;;4685:8;;;;-1:-1:-1;;;;;4685:8:251;;;;;;;;;;;;;;;-1:-1:-1;4685:8:251;;;;;1864:36369;;;-1:-1:-1;;;;;;1864:36369:251;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;4703:40;1864:36369;;;;4753:52;1864:36369;;;;4815:28;1864:36369;;;4853:37;;;;1864:36369;;4900:18;;4928:30;;;;;-1:-1:-1;1864:36369:251;;4928:30;1864:36369;;;;;;;;;4928:30;;4952:4;4928:30;;;1864:36369;4928:30;;;;;;;;-1:-1:-1;1864:36369:251;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;4853:37;1864:36369;;;;;;;;;;;;;;;4900:18;1864:36369;;;;;;;;;;;;;;;;;;;;;4928:30;-1:-1:-1;4928:30:251;;;:::i;:::-;-1:-1:-1;4928:30:251;;;1864:36369;;;-1:-1:-1;1864:36369:251;;;;;4928:30;-1:-1:-1;1864:36369:251;;4685:8;1864:36369;;;-1:-1:-1;1864:36369:251;;;;;-1:-1:-1;1864:36369:251;1269:95:23;1322:31;;;-1:-1:-1;1322:31:23;-1:-1:-1;1322:31:23;1864:36369:251;;-1:-1:-1;1322:31:23;1864:36369:251;;;;;-1:-1:-1;;1864:36369:251;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;:::o;:::-;;;-1:-1:-1;;;;;1864:36369:251;;;;;;:::o\",\"linkReferences\":{}},\"deployedBytecode\":{\"object\":\"0x60806040526004361015610011575f80fd5b5f803560e01c8063013cf08b14612ea157806302d52fa414612e545780630fc7b7e514612c9557806312261ee714612c51578063139df20014612bc25780632c331aef14612a525780633e413bee14612a0d5780634e0552441461294a57806353a58de1146129055780635efb5e37146128c0578063606d9be0146128a35780636ac184641461274f578063715018a6146126f557806377416ed0146125af578063791b98bc1461256a5780637f5a7c7b14612525578063822edc59146123d75780638da5cb5b146123b05780638e8a9d8a146122385780638ed1b9451461220e578063917125ca146120d257806393b3744e14611a77578063a64a5745146117ac578063a67ab8b014611774578063ad2aa0b814611714578063af640d0f146116eb578063b1283e7714611630578063b5e23d2114611441578063b85ed6361461140d578063bc903cb8146112d4578063bf76b42f14611287578063c47bd5bd14611060578063c6323c2614610ba6578063c81577b0146107c9578063c9e50c9714610795578063d05320e714610754578063dc4c90d31461070f578063dd1b9c4a146106e9578063df5590b614610344578063f2fde38b146102be5763f7a94a67146101dd575f80fd5b346102bb5760203660031901126102bb57610205604080926004358152600460205220613370565b60a081015161021e906001600160a01b03161515613409565b6102af60e0820161028360a08251209184670de0b6b3a76400006102786102667f000000000000000000000000000000000000000000000000000000000000000096876146e6565b5050506001600160a01b031680613783565b0260c01c915161479f565b92670de0b6b3a76400006102a461026661010084019460a0865120906146e6565b0260c01c91516147ea565b82519182526020820152f35b80fd5b50346102bb5760203660031901126102bb576102d861322c565b6102e061465a565b6001600160a01b031680156103305781546001600160a01b03198116821783556001600160a01b03167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e08380a380f35b631e4fbdf760e01b82526004829052602482fd5b50346102bb5760a03660031901126102bb5761035e61322c565b90610367613216565b916084356001600160401b0381116106e55790610389839236906004016131d2565b93602060018060a01b0360015416600460405180978193635d1ca63160e01b83525af19384156106da5783946106a2575b5060076040516103c981612f81565b8581526020810192428452604082016044358152606083016064358152608084019660018060a01b03169687815260a085019160018060a01b037f000000000000000000000000000000000000000000000000000000000000000016835260c086019460018060a01b0316855260e08601938a85526101008701988d8a528c8c52600260205260408c209751885551600188015551600287015551600386015560018060a01b03905116600485019060018060a01b03166001600160601b0360a01b82541617905560018060a01b03905116600584019060018060a01b03166001600160601b0360a01b825416179055600683019160018060a01b039060018060a01b03905116166001600160601b0360a01b835416178255516104ec81613289565b6104f581613289565b815460ff60a01b191660a09190911b60ff60a01b161790559151805191909201916001600160401b03821161068e5761052e8354613078565b601f8111610649575b5091859391602097938896601f83116001146105c35795967f0bc2a35bcd8dc65c0c53de105d719e72b6e7c46f7fce1bb1e82db4546184c48e9691836105b8575b50508160011b915f199060031b1c19161790555b6105ad60405192839242845288840152606060408401526060830190613193565b0390a2604051908152f35b015190505f80610578565b9690601f198316848952828920985b81811061062f5750917f0bc2a35bcd8dc65c0c53de105d719e72b6e7c46f7fce1bb1e82db4546184c48e979891846001959410610617575b505050811b01905561058c565b01515f1960f88460031b161c191690555f808061060a565b838301518a556001909901988a9850928b01928b016105d2565b83865260208620601f840160051c81019160208510610684575b601f0160051c01905b8181106106795750610537565b86815560010161066c565b9091508190610663565b634e487b7160e01b85526041600452602485fd5b9093506020813d6020116106d2575b816106be60209383613004565b810103126106ce5751925f6103ba565b5f80fd5b3d91506106b1565b6040513d85823e3d90fd5b8280fd5b50346102bb57806003193601126102bb57602062ffffff60015460a01c16604051908152f35b50346102bb57806003193601126102bb576040517f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03168152602090f35b50346102bb5761076336613331565b919081526009602052604081209081548310156102bb5760206107868484613347565b90549060031b1c604051908152f35b50346102bb5760203660031901126102bb576040809160043581526003602052206001815491015482519182526020820152f35b50346102bb5760203660031901126102bb57600435906107e7613493565b508181526002602052604081209161087360076040519461080786612f81565b8054865260018101546020870152600281015460408701526003810154606087015260048101546001600160a01b0390811660808801526005820154811660a080890191909152600683015491821660c08901521c60ff1661086881613289565b60e0870152016130b0565b610100840152610885835115156138c0565b8152600960205260408120906040518083602082955493848152019084526020842092845b818110610b8d5750506108bf92500383613004565b8151916108cb8361344a565b926108d96040519485613004565b808452601f196108e88261344a565b01835b818110610b3f575050827f0000000000000000000000000000000000000000000000000000000000000000905b828110610a225761093d87878761094b886040519586956060875260608701906132a7565b908582036020870152613256565b8381036040850152825190818152602081016020808460051b840101950193915b8383106109795786860387f35b919395509193602080600192601f19858203018652885190815181528282015183820152848060a01b036040830151166040820152610100806109cd60608501516101206060860152610120850190613193565b93878060a01b036080820151166080850152878060a01b0360a08201511660a0850152878060a01b0360c08201511660c085015260e081015160e085015201519101529701930193019092869594929361096c565b80610a2f60019286613501565b5186526004602052610a4360408720613370565b610a7560e0820182670de0b6b3a7640000610278610a6560a08551208a6146e6565b505050888060a01b031680613783565b610aa8610100830183670de0b6b3a76400006102a4610a9860a08551208b6146e6565b505050898060a01b031680613783565b90825192604081015190868060a01b03606082015116610120820151888060a01b0360808401511691898060a01b0360a0850151169360c08b8060a01b03910151169460405198610af88a612f81565b8952602089015260408801526060870152608086015260a085015260c084015260e0830152610100820152610b2d8289613501565b52610b388188613501565b5001610918565b602090604051610b4e81612f81565b86815286838201528660408201526060808201528660808201528660a08201528660c08201528660e082015286610100820152828289010152016108eb565b84548352600194850194879450602090930192016108aa565b50346102bb5760403660031901126102bb57600435610bc3613216565b9080835260026020526040832090604051610bdd81612f81565b8254815260018301546020820152600283015460408201526003830154606082015260048301546001600160a01b0390811660808301526005840154811660a080840191909152600685015491821660c084015260e083019461010092610c589260079291901c60ff16610c5081613289565b8752016130b0565b91015283526005602052604083205483526004602052610c7a60408420613370565b9083608083019260018060a01b03845116926040516370a0823160e01b815260208160248160018060a01b038b16988960048301525afa90811561101c57849161102b575b50945164e8d4a51000860495906001600160a01b0316803b156110275760405163079cc67960e41b81526001600160a01b0389166004820152602481019290925284908290604490829084905af190811561101c578491611007575b505060038151610d2a81613289565b610d3381613289565b03610edd575060a00180516040516370a0823160e01b81526004810194909452602090849060249082906001600160a01b03165afa928315610e7a578293610ea6575b50516001600160a01b0316803b15610ea25760405163079cc67960e41b81526001600160a01b0386166004820152602481018490529082908290604490829084905af18015610e7a57610e85575b505091610dde60209264e8d4a51000610e11950490613776565b905b60405163a9059cbb60e01b81526001600160a01b039091166004820152602481019190915291829081906044820190565b0381857f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03165af18015610e7a57610e4e575080f35b610e6f9060203d602011610e73575b610e678183613004565b810190613829565b5080f35b503d610e5d565b6040513d84823e3d90fd5b81610e9291959395613004565b610e9e5791835f610dc4565b8380fd5b5080fd5b915091506020813d602011610ed5575b81610ec360209383613004565b810103126106ce57849051915f610d76565b3d9150610eb6565b600491925051610eec81613289565b610ef581613289565b03610ff85760c00180516040516370a0823160e01b81526004810193909352859190602090849060249082906001600160a01b03165afa928315610e7a578293610fc1575b50516001600160a01b0316803b15610ea25760405163079cc67960e41b81526001600160a01b0386166004820152602481018490529082908290604490829084905af18015610e7a57610fa8575b505091610fa260209264e8d4a51000610e11950490613776565b90610de0565b81610fb591959395613004565b610e9e5791835f610f88565b915091506020813d602011610ff0575b81610fde60209383613004565b810103126106ce57849051915f610f3a565b3d9150610fd1565b630ff84df760e11b8552600485fd5b8161101191613004565b6106e557825f610d1b565b6040513d86823e3d90fd5b8480fd5b9350506020833d602011611058575b8161104760209383613004565b810103126106ce578692515f610cbf565b3d915061103a565b50346102bb5760403660031901126102bb57600435602461107f613216565b91808452600460205261109460408520613370565b93602060a086016110af60018060a01b038251161515613409565b516040516370a0823160e01b81526001600160a01b0396871660048201819052969095869290918391165afa92831561127a578193611245575b5060c08501516040516370a0823160e01b815260048101869052939490602090859060249082906001600160a01b03165afa938415610e7a57829461120e575b5060808601516040516370a0823160e01b815260048101839052929190602090849060249082906001600160a01b03165afa928315610e7a5782936111d7575b50602060a09701518252600660205260408220815f5260205260405f2054938252600760205260408220905f5260205260405f20548084115f146111d0576111b2915083613769565b925b6040519485526020850152604084015260608301526080820152f35b50926111b4565b9692506020873d602011611206575b816111f360209383613004565b810103126106ce57955191956020611169565b3d91506111e6565b919093506020823d60201161123d575b8161122b60209383613004565b810103126106ce579051926024611129565b3d915061121e565b92506020833d602011611272575b8161126060209383613004565b810103126106ce5760249251926110e9565b3d9150611253565b50604051903d90823e3d90fd5b50346102bb5760203660031901126102bb5760043562ffffff81168103610ea2576112b061465a565b6001805462ffffff60a01b191660a09290921b62ffffff60a01b1691909117905580f35b50346102bb5760203660031901126102bb5760406112fc916004358152600460205220613370565b60a081018051611316906001600160a01b03161515613409565b60208201519060408301519260018060a01b036060820151169061012081015160018060a01b036080830151169360018060a01b039051166113ee60018060a01b0360c085015116926113c860e086016113a760a08251209188670de0b6b3a76400006102786102667f000000000000000000000000000000000000000000000000000000000000000096876146e6565b96670de0b6b3a76400006102a461026661010084019460a0865120906146e6565b95604051998a998a5260208a015260408901526101206060890152610120880190613193565b94608087015260a086015260c085015260e08401526101008301520390f35b50346102bb57806003193601126102bb5761143d611429614532565b604051918291602083526020830190613256565b0390f35b50346102bb5760603660031901126102bb5761145b61322c565b602435906044359180845260026020526040842060405161147b81612f81565b8154815260018201546020820152600282015460408201526003820154606082015260048201546001600160a01b0390811660808301526005830154811660a080840191909152600684015491821660c084015260e0830193610100926114f69260079291901c60ff166114ee81613289565b8652016130b0565b9101526003815161150681613289565b61150f81613289565b14908115611611575b81156115f3575b506115e5576040516323b872dd60e01b81526001600160a01b03831660048201523060248201526044810184905260208180606481010381887f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03165af180156115da576115bd575b5083526006602052604083209060018060a01b03165f526020526115b860405f20918254613776565b905580f35b6115d59060203d602011610e7357610e678183613004565b61158f565b6040513d87823e3d90fd5b62b5f6bf60e41b8452600484fd5b600291505161160181613289565b61160a81613289565b145f61151f565b90506004815161162081613289565b61162981613289565b1490611518565b50346102bb5760203660031901126102bb576040906004358152600260205220805461143d600183015492600281015490600381015460018060a01b0360048301541660018060a01b036005840154169060068401549261169a600760ff8660a01c1696016130b0565b95604051998a998a5260208a015260408901526060880152608087015260a086015260018060a01b031660c08501526116d281613289565b60e0840152610120610100840152610120830190613193565b50346102bb57806003193601126102bb576001546040516001600160a01b039091168152602090f35b50346102bb5760603660031901126102bb576024356001600160401b038111610ea2576117459036906004016131d2565b604435906001600160401b0382116106e5576117686117719236906004016131d2565b906004356139d6565b80f35b50346102bb57366003190160c08112610ea25760a0136102bb5760a4358060020b8103610ea257611771906117a7614680565b6138ff565b50346102bb5760403660031901126102bb576004356117c9613216565b9181815260046020526117de60408220613370565b60a0810180519092906117fb906001600160a01b03161515613409565b60208281015182526006815260408083206001600160a01b0388165f818152918452828220549785526007845282852090825290925290205480851115611a6f576118469085613769565b925b64e8d4a5100084029380850464e8d4a510001490151715611a5b5760808301516040516370a0823160e01b81526001600160a01b03978816600482018190529790929160209184916024918391165afa9182156106da578392611a26575b50516040516370a0823160e01b8152600481018890529190602090839060249082906001600160a01b03165afa9182156106da5783926119f2575b5060c08401516040516370a0823160e01b81526004810198909852602090889060249082906001600160a01b03165afa9283156119e657926119b1575b60e0965061198a87850161196960a08251209187670de0b6b3a76400006102786102667f000000000000000000000000000000000000000000000000000000000000000096876146e6565b95670de0b6b3a76400006102a461026661010084019460a0865120906146e6565b94604051968752602087015260408601526060850152608084015260a083015260c0820152f35b91506020863d6020116119de575b816119cc60209383613004565b810103126106ce5760e095519161191e565b3d91506119bf565b604051903d90823e3d90fd5b9091506020813d602011611a1e575b81611a0e60209383613004565b810103126106ce5751905f6118e1565b3d9150611a01565b91506020823d602011611a53575b81611a4160209383613004565b810103126106ce5790519060206118a6565b3d9150611a34565b634e487b7160e01b82526011600452602482fd5b508092611848565b50346102bb5760403660031901126102bb5760043590611a95613216565b90611a9e613493565b5082815260026020526040812092611b2a600760405195611abe87612f81565b8054875260018101546020880152600281015460408801526003810154606088015260048101546001600160a01b0390811660808901526005820154811660a0808a0191909152600683015491821660c08a01521c60ff16611b1f81613289565b60e0880152016130b0565b610100850152611b3c845115156138c0565b80825260066020526040822060018060a01b0384165f5260205260405f20549082526009602052604082206040518082602082945493848152019086526020862092865b8181106120b9575050611b9592500382613004565b8051611ba08161344a565b94611bae6040519687613004565b818652601f19611bbd8361344a565b01855b81811061204f575050845b828110611d0b57611bf1888888611c0489896040519687966080885260808801906132a7565b9160208701528582036040870152613256565b8381036060850152825190818152602081016020808460051b840101950193915b838310611c325786860387f35b919395509193602080600192601f19858203018652885190815181528282015183820152848060a01b03604083015116604082015261018080611c8660608501516101a060608601526101a0850190613193565b93878060a01b036080820151166080850152878060a01b0360a08201511660a0850152878060a01b0360c08201511660c085015260e081015160e0850152610100810151610100850152610120810151610120850152610140810151610140850152610160810151610160850152015191015297019301930190928695949293611c25565b611d158185613501565b5180875260046020526024611d2c60408920613370565b91611d6f60e0840184670de0b6b3a764000061027861026660a08551207f00000000000000000000000000000000000000000000000000000000000000006146e6565b611db2610100850185670de0b6b3a76400006102a461026660a08551207f00000000000000000000000000000000000000000000000000000000000000006146e6565b60a08501516040516370a0823160e01b81526001600160a01b038981166004830152909560209287928391165afa918215612044578b92612010575b60c08601516040516370a0823160e01b81526001600160a01b038a8116600483015290965060209187916024918391165afa938415612005578c94611fd1575b60808701516040516370a0823160e01b81526001600160a01b038b8116600483015290975060209188916024918391165afa958615611fc6578d96611f93575b508c52600760209081526040808e206001600160a01b038b165f9081529252902054808c1115611f8b57611ea2908c613769565b955b64e8d4a5100087029680880464e8d4a510001490151715611f775780516040808301516060840151610120850151608086015160a087015160c090970151945160019e9d909c909b909a90999098909790966001600160a01b039687169691821695928216949091169190611f188e612fb1565b8d5260208d015260408c015260608b015260808a015260a089015260c088015260e0870152610100860152610120850152610140840152610160830152610180820152611f65828a613501565b52611f708189613501565b5001611bcb565b634e487b7160e01b8d52601160045260248dfd5b508b95611ea4565b9095506020813d8211611fbe575b81611fae60209383613004565b810103126106ce5751945f611e6e565b3d9150611fa1565b6040513d8f823e3d90fd5b93506020853d8211611ffd575b81611feb60209383613004565b810103126106ce576024945193611e2e565b3d9150611fde565b6040513d8e823e3d90fd5b91506020843d821161203c575b8161202a60209383613004565b810103126106ce576024935191611dee565b3d915061201d565b6040513d8d823e3d90fd5b60209060405161205e81612fb1565b88815288838201528860408201526060808201528860808201528860a08201528860c08201528860e0820152886101008201528861012082015288610140820152886101608201528861018082015282828b01015201611bc0565b8454835260019485019486945060209093019201611b80565b50346102bb57806120e236613331565b90825260046020526120f660408320613370565b60a08101516001600160a01b0316803b156121f45760405163079cc67960e41b8152336004820152602481018490529084908290604490829084905af190811561101c5784916121f9575b505060c08101516001600160a01b0316803b156121f45760405163079cc67960e41b8152336004820152602481018490529084908290604490829084905af190811561101c5784916121db575b5050608001516040516323b872dd60e01b81523060048201523360248201526044810192909252909160209183916064918391906001600160a01b03165af18015610e7a57610e4e575080f35b816121e591613004565b6121f057825f61218e565b5050fd5b505050fd5b8161220391613004565b6121f057825f612141565b50346102bb5760203660031901126102bb5760406020916004358152600583522054604051908152f35b50346102bb57366003190160a08112610ea25760a090612256614680565b126102bb5760405161226781612fcd565b6004356001600160a01b03811681036106e55781526024356001600160a01b03811681036106e557602082015260443562ffffff811681036106e55760408201526064358060020b81036106e5576060820152608435906001600160a01b03821682036106e55760a0916080820152208152600860205260408120548152600460205260206122f860408320613370565b0151815260026020526040812060405161231181612f81565b8154815260018201546020820152600282015460408201526003820154606082015260048201546001600160a01b0390811660808301526005830154811660a080840191909152600684015491821660c084015260e0830193610100926123849260079291901c60ff166114ee81613289565b9101525161239181613289565b61239a81613289565b6123a15780f35b63f884e6ff60e01b8152600490fd5b50346102bb57806003193601126102bb57546040516001600160a01b039091168152602090f35b50346102bb5760603660031901126102bb5760043560243580151590818103610e9e576044356001600160401b038111611027576124199036906004016131d2565b918385526002602052600660408620018054600160ff8260a01c1661243d81613289565b0361252157612485946020918789526005835260408920548960405180998195829463fb6cc44b60e01b84526004840152896024840152606060448401526064830190613193565b03926001600160a01b03165af1928315612516577f567004967c94ba65aa833c6d0374e264519bd15a847340c358d34c2e4a5e5d5d946020946124fb575b50156124e557805460ff60a01b1916600360a01b1790555b604051908152a280f35b805460ff60a01b1916600160a21b1790556124db565b61251190853d8711610e7357610e678183613004565b6124c3565b6040513d88823e3d90fd5b8680fd5b50346102bb57806003193601126102bb576040517f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03168152602090f35b50346102bb57806003193601126102bb576040517f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03168152602090f35b50346102bb57806125bf36613331565b90825260046020526125d360408320613370565b60808101516040516323b872dd60e01b815233600482015230602482015260448101849052906020908290606490829088906001600160a01b03165af1801561101c576126d8575b5060a08101516001600160a01b0316803b156121f4576040516340c10f1960e01b8152336004820152602481018490529084908290604490829084905af190811561101c5784916126c3575b505060c001516001600160a01b0316803b156121f0576040516340c10f1960e01b8152336004820152602481019290925282908290604490829084905af18015610e7a576126b25750f35b816126bc91613004565b6102bb5780f35b816126cd91613004565b6121f057825f612667565b6126f09060203d602011610e7357610e678183613004565b61261b565b50346102bb57806003193601126102bb5761270e61465a565b80546001600160a01b03198116825581906001600160a01b03167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e08280a380f35b50346102bb5760403660031901126102bb57602460043561276e613216565b818452600460205261278260408520613370565b60a081015161279b906001600160a01b03161515613409565b60808101516040516370a0823160e01b81526001600160a01b038481166004830152909560209287928391165afa9384156115da57859461286e575b5060209081015185526006815260408086206001600160a01b03939093165f8181529383528184205494875260078352818720908452909152902054808211156128655761282491613769565b905b64e8d4a5100082029180830464e8d4a510001490151715612851576040809350519182526020820152f35b634e487b7160e01b83526011600452602483fd5b50508190612826565b9093506020813d60201161289b575b8161288a60209383613004565b810103126106ce57519260206127d7565b3d915061287d565b50346102bb5760203660031901126102bb57611771600435613796565b50346102bb5760403660031901126102bb5760406128dc613216565b9160043581526007602052209060018060a01b03165f52602052602060405f2054604051908152f35b50346102bb5760403660031901126102bb576040612921613216565b9160043581526006602052209060018060a01b03165f52602052602060405f2054604051908152f35b50346102bb5760403660031901126102bb57600435612967613216565b8183526004602052602061297d60408520613370565b60a0810151612996906001600160a01b03161515613409565b015183526006602090815260408085206001600160a01b03939093165f81815293835281842054948652600783528186209084529091529020549182821115612a04575061143d6129e78383613769565b604051938493846040919493926060820195825260208201520152565b61143d906129e7565b50346102bb57806003193601126102bb576040517f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03168152602090f35b50346106ce5760403660031901126106ce57612a6c61322c565b60243590815f526004602052612a8460405f20613370565b6020818101515f9081526006825260408082206001600160a01b03861680845290845281832054878452600785528284209184529352902054612ac691613769565b928315612b8a575f52600760205260405f2060018060a01b0383165f5260205260405f20612af5848254613776565b9055608001516001600160a01b03169164e8d4a510008082029182049003612b7657823b156106ce576040516340c10f1960e01b81526001600160a01b039290921660048301526024820152905f908290604490829084905af18015612b6b57612b5d575080f35b612b6991505f90613004565b005b6040513d5f823e3d90fd5b634e487b7160e01b5f52601160045260245ffd5b60405162461bcd60e51b815260206004820152601060248201526f4e6f7468696e6720746f20636c61696d60801b6044820152606490fd5b346106ce575f3660031901126106ce57612bf1612bdd613515565b604051928392604084526040840190613256565b8281036020840152815180825260208201916020808360051b8301019401925f915b838310612c205786860387f35b919395509193602080612c3f600193601f1986820301875289516132a7565b97019301930190928695949293612c13565b346106ce575f3660031901126106ce576040517f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03168152602090f35b346106ce5760403660031901126106ce576024612cb0613216565b6004355f526004602052612cc660405f20613370565b90602060a08301612ce160018060a01b038251161515613409565b516040516370a0823160e01b81526001600160a01b03938416600482018190529095909386928391165afa918215612b6b575f92612e1f575b60c08101516040516370a0823160e01b8152600481018490529450602090859060249082906001600160a01b03165afa938415612b6b575f94612dea575b50608001516040516370a0823160e01b81526004810192909252602090829060249082906001600160a01b03165afa8015612b6b575f90612db6575b61143d9150604051938493846040919493926060820195825260208201520152565b506020813d602011612de2575b81612dd060209383613004565b810103126106ce5761143d9051612d94565b3d9150612dc3565b9093506020813d602011612e17575b81612e0660209383613004565b810103126106ce5751926020612d58565b3d9150612df9565b91506020833d602011612e4c575b81612e3a60209383613004565b810103126106ce576024925191612d1a565b3d9150612e2d565b346106ce5760403660031901126106ce576024356001600160401b0381116106ce57612e87612b699136906004016131d2565b60405190612e96602083613004565b5f82526004356139d6565b346106ce5760203660031901126106ce576004355f52600460205260405f20805461143d600183015492612f6d600282015491612f6260018060a01b0360038301541660018060a01b0360048401541660018060a01b0360058501541660018060a01b0360068601541691612f1860078701613025565b93612f31600d612f2a600a8a01613025565b98016130b0565b986040519c8d9c8d5260208d015260408c015260608b015260808a015260a089015260c088015260e0870190613150565b610180850190613150565b610240610220840152610240830190613193565b61012081019081106001600160401b03821117612f9d57604052565b634e487b7160e01b5f52604160045260245ffd5b6101a081019081106001600160401b03821117612f9d57604052565b60a081019081106001600160401b03821117612f9d57604052565b61014081019081106001600160401b03821117612f9d57604052565b90601f801991011681019081106001600160401b03821117612f9d57604052565b9060405161303281612fcd565b82546001600160a01b0390811682526001840154808216602084015260a081901c62ffffff16604084015260b81c600290810b6060840152909301549092166080830152565b90600182811c921680156130a6575b602083101461309257565b634e487b7160e01b5f52602260045260245ffd5b91607f1691613087565b9060405191825f8254926130c384613078565b808452936001811690811561312e57506001146130ea575b506130e892500383613004565b565b90505f9291925260205f20905f915b8183106131125750509060206130e8928201015f6130db565b60209193508060019154838589010152019101909184926130f9565b9050602092506130e894915060ff191682840152151560051b8201015f6130db565b80516001600160a01b03908116835260208083015182169084015260408083015162ffffff169084015260608083015160020b9084015260809182015116910152565b805180835260209291819084018484015e5f828201840152601f01601f1916010190565b6001600160401b038111612f9d57601f01601f191660200190565b81601f820112156106ce576020813591016131ec826131b7565b926131fa6040519485613004565b828452828201116106ce57815f92602092838601378301015290565b602435906001600160a01b03821682036106ce57565b600435906001600160a01b03821682036106ce57565b35906001600160a01b03821682036106ce57565b90602080835192838152019201905f5b8181106132735750505090565b8251845260209384019390920191600101613266565b6005111561329357565b634e487b7160e01b5f52602160045260245ffd5b9061012061010061332e938051845260208101516020850152604081015160408501526060810151606085015260018060a01b03608082015116608085015260018060a01b0360a08201511660a085015260018060a01b0360c08201511660c085015260e081015161331881613289565b60e0850152015191816101008201520190613193565b90565b60409060031901126106ce576004359060243590565b805482101561335c575f5260205f2001905f90565b634e487b7160e01b5f52603260045260245ffd5b9060405161337d81612fe8565b82548152600183015460208201526002830154604082015260038301546001600160a01b0390811660608301526004840154811660808301526005840154811660a083015260068401541660c08201529182906101209061340490600d906133e760078201613025565b60e08601526133f8600a8201613025565b610100860152016130b0565b910152565b1561341057565b60405162461bcd60e51b8152602060048201526012602482015271141c9bdc1bdcd85b081b9bdd08199bdd5b9960721b6044820152606490fd5b6001600160401b038111612f9d5760051b60200190565b9061346b8261344a565b6134786040519182613004565b8281528092613489601f199161344a565b0190602036910137565b604051906134a082612f81565b6060610100835f81525f60208201525f60408201525f838201525f60808201525f60a08201525f60c08201525f60e08201520152565b5f198114612b765760010190565b80511561335c5760200190565b80516001101561335c5760400190565b805182101561335c5760209160051b010190565b60015460405163af640d0f60e01b81529190602090839060049082906001600160a01b03165afa918215612b6b575f92613735575b5081156136e1575f9060015b838111156136ac575061356882613461565b926135728361344a565b926135806040519485613004565b80845261358f601f199161344a565b015f5b818110613695575050825f60015b838111156135ae5750505050565b805f52600260205260405f20546135ce575b6135c9906134d6565b6135a0565b9061368d81836135e16135c9948b613501565b52835f52600260205260405f2061366c60076040519261360084612f81565b8054845260018101546020850152600281015460408501526003810154606085015260048101546001600160a01b0390811660808601526005820154811660a080870191909152600683015491821660c08701521c60ff1661366181613289565b60e0850152016130b0565b61010082015261367c8287613501565b526136878186613501565b506134d6565b9190506135c0565b6020906136a0613493565b82828801015201613592565b805f52600260205260405f20546136cc575b6136c7906134d6565b613556565b916136d96136c7916134d6565b9290506136be565b604051602092506136f28382613004565b5f81525f368137604051926137078185613004565b5f8452601f1981015f5b81811061371f575050509190565b8290613729613493565b82828901015201613711565b9091506020813d602011613761575b8161375160209383613004565b810103126106ce5751905f61354a565b3d9150613744565b91908203918211612b7657565b91908201809211612b7657565b81810292918115918404141715612b7657565b805f52600260205260405f2060038101544211156137e5575f9182526003602090815260408084206006909301805460ff60a01b1916600160a01b179055600192909201546005909152912055565b606460405162461bcd60e51b815260206004820152602060248201527f4d61726b657420646561646c696e65206e6f742079657420726561636865642e6044820152fd5b908160209103126106ce575180151581036106ce5790565b91908260a09103126106ce5760405161385981612fcd565b809261386481613242565b825261387260208201613242565b6020830152604081013562ffffff811681036106ce5760408301526060810135908160020b82036106ce57606083019190915260800135906001600160a01b03821682036106ce5760800152565b156138c757565b60405162461bcd60e51b815260206004820152601060248201526f13585c9ad95d081b9bdd08199bdd5b9960821b6044820152606490fd5b60a061390c366004613841565b2090815f52600860205260405f205490815f52600460205260405f209260a061393760078601613025565b20036139d157613983670de0b6b3a764000061396560019361395e858060a01b0391615222565b1680613783565b0260c01c613974366004613841565b61397d86613370565b9061479f565b92019182545f52600360205260405f20805482116139c2575b50505054805f526002602052600360405f20015442116139b95750565b6130e890613796565b600191815501555f808061399c565b505050565b90915f928391838552600260205260408520916040516139f581612f81565b8354815260018401546020820152600284015490604081019182526003850154606082015260018060a01b03600486015416608082015260018060a01b0360058601541660a0820152610100613a76600760068801549760ff60c086019960018060a01b0381168b5260a01c16613a6b81613289565b60e0860152016130b0565b910152600154604051635d1ca63160e01b81529760209189916004918391906001600160a01b03165af1968715612b6b575f976144fe575b505f86815260066020908152604080832033808552908352818420548b855260078452828520918552925290912054613ae691613769565b8151116144b9578051875f52600760205260405f2060018060a01b0333165f52602052613b1860405f20918254613776565b9055518060011b81810460021482151715612b76576003613b3e91048060011c92613769565b908160011c90604051610fb3808201908282106001600160401b03831117612f9d5760209183916168f683393081520301905ff08015612b6b576001600160a01b03169264e8d4a510008082029180159083049091141715612b7657833b156106ce576040516340c10f1960e01b815230600482015260248101919091525f8160448183885af18015612b6b576144a4575b50604051916110ab808401938085106001600160401b038611176144905760408161584b96848883398c81523060208201520301908af09384156144855760405191808301918383106001600160401b038411176144715791839160409383396001815230602082015203019089f09283156144665764e8d4a5100083029280840464e8d4a5100014901517156143ef576001600160a01b031692833b15614418576040516340c10f1960e01b815230600482015260248101849052898160448183895af1801561441c57908a91614451575b50506001600160a01b031690813b15614418576040516340c10f1960e01b815230600482015260248101849052898160448183875af1801561441c57908a9161443c575b5050833b15614418576040516340c10f1960e01b815233600482015260248101849052898160448183895af1801561441c57908a91614427575b5050813b15614418576040516340c10f1960e01b815233600482015260248101849052898160448183875af1801561441c57908a91614403575b505064e8d4a5100081029080820464e8d4a5100014901517156143ef5790613d9682613d8e8594879689600d9a996148fd565b9386846148fd565b9260a083208a5260086020528b60408b205560a084208a5260086020528b60408b205560405194613dc686612fe8565b8c86528c8b8d602089019081526040808a019242845260608b019433865260808c0196875260a08c0197885260c08c0198895260e08c01998a526101008c019a8b526101208c019d8e5281526004602052209851895551600189015551600288015560018060a01b03905116600387019060018060a01b03166001600160601b0360a01b82541617905560018060a01b03905116600486019060018060a01b03166001600160601b0360a01b82541617905560018060a01b03905116600585019060018060a01b03166001600160601b0360a01b82541617905560018060a01b03905116600684019060018060a01b03166001600160601b0360a01b8254161790555160018060a01b03815116600784019060018060a01b03166001600160601b0360a01b8254161790556008830160018060a01b0360018060a01b03602084015116166001600160601b0360a01b825416178155613f4862ffffff604084015116829081549062ffffff60a01b9060a01b169062ffffff60a01b1916179055565b606082810151825462ffffff60b81b191662ffffff60b81b60b892831b8116919091179093556080938401516009870180546001600160a01b03199081166001600160a01b039384161790915595518051600a8901805489169184169190911790556020810151600b8901805460408401519684015190951b9096166001600160d01b03199094169083161760a09490941b62ffffff60a01b16939093179190911790925590910151600c840180549190921692169190911790559151805191909201916001600160401b0382116143db5781906140268454613078565b601f811161438b575b50602090601f831160011461432957879261431e575b50508160011b915f199060031b1c19161790555b805191826140ef575b505050818152600960205260408120805491680100000000000000008310156140db57509061409691600182018155613347565b81549060031b9084821b915f19901b19161790557fd3c39c472d4a3a9920aec93d2b301c144698a2f61a9f836f23877daad849753e60408051428152336020820152a3565b634e487b7160e01b81526041600452602490fd5b60018060a01b03905116918101916020830191602081850312611027576020810151906001600160401b03821161431a5701926101209084900312610e9e5760405161413a81612f81565b6020840151600581101561431a5781526141566040850161520e565b926020820193845261416a6060860161520e565b94604083019586526080810151916060840192835260a08201516080850190815260c08301516001600160401b0381116143165760209084010182601f8201121561431657828160206141bf935191016148ad565b9060a0860191825260e08401516001600160401b03811161430e578360206141e9928701016148e3565b9260c087019384526101008501516001600160401b03811161431257610120916020614217928801016148e3565b9460e088019586520151946101008701958652873b1561430e57938a99989694938d938b9997938a966040519c8d9b8c9a8b9963941f58cf60e01b8b5260048b015260248a01604090525161426b81613289565b60448a0152516001600160a01b0390811660648a015290511660848801525160a48701525160c48601525161012060e48601526142ad90610164860190613193565b9051848203604319016101048601526142c69190613193565b9051838203604319016101248501526142df9190613193565b905161014483015203926207a120f16142f9575b80614062565b8161430391613004565b6102bb57805f6142f3565b8a80fd5b8b80fd5b8980fd5b8580fd5b015190505f80614045565b8488528188209250601f198416885b818110614373575090846001959493921061435b575b505050811b019055614059565b01515f1960f88460031b161c191690555f808061434e565b92936020600181928786015181550195019301614338565b90915083875260208720601f840160051c810191602085106143d1575b90601f859493920160051c01905b8181106143c3575061402f565b8881558493506001016143b6565b90915081906143a8565b634e487b7160e01b86526041600452602486fd5b634e487b7160e01b89526011600452602489fd5b8161440d91613004565b61441857885f613d5b565b8880fd5b6040513d8c823e3d90fd5b8161443191613004565b61441857885f613d21565b8161444691613004565b61441857885f613ce7565b8161445b91613004565b61441857885f613ca3565b6040513d8a823e3d90fd5b634e487b7160e01b8c52604160045260248cfd5b6040513d8b823e3d90fd5b634e487b7160e01b8a52604160045260248afd5b6144b19197505f90613004565b5f955f613bd0565b60405162461bcd60e51b815260206004820152601a60248201527f4d757374206465706f736974206d696e206c69717569646974790000000000006044820152606490fd5b9096506020813d60201161452a575b8161451a60209383613004565b810103126106ce5751955f613aae565b3d915061450d565b60015460405163af640d0f60e01b81529190602090839060049082906001600160a01b03165afa918215612b6b575f92614626575b50811561460c575f60015b838111156145d7575061458490613461565b915f60015b8281111561459657505050565b805f52600260205260405f20546145b6575b6145b1906134d6565b614589565b906145cf81836145c96145b19489613501565b526134d6565b9190506145a8565b805f52600260205260405f20546145f7575b6145f2906134d6565b614572565b906146046145f2916134d6565b9190506145e9565b905060405161461c602082613004565b5f81525f36813790565b9091506020813d602011614652575b8161464260209383613004565b810103126106ce5751905f614567565b3d9150614635565b5f546001600160a01b0316330361466d57565b63118cdaa760e01b5f523360045260245ffd5b7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b031633036146b257565b60405162461bcd60e51b815260206004820152600c60248201526b6d75737420626520686f6f6b60a01b6044820152606490fd5b9190602090604051828101918252600660408201526040815261470a606082613004565b519020604051631e2eaeaf60e01b8152600481019190915292839060249082906001600160a01b03165afa918215612b6b575f9261476b575b506001600160a01b0382169160a081901c60020b9162ffffff60b883901c81169260d01c1690565b9091506020813d602011614797575b8161478760209383613004565b810103126106ce5751905f614743565b3d915061477a565b5160a091909101516001600160a01b039081169116036147bc5790565b80156147d6576ec097ce7bc90715b34b9f10000000000490565b634e487b7160e01b5f52601260045260245ffd5b5160c0909101516001600160a01b039081169116036147bc5790565b603c9060020b02908160020b918203612b7657565b6040516060919061482c8382613004565b6002815291601f1901825f5b82811061484457505050565b806060602080938501015201614838565b9080602083519182815201916020808360051b8301019401925f915b83831061488057505050505090565b909192939460208061489e600193601f198682030187528951613193565b97019301930191939290614871565b9291926148b9826131b7565b916148c76040519384613004565b8294818452818301116106ce578281602093845f96015e010152565b9080601f830112156106ce57815161332e926020016148ad565b9192905f608060405161490f81612fcd565b82815260208101839052604081018390526060810183905201526001600160a01b03838116939082168410156152085790925b600154604051956001600160a01b0386811693919260a01c62ffffff16908290861661496d8a612fcd565b808a5260208a0186815260408b0193909352603c60608b01527f00000000000000000000000000000000000000000000000000000000000000006001600160a01b031660808b0152149384156151ec576149c96139c219614806565b965f906706f05b59d3b200005b8060601b90808204600160601b1490151715612b7657670de0b6b3a764000090048060601b908160b591600160881b8410156151c9575b50806901000000000000000000620100009210156151bc575b650100000000008110156151af575b63010000008110156151a2575b010260121c8082040160011c8082040160011c8082040160011c8082040160011c8082040160011c8082040160011c8082040160011c808092041090039260018060a01b0384169373fffd8963efd1fc6a506488495d951d516396168260018060a01b036401000276a2198701161161518f5760201b640100000000600160c01b0316938480156106ce578d9560ff826001600160801b031060071b83811c6001600160401b031060061b1783811c63ffffffff1060051b1783811c61ffff1060041b1783811c821060031b177f07060605060205000602030205040001060502050303040105050304000000006f8421084210842108cc6318c6db6d54be85831c1c601f161a17169160808310155f146151835750607e1982011c5b800280607f1c8160ff1c1c800280607f1c8160ff1c1c800280607f1c8160ff1c1c800280607f1c8160ff1c1c800280607f1c8160ff1c1c800280607f1c8160ff1c1c80029081607f1c8260ff1c1c80029283607f1c8460ff1c1c80029485607f1c8660ff1c1c80029687607f1c8860ff1c1c80029889607f1c8a60ff1c1c80029a8b607f1c8c60ff1c1c80029c8d80607f1c9060ff1c1c800260cd1c6604000000000000169d60cc1c6608000000000000169c60cb1c6610000000000000169b60ca1c6620000000000000169a60c91c6640000000000000169960c81c6680000000000000169860c71c670100000000000000169760c61c670200000000000000169660c51c670400000000000000169560c41c670800000000000000169460c31c671000000000000000169360c21c672000000000000000169260c11c674000000000000000169160c01c6780000000000000001690607f190160401b1717171717171717171717171717693627a301d71055774c85026f028f6481ab7f045a5af012a19d003aa919810160801d60020b906fdb2df09e81959a81455e260799a0632f0160801d60020b918282145f1461515f575090505b60020b5f811261513457614d31603c614d369205614806565b615222565b96614d408b615222565b92614d4a85615222565b991561512b57819788935b036151235750975b80836001600160a01b0380831690821611615118575b50506001600160a01b03888116988a9185168a116150b7575050614d9692615687565b975b614da061481b565b96614da961481b565b60405163f702040560e01b60208201529097614dc86024830187613150565b60c482015260c48152614ddc60e482613004565b614de5896134e4565b52614def886134e4565b50604051600160f91b6020820152600d60f81b60218201526002815295614e17602288613004565b60209a8b9460405194614e2a8787613004565b5f8652601f19870136888801376040519788978801614e4891613150565b60020b60c087015260020b60e08601526001600160801b031661010085015261012084015261014083015230610160830152610180820161018090526101a08201614e9291613193565b03601f1981018252614ea49082613004565b614ead846134e4565b52614eb7836134e4565b5087519051604080516001600160a01b039384168982015292909116828201528152614ee4606082613004565b614eed836134f1565b52614ef7826134f1565b506040519182918683016040905260608301614f1291613193565b828103601f19016040840152614f2791614855565b03601f1981018252614f399082613004565b42603c0194854211612b7657614fa85f94614f7b614f8f614fad95614fce9a60405193849263dd46508f60e01b8d850152604060248501526064840190613193565b90604483015203601f198101835282613004565b614f98866134f1565b52614fa2856134f1565b5061554f565b61554f565b60405180948192631592ca1b60e31b83528560048401526024830190614855565b0381837f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03165af18015612b6b5761500c57505090565b3d805f843e61501b8184613004565b82019181818403126106ce578051906001600160401b0382116106ce57019180601f840112156106ce578251926150518461344a565b9361505f6040519586613004565b808552838086019160051b830101928084116106ce57848301915b84831061508b575050505050505090565b82516001600160401b0381116106ce5786916150ac848480948901016148e3565b81520192019161507a565b909290916001600160a01b0381168a101561510c5782916150dc916150e29594615687565b9361564d565b6001600160801b0381166001600160801b038316105f1461510557505b97614d98565b90506150ff565b9150506150ff9261564d565b915092505f80614d73565b905097614d5d565b80978893614d55565b603a19019350627fffff198412627fffff851317612b7657614d36614d31603c8e9660020b05614806565b6001600160a01b0361517084615222565b161161517c5750614d18565b9050614d18565b905081607f031b614b5f565b846318521d4960e21b5f5260045260245ffd5b60101c9160081b91614a42565b60201c9160101b91614a35565b60401c9160201b91614a26565b68b50000000000000000925060201c6001600160801b0316905062010000614a0d565b5f966151f96139c3614806565b90671bc16d674ec800006149d6565b92614942565b51906001600160a01b03821682036106ce57565b60020b908160ff1d82810118620d89e8811161553c5763ffffffff9192600182167001fffcb933bd6fad37aa2d162d1a59400102600160801b189160028116615520575b60048116615504575b600881166154e8575b601081166154cc575b602081166154b0575b60408116615494575b60808116615478575b610100811661545c575b6102008116615440575b6104008116615424575b6108008116615408575b61100081166153ec575b61200081166153d0575b61400081166153b4575b6180008116615398575b62010000811661537c575b620200008116615361575b620400008116615346575b620800001661532d575b5f12615325575b0160201c90565b5f190461531e565b6b048a170391f7dc42444e8fa290910260801c90615317565b6d2216e584f5fa1ea926041bedfe9890920260801c9161530d565b916e5d6af8dedb81196699c329225ee6040260801c91615302565b916f09aa508b5b7a84e1c677de54f3e99bc90260801c916152f7565b916f31be135f97d08fd981231505542fcfa60260801c916152ec565b916f70d869a156d2a1b890bb3df62baf32f70260801c916152e2565b916fa9f746462d870fdf8a65dc1f90e061e50260801c916152d8565b916fd097f3bdfd2022b8845ad8f792aa58250260801c916152ce565b916fe7159475a2c29b7443b29c7fa6e889d90260801c916152c4565b916ff3392b0822b70005940c7a398e4b70f30260801c916152ba565b916ff987a7253ac413176f2b074cf7815e540260801c916152b0565b916ffcbe86c7900a88aedcffc83b479aa3a40260801c916152a6565b916ffe5dee046a99a2a811c461f1969c30530260801c9161529c565b916fff2ea16466c96a3843ec78b326b528610260801c91615293565b916fff973b41fa98c081472e6896dfb254c00260801c9161528a565b916fffcb9843d60f6159c9db58835c9266440260801c91615281565b916fffe5caca7e10e4e61c3624eaa0941cd00260801c91615278565b916ffff2e50f5f656932ef12357cf3c7fdcc0260801c9161526f565b916ffff97272373d413259a46990580e213a0260801c91615266565b826345c3193d60e11b5f5260045260245ffd5b60405163095ea7b360e01b81526001600160a01b037f00000000000000000000000000000000000000000000000000000000000000008116600483018190525f1960248401529216906020816044815f865af18015612b6b57615630575b50813b156106ce576040516387517c4560e01b815260048101919091526001600160a01b037f000000000000000000000000000000000000000000000000000000000000000081166024830152604482015265ffffffffffff6064820152905f908290608490829084905af18015612b6b576156265750565b5f6130e891613004565b6156489060203d602011610e7357610e678183613004565b6155ad565b61332e9261567c9290916001600160a01b0380831690821611615681575b90036001600160a01b0316906156d4565b615827565b9061566b565b61332e9261567c929091906001600160a01b03808216908316116156ce575b6156bc6001600160a01b0382811690841661575e565b9190036001600160a01b0316916157a7565b906156a6565b90606082901b905f19600160601b8409928280851094039380850394858411156106ce5714615757578190600160601b900981805f03168092046002816003021880820260020302808202600203028082026002030280820260020302808202600203028091026002030293600183805f03040190848311900302920304170290565b5091500490565b81810291905f1982820991838084109303928084039384600160601b11156106ce571461579e57600160601b910990828211900360a01b910360601c1790565b50505060601c90565b91818302915f19818509938380861095039480860395868511156106ce571461581f579082910981805f03168092046002816003021880820260020302808202600203028082026002030280820260020302808202600203028091026002030293600183805f03040190848311900302920304170290565b505091500490565b906001600160801b03821680920361583b57565b6393dafdf160e01b5f5260045ffdfe6080604052346103e9576110ab6040813803918261001c816103ed565b9384928339810103126103e95780519060028210156103e95760200151906001600160a01b03821682036103e95780159182156103ca5761005d60406103ed565b600381526259455360e81b6020820152925b156103ac5761007e60406103ed565b600381526259455360e81b60208201525b83516001600160401b0381116102bd57600354600181811c911680156103a2575b602082101461029f57601f811161033f575b50602094601f82116001146102dc579481929394955f926102d1575b50508160011b915f199060031b1c1916176003555b8051906001600160401b0382116102bd57600454600181811c911680156102b3575b602082101461029f57601f811161023c575b50602090601f83116001146101d35761015d9392915f91836101c8575b50508160011b915f199060031b1c191617600455610412565b5033156101b557335f81815260208181526040518281527fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef9190a360ff801960065416911617600655604051610bcd90816104be8239f35b63ec442f0560e01b5f525f60045260245ffd5b015190505f80610144565b90601f1983169160045f52815f20925f5b818110610224575091600193918561015d9796941061020c575b505050811b01600455610412565b01515f1960f88460031b161c191690555f80806101fe565b929360206001819287860151815501950193016101e4565b60045f527f8a35acfbc15ff81a39ae7d344fd709f28e8600b4aa8c65c6b64bfe7fe36bd19b601f840160051c81019160208510610295575b601f0160051c01905b81811061028a5750610127565b5f815560010161027d565b9091508190610274565b634e487b7160e01b5f52602260045260245ffd5b90607f1690610115565b634e487b7160e01b5f52604160045260245ffd5b015190505f806100de565b601f1982169560035f52805f20915f5b8881106103275750836001959697981061030f575b505050811b016003556100f3565b01515f1960f88460031b161c191690555f8080610301565b919260206001819286850151815501940192016102ec565b60035f527fc2575a0e9e593c00f959f8c92f12db2869c3395a3b0502d05e2516446f71f85b601f830160051c81019160208410610398575b601f0160051c01905b81811061038d57506100c2565b5f8155600101610380565b9091508190610377565b90607f16906100b0565b6103b660406103ed565b60028152614e4f60f01b602082015261008f565b6103d460406103ed565b60028152614e4f60f01b60208201529261006f565b5f80fd5b6040519190601f01601f191682016001600160401b038111838210176102bd57604052565b6001600160a01b0381165f9081525f8051602061108b833981519152602052604090205460ff166104b8576001600160a01b03165f8181525f8051602061108b83398151915260205260408120805460ff191660011790553391907f9f2df0fed2c77648de5860a4cc508cd0818c85b8b8a1ab4ceeef8d981c8956a6907f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d9080a4600190565b505f9056fe6080806040526004361015610012575f80fd5b5f3560e01c90816301ffc9a7146107d35750806306fdde0314610701578063095ea7b31461065957806318160ddd1461063c57806323b872dd14610604578063248a9ca3146105d15780632f2ff15d1461059357806330fa738c14610556578063313ce5671461053b57806336568abe146104f757806340c10f191461040957806342966c68146103ec57806370a08231146103b557806379cc67901461038557806391d148541461033c57806395d89b4114610221578063a217fddf14610207578063a9059cbb146101d6578063d53913931461019c578063d547741f146101575763dd62ed3e14610103575f80fd5b346101535760403660031901126101535761011c610850565b610124610866565b6001600160a01b039182165f908152600160209081526040808320949093168252928352819020549051908152f35b5f80fd5b346101535760403660031901126101535761019a600435610176610866565b90610195610190825f526005602052600160405f20015490565b6109c9565b610a8f565b005b34610153575f3660031901126101535760206040517f9f2df0fed2c77648de5860a4cc508cd0818c85b8b8a1ab4ceeef8d981c8956a68152f35b34610153576040366003190112610153576101fc6101f2610850565b602435903361091f565b602060405160018152f35b34610153575f3660031901126101535760206040515f8152f35b34610153575f366003190112610153576040515f6004548060011c90600181168015610332575b60208310811461031e5782855290811561030257506001146102ad575b50819003601f01601f191681019067ffffffffffffffff8211818310176102995761029582918260405282610826565b0390f35b634e487b7160e01b5f52604160045260245ffd5b905060045f527f8a35acfbc15ff81a39ae7d344fd709f28e8600b4aa8c65c6b64bfe7fe36bd19b5f905b8282106102ec57506020915082010182610265565b60018160209254838588010152019101906102d7565b90506020925060ff191682840152151560051b82010182610265565b634e487b7160e01b5f52602260045260245ffd5b91607f1691610248565b3461015357604036600319011261015357610355610866565b6004355f52600560205260405f209060018060a01b03165f52602052602060ff60405f2054166040519015158152f35b346101535760403660031901126101535761019a6103a1610850565b602435906103b082338361087c565b610b13565b34610153576020366003190112610153576001600160a01b036103d6610850565b165f525f602052602060405f2054604051908152f35b346101535760203660031901126101535761019a60043533610b13565b3461015357604036600319011261015357610422610850565b335f9081527f15a28d26fa1bf736cf7edc9922607171ccb09c3c73b808e7772a3013e068a5226020526040902054602435919060ff16156104e4576001600160a01b03169081156104d157600254908082018092116104bd5760207fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef915f9360025584845283825260408420818154019055604051908152a3005b634e487b7160e01b5f52601160045260245ffd5b63ec442f0560e01b5f525f60045260245ffd5b632fdab94f60e11b5f523360045260245ffd5b3461015357604036600319011261015357610510610866565b336001600160a01b0382160361052c5761019a90600435610a8f565b63334bd91960e11b5f5260045ffd5b34610153575f36600319011261015357602060405160128152f35b34610153575f3660031901126101535760ff60065416604051600282101561057f576020918152f35b634e487b7160e01b5f52602160045260245ffd5b346101535760403660031901126101535761019a6004356105b2610866565b906105cc610190825f526005602052600160405f20015490565b610a03565b346101535760203660031901126101535760206105fc6004355f526005602052600160405f20015490565b604051908152f35b34610153576060366003190112610153576101fc610620610850565b610628610866565b6044359161063783338361087c565b61091f565b34610153575f366003190112610153576020600254604051908152f35b3461015357604036600319011261015357610672610850565b6024359033156106ee576001600160a01b03169081156106db57335f52600160205260405f20825f526020528060405f20556040519081527f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b92560203392a3602060405160018152f35b634a1406b160e11b5f525f60045260245ffd5b63e602df0560e01b5f525f60045260245ffd5b34610153575f366003190112610153576040515f6003548060011c906001811680156107c9575b60208310811461031e5782855290811561030257506001146107745750819003601f01601f191681019067ffffffffffffffff8211818310176102995761029582918260405282610826565b905060035f527fc2575a0e9e593c00f959f8c92f12db2869c3395a3b0502d05e2516446f71f85b5f905b8282106107b357506020915082010182610265565b600181602092548385880101520191019061079e565b91607f1691610728565b34610153576020366003190112610153576004359063ffffffff60e01b821680920361015357602091637965db0b60e01b8114908115610815575b5015158152f35b6301ffc9a760e01b1490508361080e565b602060409281835280519182918282860152018484015e5f828201840152601f01601f1916010190565b600435906001600160a01b038216820361015357565b602435906001600160a01b038216820361015357565b6001600160a01b039081165f818152600160209081526040808320948616835293905291909120549291905f1984106108b6575b50505050565b8284106108fc5780156106ee576001600160a01b038216156106db575f52600160205260405f209060018060a01b03165f5260205260405f20910390555f8080806108b0565b508290637dc7a0d960e11b5f5260018060a01b031660045260245260445260645ffd5b6001600160a01b03169081156109b6576001600160a01b03169182156104d157815f525f60205260405f205481811061099d57817fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef92602092855f525f84520360405f2055845f525f825260405f20818154019055604051908152a3565b8263391434e360e21b5f5260045260245260445260645ffd5b634b637e8f60e11b5f525f60045260245ffd5b5f81815260056020908152604080832033845290915290205460ff16156109ed5750565b63e2517d3f60e01b5f523360045260245260445ffd5b5f8181526005602090815260408083206001600160a01b038616845290915290205460ff16610a89575f8181526005602090815260408083206001600160a01b0395909516808452949091528120805460ff19166001179055339291907f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d9080a4600190565b50505f90565b5f8181526005602090815260408083206001600160a01b038616845290915290205460ff1615610a89575f8181526005602090815260408083206001600160a01b0395909516808452949091528120805460ff19169055339291907ff6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b9080a4600190565b9091906001600160a01b031680156109b657805f525f60205260405f2054838110610b7d576020845f94957fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef938587528684520360408620558060025403600255604051908152a3565b915063391434e360e21b5f5260045260245260445260645ffdfea264697066735822122079e892db402b6f200a715fc593012184aefbca1c01c0630bc67b1c8f62611d2364736f6c634300081a003315a28d26fa1bf736cf7edc9922607171ccb09c3c73b808e7772a3013e068a52260806040523461033957610fb36020813803918261001c8161033d565b93849283398101031261033957516001600160a01b038116810361033957610044604061033d565b90600c82526b5669727475616c205553444360a01b6020830152610068604061033d565b6004815263159554d160e21b602082015282519091906001600160401b03811161024a57600354600181811c9116801561032f575b602082101461022c57601f81116102cc575b506020601f821160011461026957819293945f9261025e575b50508160011b915f199060031b1c1916176003555b8151916001600160401b03831161024a57600454600181811c91168015610240575b602082101461022c57601f81116101c9575b50602090601f84116001146101615761014693915f9183610156575b50508160011b915f199060031b1c191617600455610362565b50604051610b85908161040e8239f35b015190505f8061012d565b90601f1984169160045f52815f20925f5b8181106101b15750916001939186610146979410610199575b505050811b01600455610362565b01515f1960f88460031b161c191690555f808061018b565b92936020600181928786015181550195019301610172565b60045f527f8a35acfbc15ff81a39ae7d344fd709f28e8600b4aa8c65c6b64bfe7fe36bd19b601f850160051c81019160208610610222575b601f0160051c01905b8181106102175750610111565b5f815560010161020a565b9091508190610201565b634e487b7160e01b5f52602260045260245ffd5b90607f16906100ff565b634e487b7160e01b5f52604160045260245ffd5b015190505f806100c8565b601f1982169060035f52805f20915f5b8181106102b45750958360019596971061029c575b505050811b016003556100dd565b01515f1960f88460031b161c191690555f808061028e565b9192602060018192868b015181550194019201610279565b60035f527fc2575a0e9e593c00f959f8c92f12db2869c3395a3b0502d05e2516446f71f85b601f830160051c81019160208410610325575b601f0160051c01905b81811061031a57506100af565b5f815560010161030d565b9091508190610304565b90607f169061009d565b5f80fd5b6040519190601f01601f191682016001600160401b0381118382101761024a57604052565b6001600160a01b0381165f9081525f80516020610f93833981519152602052604090205460ff16610408576001600160a01b03165f8181525f80516020610f9383398151915260205260408120805460ff191660011790553391907f9f2df0fed2c77648de5860a4cc508cd0818c85b8b8a1ab4ceeef8d981c8956a6907f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d9080a4600190565b505f9056fe6080806040526004361015610012575f80fd5b5f3560e01c90816301ffc9a71461078b5750806306fdde03146106b9578063095ea7b31461061157806318160ddd146105f457806323b872dd146105bc578063248a9ca3146105895780632f2ff15d1461054b578063313ce5671461053057806336568abe146104ec57806340c10f19146103fe57806342966c68146103e157806370a08231146103aa57806379cc67901461037a57806391d148541461033157806395d89b4114610216578063a217fddf146101fc578063a9059cbb146101cb578063d539139314610191578063d547741f1461014c5763dd62ed3e146100f8575f80fd5b3461014857604036600319011261014857610111610808565b61011961081e565b6001600160a01b039182165f908152600160209081526040808320949093168252928352819020549051908152f35b5f80fd5b346101485760403660031901126101485761018f60043561016b61081e565b9061018a610185825f526005602052600160405f20015490565b610981565b610a47565b005b34610148575f3660031901126101485760206040517f9f2df0fed2c77648de5860a4cc508cd0818c85b8b8a1ab4ceeef8d981c8956a68152f35b34610148576040366003190112610148576101f16101e7610808565b60243590336108d7565b602060405160018152f35b34610148575f3660031901126101485760206040515f8152f35b34610148575f366003190112610148576040515f6004548060011c90600181168015610327575b602083108114610313578285529081156102f757506001146102a2575b50819003601f01601f191681019067ffffffffffffffff82118183101761028e5761028a829182604052826107de565b0390f35b634e487b7160e01b5f52604160045260245ffd5b905060045f527f8a35acfbc15ff81a39ae7d344fd709f28e8600b4aa8c65c6b64bfe7fe36bd19b5f905b8282106102e15750602091508201018261025a565b60018160209254838588010152019101906102cc565b90506020925060ff191682840152151560051b8201018261025a565b634e487b7160e01b5f52602260045260245ffd5b91607f169161023d565b346101485760403660031901126101485761034a61081e565b6004355f52600560205260405f209060018060a01b03165f52602052602060ff60405f2054166040519015158152f35b346101485760403660031901126101485761018f610396610808565b602435906103a5823383610834565b610acb565b34610148576020366003190112610148576001600160a01b036103cb610808565b165f525f602052602060405f2054604051908152f35b346101485760203660031901126101485761018f60043533610acb565b3461014857604036600319011261014857610417610808565b335f9081527f15a28d26fa1bf736cf7edc9922607171ccb09c3c73b808e7772a3013e068a5226020526040902054602435919060ff16156104d9576001600160a01b03169081156104c657600254908082018092116104b25760207fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef915f9360025584845283825260408420818154019055604051908152a3005b634e487b7160e01b5f52601160045260245ffd5b63ec442f0560e01b5f525f60045260245ffd5b632fdab94f60e11b5f523360045260245ffd5b346101485760403660031901126101485761050561081e565b336001600160a01b038216036105215761018f90600435610a47565b63334bd91960e11b5f5260045ffd5b34610148575f36600319011261014857602060405160128152f35b346101485760403660031901126101485761018f60043561056a61081e565b90610584610185825f526005602052600160405f20015490565b6109bb565b346101485760203660031901126101485760206105b46004355f526005602052600160405f20015490565b604051908152f35b34610148576060366003190112610148576101f16105d8610808565b6105e061081e565b604435916105ef833383610834565b6108d7565b34610148575f366003190112610148576020600254604051908152f35b346101485760403660031901126101485761062a610808565b6024359033156106a6576001600160a01b031690811561069357335f52600160205260405f20825f526020528060405f20556040519081527f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b92560203392a3602060405160018152f35b634a1406b160e11b5f525f60045260245ffd5b63e602df0560e01b5f525f60045260245ffd5b34610148575f366003190112610148576040515f6003548060011c90600181168015610781575b602083108114610313578285529081156102f7575060011461072c5750819003601f01601f191681019067ffffffffffffffff82118183101761028e5761028a829182604052826107de565b905060035f527fc2575a0e9e593c00f959f8c92f12db2869c3395a3b0502d05e2516446f71f85b5f905b82821061076b5750602091508201018261025a565b6001816020925483858801015201910190610756565b91607f16916106e0565b34610148576020366003190112610148576004359063ffffffff60e01b821680920361014857602091637965db0b60e01b81149081156107cd575b5015158152f35b6301ffc9a760e01b149050836107c6565b602060409281835280519182918282860152018484015e5f828201840152601f01601f1916010190565b600435906001600160a01b038216820361014857565b602435906001600160a01b038216820361014857565b6001600160a01b039081165f818152600160209081526040808320948616835293905291909120549291905f19841061086e575b50505050565b8284106108b45780156106a6576001600160a01b03821615610693575f52600160205260405f209060018060a01b03165f5260205260405f20910390555f808080610868565b508290637dc7a0d960e11b5f5260018060a01b031660045260245260445260645ffd5b6001600160a01b031690811561096e576001600160a01b03169182156104c657815f525f60205260405f205481811061095557817fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef92602092855f525f84520360405f2055845f525f825260405f20818154019055604051908152a3565b8263391434e360e21b5f5260045260245260445260645ffd5b634b637e8f60e11b5f525f60045260245ffd5b5f81815260056020908152604080832033845290915290205460ff16156109a55750565b63e2517d3f60e01b5f523360045260245260445ffd5b5f8181526005602090815260408083206001600160a01b038616845290915290205460ff16610a41575f8181526005602090815260408083206001600160a01b0395909516808452949091528120805460ff19166001179055339291907f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d9080a4600190565b50505f90565b5f8181526005602090815260408083206001600160a01b038616845290915290205460ff1615610a41575f8181526005602090815260408083206001600160a01b0395909516808452949091528120805460ff19169055339291907ff6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b9080a4600190565b9091906001600160a01b0316801561096e57805f525f60205260405f2054838110610b35576020845f94957fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef938587528684520360408620558060025403600255604051908152a3565b915063391434e360e21b5f5260045260245260445260645ffdfea2646970667358221220ff6f8f50e1c34488ae05ee6413b58f535ec3afa3f1f45122a0eb354ea6ca708164736f6c634300081a003315a28d26fa1bf736cf7edc9922607171ccb09c3c73b808e7772a3013e068a522a2646970667358221220db0034e7e02c1d7351cdc6f5d753b02b9fafdb860a44a129582f0c0e323d122964736f6c634300081a0033\",\"sourceMap\":\"1864:36369:251:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;26084:17;1864:36369;26084:17;;;1864:36369;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;1864:36369:251;;;;;;;;;;;;;;;;;:::i;:::-;;20673:17;;1864:36369;20657:71;;-1:-1:-1;;;;;1864:36369:251;20665:40;;20657:71;:::i;:::-;21296:57;1864:36369;20807:19;;20989:60;20673:17;20807:19;;357:173:176;20865:11:251;;881:4:262;775:45;20865:31:251;:11;:31;;;:::i;:::-;-1:-1:-1;;;;;;;;1864:36369:251;;775:45:262;:::i;:::-;1864:36369:251;890:3:262;1864:36369:251;21011:19;;20989:60;:::i;:::-;21126:18;881:4:262;775:45;21175:30:251;21126:18;;;;20673:17;21126:18;;357:173:176;21175:30:251;;:::i;775:45:262:-;1864:36369:251;890:3:262;1864:36369:251;21317:18;;21296:57;:::i;:::-;1864:36369;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;1864:36369:251;;;;;;:::i;:::-;1500:62:23;;:::i;:::-;-1:-1:-1;;;;;1864:36369:251;2627:22:23;;2623:91;;1864:36369:251;;-1:-1:-1;;;;;;1864:36369:251;;;;;;-1:-1:-1;;;;;1864:36369:251;3052:40:23;1864:36369:251;;3052:40:23;1864:36369:251;;2623:91:23;-1:-1:-1;;;2672:31:23;;1864:36369:251;;;;;2672:31:23;;1864:36369:251;;;;;;;-1:-1:-1;;1864:36369:251;;;;;;:::i;:::-;;;;:::i;:::-;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;7117:10;;;;;;;;;;;;;1864:36369;;;;;;;;:::i;:::-;;;;;7158:349;;7222:15;;1864:36369;;;7158:349;;1864:36369;;;;;7158:349;;1864:36369;;;;;7158:349;;1864:36369;;;;;;;;;;;;7158:349;;1864:36369;;;;;;7370:4;1864:36369;;;7158:349;;;1864:36369;;;;;;;;;;7158:349;;1864:36369;;;;7158:349;;;1864:36369;;;;;;;7138:7;1864:36369;;;;;;;;;;;;;;;7138:7;1864:36369;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;:::i;:::-;;;;:::i;:::-;;;-1:-1:-1;;;;1864:36369:251;;;;;;-1:-1:-1;;;1864:36369:251;;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;7523:56;;1864:36369;;;;;;;;;;;;;;;;;;;;;;;;;;7222:15;;;;1864:36369;;;;;;;;;;;;;;;;:::i;:::-;7523:56;;;1864:36369;;;;;;;;;;-1:-1:-1;1864:36369:251;;;;;;;;;;;;;;;;;;;;;;;;;;7523:56;1864:36369;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;1864:36369:251;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;1864:36369:251;;;;;-1:-1:-1;;;1864:36369:251;;;;;;;;7117:10;;;;1864:36369;7117:10;;1864:36369;7117:10;;;;;;1864:36369;7117:10;;;:::i;:::-;;;1864:36369;;;;;7117:10;;;;1864:36369;-1:-1:-1;1864:36369:251;;7117:10;;;-1:-1:-1;7117:10:251;;;1864:36369;;;;;;;;;;;;;;;;;;;;;;;;;;;;2253:29;1864:36369;;;;;;;;;;;;;;;;;;;;;;;;;1996:41;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;;;:::i;:::-;;;;;4211:52;1864:36369;;;;;;;;4211:52;;;;;1864:36369;4211:52;;;;:::i;:::-;1864:36369;;;;;;;;;;;;;;;;;;;-1:-1:-1;;1864:36369:251;;;;;;;;;;;3844:48;1864:36369;;;;;;3844:48;;1864:36369;;;;;;;;;;;;;;;;;;-1:-1:-1;;1864:36369:251;;;;;;;;;:::i;:::-;;;;;32045:7;1864:36369;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;32045:7;1864:36369;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;:::i;:::-;;;;;32072:43;1864:36369;;32080:14;;32072:43;:::i;:::-;1864:36369;;32188:15;1864:36369;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;:::i;:::-;;;;-1:-1:-1;;1864:36369:251;;;:::i;:::-;;;;;;;;;32380:13;;;32677:11;32375:1278;32395:17;;;;;;1864:36369;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;32414:3;32454:14;;1864:36369;32454:14;;;:::i;:::-;1864:36369;;;;;;;;;;;:::i;:::-;32817:60;1864:36369;32615:19;;;881:4:262;775:45;32677:31:251;1864:36369;32615:19;;357:173:176;32677:31:251;;:::i;:::-;32739:45;;;1864:36369;;;;;;775:45:262;;:::i;32817:60:251:-;33119:57;1864:36369;32929:18;;;881:4:262;775:45;32982:30:251;1864:36369;32929:18;;357:173:176;32982:30:251;;:::i;:::-;33042:45;;;1864:36369;;;;;;775:45:262;;:::i;33119:57:251:-;1864:36369;;;33284:18;1864:36369;33284:18;;1864:36369;;;;;;;;33329:16;;1864:36369;;;33370:14;;;1864:36369;;;;;;33423:13;;1864:36369;;;;;;;;;33480:17;;1864:36369;;;;;;;;;33540:16;;1864:36369;;;;;;;;;:::i;:::-;;;;33209:433;;1864:36369;;33209:433;;1864:36369;;33209:433;;1864:36369;;33209:433;;1864:36369;;33209:433;;1864:36369;;33209:433;;1864:36369;;33209:433;;1864:36369;;33209:433;;1864:36369;33191:451;;;;:::i;:::-;;;;;;:::i;:::-;;1864:36369;32380:13;;1864:36369;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;1864:36369:251;;;;;;;;;;;;;;;-1:-1:-1;;1864:36369:251;;;;;;;;:::i;:::-;;;;;18936:7;1864:36369;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;18936:7;1864:36369;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;19210:13;;1864:36369;19210:13;;1864:36369;;;;;;;;;;;;;;;19210:29;;1864:36369;;;;;;;;;;;19210:29;;1864:36369;19210:29;;1864:36369;19210:29;;;;;;;;;;;1864:36369;-1:-1:-1;1864:36369:251;;19288:4;1864:36369;;;;-1:-1:-1;;;;;1864:36369:251;19353:41;;;;;1864:36369;;-1:-1:-1;;;19353:41:251;;-1:-1:-1;;;;;1864:36369:251;;;19353:41;;1864:36369;;;;;;;;;;;;;;;;;;19353:41;;;;;;;;;;;1864:36369;;;;;;;;;:::i;:::-;;;;:::i;:::-;19409:42;1864:36369;;-1:-1:-1;1864:36369:251;19490:17;1864:36369;;;;-1:-1:-1;;;19490:33:251;;1864:36369;19490:33;;1864:36369;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;19490:33;;;;;;;;;;;19405:727;-1:-1:-1;1864:36369:251;-1:-1:-1;;;;;1864:36369:251;19537:46;;;;;1864:36369;;-1:-1:-1;;;19537:46:251;;-1:-1:-1;;;;;1864:36369:251;;;19537:46;;1864:36369;;;;;;;;;;;;;;;;;;19537:46;;;;;;;;19405:727;1864:36369;;;19691:37;1864:36369;;19288:4;20187:35;1864:36369;;19691:37;;:::i;:::-;19405:727;;1864:36369;;-1:-1:-1;;;20187:35:251;;-1:-1:-1;;;;;1864:36369:251;;;;20187:35;;1864:36369;;;;;;;;;;;;;;;;;;20187:35;;1864:36369;;20187:4;-1:-1:-1;;;;;1864:36369:251;20187:35;;;;;;;;1864:36369;;;20187:35;;;1864:36369;20187:35;1864:36369;20187:35;;;;;;;;:::i;:::-;;;;;:::i;:::-;;1864:36369;;20187:35;;;;;;1864:36369;;;;;;;;;19537:46;;;;;;;;:::i;:::-;1864:36369;;19537:46;;;;;1864:36369;;;;19537:46;1864:36369;;;19490:33;;;;;1864:36369;19490:33;;1864:36369;19490:33;;;;;;1864:36369;19490:33;;;:::i;:::-;;;1864:36369;;;;;;;19490:33;;;;;;;-1:-1:-1;19490:33:251;;19405:727;1864:36369;;;;;;;;:::i;:::-;;;;:::i;:::-;19749:41;1864:36369;;;19829:16;1864:36369;;;;-1:-1:-1;;;19829:32:251;;1864:36369;19829:32;;1864:36369;;;;19829:16;;;1864:36369;;;;;;;;-1:-1:-1;;;;;1864:36369:251;19829:32;;;;;;;;;;;19745:387;-1:-1:-1;1864:36369:251;-1:-1:-1;;;;;1864:36369:251;19875:45;;;;;1864:36369;;-1:-1:-1;;;19875:45:251;;-1:-1:-1;;;;;1864:36369:251;;;19875:45;;1864:36369;;;;;;;;;;;;;;;;;;19875:45;;;;;;;;19745:387;1864:36369;;;20028:37;1864:36369;;19288:4;20187:35;1864:36369;;20028:37;;:::i;:::-;19745:387;19405:727;;19875:45;;;;;;;;:::i;:::-;1864:36369;;19875:45;;;;;19829:32;;;;;1864:36369;19829:32;;1864:36369;19829:32;;;;;;1864:36369;19829:32;;;:::i;:::-;;;1864:36369;;;;;;;19829:32;;;;;;;-1:-1:-1;19829:32:251;;19745:387;-1:-1:-1;;;20103:18:251;;1864:36369;20103:18;;19353:41;;;;;:::i;:::-;1864:36369;;19353:41;;;;;1864:36369;;;;;;;;;19353:41;1864:36369;;;19210:29;;;;1864:36369;19210:29;;1864:36369;19210:29;;;;;;1864:36369;19210:29;;;:::i;:::-;;;1864:36369;;;;;;;19210:29;;;;;;-1:-1:-1;19210:29:251;;1864:36369;;;;;;;-1:-1:-1;;1864:36369:251;;;;;;;;;:::i;:::-;;;;;;;;;;;;;:::i;:::-;26084:17;1864:36369;26084:17;;;26068:71;1864:36369;;;;;;;;26076:40;;26068:71;:::i;:::-;1864:36369;;;-1:-1:-1;;;26187:33:251;;-1:-1:-1;;;;;1864:36369:251;;;;26187:33;;1864:36369;;;;;;;;;;;;;26187:33;;;;;;;;;;;1864:36369;-1:-1:-1;26242:16:251;;;1864:36369;;;-1:-1:-1;;;26242:32:251;;1864:36369;26242:32;;1864:36369;;;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;26242:32;;;;;;;;;;;1864:36369;-1:-1:-1;26298:13:251;;;1864:36369;;;-1:-1:-1;;;26298:29:251;;1864:36369;26298:29;;1864:36369;;;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;26298:29;;;;;;;;;;;1864:36369;26385:17;1864:36369;26084:17;26385;;1864:36369;;;26429:8;1864:36369;;;;;;-1:-1:-1;1864:36369:251;;;;-1:-1:-1;1864:36369:251;;;;;26488:21;1864:36369;;;;;26488:39;-1:-1:-1;1864:36369:251;;;;-1:-1:-1;1864:36369:251;;26556:31;;;:69;:31;;;26590;;;;;:::i;:::-;26556:69;;1864:36369;;;;;;;;;;;;;;;;;26298:13;1864:36369;;;;26556:69;;;;;26298:29;;;;1864:36369;26298:29;;1864:36369;26298:29;;;;;;1864:36369;26298:29;;;:::i;:::-;;;1864:36369;;;;;;26298:29;;1864:36369;26298:29;;;;;-1:-1:-1;26298:29:251;;26242:32;;;;;1864:36369;26242:32;;1864:36369;26242:32;;;;;;1864:36369;26242:32;;;:::i;:::-;;;1864:36369;;;;;;;;26242:32;;;;;-1:-1:-1;26242:32:251;;26187:33;;;1864:36369;26187:33;;1864:36369;26187:33;;;;;;1864:36369;26187:33;;;:::i;:::-;;;1864:36369;;;;;;;26187:33;;;;;;-1:-1:-1;26187:33:251;;;1864:36369;;;;;;;;;;;;;;;;;;-1:-1:-1;;1864:36369:251;;;;;;;;;;;;;1500:62:23;;:::i;:::-;5034:17:251;1864:36369;;-1:-1:-1;;;;1864:36369:251;;;;;;-1:-1:-1;;;1864:36369:251;;;;;;;;;;;;;;;;-1:-1:-1;;1864:36369:251;;;;;;;;;;;;;;;;:::i;:::-;24262:17;;;1864:36369;;24246:71;;-1:-1:-1;;;;;1864:36369:251;24254:40;;24246:71;:::i;:::-;1864:36369;24339:17;;1864:36369;24378:18;1864:36369;24378:18;;1864:36369;;;;;;;24416:16;;;1864:36369;;24450:14;;;;;1864:36369;;;;;24496:13;;;1864:36369;;;;;;;;;;;;;;;;;24599:16;;;1864:36369;;24687:19;25147:57;1864:36369;24687:19;;24869:60;24262:17;24687:19;;357:173:176;24745:11:251;;881:4:262;775:45;24745:31:251;:11;:31;;;:::i;24869:60::-;24977:18;881:4:262;775:45;25026:30:251;24977:18;;;;24262:17;24977:18;;357:173:176;25026:30:251;;:::i;25147:57::-;1864:36369;;;;;;;;;;;;;;;;24450:14;24416:16;1864:36369;;;24450:14;1864:36369;;;;:::i;:::-;;24496:13;1864:36369;;;24262:17;1864:36369;;;24599:16;1864:36369;;;;;;;24977:18;1864:36369;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;-1:-1:-1;;1864:36369:251;;;;;;:::i;:::-;;;;;;;;;;5190:7;1864:36369;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;5190:7;1864:36369;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;:::i;:::-;;;;;;;;;;:::i;:::-;;;;:::i;:::-;5234:42;:87;;;;;1864:36369;5234:144;;;;1864:36369;5217:218;;;1864:36369;;-1:-1:-1;;;5476:51:251;;-1:-1:-1;;;;;1864:36369:251;;;5476:51;;1864:36369;5513:4;1864:36369;;;;;;;;;;;;;;;;5476:51;1864:36369;;5476:4;-1:-1:-1;;;;;1864:36369:251;5476:51;;;;;;;;1864:36369;;;;;;;;;;5537:29;1864:36369;;;;;;-1:-1:-1;1864:36369:251;;;5537:39;1864:36369;-1:-1:-1;1864:36369:251;;;;5537:39;:::i;:::-;1864:36369;;;;5476:51;;;1864:36369;5476:51;1864:36369;5476:51;;;;;;;:::i;:::-;;;;1864:36369;;;;;;;;;5217:218;-1:-1:-1;;;5410:14:251;;1864:36369;5410:14;;5234:144;5190:7;1864:36369;;;;;;:::i;:::-;;;;:::i;:::-;5341:37;5234:144;;;:87;1864:36369;;;;;;;;:::i;:::-;;;;:::i;:::-;5280:41;5234:87;;;1864:36369;;;;;;;-1:-1:-1;;1864:36369:251;;;;;;;;;;3791:47;1864:36369;;;;;;;3791:47;;1864:36369;3791:47;;;;1864:36369;3791:47;;;;1864:36369;;;;;;;3791:47;;1864:36369;;;;;;;3791:47;;;1864:36369;;3791:47;;;;1864:36369;;3791:47;;1864:36369;;;;;3791:47;;;:::i;:::-;1864:36369;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;;;;-1:-1:-1;;1864:36369:251;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;:::i;:::-;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;:::i;:::-;;;;;:::i;:::-;;;;;;;;;-1:-1:-1;;1864:36369:251;;;;;;;-1:-1:-1;1864:36369:251;;;;;;;;;;;4350:1;4299:59;;;:::i;:::-;4350:1;:::i;1864:36369::-;;;;;;;-1:-1:-1;;1864:36369:251;;;;;;;;:::i;:::-;;;;;;;;;;;;;:::i;:::-;29190:17;;;1864:36369;;29190:17;;1864:36369;29174:71;;-1:-1:-1;;;;;1864:36369:251;29182:40;;29174:71;:::i;:::-;1864:36369;29275:17;;;1864:36369;;;29382:8;1864:36369;;;;;;-1:-1:-1;;;;;1864:36369:251;;-1:-1:-1;1864:36369:251;;;;;;;;;;;;;29499:21;1864:36369;;;;;;;;;;;;;;29572:37;;;;;;29612;;;;:::i;:::-;29572:81;;29695:4;1864:36369;;;;;;29695:4;1864:36369;;;;;;;29806:13;;;1864:36369;;;-1:-1:-1;;;29806:29:251;;-1:-1:-1;;;;;1864:36369:251;;;;29806:29;;1864:36369;;;;;;;;;;;;;;;;29806:29;;;;;;;;;;;29572:81;-1:-1:-1;1864:36369:251;;;-1:-1:-1;;;29913:33:251;;1864:36369;29913:33;;1864:36369;;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;29913:33;;;;;;;;;;;29572:81;-1:-1:-1;29968:16:251;;;1864:36369;;;-1:-1:-1;;;29968:32:251;;1864:36369;29968:32;;1864:36369;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;29968:32;;;;;;;;;;29572:81;1864:36369;30095:19;;30555:57;30095:19;;;30277:60;29190:17;30095:19;;357:173:176;30153:11:251;;881:4:262;775:45;30153:31:251;:11;:31;;;:::i;30277:60::-;30385:18;881:4:262;775:45;30434:30:251;30385:18;;;;29190:17;30385:18;;357:173:176;30434:30:251;;:::i;30555:57::-;1864:36369;;;;;;;;;;;;;;;;;;29806:13;1864:36369;;;29190:17;1864:36369;;;29968:16;1864:36369;;;;29968:32;;;1864:36369;29968:32;;1864:36369;29968:32;;;;;;1864:36369;29968:32;;;:::i;:::-;;;1864:36369;;;;;;;29968:32;;;;;;-1:-1:-1;29968:32:251;;;1864:36369;;;;;;;;;;29913:33;;;;1864:36369;29913:33;;1864:36369;29913:33;;;;;;1864:36369;29913:33;;;:::i;:::-;;;1864:36369;;;;;29913:33;;;;;;;-1:-1:-1;29913:33:251;;29806:29;;;1864:36369;29806:29;;1864:36369;29806:29;;;;;;1864:36369;29806:29;;;:::i;:::-;;;1864:36369;;;;;;;;29806:29;;;;;-1:-1:-1;29806:29:251;;1864:36369;-1:-1:-1;;;1864:36369:251;;;;;;;;29572:81;;;;;;1864:36369;;;;;;;-1:-1:-1;;1864:36369:251;;;;;;;;;:::i;:::-;;;;:::i;:::-;;;;;34598:7;1864:36369;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;34598:7;1864:36369;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;:::i;:::-;;;;;34625:43;1864:36369;;34633:14;;34625:43;:::i;:::-;1864:36369;;;;;;;;;;;;;;;;-1:-1:-1;1864:36369:251;;;;-1:-1:-1;1864:36369:251;;;;;34854:15;1864:36369;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;:::i;:::-;;;;;;;;:::i;:::-;;;;-1:-1:-1;;1864:36369:251;;;:::i;:::-;;;;;;;;;35076:13;;;35091:17;;;;;;1864:36369;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;35110:3;35150:14;;;;:::i;:::-;1864:36369;;;;;;;;;;;;;:::i;:::-;35311:19;35513:60;1864:36369;35311:19;;;881:4:262;775:45;35373:31:251;1864:36369;35311:19;;357:173:176;35373:11:251;:31;:::i;35513:60::-;35815:57;1864:36369;35625:18;;;881:4:262;775:45;35678:30:251;1864:36369;35625:18;;357:173:176;35373:11:251;35678:30;:::i;35815:57::-;1864:36369;35941:17;;1864:36369;;;-1:-1:-1;;;35941:33:251;;-1:-1:-1;;;;;1864:36369:251;;;;35941:33;;1864:36369;;;;;;;;;;35941:33;;;;;;;;;;;35110:3;1864:36369;36008:16;;1864:36369;;;-1:-1:-1;;;36008:32:251;;-1:-1:-1;;;;;1864:36369:251;;;;36008:32;;1864:36369;;;-1:-1:-1;1864:36369:251;;;;;;;;;36008:32;;;;;;;;;;;35110:3;1864:36369;36076:13;;1864:36369;;;-1:-1:-1;;;36076:29:251;;-1:-1:-1;;;;;1864:36369:251;;;;36076:29;;1864:36369;;;-1:-1:-1;1864:36369:251;;;;;;;;;36076:29;;;;;;;;;;;35110:3;-1:-1:-1;1864:36369:251;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;-1:-1:-1;1864:36369:251;;;;;;;;36296:41;;;;;;36340;;;;:::i;:::-;36296:89;;36439:4;1864:36369;;;;;;36439:4;1864:36369;;;;;;;;;;36589:18;;;1864:36369;;36634:16;;1864:36369;;36675:14;;;1864:36369;36076:13;;1864:36369;;35941:17;;1864:36369;;36008:16;;;1864:36369;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;36502:611;;1864:36369;;36502:611;;1864:36369;;36502:611;;1864:36369;;36502:611;;1864:36369;;36502:611;;1864:36369;;36502:611;;1864:36369;;36502:611;;1864:36369;;36502:611;;1864:36369;;36502:611;;1864:36369;;36502:611;;1864:36369;;36502:611;;1864:36369;;36502:611;;1864:36369;36484:629;;;;:::i;:::-;;;;;;:::i;:::-;;1864:36369;35076:13;;1864:36369;-1:-1:-1;;;1864:36369:251;;;;;;;;36296:89;;;;;;36076:29;;;;1864:36369;36076:29;;;;;;;;;1864:36369;36076:29;;;:::i;:::-;;;1864:36369;;;;;36076:29;;;;;;;-1:-1:-1;36076:29:251;;;1864:36369;;;;;;;;;36008:32;;;1864:36369;36008:32;;;;;;;;;1864:36369;36008:32;;;:::i;:::-;;;1864:36369;;;;;;;36008:32;;;;;;-1:-1:-1;36008:32:251;;;1864:36369;;;;;;;;;35941:33;;;1864:36369;35941:33;;;;;;;;;1864:36369;35941:33;;;:::i;:::-;;;1864:36369;;;;;;;35941:33;;;;;;-1:-1:-1;35941:33:251;;;1864:36369;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;1864:36369:251;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;:::i;:::-;;6745:15;;1864:36369;-1:-1:-1;;;;;1864:36369:251;6745:44;;;;;1864:36369;;-1:-1:-1;;;6745:44:251;;6770:10;1864:36369;6745:44;;1864:36369;;;;;;;;;;;;;;;;;;6745:44;;;;;;;;;;;1864:36369;-1:-1:-1;;6799:14:251;;;1864:36369;-1:-1:-1;;;;;1864:36369:251;6799:43;;;;;1864:36369;;-1:-1:-1;;;6799:43:251;;6770:10;1864:36369;6799:43;;1864:36369;;;;;;;;;;;;;;;;;;6799:43;;;;;;;;;;;1864:36369;-1:-1:-1;;6852:11:251;;1864:36369;;;-1:-1:-1;;;6852:59:251;;6885:4;1864:36369;6852:59;;1864:36369;6770:10;1864:36369;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;6852:59;;;;;;;;1864:36369;;;6799:43;;;;;:::i;:::-;1864:36369;;6799:43;;;;1864:36369;;;;6799:43;1864:36369;;;;6745:44;;;;;:::i;:::-;1864:36369;;6745:44;;;;1864:36369;;;;;;;-1:-1:-1;;1864:36369:251;;;;;;;;;;;3955:52;1864:36369;;;;;;;;;;;;;;;;-1:-1:-1;;1864:36369:251;;;;;;;;4299:59;;:::i;:::-;1864:36369;;;;;;;;:::i;:::-;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;357:173:176;1864:36369:251;;16369:14;1864:36369;;;;;;;;;;;;;;;;;:::i;:::-;16529:17;1864:36369;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;:::i;:::-;;;;:::i;:::-;16557:99;;1864:36369;;16557:99;-1:-1:-1;;;16624:21:251;;1864:36369;;16624:21;1864:36369;;;;;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;;;;-1:-1:-1;;1864:36369:251;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;:::i;:::-;;;;;18345:7;1864:36369;;18380:13;1864:36369;;;18380:13;1864:36369;;;;;;;;;;;:::i;:::-;18380:47;1864:36369;;;;;;;;;;;;;;;;;;;;;;;;;;;;18496:77;;1864:36369;18496:77;;1864:36369;;;;;;;;;;;;;;;;:::i;:::-;18496:77;;-1:-1:-1;;;;;1864:36369:251;18496:77;;;;;;;18788:32;18496:77;1864:36369;18496:77;;;1864:36369;-1:-1:-1;18623:150:251;;;1864:36369;;-1:-1:-1;;;;1864:36369:251;-1:-1:-1;;;1864:36369:251;;;18623:150;1864:36369;;;;;18788:32;1864:36369;;18623:150;1864:36369;;-1:-1:-1;;;;1864:36369:251;-1:-1:-1;;;1864:36369:251;;;18623:150;;18496:77;;;;;;;;;;;;;:::i;:::-;;;;1864:36369;;;;;;;;;;;;;;;;;;;;;;;;;;;;2137:41;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;;;;;;;;;;2043:49;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;:::i;:::-;6436:11;;;1864:36369;;;-1:-1:-1;;;6436:59:251;;6461:10;1864:36369;6436:59;;1864:36369;6481:4;1864:36369;;;;;;;;;;;;;;;;;;;6481:4;;-1:-1:-1;;;;;1864:36369:251;6436:59;;;;;;;;1864:36369;-1:-1:-1;1864:36369:251;6505:15;;1864:36369;-1:-1:-1;;;;;1864:36369:251;6505:40;;;;;1864:36369;;-1:-1:-1;;;6505:40:251;;6461:10;1864:36369;6505:40;;1864:36369;;;;;;;;;;;;;;;;;;6505:40;;;;;;;;;;;1864:36369;-1:-1:-1;;6555:14:251;;1864:36369;-1:-1:-1;;;;;1864:36369:251;6555:39;;;;;1864:36369;;-1:-1:-1;;;6555:39:251;;6461:10;1864:36369;6555:39;;1864:36369;;;;;;;;;;;;;;;;;;6555:39;;;;;;;;1864:36369;;6555:39;;;;;:::i;:::-;1864:36369;;6555:39;1864:36369;6505:40;;;;;:::i;:::-;1864:36369;;6505:40;;;;6436:59;;;1864:36369;6436:59;1864:36369;6436:59;;;;;;;:::i;:::-;;;1864:36369;;;;;;;;;;;;;1500:62:23;;:::i;:::-;1864:36369:251;;-1:-1:-1;;;;;;1864:36369:251;;;;;;-1:-1:-1;;;;;1864:36369:251;3052:40:23;1864:36369:251;;3052:40:23;1864:36369:251;;;;;;;;;-1:-1:-1;;1864:36369:251;;;;;;;;;:::i;:::-;;;;;;;;;;;;:::i;:::-;;27296:17;;1864:36369;27280:71;;-1:-1:-1;;;;;1864:36369:251;27288:40;;27280:71;:::i;:::-;27444:13;;;1864:36369;;;-1:-1:-1;;;27444:29:251;;-1:-1:-1;;;;;1864:36369:251;;;;27444:29;;1864:36369;;;;;;;;;;27444:29;;;;;;;;;;;1864:36369;-1:-1:-1;1864:36369:251;27590:17;;;1864:36369;;;27642:8;1864:36369;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;-1:-1:-1;1864:36369:251;;;;;;;;;;;;;27701:21;1864:36369;;;;;;;;;;;;;;27774:31;;;;;;27808;;;:::i;:::-;27774:69;;27963:4;1864:36369;;;;;;27963:4;1864:36369;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;1864:36369:251;;;;;;;;27774:69;;;;;;;27444:29;;;;1864:36369;27444:29;;1864:36369;27444:29;;;;;;1864:36369;27444:29;;;:::i;:::-;;;1864:36369;;;;;;;27444:29;;;;;-1:-1:-1;27444:29:251;;1864:36369;;;;;;;-1:-1:-1;;1864:36369:251;;;;;;;;:::i;:::-;;;;;;;-1:-1:-1;;1864:36369:251;;;;;;;:::i;:::-;;;;;;4082:76;1864:36369;;;4082:76;1864:36369;;;;;;-1:-1:-1;1864:36369:251;;;;;-1:-1:-1;1864:36369:251;;;;;;;;;;;;;;;-1:-1:-1;;1864:36369:251;;;;;;;:::i;:::-;;;;;;4013:63;1864:36369;;;4013:63;1864:36369;;;;;;-1:-1:-1;1864:36369:251;;;;;-1:-1:-1;1864:36369:251;;;;;;;;;;;;;;;-1:-1:-1;;1864:36369:251;;;;;;;;:::i;:::-;;;;;;;;;;;;;:::i;:::-;;22041:17;;1864:36369;22025:71;;-1:-1:-1;;;;;1864:36369:251;22033:40;;22025:71;:::i;:::-;22126:17;1864:36369;;;22170:8;1864:36369;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;-1:-1:-1;1864:36369:251;;;;;;;;;;;;;22221:21;1864:36369;;;;;;;;;;;;;;;22282:31;;;;;;22316;1864:36369;22316:31;;;;:::i;:::-;1864:36369;;;;;;;;;;;;;;;;;;;;;;;;22282:69;1864:36369;22282:69;;;1864:36369;;;;;;;;;;;;;;;2184:26;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;;-1:-1:-1;;1864:36369:251;;;;;;:::i;:::-;;;;;;;;;;;;;;;:::i;:::-;;5774:23;;;1864:36369;;;;;5832:8;1864:36369;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;;;;5896:21;1864:36369;;;;;;;;;;;;;5970:31;;;:::i;:::-;6020:13;;;1864:36369;;;;5896:21;1864:36369;;;;;;;;;;;;;;;;;;;6065:57;1864:36369;;;6065:57;:::i;:::-;1864:36369;;6236:19;;1864:36369;-1:-1:-1;;;;;1864:36369:251;;6284:4;1864:36369;;;;;;;;;;6236:53;;;;;1864:36369;;-1:-1:-1;;;6236:53:251;;-1:-1:-1;;;;;1864:36369:251;;;;;6236:53;;1864:36369;;;;;;-1:-1:-1;;1864:36369:251;;;;;;-1:-1:-1;;6236:53:251;;;;;;;;1864:36369;;;6236:53;;;;1864:36369;6236:53;;:::i;:::-;1864:36369;6236:53;1864:36369;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;1864:36369:251;;;;;;;;;;;;-1:-1:-1;;;1864:36369:251;;;;;;;;;;;;;-1:-1:-1;;1864:36369:251;;;;;;;:::i;:::-;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;1864:36369:251;;;;;;2098:33;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;-1:-1:-1;;1864:36369:251;;;;;;;:::i;:::-;;;;;;;;;;;;;:::i;:::-;22949:17;1864:36369;22949:17;;;22933:71;1864:36369;;;;;;;;22941:40;;22933:71;:::i;:::-;1864:36369;;;-1:-1:-1;;;23028:33:251;;-1:-1:-1;;;;;1864:36369:251;;;;23028:33;;1864:36369;;;;;;;;;;;;23028:33;;;;;;;1864:36369;23028:33;;;1864:36369;23083:16;;;1864:36369;;;-1:-1:-1;;;23083:32:251;;1864:36369;23083:32;;1864:36369;;;;-1:-1:-1;1864:36369:251;;;;;;;;-1:-1:-1;;;;;1864:36369:251;23083:32;;;;;;;1864:36369;23083:32;;;1864:36369;-1:-1:-1;23139:13:251;;1864:36369;;;-1:-1:-1;;;23139:29:251;;1864:36369;23139:29;;1864:36369;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;23139:29;;;;;;1864:36369;23139:29;;;1864:36369;;;;;;;;;;;;;;;;;;;;;;;;;;;;23139:29;;1864:36369;23139:29;;1864:36369;23139:29;;;;;;1864:36369;23139:29;;;:::i;:::-;;;1864:36369;;;;;;;23139:29;;;;;-1:-1:-1;23139:29:251;;23083:32;;;;1864:36369;23083:32;;1864:36369;23083:32;;;;;;1864:36369;23083:32;;;:::i;:::-;;;1864:36369;;;;;;;23083:32;;;;;-1:-1:-1;23083:32:251;;23028:33;;;1864:36369;23028:33;;1864:36369;23028:33;;;;;;1864:36369;23028:33;;;:::i;:::-;;;1864:36369;;;;;;;23028:33;;;;;;-1:-1:-1;23028:33:251;;1864:36369;;;;;;-1:-1:-1;;1864:36369:251;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;7674:49;1864:36369;;;;;;:::i;:::-;;;;;;;;:::i;:::-;;;;;;7674:49;:::i;1864:36369::-;;;;;;-1:-1:-1;;1864:36369:251;;;;;;;;;;;;;;;;;;3898:51;;1864:36369;3898:51;1864:36369;3898:51;;;1864:36369;;;;;;;;3898:51;;;1864:36369;;;;;;;;3898:51;;1864:36369;;;;;;;3898:51;;;1864:36369;;;;;;;3898:51;;;1864:36369;;3898:51;;;;;;:::i;:::-;;;;;;;;;:::i;:::-;;;;:::i;:::-;1864:36369;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;:::i;:::-;;;;;;;;;;;:::i;:::-;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;:::o;:::-;;;;-1:-1:-1;1864:36369:251;;;;;-1:-1:-1;1864:36369:251;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;:::o;:::-;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;:::o;:::-;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;:::o;:::-;;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;:::o;:::-;;;;;;;:::i;:::-;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;1864:36369:251;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;:::o;:::-;;;-1:-1:-1;1864:36369:251;;;;;-1:-1:-1;1864:36369:251;;-1:-1:-1;1864:36369:251;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;-1:-1:-1;1864:36369:251;;;;;;;;-1:-1:-1;;1864:36369:251;;;;:::o;:::-;-1:-1:-1;;;;;1864:36369:251;;;;;;-1:-1:-1;;1864:36369:251;;;;:::o;:::-;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;:::i;:::-;;;;;;;;;;;-1:-1:-1;1864:36369:251;;;;;;;;;;;;:::o;:::-;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;:::o;:::-;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;:::o;:::-;;;-1:-1:-1;;;;;1864:36369:251;;;;;;:::o;:::-;;;;;;;;;;;;;;-1:-1:-1;1864:36369:251;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;-1:-1:-1;1864:36369:251;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;:::i;:::-;;:::o;:::-;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;-1:-1:-1;1864:36369:251;;-1:-1:-1;1864:36369:251;;;-1:-1:-1;1864:36369:251;:::o;:::-;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;:::i;:::-;;;;;;;:::i;:::-;;;;:::o;:::-;;;;:::o;:::-;;;-1:-1:-1;;;1864:36369:251;;;;;;;;;;;;-1:-1:-1;;;1864:36369:251;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;:::o;:::-;;;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;;;;:::i;:::-;;;;;;;;:::o;:::-;;;;;;;:::i;:::-;;;;-1:-1:-1;1864:36369:251;;-1:-1:-1;1864:36369:251;;;;-1:-1:-1;1864:36369:251;;;;-1:-1:-1;1864:36369:251;;;;-1:-1:-1;1864:36369:251;;;;-1:-1:-1;1864:36369:251;;;;-1:-1:-1;1864:36369:251;;;;-1:-1:-1;1864:36369:251;;;;;;:::o;:::-;-1:-1:-1;;1864:36369:251;;;;;;;:::o;:::-;;;;;;;;;:::o;:::-;;;13288:8;1864:36369;;;;;;;:::o;:::-;;;;;;;;;;;;;;;:::o;37402:829::-;1864:36369;;;;-1:-1:-1;;;37547:7:251;;1864:36369;37402:829;37547:7;;1864:36369;;37547:7;;1864:36369;;-1:-1:-1;;;;;1864:36369:251;37547:7;;;;;;;-1:-1:-1;37547:7:251;;;37402:829;37568:14;;;37564:93;;-1:-1:-1;37730:13:251;37547:2;37745:14;;;;;;;37903:20;;;;:::i;:::-;37947:25;1864:36369;;;:::i;:::-;;;;;;;;:::i;:::-;;;;;;;;;:::i;:::-;;-1:-1:-1;1864:36369:251;;;;;;37933:39;;;-1:-1:-1;37547:2:251;38029:14;;;;;;;37402:829;;;;:::o;38045:3::-;1864:36369;-1:-1:-1;1864:36369:251;37784:7;37547;1864:36369;;-1:-1:-1;1864:36369:251;;38064:151;;38045:3;;;;:::i;:::-;38014:13;;38064:151;38106:20;38193:7;38106:20;;;38045:3;38106:20;;;:::i;:::-;1864:36369;;-1:-1:-1;1864:36369:251;37784:7;37547;1864:36369;;-1:-1:-1;1864:36369:251;;;;;;;;;:::i;:::-;;;;;37547:2;1864:36369;;;37547:7;1864:36369;;;37784:7;1864:36369;;;;;;;;;;;;;;;37547:7;1864:36369;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;:::i;:::-;;;;;38144:31;;;;:::i;:::-;;;;;;:::i;:::-;;38193:7;:::i;:::-;38064:151;;;;;1864:36369;37547:7;1864:36369;;;:::i;:::-;;;;;;;;;;37761:3;1864:36369;-1:-1:-1;1864:36369:251;37784:7;37547;1864:36369;;-1:-1:-1;1864:36369:251;;37780:64;;37761:3;;;;:::i;:::-;37730:13;;37780:64;37822:7;;37761:3;37822:7;;:::i;:::-;37780:64;;;;;37564:93;1864:36369;;37547:7;;-1:-1:-1;1864:36369:251;37547:7;1864:36369;;:::i;:::-;-1:-1:-1;1864:36369:251;;-1:-1:-1;1864:36369:251;;;;;;;;;;:::i;:::-;-1:-1:-1;1864:36369:251;;-1:-1:-1;;1864:36369:251;;-1:-1:-1;1864:36369:251;;;;;;37598:48;;;;;:::o;1864:36369::-;;;;;:::i;:::-;;;;;;;;;;37547:7;;;;;;;;;;;;;;1864:36369;37547:7;;;:::i;:::-;;;1864:36369;;;;;37547:7;;;;;;;-1:-1:-1;37547:7:251;;1864:36369;;;;;;;;;;:::o;:::-;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;:::o;17815:400::-;1864:36369;-1:-1:-1;1864:36369:251;17910:7;1864:36369;;;-1:-1:-1;1864:36369:251;17945:21;;;1864:36369;17969:15;-1:-1:-1;1864:36369:251;;;-1:-1:-1;1864:36369:251;;;17945:21;1864:36369;;;;;;;;18094:19;;;;1864:36369;;-1:-1:-1;;;;1864:36369:251;-1:-1:-1;;;1864:36369:251;;;18116:30;18186:22;;;;1864:36369;;;;;;;;17815:400::o;1864:36369::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;:::i;:::-;;;;;;:::i;:::-;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;:::o;:::-;;;;:::o;:::-;;;-1:-1:-1;;;1864:36369:251;;;;;;;;;;;;-1:-1:-1;;;1864:36369:251;;;;;;;16668:1141;357:173:176;1864:36369:251;;;;:::i;:::-;357:173:176;1864:36369:251;;-1:-1:-1;1864:36369:251;16835:14;1864:36369;;;-1:-1:-1;1864:36369:251;;;;-1:-1:-1;1864:36369:251;;;;;-1:-1:-1;1864:36369:251;17030:19;357:173:176;1864:36369:251;17030:19;;;1864:36369;:::i;:::-;357:173:176;16972:79:251;16968:92;;17167:45;617:4:262;525:31;17393:17:251;1864:36369;457:33:262;1864:36369:251;;;;;457:33:262;;:::i;:::-;1864:36369:251;525:31:262;;:::i;:::-;1864:36369:251;626:3:262;1864:36369:251;;;;;:::i;:::-;;;;:::i;:::-;17167:45;;:::i;:::-;17393:17;;1864:36369;;;-1:-1:-1;1864:36369:251;17383:9;1864:36369;;;-1:-1:-1;1864:36369:251;;;17425:27;;17421:130;;16668:1141;1864:36369;;;;;-1:-1:-1;1864:36369:251;17694:7;1864:36369;;17383:9;1864:36369;-1:-1:-1;1864:36369:251;17752:15;1864:36369;17734:15;:33;17730:72;;16668:1141;:::o;17730:72::-;17784:17;;;:::i;17421:130::-;17393:17;1864:36369;;;17509:18;1864:36369;17421:130;;;;;16968:92;17053:7;;;:::o;7736:4164::-;;;-1:-1:-1;7736:4164:251;7912:17;1864:36369;;;;7912:7;1864:36369;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;7912:7;1864:36369;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;-1:-1:-1;;;7960:10:251;;1864:36369;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;7960:10;;;;;;;-1:-1:-1;7960:10:251;;;7736:4164;-1:-1:-1;;1864:36369:251;;;;;;;;;;;;8001:10;1864:36369;;;;;;;;;;;;;;;;;;;;;;;;;;;;8184:31;;;:::i;:::-;1864:36369;;8234:36;1864:36369;;;;;-1:-1:-1;1864:36369:251;;;;;-1:-1:-1;1864:36369:251;;;;;;8001:10;1864:36369;-1:-1:-1;1864:36369:251;;;8311:71;1864:36369;-1:-1:-1;1864:36369:251;;;;8311:71;:::i;:::-;1864:36369;;;;;;;;;7912:7;1864:36369;;;;;;;;8845:13;1864:36369;;;;;8845:13;;:::i;:::-;1864:36369;;;;;;;9234:23;;;;;;;;-1:-1:-1;;;;;9234:23:251;;;;;1864:36369;9234:23;;;;;;9251:4;1864:36369;;9234:23;;;-1:-1:-1;9234:23:251;;;;;-1:-1:-1;;;;;1864:36369:251;;9409:4;1864:36369;;;;;;;;;;;;;;;;9371:43;;;;;1864:36369;;-1:-1:-1;;;9371:43:251;;9251:4;1864:36369;9371:43;;1864:36369;;;;;;;;-1:-1:-1;1864:36369:251;;;-1:-1:-1;9371:43:251;;;;;;;;;7736:4164;1864:36369;;;9450:47;;;;;;;;;-1:-1:-1;;;;;9450:47:251;;;;;1864:36369;9450:47;;;;;;;1864:36369;;;9251:4;1864:36369;;;;9450:47;;;;;;;;;;1864:36369;;9531:46;;;;;;;;-1:-1:-1;;;;;9531:46:251;;;;;;;;1864:36369;9531:46;;;1864:36369;;;9251:4;1864:36369;;;;9531:46;;;;;;;;;;9409:4;1864:36369;;;;;;9409:4;1864:36369;;;;;;;-1:-1:-1;;;;;1864:36369:251;;9862:44;;;;;1864:36369;;-1:-1:-1;;;9862:44:251;;9251:4;1864:36369;9862:44;;1864:36369;;;;;;;9251:4;1864:36369;;;9251:4;9862:44;;;;;;;;;;;;7736:4164;-1:-1:-1;;;;;;;1864:36369:251;;9916:43;;;;;1864:36369;;-1:-1:-1;;;9916:43:251;;9251:4;1864:36369;9916:43;;1864:36369;;;;;;;9251:4;1864:36369;;;9251:4;9916:43;;;;;;;;;;;;7736:4164;10029:41;;;;;;;1864:36369;;-1:-1:-1;;;10029:41:251;;8001:10;1864:36369;10029:41;;1864:36369;;;;;;;8001:10;1864:36369;;;8001:10;10029:41;;;;;;;;;;;;7736:4164;10080:40;;;;;;;1864:36369;;-1:-1:-1;;;10080:40:251;;8001:10;1864:36369;10080:40;;1864:36369;;;;;;;8001:10;1864:36369;;;8001:10;10080:40;;;;;;;;;;;;7736:4164;1864:36369;;9409:4;1864:36369;;;;;;9409:4;1864:36369;;;;;;;10462:98;10609:97;10462:98;;;;;;;1864:36369;10462:98;;;:::i;:::-;1864:36369;10609:97;;;:::i;:::-;357:173:176;1864:36369:251;357:173:176;;1864:36369:251;;10717:14;1864:36369;;;;;;;;357:173:176;;1864:36369:251;;10717:14;1864:36369;;;;;;;;;;;;;:::i;:::-;;;;11082:341;;;1864:36369;11082:341;;1864:36369;;;;11082:341;;;11182:15;;1864:36369;;;11082:341;;8001:10;;1864:36369;;;11082:341;;1864:36369;;;;11082:341;;1864:36369;;;;11082:341;;1864:36369;;;;11082:341;;1864:36369;;;;11082:341;;1864:36369;;;;11082:341;;1864:36369;;;;;;;;;;;;;;;;;;;7912:7;1864:36369;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;10717:14;1864:36369;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;1864:36369:251;-1:-1:-1;;;1864:36369:251;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;;1864:36369:251;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;;1864:36369:251;;;;;;;;;;;;-1:-1:-1;;;1864:36369:251;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;:::i;:::-;;;;;;7736:4164;1864:36369;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;11570:31;;11566:143;;1864:36369;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;11827:66;1864:36369;;;11182:15;1864:36369;;8001:10;1864:36369;;;;11827:66;7736:4164::o;1864:36369::-;-1:-1:-1;;;1864:36369:251;;;;;;;;11566:143;1864:36369;;;;;;;;12478:52;;;;1864:36369;12478:52;;1864:36369;;;;;;;;;12478:52;;1864:36369;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;12389:151;;;;;1864:36369;;;;;;;;;;;;;;;;;;;;;;;;;;;12389:151;;1864:36369;12389:151;;1864:36369;;;;;;;;;;;:::i;:::-;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;-1:-1:-1;;1864:36369:251;;;;;;;;;:::i;:::-;;;;;;-1:-1:-1;;1864:36369:251;;;;;;;;;:::i;:::-;;;;;;;12389:151;;12445:6;12389:151;;;11566:143;;;;12389:151;;;;;:::i;:::-;1864:36369;;12389:151;;;;;1864:36369;;;;;;;;;;;;;;;;;;;-1:-1:-1;1864:36369:251;;;;;;;;;;;;-1:-1:-1;;;1864:36369:251;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;1864:36369:251;;;;;;;-1:-1:-1;1864:36369:251;;;;;-1:-1:-1;;;1864:36369:251;;;;;;;;;-1:-1:-1;;;1864:36369:251;;;;;;;;10080:40;;;;;:::i;:::-;1864:36369;;10080:40;;;;1864:36369;;;;10080:40;1864:36369;;;;;;;;;10029:41;;;;;:::i;:::-;1864:36369;;10029:41;;;;9916:43;;;;;:::i;:::-;1864:36369;;9916:43;;;;9862:44;;;;;:::i;:::-;1864:36369;;9862:44;;;;9531:46;1864:36369;;;;;;;;;9531:46;-1:-1:-1;;;1864:36369:251;;;;;;;;9450:47;1864:36369;;;;;;;;;9450:47;-1:-1:-1;;;1864:36369:251;;;;;;;;9371:43;;;;;-1:-1:-1;9371:43:251;;:::i;:::-;-1:-1:-1;9371:43:251;;;;1864:36369;;;-1:-1:-1;;;1864:36369:251;;;;;;;;;;;;;;;;;;;;7960:10;;;;1864:36369;7960:10;;1864:36369;7960:10;;;;;;1864:36369;7960:10;;;:::i;:::-;;;1864:36369;;;;;7960:10;;;;;;;-1:-1:-1;7960:10:251;;30757:695;1864:36369;;;;-1:-1:-1;;;30865:7:251;;1864:36369;30757:695;30865:7;;1864:36369;;30865:7;;1864:36369;;-1:-1:-1;;;;;1864:36369:251;30865:7;;;;;;;-1:-1:-1;30865:7:251;;;30757:695;30886:14;;;30882:68;;-1:-1:-1;30865:2:251;31065:14;;;;;;;31222:20;;;;:::i;:::-;31252:17;-1:-1:-1;30865:2:251;31299:14;;;;;;;30757:695;;;:::o;31315:3::-;1864:36369;-1:-1:-1;1864:36369:251;31104:7;30865;1864:36369;;-1:-1:-1;1864:36369:251;;31334:102;;31315:3;;;;:::i;:::-;31284:13;;31334:102;31376:20;31414:7;31376:20;;;31315:3;31376:20;;;:::i;:::-;1864:36369;31414:7;:::i;:::-;31334:102;;;;;31081:3;1864:36369;-1:-1:-1;1864:36369:251;31104:7;30865;1864:36369;;-1:-1:-1;1864:36369:251;;31100:64;;31081:3;;;;:::i;:::-;31050:13;;31100:64;31142:7;;31081:3;31142:7;;:::i;:::-;31100:64;;;;;30882:68;1864:36369;;;;;30865:7;1864:36369;;:::i;:::-;-1:-1:-1;1864:36369:251;;-1:-1:-1;1864:36369:251;;;30916:23;:::o;30865:7::-;;;;;;;;;;;;;;1864:36369;30865:7;;;:::i;:::-;;;1864:36369;;;;;30865:7;;;;;;;-1:-1:-1;30865:7:251;;1796:162:23;1710:6;1864:36369:251;-1:-1:-1;;;;;1864:36369:251;735:10:50;1855:23:23;1851:101;;1796:162::o;1851:101::-;1901:40;;;1710:6;1901:40;735:10:50;1901:40:23;1864:36369:251;;1710:6:23;1901:40;4364:104:251;4439:4;-1:-1:-1;;;;;1864:36369:251;4417:10;:27;1864:36369;;4364:104::o;1864:36369::-;;;-1:-1:-1;;;1864:36369:251;;;;;;;;;;;;-1:-1:-1;;;1864:36369:251;;;;;;;1580:996:156;;;14953:51;1580:996;1864:36369:251;;14953:51:156;;;1864:36369:251;;;414:1:156;1864:36369:251;398:19:156;;1864:36369:251;;14953:51:156;;;;;;:::i;:::-;1864:36369:251;14943:62:156;;1864:36369:251;;-1:-1:-1;;;1892:27:156;;;;;1864:36369:251;;;;;;;1892:27:156;;1864:36369:251;;-1:-1:-1;;;;;1864:36369:251;1892:27:156;;;;;;;-1:-1:-1;1892:27:156;;;1580:996;-1:-1:-1;;;;;;2147:423:156;;;1864:36369:251;2147:423:156;;;;;;;;;;;;;;;;;;1580:996::o;1892:27::-;;;;14953:51;1892:27;;14953:51;1892:27;;;;;;14953:51;1892:27;;;:::i;:::-;;;1864:36369:251;;;;;1892:27:156;;;;;;;-1:-1:-1;1892:27:156;;927:342:262;1864:36369:251;;1187:10:262;;;;1864:36369:251;-1:-1:-1;;;;;1864:36369:251;;;;;1145:53:262;1215:32;;927:342;:::o;1215:32::-;1864:36369:251;;;;1236:4:262;1864:36369:251;927:342:262;:::o;1864:36369:251:-;;;;-1:-1:-1;1864:36369:251;;;;;-1:-1:-1;1864:36369:251;1275:316:262;1864:36369:251;1511:9:262;;;;1864:36369:251;-1:-1:-1;;;;;1864:36369:251;;;;;1469:52:262;1538:31;;1275:316;:::o;1317:6:159:-;1864:36369:251;1317:6:159;1864:36369:251;;1317:6:159;1864:36369:251;;;;1317:6:159;;;;;:::o;1032:7::-;1864:36369:251;;;;;;;;;:::i;:::-;;;;;-1:-1:-1;;1032:7:159;1864:36369:251;-1:-1:-1;1032:7:159;;;;;;;;;:::o;:::-;;1864:36369:251;1032:7:159;;;;;;;;;;1371:4:218;;;1864:36369:251;;;;;;;;1371:4:218;1864:36369:251;1371:4:218;;;;;;;1864:36369:251;;1371:4:218;-1:-1:-1;1371:4:218;;;;;;;;;;;;;:::o;:::-;1864:36369:251;;;;;;;1371:4:218;;1864:36369:251;;;1371:4:218;;;;;;;;;:::i;:::-;1864:36369:251;;1371:4:218;;;;;;;;;;;;;;;;;:::i;:::-;1864:36369:251;;;;;;;:::i;:::-;1371:4:218;;;;;;;;;;;;;;;;-1:-1:-1;1371:4:218;;1864:36369:251;;;;1371:4:218:o;:::-;;;;;;;;;;;;;;;;;:::i;12800:3188:251:-;;;;-1:-1:-1;1864:36369:251;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;6454:15:93;;1864:36369:251;;;6454:53:93;;;1864:36369:251;;;;;-1:-1:-1;;;;;1864:36369:251;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;13169:192;;1864:36369;;;;13169:192;;1864:36369;;;;13323:2;1864:36369;13169:192;;1864:36369;13346:4;-1:-1:-1;;;;;1864:36369:251;;13169:192;;1864:36369;13608:16;;13604:434;;;;13698:39;-1:-1:-1;;13698:39:251;:::i;:::-;13751:13;-1:-1:-1;13778:17:251;13789:6;13604:434;1864:36369;;;;;;;;14116:7;;1864:36369;;;;;;;14128:4;1864:36369;;;;;14183:38;5858:3278:105;;;1864:36369:251;5858:3278:105;;;;;;;13604:434:251;5858:3278:105;;;;;;;;;13604:434:251;5858:3278:105;;;;;;13604:434:251;5858:3278:105;;;;;;13604:434:251;5858:3278:105;;;;;;;;13288:8:251;5858:3278:105;;;;;13288:8:251;5858:3278:105;;;;;13288:8:251;5858:3278:105;;;;;13288:8:251;5858:3278:105;;;;;13288:8:251;5858:3278:105;;;;;13288:8:251;5858:3278:105;;;;;13288:8:251;5858:3278:105;;;;;;;;1864:36369:251;;;;;;;;;2282:66:159;1864:36369:251;;;;;1862:10:159;;;;1864:36369:251;8182:79:159;8178:168;;1864:36369:251;;-1:-1:-1;;;;;1864:36369:251;;;742:5:138;;1864:36369:251;;759:552:138;;1864:36369:251;759:552:138;-1:-1:-1;;;;;759:552:138;;;;;;-1:-1:-1;;;;;759:552:138;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1864:36369:251;8511:10:159;1864:36369:251;8511:10:159;;;8507:83;1864:36369:251;;;-1:-1:-1;;;2282:66:159;;1864:36369:251;8507:83:159;8660:196;;;;;;1864:36369:251;8660:196:159;;8869;;;8660;8869;;1864:36369:251;8869:196:159;;9078;;;8660;9078;;1864:36369:251;9078:196:159;;9287;;;8660;9287;;1864:36369:251;9287:196:159;;9496;;;8660;9496;;1864:36369:251;9496:196:159;;9705;;;8660;9705;;1864:36369:251;9705:196:159;;9914;;;;8660;9914;;1864:36369:251;9914:196:159;;10123;;;;8660;10123;;1864:36369:251;10123:196:159;;10332;;;;8660;10332;;1864:36369:251;10332:196:159;;10541;;;;8660;10541;;1864:36369:251;10541:196:159;;10750;;;;8660;10750;;1864:36369:251;10750:196:159;;10959;;;;8660;10959;;1864:36369:251;10959:196:159;;11168;;;;;8660;11168;;1864:36369:251;11168:196:159;;11377:165;;;;;;11168:196;;;;;10959;;;;;10750;;;;;10541;;;;;10332;;;;;10123;;;;;9914;;;;;9705;;;;;9496;;;;;9287;;;;;9078;;;;;8869;;;;;8660;;;;;2282:66;;;;1864:36369:251;;8660:196:159;8869;9078;9287;9496;9705;9914;10123;10332;10541;10750;10959;11168;11377:165;11587:24;2282:66;;;;;1864:36369:251;2282:66:159;1864:36369:251;;2282:66:159;12201:39;2282:66;1864:36369:251;2282:66:159;1864:36369:251;;12271:91:159;:17;;;:91;1864:36369:251;;;12271:91:159;;;;1864:36369:251;;-1:-1:-1;14328:15:251;;-1:-1:-1;;14346:32:251;1864:36369;14492:37;14347:20;1317:6:159;14346:32:251;:::i;:::-;14492:37;:::i;:::-;14560:38;;;;:::i;:::-;14628;;;;:::i;:::-;14743;;;;;;;;;14813:16;;;14812:38;;;14893:99;;-1:-1:-1;;;;;1864:36369:251;;;;;;3106:29:226;3102:98;;14812:38:251;-1:-1:-1;;;;;;;1864:36369:251;;;;;;;;3215:29:226;;1864:36369:251;;3272:61:226;;;;;:::i;:::-;3211:554;;15174:14:251;;:::i;:::-;15226;;;:::i;:::-;1864:36369;;-1:-1:-1;;;1864:36369:251;15263:86;;;1864:36369;;1032:7:159;15263:86:251;;;1032:7:159;;:::i;:::-;9496:196;1032:7;;1864:36369:251;9496:196:159;15263:86:251;;;;;;:::i;:::-;15251:98;;;:::i;:::-;;;;;:::i;:::-;-1:-1:-1;1864:36369:251;;-1:-1:-1;;;1864:36369:251;15383:74;;1371:4:218;-1:-1:-1;;;1371:4:218;;;;1864:36369:251;15383:74;;1864:36369;15383:74;;1864:36369;15383:74;:::i;:::-;1864:36369;;;;;;;;;;;:::i;:::-;-1:-1:-1;1864:36369:251;;-1:-1:-1;;1371:4:218;;1864:36369:251;1371:4:218;;;1864:36369:251;;;15495:101;;;;;1371:4:218;;;:::i;:::-;1864:36369:251;;8660:196:159;1371:4:218;;1864:36369:251;;;1371:4:218;;;1864:36369:251;-1:-1:-1;;;;;1371:4:218;;;;;;;;1864:36369:251;1371:4:218;;;1864:36369:251;15576:4;1371::218;;;1864:36369:251;1371:4:218;;;;;;;;;;;;:::i;:::-;15495:101:251;1864:36369;;15495:101;;;;;;;;:::i;:::-;15467:129;;;:::i;:::-;;;;;:::i;:::-;-1:-1:-1;1864:36369:251;;;;;;;-1:-1:-1;;;;;1864:36369:251;;;15622:40;;;1864:36369;;;;;1371:4:218;;;1864:36369:251;15622:40;;;1864:36369;;15622:40;:::i;:::-;15606:56;;;:::i;:::-;;;;;:::i;:::-;;1864:36369;;15765:31;;;;;;1864:36369;1371:4:218;;1864:36369:251;1371:4:218;;;;;:::i;:::-;;;;-1:-1:-1;;1371:4:218;1864:36369:251;1371:4:218;;;;;;:::i;:::-;15765:31:251;1864:36369;;15765:31;;;;;;;;:::i;:::-;15798:15;13323:2;1864:36369;15798:15;;;1864:36369;;;15866:6;-1:-1:-1;1864:36369:251;1371:4:218;15685:143:251;15910:6;1864:36369;1371:4:218;1864:36369:251;;;;;;;;;15685:143;;;;1864:36369;15263:86;15685:143;;1371:4:218;;;;;;:::i;:::-;;;;;1864:36369:251;15685:143;1864:36369;;15685:143;;;;;;:::i;:::-;15673:155;;;:::i;:::-;;;;;:::i;:::-;;15866:6;:::i;:::-;15910;:::i;:::-;1864:36369;;;;;;;;;15927:33;;;759:552:138;15927:33:251;;1371:4:218;15263:86:251;1371:4:218;;;;:::i;:::-;15927:33:251;1864:36369;;15927:15;-1:-1:-1;;;;;1864:36369:251;15927:33;;;;;;;;15971:10;;12800:3188;:::o;15927:33::-;;;-1:-1:-1;15927:33:251;;;;;;:::i;:::-;;;1371:4:218;;;;;;;;;;;-1:-1:-1;;;;;1371:4:218;;;;;;;759:552:138;1371:4:218;;;;;;;;;;;;:::i;:::-;1864:36369:251;;;;;;;:::i;:::-;1371:4:218;;;;;;;;759:552:138;1371:4:218;;;;;;;;;;;;;;;;;;;;15927:33:251;;;;;;15971:10;12800:3188;:::o;1371:4:218:-;;;-1:-1:-1;;;;;1371:4:218;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;3211:554:226;1864:36369:251;;;;-1:-1:-1;;;;;1864:36369:251;;3354:28:226;;1864:36369:251;;;3419:60:226;;;;3514;3419;;;:::i;:::-;3514;;:::i;:::-;-1:-1:-1;;;;;1371:4:218;;-1:-1:-1;;;;;1371:4:218;;3601:23:226;:49;759:552:138;;;3601:49:226;;3350:415;3211:554;;3601:49;;;;;3350:415;3693:61;;;;;;:::i;3102:98::-;3137:63;;;;3102:98;;;;14812:38:251;;;;;;14743;;;;;;;14328:103;-1:-1:-1;;1032:7:159;;-1:-1:-1;;;1032:7:159;;;;;;;;14492:37:251;14381:50;1864:36369;14382:38;;1864:36369;;1317:6:159;14381:50:251;:::i;12271:91:159:-;-1:-1:-1;;;;;12301:26:159;;;:::i;:::-;1864:36369:251;12301:42:159;:61;;;12271:91;;12301:61;;;12271:91;;8507:83;2282:66;;;8580:3;2282:66;1864:36369:251;8507:83:159;;8178:168;8281:25;;;;-1:-1:-1;1748:177:141;;;;-1:-1:-1;1748:177:141;5858:3278:105;;;;;;;;;;1864:36369:251;5858:3278:105;;;;;;;;1864:36369:251;5858:3278:105;;1864:36369:251;5858:3278:105;;;;;;;-1:-1:-1;1864:36369:251;5858:3278:105;-1:-1:-1;;;;;5858:3278:105;;-1:-1:-1;5858:3278:105;;;13604:434:251;-1:-1:-1;13937:27:251;13936:39;1317:6:159;13936:39:251;:::i;:::-;13989:15;14000:4;13604:434;;6454:53:93;;;;1864:36369:251;;;-1:-1:-1;;;;;1864:36369:251;;;;;;:::o;3149:4018:159:-;3297:459;;;;;;;;;;1317:6;3774:35;;3770:78;;6424:727;4356:13;;4383:160;;;;;1864:36369:251;4383:160:159;;;4560:13;3297:459;4560:13;;4556:83;;3149:4018;4667:3;4657:13;;4653:83;;3149:4018;4764:3;4754:13;;4750:83;;3149:4018;4861:4;4851:14;;4847:84;;3149:4018;4959:4;4949:14;;4945:84;;3149:4018;5057:4;5047:14;;5043:84;;3149:4018;4383:160;5145:14;;5141:84;;3149:4018;5253:5;5243:15;;5239:85;;3149:4018;5352:5;5342:15;;5338:85;;3149:4018;5451:5;5441:15;;5437:85;;3149:4018;5550:5;5540:15;;5536:85;;3149:4018;5649:6;5639:16;;5635:86;;3149:4018;5749:6;5739:16;;5735:86;;3149:4018;5849:6;5839:16;;5835:86;;3149:4018;5949:6;5939:16;;5935:86;;3149:4018;6049:7;6039:17;;6035:86;;3149:4018;6149:7;6139:17;;6135:85;;3149:4018;6248:7;6238:17;;6234:83;;3149:4018;6345:7;6335:17;6331:78;;3149:4018;-1:-1:-1;;6424:727:159;;3149:4018;6424:727;4959:4;6424:727;3149:4018;:::o;6424:727::-;-1:-1:-1;;6424:727:159;;;6331:78;6376:25;1864:36369:251;;;4383:160:159;1864:36369:251;;6331:78:159;;6234:83;6279:30;1864:36369:251;;;4383:160:159;1864:36369:251;;6234:83:159;;6135:85;1864:36369:251;6180:32:159;1864:36369:251;4383:160:159;1864:36369:251;6135:85:159;;;6035:86;1864:36369:251;6080:33:159;1864:36369:251;4383:160:159;1864:36369:251;6035:86:159;;;5935;1864:36369:251;5979:34:159;1864:36369:251;4383:160:159;1864:36369:251;5935:86:159;;;5835;1864:36369:251;5879:34:159;1864:36369:251;4383:160:159;1864:36369:251;5835:86:159;;;5735;1864:36369:251;5779:34:159;1864:36369:251;4383:160:159;1864:36369:251;5735:86:159;;;5635;1864:36369:251;5679:34:159;1864:36369:251;4383:160:159;1864:36369:251;5635:86:159;;;5536:85;1864:36369:251;5579:34:159;1864:36369:251;4383:160:159;1864:36369:251;5536:85:159;;;5437;1864:36369:251;5480:34:159;1864:36369:251;4383:160:159;1864:36369:251;5437:85:159;;;5338;1864:36369:251;5381:34:159;1864:36369:251;4383:160:159;1864:36369:251;5338:85:159;;;5239;1864:36369:251;5282:34:159;1864:36369:251;4383:160:159;1864:36369:251;5239:85:159;;;5141:84;1864:36369:251;5183:34:159;1864:36369:251;4383:160:159;1864:36369:251;5141:84:159;;;5043;1864:36369:251;5085:34:159;1864:36369:251;4383:160:159;1864:36369:251;5043:84:159;;;4945;1864:36369:251;4987:34:159;1864:36369:251;4383:160:159;1864:36369:251;4945:84:159;;;4847;1864:36369:251;4889:34:159;1864:36369:251;4383:160:159;1864:36369:251;4847:84:159;;;4750:83;1864:36369:251;4791:34:159;1864:36369:251;4383:160:159;1864:36369:251;4750:83:159;;;4653;1864:36369:251;4694:34:159;1864:36369:251;4383:160:159;1864:36369:251;4653:83:159;;;4556;1864:36369:251;4597:34:159;1864:36369:251;4383:160:159;1864:36369:251;4556:83:159;;;3770:78;3811:20;;;;1431:143:141;;;;;;;15994:272:251;1864:36369;;-1:-1:-1;;;16064:58:251;;-1:-1:-1;;;;;16094:7:251;1864:36369;;16064:58;;;1864:36369;;;-1:-1:-1;;1864:36369:251;;;;;;;;;16064:58;1864:36369;-1:-1:-1;1864:36369:251;16064:58;;;;;;;;15994:272;16132:127;;;;;;1864:36369;;-1:-1:-1;;;16132:127:251;;16064:58;16132:127;;1864:36369;;;;-1:-1:-1;;;;;16205:15:251;1864:36369;;;;;;16064:58;1864:36369;;;16242:16;1864:36369;;;;;-1:-1:-1;;1864:36369:251;;16132:127;;1864:36369;;-1:-1:-1;;16132:127:251;;;;;;;;15994:272;:::o;16132:127::-;-1:-1:-1;16132:127:251;;;:::i;16064:58::-;;;1864:36369;16064:58;1864:36369;16064:58;;;;;;;:::i;:::-;;;1850:420:226;2168:85;;:73;;1850:420;;-1:-1:-1;;;;;1864:36369:251;;;;;;2053:29:226;2049:98;;1850:420;1862:10:159;;-1:-1:-1;;;;;1864:36369:251;;2168:73:226;:::i;:::-;:85;:::i;2049:98::-;2084:63;2049:98;;895:516;1313:81;;:69;;895:516;;;-1:-1:-1;;;;;1864:36369:251;;;;;;1098:29:226;1094:98;;895:516;1229:63;-1:-1:-1;;;;;1864:36369:251;;;;;;1229:63:226;:::i;:::-;1862:10:159;;;-1:-1:-1;;;;;1864:36369:251;;1313:69:226;:::i;1094:98::-;;;;741:4141:144;;1864:36369:251;;;;;-1:-1:-1;;;;;741:4141:144;1347:147;;;;;;;;;;;;1619:19;;;;1864:36369:251;;;1720:10:144;1716:177;;14116:7:251;;-1:-1:-1;;;14116:7:251;2224:95:144;2282:66:159;;1864:36369:251;2282:66:159;2716:31:144;2811:94;;;3776:1;1864:36369:251;3757:1:144;1864:36369:251;3756:21:144;1864:36369:251;;;3776:1:144;2282:66:159;1864:36369:251;;;;3776:1:144;2282:66:159;1864:36369:251;;;;3776:1:144;2282:66:159;1864:36369:251;;;;3776:1:144;2282:66:159;1864:36369:251;;;;3776:1:144;2282:66:159;1864:36369:251;;;;3776:1:144;2282:66:159;1864:36369:251;3254:96:144;;;;1864:36369:251;3254:96:144;;;2391:145;;;;;;1864:36369:251;2391:145:144;;2977:82;3363:21;1864:36369:251;741:4141:144;:::o;1716:177::-;1750:98;;;;1865:13;:::o;741:4141::-;1864:36369:251;;;;741:4141:144;-1:-1:-1;;741:4141:144;;1347:147;;;;;;;;;;;;14116:7:251;;1864:36369;14116:7;;1619:19:144;1864:36369:251;;;1720:10:144;1716:177;;-1:-1:-1;;;14116:7:251;2224:95:144;2391:145;;;;;;1864:36369:251;;2391:145:144;;2977:82;;3363:21;741:4141;:::o;1716:177::-;1750:98;;;;;1865:13;:::o;741:4141::-;;1864:36369:251;;;;-1:-1:-1;;1864:36369:251;741:4141:144;1347:147;;;;;;;;;;;;1619:19;;;;1864:36369:251;;;1720:10:144;1716:177;;2224:95;;;;2282:66:159;;1864:36369:251;2282:66:159;2716:31:144;2811:94;;;3776:1;1864:36369:251;3757:1:144;1864:36369:251;3756:21:144;1864:36369:251;;;3776:1:144;2282:66:159;1864:36369:251;;;;3776:1:144;2282:66:159;1864:36369:251;;;;3776:1:144;2282:66:159;1864:36369:251;;;;3776:1:144;2282:66:159;1864:36369:251;;;;3776:1:144;2282:66:159;1864:36369:251;;;;3776:1:144;2282:66:159;1864:36369:251;3254:96:144;;;;1864:36369:251;3254:96:144;;;2391:145;;;;;;1864:36369:251;2391:145:144;;2977:82;3363:21;1864:36369:251;741:4141:144;:::o;1716:177::-;1750:98;;;;;1865:13;:::o;790:155:154:-;;-1:-1:-1;;;;;1371:4:218;;892:6:154;;;888:50;;790:155::o;888:50::-;900:25;;;814:96:141;;;;\",\"linkReferences\":{},\"immutableReferences\":{\"88666\":[{\"start\":576,\"length\":32},{\"start\":1829,\"length\":32},{\"start\":2295,\"length\":32},{\"start\":4993,\"length\":32},{\"start\":6467,\"length\":32},{\"start\":7499,\"length\":32},{\"start\":7566,\"length\":32}],\"88669\":[{\"start\":9600,\"length\":32},{\"start\":20435,\"length\":32},{\"start\":21972,\"length\":32}],\"88672\":[{\"start\":11366,\"length\":32},{\"start\":21862,\"length\":32}],\"88675\":[{\"start\":9531,\"length\":32},{\"start\":18050,\"length\":32},{\"start\":18824,\"length\":32}],\"88678\":[{\"start\":1029,\"length\":32},{\"start\":3606,\"length\":32},{\"start\":5466,\"length\":32},{\"start\":10787,\"length\":32}]}},\"methodIdentifiers\":{\"POOL_FEE()\":\"dd1b9c4a\",\"acceptedProposals(uint256)\":\"8ed1b945\",\"changeFee(uint24)\":\"bf76b42f\",\"claimVirtualTokenForProposal(address,uint256)\":\"2c331aef\",\"createMarket(address,address,uint256,uint256,string)\":\"df5590b6\",\"createProposal(uint256,string)\":\"02d52fa4\",\"createProposalWithResolution(uint256,string,bytes)\":\"ad2aa0b8\",\"depositToMarket(address,uint256,uint256)\":\"b5e23d21\",\"deposits(uint256,address)\":\"53a58de1\",\"getAllMarketIds()\":\"b85ed636\",\"getAllMarketsInfo()\":\"139df200\",\"getMarketInfoWithProposals(uint256)\":\"c81577b0\",\"getMarketInfoWithProposalsAndUserBalances(uint256,address)\":\"93b3744e\",\"getProposalInfo(uint256)\":\"bc903cb8\",\"getProposalPrices(uint256)\":\"f7a94a67\",\"getUserDeposit(uint256,address)\":\"4e055244\",\"getUserProposalBalances(uint256,address)\":\"0fc7b7e5\",\"getUserProposalCompleteInfo(uint256,address)\":\"a64a5745\",\"getUserProposalPosition(uint256,address)\":\"c47bd5bd\",\"getUserVUSDInfo(uint256,address)\":\"6ac18464\",\"graduateMarket(uint256)\":\"606d9be0\",\"hook()\":\"7f5a7c7b\",\"id()\":\"af640d0f\",\"marketMax(uint256)\":\"c9e50c97\",\"marketProposals(uint256,uint256)\":\"d05320e7\",\"markets(uint256)\":\"b1283e77\",\"mintYesNo(uint256,uint256)\":\"77416ed0\",\"owner()\":\"8da5cb5b\",\"permit2()\":\"12261ee7\",\"poolManager()\":\"dc4c90d3\",\"positionManager()\":\"791b98bc\",\"proposalDepositClaims(uint256,address)\":\"5efb5e37\",\"proposals(uint256)\":\"013cf08b\",\"redeemRewards(uint256,address)\":\"c6323c26\",\"redeemYesNo(uint256,uint256)\":\"917125ca\",\"renounceOwnership()\":\"715018a6\",\"resolveMarket(uint256,bool,bytes)\":\"822edc59\",\"transferOwnership(address)\":\"f2fde38b\",\"updatePostSwap((address,address,uint24,int24,address),int24)\":\"a67ab8b0\",\"usdc()\":\"3e413bee\",\"validateSwap((address,address,uint24,int24,address))\":\"8e8a9d8a\"},\"rawMetadata\":\"{\\\"compiler\\\":{\\\"version\\\":\\\"0.8.26+commit.8a97fa7a\\\"},\\\"language\\\":\\\"Solidity\\\",\\\"output\\\":{\\\"abi\\\":[{\\\"inputs\\\":[{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"admin\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"_poolManager\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"_positionManager\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"_permit2\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"_swapHook\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"_usdc\\\",\\\"type\\\":\\\"address\\\"}],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"constructor\\\"},{\\\"inputs\\\":[],\\\"name\\\":\\\"MarketClosed\\\",\\\"type\\\":\\\"error\\\"},{\\\"inputs\\\":[],\\\"name\\\":\\\"MarketNotSettled\\\",\\\"type\\\":\\\"error\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"owner\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"OwnableInvalidOwner\\\",\\\"type\\\":\\\"error\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"account\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"OwnableUnauthorizedAccount\\\",\\\"type\\\":\\\"error\\\"},{\\\"inputs\\\":[],\\\"name\\\":\\\"ProposalNotTradable\\\",\\\"type\\\":\\\"error\\\"},{\\\"anonymous\\\":false,\\\"inputs\\\":[{\\\"indexed\\\":true,\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"marketId\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"indexed\\\":false,\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"createdAt\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"indexed\\\":false,\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"creator\\\",\\\"type\\\":\\\"address\\\"},{\\\"indexed\\\":false,\\\"internalType\\\":\\\"string\\\",\\\"name\\\":\\\"title\\\",\\\"type\\\":\\\"string\\\"}],\\\"name\\\":\\\"MarketCreated\\\",\\\"type\\\":\\\"event\\\"},{\\\"anonymous\\\":false,\\\"inputs\\\":[{\\\"indexed\\\":true,\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"marketId\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"indexed\\\":false,\\\"internalType\\\":\\\"bool\\\",\\\"name\\\":\\\"passed\\\",\\\"type\\\":\\\"bool\\\"}],\\\"name\\\":\\\"MarketSettled\\\",\\\"type\\\":\\\"event\\\"},{\\\"anonymous\\\":false,\\\"inputs\\\":[{\\\"indexed\\\":true,\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"previousOwner\\\",\\\"type\\\":\\\"address\\\"},{\\\"indexed\\\":true,\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"newOwner\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"OwnershipTransferred\\\",\\\"type\\\":\\\"event\\\"},{\\\"anonymous\\\":false,\\\"inputs\\\":[{\\\"indexed\\\":true,\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"marketId\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"indexed\\\":true,\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"proposalId\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"indexed\\\":false,\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"createdAt\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"indexed\\\":false,\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"creator\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"ProposalCreated\\\",\\\"type\\\":\\\"event\\\"},{\\\"inputs\\\":[],\\\"name\\\":\\\"POOL_FEE\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"uint24\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"uint24\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"name\\\":\\\"acceptedProposals\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint24\\\",\\\"name\\\":\\\"newFee\\\",\\\"type\\\":\\\"uint24\\\"}],\\\"name\\\":\\\"changeFee\\\",\\\"outputs\\\":[],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"depositor\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"proposalId\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"name\\\":\\\"claimVirtualTokenForProposal\\\",\\\"outputs\\\":[],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"creator\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"resolver\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"minDeposit\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"deadline\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"string\\\",\\\"name\\\":\\\"title\\\",\\\"type\\\":\\\"string\\\"}],\\\"name\\\":\\\"createMarket\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"marketId\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"marketId\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"string\\\",\\\"name\\\":\\\"title\\\",\\\"type\\\":\\\"string\\\"}],\\\"name\\\":\\\"createProposal\\\",\\\"outputs\\\":[],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"marketId\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"string\\\",\\\"name\\\":\\\"title\\\",\\\"type\\\":\\\"string\\\"},{\\\"internalType\\\":\\\"bytes\\\",\\\"name\\\":\\\"resolutionConfigData\\\",\\\"type\\\":\\\"bytes\\\"}],\\\"name\\\":\\\"createProposalWithResolution\\\",\\\"outputs\\\":[],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"depositor\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"marketId\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"amount\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"name\\\":\\\"depositToMarket\\\",\\\"outputs\\\":[],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"deposits\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[],\\\"name\\\":\\\"getAllMarketIds\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"uint256[]\\\",\\\"name\\\":\\\"marketIds\\\",\\\"type\\\":\\\"uint256[]\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[],\\\"name\\\":\\\"getAllMarketsInfo\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"uint256[]\\\",\\\"name\\\":\\\"marketIds\\\",\\\"type\\\":\\\"uint256[]\\\"},{\\\"components\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"id\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"createdAt\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"minDeposit\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"deadline\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"creator\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"marketToken\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"resolver\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"enum MarketStatus\\\",\\\"name\\\":\\\"status\\\",\\\"type\\\":\\\"uint8\\\"},{\\\"internalType\\\":\\\"string\\\",\\\"name\\\":\\\"title\\\",\\\"type\\\":\\\"string\\\"}],\\\"internalType\\\":\\\"struct MarketConfig[]\\\",\\\"name\\\":\\\"marketsData\\\",\\\"type\\\":\\\"tuple[]\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"marketId\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"name\\\":\\\"getMarketInfoWithProposals\\\",\\\"outputs\\\":[{\\\"components\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"id\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"createdAt\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"minDeposit\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"deadline\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"creator\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"marketToken\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"resolver\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"enum MarketStatus\\\",\\\"name\\\":\\\"status\\\",\\\"type\\\":\\\"uint8\\\"},{\\\"internalType\\\":\\\"string\\\",\\\"name\\\":\\\"title\\\",\\\"type\\\":\\\"string\\\"}],\\\"internalType\\\":\\\"struct MarketConfig\\\",\\\"name\\\":\\\"market\\\",\\\"type\\\":\\\"tuple\\\"},{\\\"internalType\\\":\\\"uint256[]\\\",\\\"name\\\":\\\"proposalIds\\\",\\\"type\\\":\\\"uint256[]\\\"},{\\\"components\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"id\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"createdAt\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"creator\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"string\\\",\\\"name\\\":\\\"title\\\",\\\"type\\\":\\\"string\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"vusdAddress\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"yesTokenAddress\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"noTokenAddress\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"yesPrice\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"noPrice\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"internalType\\\":\\\"struct Market.ProposalInfo[]\\\",\\\"name\\\":\\\"proposalData\\\",\\\"type\\\":\\\"tuple[]\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"marketId\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"user\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"getMarketInfoWithProposalsAndUserBalances\\\",\\\"outputs\\\":[{\\\"components\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"id\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"createdAt\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"minDeposit\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"deadline\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"creator\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"marketToken\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"resolver\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"enum MarketStatus\\\",\\\"name\\\":\\\"status\\\",\\\"type\\\":\\\"uint8\\\"},{\\\"internalType\\\":\\\"string\\\",\\\"name\\\":\\\"title\\\",\\\"type\\\":\\\"string\\\"}],\\\"internalType\\\":\\\"struct MarketConfig\\\",\\\"name\\\":\\\"market\\\",\\\"type\\\":\\\"tuple\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"userMarketDepositBalance\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256[]\\\",\\\"name\\\":\\\"proposalIds\\\",\\\"type\\\":\\\"uint256[]\\\"},{\\\"components\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"id\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"createdAt\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"creator\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"string\\\",\\\"name\\\":\\\"title\\\",\\\"type\\\":\\\"string\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"vusdAddress\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"yesTokenAddress\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"noTokenAddress\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"yesPrice\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"noPrice\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"yesBalance\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"noBalance\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"vusdBalance\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"claimableVUSD\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"internalType\\\":\\\"struct Market.ProposalInfoWithBalances[]\\\",\\\"name\\\":\\\"proposalData\\\",\\\"type\\\":\\\"tuple[]\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"proposalId\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"name\\\":\\\"getProposalInfo\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"marketId\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"createdAt\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"creator\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"string\\\",\\\"name\\\":\\\"title\\\",\\\"type\\\":\\\"string\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"vusdAddress\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"yesTokenAddress\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"noTokenAddress\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"yesPrice\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"noPrice\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"proposalId\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"name\\\":\\\"getProposalPrices\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"yesPrice\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"noPrice\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"proposalId\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"user\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"getUserDeposit\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"totalDeposited\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"alreadyClaimed\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"available\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"proposalId\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"user\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"getUserProposalBalances\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"yesBalance\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"noBalance\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"vusdBalance\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"proposalId\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"user\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"getUserProposalCompleteInfo\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"marketDepositBalance\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"claimableVUSD\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"currentVUSDBalance\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"yesBalance\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"noBalance\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"yesPrice\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"noPrice\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"proposalId\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"user\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"getUserProposalPosition\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"yesBalance\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"noBalance\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"vusdBalance\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"totalDeposited\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"availableDeposit\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"proposalId\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"user\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"getUserVUSDInfo\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"claimableVUSD\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"currentVUSDBalance\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"marketId\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"name\\\":\\\"graduateMarket\\\",\\\"outputs\\\":[],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[],\\\"name\\\":\\\"hook\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"contract MarketUtilsSwapHook\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"address\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[],\\\"name\\\":\\\"id\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"contract Id\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"address\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"name\\\":\\\"marketMax\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"yesPrice\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"proposalId\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"name\\\":\\\"marketProposals\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"name\\\":\\\"markets\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"id\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"createdAt\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"minDeposit\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"deadline\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"creator\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"marketToken\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"resolver\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"enum MarketStatus\\\",\\\"name\\\":\\\"status\\\",\\\"type\\\":\\\"uint8\\\"},{\\\"internalType\\\":\\\"string\\\",\\\"name\\\":\\\"title\\\",\\\"type\\\":\\\"string\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"proposalId\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"amount\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"name\\\":\\\"mintYesNo\\\",\\\"outputs\\\":[],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[],\\\"name\\\":\\\"owner\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"address\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[],\\\"name\\\":\\\"permit2\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"contract IPermit2\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"address\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[],\\\"name\\\":\\\"poolManager\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"contract IPoolManager\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"address\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[],\\\"name\\\":\\\"positionManager\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"contract IPositionManager\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"address\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"proposalDepositClaims\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"name\\\":\\\"proposals\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"id\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"marketId\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"createdAt\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"creator\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"contract VUSD\\\",\\\"name\\\":\\\"vUSD\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"contract DecisionToken\\\",\\\"name\\\":\\\"yesToken\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"contract DecisionToken\\\",\\\"name\\\":\\\"noToken\\\",\\\"type\\\":\\\"address\\\"},{\\\"components\\\":[{\\\"internalType\\\":\\\"Currency\\\",\\\"name\\\":\\\"currency0\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"Currency\\\",\\\"name\\\":\\\"currency1\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"uint24\\\",\\\"name\\\":\\\"fee\\\",\\\"type\\\":\\\"uint24\\\"},{\\\"internalType\\\":\\\"int24\\\",\\\"name\\\":\\\"tickSpacing\\\",\\\"type\\\":\\\"int24\\\"},{\\\"internalType\\\":\\\"contract IHooks\\\",\\\"name\\\":\\\"hooks\\\",\\\"type\\\":\\\"address\\\"}],\\\"internalType\\\":\\\"struct PoolKey\\\",\\\"name\\\":\\\"yesPoolKey\\\",\\\"type\\\":\\\"tuple\\\"},{\\\"components\\\":[{\\\"internalType\\\":\\\"Currency\\\",\\\"name\\\":\\\"currency0\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"Currency\\\",\\\"name\\\":\\\"currency1\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"uint24\\\",\\\"name\\\":\\\"fee\\\",\\\"type\\\":\\\"uint24\\\"},{\\\"internalType\\\":\\\"int24\\\",\\\"name\\\":\\\"tickSpacing\\\",\\\"type\\\":\\\"int24\\\"},{\\\"internalType\\\":\\\"contract IHooks\\\",\\\"name\\\":\\\"hooks\\\",\\\"type\\\":\\\"address\\\"}],\\\"internalType\\\":\\\"struct PoolKey\\\",\\\"name\\\":\\\"noPoolKey\\\",\\\"type\\\":\\\"tuple\\\"},{\\\"internalType\\\":\\\"string\\\",\\\"name\\\":\\\"title\\\",\\\"type\\\":\\\"string\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"marketId\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"user\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"redeemRewards\\\",\\\"outputs\\\":[],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"proposalId\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"amount\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"name\\\":\\\"redeemYesNo\\\",\\\"outputs\\\":[],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[],\\\"name\\\":\\\"renounceOwnership\\\",\\\"outputs\\\":[],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"marketId\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"bool\\\",\\\"name\\\":\\\"yesOrNo\\\",\\\"type\\\":\\\"bool\\\"},{\\\"internalType\\\":\\\"bytes\\\",\\\"name\\\":\\\"proof\\\",\\\"type\\\":\\\"bytes\\\"}],\\\"name\\\":\\\"resolveMarket\\\",\\\"outputs\\\":[],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"newOwner\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"transferOwnership\\\",\\\"outputs\\\":[],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"components\\\":[{\\\"internalType\\\":\\\"Currency\\\",\\\"name\\\":\\\"currency0\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"Currency\\\",\\\"name\\\":\\\"currency1\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"uint24\\\",\\\"name\\\":\\\"fee\\\",\\\"type\\\":\\\"uint24\\\"},{\\\"internalType\\\":\\\"int24\\\",\\\"name\\\":\\\"tickSpacing\\\",\\\"type\\\":\\\"int24\\\"},{\\\"internalType\\\":\\\"contract IHooks\\\",\\\"name\\\":\\\"hooks\\\",\\\"type\\\":\\\"address\\\"}],\\\"internalType\\\":\\\"struct PoolKey\\\",\\\"name\\\":\\\"poolKey\\\",\\\"type\\\":\\\"tuple\\\"},{\\\"internalType\\\":\\\"int24\\\",\\\"name\\\":\\\"avgTick\\\",\\\"type\\\":\\\"int24\\\"}],\\\"name\\\":\\\"updatePostSwap\\\",\\\"outputs\\\":[],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[],\\\"name\\\":\\\"usdc\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"contract USDC\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"address\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"components\\\":[{\\\"internalType\\\":\\\"Currency\\\",\\\"name\\\":\\\"currency0\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"Currency\\\",\\\"name\\\":\\\"currency1\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"uint24\\\",\\\"name\\\":\\\"fee\\\",\\\"type\\\":\\\"uint24\\\"},{\\\"internalType\\\":\\\"int24\\\",\\\"name\\\":\\\"tickSpacing\\\",\\\"type\\\":\\\"int24\\\"},{\\\"internalType\\\":\\\"contract IHooks\\\",\\\"name\\\":\\\"hooks\\\",\\\"type\\\":\\\"address\\\"}],\\\"internalType\\\":\\\"struct PoolKey\\\",\\\"name\\\":\\\"poolKey\\\",\\\"type\\\":\\\"tuple\\\"}],\\\"name\\\":\\\"validateSwap\\\",\\\"outputs\\\":[],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"function\\\"}],\\\"devdoc\\\":{\\\"errors\\\":{\\\"OwnableInvalidOwner(address)\\\":[{\\\"details\\\":\\\"The owner is not a valid owner account. (eg. `address(0)`)\\\"}],\\\"OwnableUnauthorizedAccount(address)\\\":[{\\\"details\\\":\\\"The caller account is not authorized to perform an operation.\\\"}]},\\\"kind\\\":\\\"dev\\\",\\\"methods\\\":{\\\"getAllMarketIds()\\\":{\\\"returns\\\":{\\\"marketIds\\\":\\\"Array of all market IDs that have been created\\\"}},\\\"getAllMarketsInfo()\\\":{\\\"details\\\":\\\"Optimized function to fetch all markets in a single call\\\",\\\"returns\\\":{\\\"marketIds\\\":\\\"Array of all market IDs\\\",\\\"marketsData\\\":\\\"Array of market configurations\\\"}},\\\"getMarketInfoWithProposals(uint256)\\\":{\\\"params\\\":{\\\"marketId\\\":\\\"The market ID\\\"},\\\"returns\\\":{\\\"market\\\":\\\"Market configuration\\\",\\\"proposalData\\\":\\\"Array of proposal data (id, createdAt, creator, title, vusdAddress, yesTokenAddress, noTokenAddress, yesPrice, noPrice)\\\",\\\"proposalIds\\\":\\\"Array of proposal IDs in this market\\\"}},\\\"getMarketInfoWithProposalsAndUserBalances(uint256,address)\\\":{\\\"details\\\":\\\"Optimized function for frontend to get all data needed for market detail page\\\",\\\"params\\\":{\\\"marketId\\\":\\\"The market ID\\\",\\\"user\\\":\\\"The user address to get balances for\\\"},\\\"returns\\\":{\\\"market\\\":\\\"Market configuration\\\",\\\"proposalData\\\":\\\"Array of proposal data with prices and user balances\\\",\\\"proposalIds\\\":\\\"Array of proposal IDs in this market\\\",\\\"userMarketDepositBalance\\\":\\\"User's total USDC deposit in this market (6 decimals)\\\"}},\\\"getProposalInfo(uint256)\\\":{\\\"params\\\":{\\\"proposalId\\\":\\\"The proposal ID\\\"},\\\"returns\\\":{\\\"createdAt\\\":\\\"Timestamp when proposal was created\\\",\\\"creator\\\":\\\"Address of proposal creator\\\",\\\"marketId\\\":\\\"The market ID this proposal belongs to\\\",\\\"noPrice\\\":\\\"Current NO price in VUSD (18 decimals)\\\",\\\"noTokenAddress\\\":\\\"NO token address\\\",\\\"title\\\":\\\"Proposal title\\\",\\\"vusdAddress\\\":\\\"VUSD token address\\\",\\\"yesPrice\\\":\\\"Current YES price in VUSD (18 decimals)\\\",\\\"yesTokenAddress\\\":\\\"YES token address\\\"}},\\\"getProposalPrices(uint256)\\\":{\\\"params\\\":{\\\"proposalId\\\":\\\"The proposal ID\\\"},\\\"returns\\\":{\\\"noPrice\\\":\\\"Current NO price in VUSD (18 decimals)\\\",\\\"yesPrice\\\":\\\"Current YES price in VUSD (18 decimals)\\\"}},\\\"getUserDeposit(uint256,address)\\\":{\\\"params\\\":{\\\"proposalId\\\":\\\"The proposal ID\\\",\\\"user\\\":\\\"The user address\\\"},\\\"returns\\\":{\\\"alreadyClaimed\\\":\\\"USDC already claimed/used for this proposal (6 decimals)\\\",\\\"available\\\":\\\"Amount available to claim for this proposal (6 decimals)\\\",\\\"totalDeposited\\\":\\\"Total USDC deposited by user in the market (6 decimals)\\\"}},\\\"getUserProposalBalances(uint256,address)\\\":{\\\"params\\\":{\\\"proposalId\\\":\\\"The proposal ID\\\",\\\"user\\\":\\\"The user address\\\"},\\\"returns\\\":{\\\"noBalance\\\":\\\"NO token balance (18 decimals)\\\",\\\"vusdBalance\\\":\\\"VUSD balance (18 decimals)\\\",\\\"yesBalance\\\":\\\"YES token balance (18 decimals)\\\"}},\\\"getUserProposalCompleteInfo(uint256,address)\\\":{\\\"details\\\":\\\"Returns all data needed for UI in a single call\\\",\\\"params\\\":{\\\"proposalId\\\":\\\"The proposal ID\\\",\\\"user\\\":\\\"The user address\\\"},\\\"returns\\\":{\\\"claimableVUSD\\\":\\\"Amount of VUSD user can claim for this proposal (18 decimals)\\\",\\\"currentVUSDBalance\\\":\\\"Current VUSD balance user has for this proposal (18 decimals)\\\",\\\"marketDepositBalance\\\":\\\"Total USDC deposited in market (6 decimals)\\\",\\\"noBalance\\\":\\\"NO token balance (18 decimals)\\\",\\\"noPrice\\\":\\\"Current NO price in VUSD (18 decimals)\\\",\\\"yesBalance\\\":\\\"YES token balance (18 decimals)\\\",\\\"yesPrice\\\":\\\"Current YES price in VUSD (18 decimals)\\\"}},\\\"getUserProposalPosition(uint256,address)\\\":{\\\"params\\\":{\\\"proposalId\\\":\\\"The proposal ID\\\",\\\"user\\\":\\\"The user address\\\"},\\\"returns\\\":{\\\"availableDeposit\\\":\\\"Available USDC to claim (6 decimals)\\\",\\\"noBalance\\\":\\\"NO token balance (18 decimals)\\\",\\\"totalDeposited\\\":\\\"Total USDC deposited (6 decimals)\\\",\\\"vusdBalance\\\":\\\"VUSD balance (18 decimals)\\\",\\\"yesBalance\\\":\\\"YES token balance (18 decimals)\\\"}},\\\"getUserVUSDInfo(uint256,address)\\\":{\\\"details\\\":\\\"Returns both values in VUSD terms (18 decimals) for easy comparison\\\",\\\"params\\\":{\\\"proposalId\\\":\\\"The proposal ID\\\",\\\"user\\\":\\\"The user address\\\"},\\\"returns\\\":{\\\"claimableVUSD\\\":\\\"Amount of VUSD user can claim (18 decimals)\\\",\\\"currentVUSDBalance\\\":\\\"Current VUSD balance user has (18 decimals)\\\"}},\\\"owner()\\\":{\\\"details\\\":\\\"Returns the address of the current owner.\\\"},\\\"renounceOwnership()\\\":{\\\"details\\\":\\\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby disabling any functionality that is only available to the owner.\\\"},\\\"transferOwnership(address)\\\":{\\\"details\\\":\\\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\\\"}},\\\"version\\\":1},\\\"userdoc\\\":{\\\"kind\\\":\\\"user\\\",\\\"methods\\\":{\\\"getAllMarketIds()\\\":{\\\"notice\\\":\\\"Get all available market IDs\\\"},\\\"getAllMarketsInfo()\\\":{\\\"notice\\\":\\\"Get all markets with their basic information for home page\\\"},\\\"getMarketInfoWithProposals(uint256)\\\":{\\\"notice\\\":\\\"Get market information with all its proposals\\\"},\\\"getMarketInfoWithProposalsAndUserBalances(uint256,address)\\\":{\\\"notice\\\":\\\"Get market information with all proposals, prices, and user balances in a single call\\\"},\\\"getProposalInfo(uint256)\\\":{\\\"notice\\\":\\\"Get comprehensive proposal information for UI\\\"},\\\"getProposalPrices(uint256)\\\":{\\\"notice\\\":\\\"Get current YES and NO prices for a proposal\\\"},\\\"getUserDeposit(uint256,address)\\\":{\\\"notice\\\":\\\"Get user's deposit information for a proposal\\\"},\\\"getUserProposalBalances(uint256,address)\\\":{\\\"notice\\\":\\\"Get user's token balances for a proposal\\\"},\\\"getUserProposalCompleteInfo(uint256,address)\\\":{\\\"notice\\\":\\\"Get complete user information for a proposal (deposits, balances, prices)\\\"},\\\"getUserProposalPosition(uint256,address)\\\":{\\\"notice\\\":\\\"Get user's complete position for a proposal (balances + deposit info)\\\"},\\\"getUserVUSDInfo(uint256,address)\\\":{\\\"notice\\\":\\\"Get user's VUSD claimable amount and current balance for a proposal\\\"}},\\\"version\\\":1}},\\\"settings\\\":{\\\"compilationTarget\\\":{\\\"src/Market.sol\\\":\\\"Market\\\"},\\\"evmVersion\\\":\\\"cancun\\\",\\\"libraries\\\":{},\\\"metadata\\\":{\\\"bytecodeHash\\\":\\\"ipfs\\\"},\\\"optimizer\\\":{\\\"enabled\\\":true,\\\"runs\\\":200},\\\"remappings\\\":[\\\":@ensdomains/=lib/v4-core/node_modules/@ensdomains/\\\",\\\":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/\\\",\\\":@uniswap/permit2/=lib/permit2/\\\",\\\":@uniswap/universal-router/=lib/universal-router/\\\",\\\":@uniswap/v2-core/=lib/v2-core/\\\",\\\":@uniswap/v3-core/=lib/v3-core/\\\",\\\":@uniswap/v3-periphery/=lib/v3-periphery/\\\",\\\":@uniswap/v4-core/=lib/v4-core/\\\",\\\":@uniswap/v4-periphery/=lib/v4-periphery/\\\",\\\":ds-test/=lib/universal-router/lib/forge-std/lib/ds-test/src/\\\",\\\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\\\",\\\":forge-gas-snapshot/=lib/permit2/lib/forge-gas-snapshot/src/\\\",\\\":forge-std/=lib/forge-std/src/\\\",\\\":halmos-cheatcodes/=lib/openzeppelin-contracts/lib/halmos-cheatcodes/src/\\\",\\\":hardhat/=lib/v4-core/node_modules/hardhat/\\\",\\\":openzeppelin-contracts/=lib/openzeppelin-contracts/\\\",\\\":permit2/=lib/permit2/\\\",\\\":solmate/=lib/universal-router/lib/solmate/\\\",\\\":universal-router/=lib/universal-router/\\\",\\\":v2-core/=lib/v2-core/contracts/\\\",\\\":v3-core/=lib/v3-core/\\\",\\\":v3-periphery/=lib/v3-periphery/contracts/\\\",\\\":v4-core/=lib/v4-core/src/\\\",\\\":v4-periphery/=lib/v4-periphery/\\\"],\\\"viaIR\\\":true},\\\"sources\\\":{\\\"lib/forge-std/src/console.sol\\\":{\\\"keccak256\\\":\\\"0x4bbf47eb762cef93729d6ef15e78789957147039b113e5d4df48e3d3fd16d0f5\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://af9e3a7c3d82fb5b10b57ca4d1a82f2acbef80c077f6f6ef0cc0187c7bfd9f57\\\",\\\"dweb:/ipfs/QmR9VzmnBDJpgiDP6CHT6truehukF9HpYvuP6kRiJbDwPP\\\"]},\\\"lib/openzeppelin-contracts/contracts/access/AccessControl.sol\\\":{\\\"keccak256\\\":\\\"0xc1bebdee8943bd5e9ef1e0f2e63296aa1dd4171a66b9e74d0286220e891e1458\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://928cf2f0042c606f3dcb21bd8a272573f462a215cd65285d2d6b407f31e9bd67\\\",\\\"dweb:/ipfs/QmWGxjckno6sfjHPX5naPnsfsyisgy4PJDf46eLw9umfpx\\\"]},\\\"lib/openzeppelin-contracts/contracts/access/IAccessControl.sol\\\":{\\\"keccak256\\\":\\\"0x4d9a2b261b56a1e4a37bb038151dec98b952fed16de2bdfdda27e38e2b12b530\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://f724110f7aeb6151af800ab8c12e6060b29bda9e013f0ccb331eb754d6a7cbf0\\\",\\\"dweb:/ipfs/QmUcjzCZpxtUPdEThtAzE1f9LvuJiUGZxTdH9N6bHrb5Cf\\\"]},\\\"lib/openzeppelin-contracts/contracts/access/Ownable.sol\\\":{\\\"keccak256\\\":\\\"0xff6d0bb2e285473e5311d9d3caacb525ae3538a80758c10649a4d61029b017bb\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://8ed324d3920bb545059d66ab97d43e43ee85fd3bd52e03e401f020afb0b120f6\\\",\\\"dweb:/ipfs/QmfEckWLmZkDDcoWrkEvMWhms66xwTLff9DDhegYpvHo1a\\\"]},\\\"lib/openzeppelin-contracts/contracts/interfaces/IERC1363.sol\\\":{\\\"keccak256\\\":\\\"0x9b6b3e7803bc5f2f8cd7ad57db8ac1def61a9930a5a3107df4882e028a9605d7\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://da62d6be1f5c6edf577f0cb45666a8aa9c2086a4bac87d95d65f02e2f4c36a4b\\\",\\\"dweb:/ipfs/QmNkpvBpoCMvX8JwAFNSc5XxJ2q5BXJpL5L1txb4QkqVFF\\\"]},\\\"lib/openzeppelin-contracts/contracts/interfaces/IERC165.sol\\\":{\\\"keccak256\\\":\\\"0xde7e9fd9aee8d4f40772f96bb3b58836cbc6dfc0227014a061947f8821ea9724\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://11fea9f8bc98949ac6709f0c1699db7430d2948137aa94d5a9e95a91f61a710a\\\",\\\"dweb:/ipfs/QmQdfRXxQjwP6yn3DVo1GHPpriKNcFghSPi94Z1oKEFUNS\\\"]},\\\"lib/openzeppelin-contracts/contracts/interfaces/IERC20.sol\\\":{\\\"keccak256\\\":\\\"0xce41876e78d1badc0512229b4d14e4daf83bc1003d7f83978d18e0e56f965b9c\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://a2608291cb038b388d80b79a06b6118a42f7894ff67b7da10ec0dbbf5b2973ba\\\",\\\"dweb:/ipfs/QmWohqcBLbcxmA4eGPhZDXe5RYMMEEpFq22nfkaUMvTfw1\\\"]},\\\"lib/openzeppelin-contracts/contracts/interfaces/draft-IERC6093.sol\\\":{\\\"keccak256\\\":\\\"0x880da465c203cec76b10d72dbd87c80f387df4102274f23eea1f9c9b0918792b\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://399594cd8bb0143bc9e55e0f1d071d0d8c850a394fb7a319d50edd55d9ed822b\\\",\\\"dweb:/ipfs/QmbPZzgtT6LEm9CMqWfagQFwETbV1ztpECBB1DtQHrKiRz\\\"]},\\\"lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol\\\":{\\\"keccak256\\\":\\\"0x41f6b3b9e030561e7896dbef372b499cc8d418a80c3884a4d65a68f2fdc7493a\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://80b0992a11b2fd1f75ced2971696d07bbd1d19ce6761dd50d8b6d48aa435f42a\\\",\\\"dweb:/ipfs/QmZDe5xd2gXHjVEjv9t8C1KQ68K5T8qFwdinwQgmP3rF3x\\\"]},\\\"lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol\\\":{\\\"keccak256\\\":\\\"0xe06a3f08a987af6ad2e1c1e774405d4fe08f1694b67517438b467cecf0da0ef7\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://df6f0c459663c9858b6cba2cda1d14a7d05a985bed6d2de72bd8e78c25ee79db\\\",\\\"dweb:/ipfs/QmeTTxZ7qVk9rjEv2R4CpCwdf8UMCcRqDNMvzNxHc3Fnn9\\\"]},\\\"lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Burnable.sol\\\":{\\\"keccak256\\\":\\\"0x2659248df25e34000ed214b3dc8da2160bc39874c992b477d9e2b1b3283dc073\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://c345af1b0e7ea28d1216d6a04ab28f5534a5229b9edf9ca3cd0e84950ae58d26\\\",\\\"dweb:/ipfs/QmY63jtSrYpLRe8Gj1ep2vMDCKxGNNG3hnNVKBVnrs2nmA\\\"]},\\\"lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Pausable.sol\\\":{\\\"keccak256\\\":\\\"0x756aee61d83960d324973de3a64920a02b480efe662b611fb05ea506d844aa55\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://4dfb71ab2f5fcc530226a25bba4d808f4d22a7f383cae4a3be3629ec057b276c\\\",\\\"dweb:/ipfs/QmRzyetUjbr9Gx1pcXYSsE5rz4XypfEbZgmBvZKUNUJQLR\\\"]},\\\"lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Wrapper.sol\\\":{\\\"keccak256\\\":\\\"0xe2cacb80ff6ca05c0d0a20f2a3a86465dabe77f24804d34c26f26e8bc0f560e4\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://620c7c6c24c28059ac5d915a4e00bad0ab87864ff2623991458a775804cd58bf\\\",\\\"dweb:/ipfs/QmSSUiYwDXwBA126Mq6UsFhWR6nfMxcwj8xCKrScbYG1fn\\\"]},\\\"lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol\\\":{\\\"keccak256\\\":\\\"0x70f2f713b13b7ce4610bcd0ac9fec0f3cc43693b043abcb8dc40a42a726eb330\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://c13d13304ac79a83ab1c30168967d19e2203342ebbd6a9bbce4db7550522dcbf\\\",\\\"dweb:/ipfs/QmeN5jKMN2vw5bhacr6tkg78afbTTZUeaacNHqjWt4Ew1r\\\"]},\\\"lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol\\\":{\\\"keccak256\\\":\\\"0x982c5cb790ab941d1e04f807120a71709d4c313ba0bfc16006447ffbd27fbbd5\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://8150ceb4ac947e8a442b2a9c017e01e880b2be2dd958f1fa9bc405f4c5a86508\\\",\\\"dweb:/ipfs/QmbcBmFX66AY6Kbhnd5gx7zpkgqnUafo43XnmayAM7zVdB\\\"]},\\\"lib/openzeppelin-contracts/contracts/utils/Context.sol\\\":{\\\"keccak256\\\":\\\"0x493033a8d1b176a037b2cc6a04dad01a5c157722049bbecf632ca876224dd4b2\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://6a708e8a5bdb1011c2c381c9a5cfd8a9a956d7d0a9dc1bd8bcdaf52f76ef2f12\\\",\\\"dweb:/ipfs/Qmax9WHBnVsZP46ZxEMNRQpLQnrdE4dK8LehML1Py8FowF\\\"]},\\\"lib/openzeppelin-contracts/contracts/utils/Pausable.sol\\\":{\\\"keccak256\\\":\\\"0xdb484371dfbb848cb6f5d70464e9ac9b2900e4164ead76bbce4fef0b44bcc68f\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://f9d6f6f6600a2bec622f699081b58350873b5e63ce05464d17d674a290bb8a7c\\\",\\\"dweb:/ipfs/QmQKVzSQY1PM3Bid4QhgVVZyx6B4Jx7XgaQzLKHj38vJz8\\\"]},\\\"lib/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol\\\":{\\\"keccak256\\\":\\\"0xddce8e17e3d3f9ed818b4f4c4478a8262aab8b11ed322f1bf5ed705bb4bd97fa\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://8084aa71a4cc7d2980972412a88fe4f114869faea3fefa5436431644eb5c0287\\\",\\\"dweb:/ipfs/Qmbqfs5dRdPvHVKY8kTaeyc65NdqXRQwRK7h9s5UJEhD1p\\\"]},\\\"lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol\\\":{\\\"keccak256\\\":\\\"0x79796192ec90263f21b464d5bc90b777a525971d3de8232be80d9c4f9fb353b8\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://f6fda447a62815e8064f47eff0dd1cf58d9207ad69b5d32280f8d7ed1d1e4621\\\",\\\"dweb:/ipfs/QmfDRc7pxfaXB2Dh9np5Uf29Na3pQ7tafRS684wd3GLjVL\\\"]},\\\"lib/permit2/src/interfaces/IAllowanceTransfer.sol\\\":{\\\"keccak256\\\":\\\"0x37f0ac203b6ef605c9533e1a739477e8e9dcea90710b40e645a367f8a21ace29\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://e0104d72aeaec1cd66cc232e7de7b7ead08608efcc179491b8a66387614670b0\\\",\\\"dweb:/ipfs/QmfAZDyuNC9FXXbnJUwqHNwmAK6uRrXxtWEytLsxjskPsN\\\"]},\\\"lib/permit2/src/interfaces/IEIP712.sol\\\":{\\\"keccak256\\\":\\\"0xfdccf2b9639070803cd0e4198427fb0df3cc452ca59bd3b8a0d957a9a4254138\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://f7c936ac42ce89e827db905a1544397f8bdf46db34cdb6aa1b90dea42fdb4c72\\\",\\\"dweb:/ipfs/QmVgurxo1N31qZqkPBirw9Z7S9tLYmv6jSwQp8R8ur2cBk\\\"]},\\\"lib/permit2/src/interfaces/IERC1271.sol\\\":{\\\"keccak256\\\":\\\"0x0a546b8535127fb4a49d36d5f306fd5a8bbe6125a1852f935b9bb85a04c1acef\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://4b99651e2df98e283a97c46d8d1ac4eff0d6a3618e25f7f85294472a670b541c\\\",\\\"dweb:/ipfs/QmYRy5G8fXE8BfmyvGEbESEYZPPg3zJEFxHzR5GJZEMMTk\\\"]},\\\"lib/permit2/src/interfaces/IPermit2.sol\\\":{\\\"keccak256\\\":\\\"0xaa631cc9f53e699301d94233007110a345e6779011def484e8dd97b8fe0af771\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://fc0502cf19c9c18f320a3001201e89e350393b75837f6b7971de18b2de06f30d\\\",\\\"dweb:/ipfs/QmT9SfhdJ7VJNNrf94g4H5usyi7ShqWGx7Cqsz9jZTjX96\\\"]},\\\"lib/permit2/src/interfaces/ISignatureTransfer.sol\\\":{\\\"keccak256\\\":\\\"0xe6df9966f8841dc3958ee86169c89de97e7f614c81c28b9dc947b12d732df64e\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://3d4eafdee7f48c3be8350a94eb6edd0bfb2af2c105df65787a77174f356c0317\\\",\\\"dweb:/ipfs/QmY1j2adeeAhNpn6cUuthemxGCdLXHTfyMh9yTKsY4mZ2d\\\"]},\\\"lib/permit2/src/libraries/SignatureVerification.sol\\\":{\\\"keccak256\\\":\\\"0x99f437ffe99aa1ff7885aec8b971f48efac00c6ebc59c02eec78c9ca850a5e30\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://9365414bdb67813d4ef6c89fa152dff05fc2a64992a1a4f212fa414dbdee3eab\\\",\\\"dweb:/ipfs/QmfJxSszF1rjmMoNXW5oQMo9gARMHAXYTu68fkZvdEu58i\\\"]},\\\"lib/universal-router/contracts/modules/uniswap/v2/UniswapV2Library.sol\\\":{\\\"keccak256\\\":\\\"0x829d48c1b69d2e1bc078a57aae8d87dc31d920b01c62d6268d20d517fd24150c\\\",\\\"license\\\":\\\"GPL-3.0-or-later\\\",\\\"urls\\\":[\\\"bzz-raw://b87236ea4c1e64c12434f31abbd658ca3fc510ebe65be731d84d3ce8efa71c32\\\",\\\"dweb:/ipfs/QmUerjg5Ebt3pfQZtk2sArUy414gQtHwvFNgsQNe4PhxbN\\\"]},\\\"lib/universal-router/lib/solmate/src/auth/Owned.sol\\\":{\\\"keccak256\\\":\\\"0xfedb27d14c508342c33eb067c9a02eabcdb0f9dcf93b04ded1001f580d12d0ea\\\",\\\"license\\\":\\\"AGPL-3.0-only\\\",\\\"urls\\\":[\\\"bzz-raw://1ff52bbee698b9cf9e4574615e6550be0887ccf355f6571e23d6f25b332e79b4\\\",\\\"dweb:/ipfs/QmVorA2apojVRStzS7h8aFccR3Uv32G6HVtBtFHZrE7YXx\\\"]},\\\"lib/universal-router/lib/solmate/src/tokens/ERC721.sol\\\":{\\\"keccak256\\\":\\\"0x04af19f16f00ba65ae168d6d10da5210dc18da6bcec6974dccf984ba388aa22d\\\",\\\"license\\\":\\\"AGPL-3.0-only\\\",\\\"urls\\\":[\\\"bzz-raw://098e69f22b67da6927e03203c12ebfda5b0490518f6d9cce7853001ac5ad8403\\\",\\\"dweb:/ipfs/QmYyzfurQe88PsVjRNfutV3gS7Vi68f7zgtVZVtLfd4ViK\\\"]},\\\"lib/universal-router/lib/solmate/src/utils/FixedPointMathLib.sol\\\":{\\\"keccak256\\\":\\\"0x1b62af9baf5b8e991ed7531bc87f45550ba9d61e8dbff5caf237ccaf3a3fd843\\\",\\\"license\\\":\\\"AGPL-3.0-only\\\",\\\"urls\\\":[\\\"bzz-raw://b7b38b977c5305b18ceefbeed4c9ceaaaefa419b520de62de6604ea661f8c0a9\\\",\\\"dweb:/ipfs/QmecMRzgfMyDVa2pvBqMMDLYBappaj7Aa3qcMoQYEQrhWi\\\"]},\\\"lib/v2-core/contracts/interfaces/IUniswapV2Pair.sol\\\":{\\\"keccak256\\\":\\\"0x7c9bc70e5996c763e02ff38905282bc24fb242b0ef2519a003b36824fc524a4b\\\",\\\"urls\\\":[\\\"bzz-raw://85d5ad2dd23ee127f40907a12865a1e8cb5828814f6f2480285e1827dd72dedf\\\",\\\"dweb:/ipfs/QmayKQWJgWmr46DqWseADyUanmqxh662hPNdAkdHRjiQQH\\\"]},\\\"lib/v4-core/src/ERC6909.sol\\\":{\\\"keccak256\\\":\\\"0x22476a1c183be1b547a509b3e6906abaccb6408375f798fce805ff7877aca09f\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://e85580e1563ea0556705132fb6bd038ca4aa355749039923853ebcb76b7c84e6\\\",\\\"dweb:/ipfs/QmVoxPrbagRKpFdRWoaCSKmStYLZrhNFuedcuyGycSGR7q\\\"]},\\\"lib/v4-core/src/ERC6909Claims.sol\\\":{\\\"keccak256\\\":\\\"0xf496ef3a5a9bf4f4aa2eec951dbeff09a01ef058bb9f64b1664cf46c9e85cd49\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://2a0a97c359a7a4c526ba9fc4ceb20af8050f9cf7886ea7e1f38c9c10b4a3750c\\\",\\\"dweb:/ipfs/QmPy6pCQbvzCdJRqG1thHRSwEZoLBAaLo3KQnueL3wxb8i\\\"]},\\\"lib/v4-core/src/Extsload.sol\\\":{\\\"keccak256\\\":\\\"0x784074bd04a1541c7c6ace074e30245746133fd37c3ba16b025dce394db986ce\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://35f1f4fb306bf01e98b7eca012b85f3ab978b39fa5136193363e2519c4435e51\\\",\\\"dweb:/ipfs/QmeGrjGMt71dJymVhkEadh5CuCW5GxRqNEZLi5AJxvC5tU\\\"]},\\\"lib/v4-core/src/Exttload.sol\\\":{\\\"keccak256\\\":\\\"0x769ee2733a08112c652274f4b972c45fb56cc46109f233b9a30f81561b15dd54\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://dd19e88d50ae77c1ed5581baca1c75b3fb828d0b58cded90188d55c4e336266c\\\",\\\"dweb:/ipfs/Qmc8YM6Tfpwwa4qivHHzRxNdhZzdzGiD7VexWsDvkaQTxG\\\"]},\\\"lib/v4-core/src/NoDelegateCall.sol\\\":{\\\"keccak256\\\":\\\"0xacb81aecb7c74c86650a035462dae38c313b4b7b5842e14b645f864f61da2b51\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://363a0e15fc30ea68a5d52a78772facecde6433ea156e3ec2ce25068c97cd5ad6\\\",\\\"dweb:/ipfs/QmYhWaF3wH71SDx5TZr9qEXXQf5FYQvdjoo3B2qWiAbm18\\\"]},\\\"lib/v4-core/src/PoolManager.sol\\\":{\\\"keccak256\\\":\\\"0xf9ff5d5e261a21a5e72a01c5badd988beeff437e0f6b82fd56f80be42d727c07\\\",\\\"license\\\":\\\"BUSL-1.1\\\",\\\"urls\\\":[\\\"bzz-raw://4a92a25102c73245e1343f0dbc8400b8bac3c464ba064aa5574b9584a12e6c72\\\",\\\"dweb:/ipfs/QmfCcvspZ8XzDeQjEd2FfM76wzkfE9KDgBoqAcqhf3nsnu\\\"]},\\\"lib/v4-core/src/ProtocolFees.sol\\\":{\\\"keccak256\\\":\\\"0x81362ef1d19670b41cefc2b6f2dc0333b6743fe39a1929edd36bd9b6a1111755\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://de483bbd8bf9a53b9644d7f9a6a6fe77ae527b755cf29e1db8725de89e70c7aa\\\",\\\"dweb:/ipfs/Qmex3PcgJGbYsuDNaMXc8mg5fW1DNaPGiNToPpAAzz6GEq\\\"]},\\\"lib/v4-core/src/interfaces/IExtsload.sol\\\":{\\\"keccak256\\\":\\\"0x80b53ca4907d6f0088c3b931f2b72cad1dc4615a95094d96bd0fb8dff8d5ba43\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://375c69148622aab7a3537d5fd37d373a8e9731022c8d87bdaee46233b0a99fe1\\\",\\\"dweb:/ipfs/QmXFjdoYRxsA5B1kyuxEXgNf3FBoL1zPvy26Qy8EtpdFRN\\\"]},\\\"lib/v4-core/src/interfaces/IExttload.sol\\\":{\\\"keccak256\\\":\\\"0xc6b68283ebd8d1c789df536756726eed51c589134bb20821b236a0d22a135937\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://294394f72dfc219689209f4130d85601dfd0d63c8d47578050d312db70f9b6c8\\\",\\\"dweb:/ipfs/QmTDMQ3oxCGHgEBU48a3Lp4S1rRjc8vVCxkhE5ZNej1bsY\\\"]},\\\"lib/v4-core/src/interfaces/IHooks.sol\\\":{\\\"keccak256\\\":\\\"0xc131ffa2d04c10a012fe715fe2c115811526b7ea34285cf0a04ce7ce8320da8d\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://3b212358897db5d99c21244d88f97b2e788527552cb430629b472a8cc6289aec\\\",\\\"dweb:/ipfs/QmQtwV4dDe2RYk2ErLpaAX7U82jWh1L6Lw2HRuKDvBi84G\\\"]},\\\"lib/v4-core/src/interfaces/IPoolManager.sol\\\":{\\\"keccak256\\\":\\\"0xbdab3544da3d32dfdf7457baa94e17d5a3012952428559e013ffac45d067038e\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://ce95ff864468e37c76adf71df061d4f3d6f3a5ec1f9bc3aea090463bc72798f4\\\",\\\"dweb:/ipfs/QmSbWh1pLbz51yQF4HEu5NRhr8XVv9JYGEw1hq1HudAnCi\\\"]},\\\"lib/v4-core/src/interfaces/IProtocolFees.sol\\\":{\\\"keccak256\\\":\\\"0x32a666e588a2f66334430357bb1e2424fe7eebeb98a3364b1dd16eb6ccca9848\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://85751d302125881f72e5f8af051c2d5d9b1f606ebaea8ca7d04fccdd27cc252d\\\",\\\"dweb:/ipfs/QmeRwomeh9NWm6A6fgNA4KZPQZHPpdKsPQyYsHSFmvud7J\\\"]},\\\"lib/v4-core/src/interfaces/callback/IUnlockCallback.sol\\\":{\\\"keccak256\\\":\\\"0x58c82f2bd9d7c097ed09bd0991fedc403b0ec270eb3d0158bfb095c06a03d719\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://91168ca26a10980df2cdc3fbfe8ddf372c002b7ef19e3c59a0c9870d64198f1b\\\",\\\"dweb:/ipfs/QmUSpaM825vd1SwvF38esgbdLgYiPwefKaFERTWvUi6uSK\\\"]},\\\"lib/v4-core/src/interfaces/external/IERC20Minimal.sol\\\":{\\\"keccak256\\\":\\\"0xeccadf1bf69ba2eb51f2fe4fa511bc7bb05bbd6b9f9a3cb8e5d83d9582613e0f\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://118757369892687b99ef46ce28d6861f62c098285bd7687a4f17f7e44e5f81de\\\",\\\"dweb:/ipfs/QmUxqbYqQtcEwwFbb9e6BBMePEaSgN8C45v6RKubD4ib8d\\\"]},\\\"lib/v4-core/src/interfaces/external/IERC6909Claims.sol\\\":{\\\"keccak256\\\":\\\"0xa586f345739e52b0488a0fe40b6e375cce67fdd25758408b0efcb5133ad96a48\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://e8c557b7e52abdbbd82e415a1acc27921446a7fd090b7d4877e52be72619547f\\\",\\\"dweb:/ipfs/QmXE2KNPbXmGX8BQF3ei6zhzRTnhoTQg39XmqMnkhbr6QK\\\"]},\\\"lib/v4-core/src/libraries/BitMath.sol\\\":{\\\"keccak256\\\":\\\"0x51b9be4f5c4fd3e80cbc9631a65244a2eb2be250b6b7f128a2035080e18aee8d\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://fe98bbd5498e912146b9319827fc63621eb66ff55d5baae0fa02a7a972ab8d1e\\\",\\\"dweb:/ipfs/QmY5hCuyrtgsJtk4AavrxcvBkRrChfr4N6ZnhdC8roPpNi\\\"]},\\\"lib/v4-core/src/libraries/CurrencyDelta.sol\\\":{\\\"keccak256\\\":\\\"0x80dbd898cf0f90c5c27192689b16c34edc765d6ab21b8358e3bb792c7fef238c\\\",\\\"license\\\":\\\"BUSL-1.1\\\",\\\"urls\\\":[\\\"bzz-raw://107698da024313f132d9fe28deb920b5c03d14624889c3ce5720e588f03635bb\\\",\\\"dweb:/ipfs/QmQteUbhj5SsWbvSF6U8niBUSrETqVbEwULc8E7vS4Kbnn\\\"]},\\\"lib/v4-core/src/libraries/CurrencyReserves.sol\\\":{\\\"keccak256\\\":\\\"0x1576616129933fcdf3b684cea33cffd9c95e18fafbd2832a8c48ac3d8526d4c3\\\",\\\"license\\\":\\\"BUSL-1.1\\\",\\\"urls\\\":[\\\"bzz-raw://33b050efb9b81803b18f562271e7cca2ec5362c4d505860d6419b4a345636725\\\",\\\"dweb:/ipfs/QmQtFtTwKZ5pFVGD2ENDUXvp7ECFvzqeCuJ1miJcUHdmiX\\\"]},\\\"lib/v4-core/src/libraries/CustomRevert.sol\\\":{\\\"keccak256\\\":\\\"0x111ed3031b6990c80a93ae35dde6b6ac0b7e6af471388fdd7461e91edda9b7de\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://c9ea883c98d6ae1829160d0977bb5195761cfd5bc81692d0a941f45717f594cd\\\",\\\"dweb:/ipfs/QmZPwxzaeMNv536wzrAMrMswu7vMHuqPVpjcqL3YvCMoxt\\\"]},\\\"lib/v4-core/src/libraries/FixedPoint128.sol\\\":{\\\"keccak256\\\":\\\"0xad236e10853f4b4b20a35a9bb52b857c4fc79874846b7e444e06ead7f2630542\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://0de1f9a06520b1a689660943faa14fc0b8344ab41fab9e6012ea34bff4b9b3eb\\\",\\\"dweb:/ipfs/QmRNMPTyko7W6d6KxuTsnDBa9oZgDK4xiwRRq3H9ASTbwy\\\"]},\\\"lib/v4-core/src/libraries/FixedPoint96.sol\\\":{\\\"keccak256\\\":\\\"0xef5c3fd41aee26bb12aa1c32873cfee88e67eddfe7c2b32283786265ac669741\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://4de298d02f662a1c36c7be0a150f18c2a161408a5d3e48432e707efd01fac9a4\\\",\\\"dweb:/ipfs/QmSiM4oeMmLVKmAtJXz2feYkv4R9ZcyBpkTRW5Nhw5KDyJ\\\"]},\\\"lib/v4-core/src/libraries/FullMath.sol\\\":{\\\"keccak256\\\":\\\"0x4fc73a00817193fd3cac1cc03d8167d21af97d75f1815a070ee31a90c702b4c2\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://c3b2d66d36b1ad56b1ab6e2eb8a816740877b40b461c93f125e88621c8378e52\\\",\\\"dweb:/ipfs/QmPGvMZzKQvNiWKd8aRzzdW7oAizwrMgcMtnaworDkVHFC\\\"]},\\\"lib/v4-core/src/libraries/Hooks.sol\\\":{\\\"keccak256\\\":\\\"0xd679b4b2d429689bc44f136050ebc958fb2d7d0d3a3c7b3e48c08ab4fba09aaa\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://287190cb72840e5eb63cc7a8a1d0b9150af17d8e4ea0323f47c7e7928f2033cb\\\",\\\"dweb:/ipfs/QmVfqWBnAQM2jUcuREDdvjcP21gNuLU35CoL3NG5CEhNcx\\\"]},\\\"lib/v4-core/src/libraries/LPFeeLibrary.sol\\\":{\\\"keccak256\\\":\\\"0xbf6914e01014e7c1044111feb7df7a3d96bb503b3da827ad8464b1955580d13b\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://33823c20a91882c9aacdcbb02f0558c05209f4d5954aa6dd4fa17c95664db475\\\",\\\"dweb:/ipfs/QmR7owkFgpfztpp1QUg3ut3nw9iPVQqLGP4hzgmZtRUQ2J\\\"]},\\\"lib/v4-core/src/libraries/LiquidityMath.sol\\\":{\\\"keccak256\\\":\\\"0x000ef2eadcc1eb7b2c18a77655f94e76e0e860f605783484657ef65fd6eda353\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://a766b620a7a22798b43c6c1f23b5c6cff0ebf588deb89842bad05208d448cd99\\\",\\\"dweb:/ipfs/QmVKjaFJdzkqA3ey2Byum8iTCMssWVD8MmVC8rw62Tj5WD\\\"]},\\\"lib/v4-core/src/libraries/Lock.sol\\\":{\\\"keccak256\\\":\\\"0x9338be4b5695f1da5f3d3f7a3eeaf7a356c1045458289586ac0cbe9cef77c6d5\\\",\\\"license\\\":\\\"BUSL-1.1\\\",\\\"urls\\\":[\\\"bzz-raw://485ec42ed6155469d612a9a0c18068ebfbad74448792a338a435503de3ef1b2c\\\",\\\"dweb:/ipfs/QmVnnv5u74MYatfRmBgrcfFYQcsMAJMG9jQ6ju8UiydKNF\\\"]},\\\"lib/v4-core/src/libraries/NonzeroDeltaCount.sol\\\":{\\\"keccak256\\\":\\\"0x0666ebd5d3528d7d52c48538296367a4cff97a578cf13365c51983fae3219b87\\\",\\\"license\\\":\\\"BUSL-1.1\\\",\\\"urls\\\":[\\\"bzz-raw://d27f1be3bd09d85c53d3e6a539dd6529ddd8b2b764ccb47fd7765fc81f9add59\\\",\\\"dweb:/ipfs/QmQdZujNXhKEXQBkKtF5jbdvo1yXMqPDUoBBaF9S5u3Kpm\\\"]},\\\"lib/v4-core/src/libraries/ParseBytes.sol\\\":{\\\"keccak256\\\":\\\"0x7533b13f53ee2c2c55500100b22ffd6e37e7523c27874edc98663d53a8672b15\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://82449058634fde28a085f3c59a6a5f412550c02181590593fd84c3e8b329aa17\\\",\\\"dweb:/ipfs/Qmev4E9Au6SsE4wsArChCwfg94KhHc5gYsEsZUnjF5sRLa\\\"]},\\\"lib/v4-core/src/libraries/Pool.sol\\\":{\\\"keccak256\\\":\\\"0xb8191707c5913f5e2f589cec5167e3fac4a5b86bd84f61fdba0fbe6a8ce8a3a0\\\",\\\"license\\\":\\\"BUSL-1.1\\\",\\\"urls\\\":[\\\"bzz-raw://a609f9c365f05becf61877d9dc767e7825bce8c34607dbfc0f0437a71f6ff407\\\",\\\"dweb:/ipfs/QmThDUzLePs2Hbp6XTpRSHT67rdsjQLhdmS6krm8cpKSey\\\"]},\\\"lib/v4-core/src/libraries/Position.sol\\\":{\\\"keccak256\\\":\\\"0xddab2a831f1befb6abf5567e77c4582169ca8156cf69eb4f22d8e87f7226a3f9\\\",\\\"license\\\":\\\"BUSL-1.1\\\",\\\"urls\\\":[\\\"bzz-raw://c79fe61b50f3b70cff503abfa6f5643fcbefb9b794855bee1019b1e6d9c083b2\\\",\\\"dweb:/ipfs/QmbKmYNQesaMz8bo1b7TMHQcAwaDd3eDPrE5pAdPPZTtk5\\\"]},\\\"lib/v4-core/src/libraries/ProtocolFeeLibrary.sol\\\":{\\\"keccak256\\\":\\\"0xf483001899229ab10f5a626fe1c5866134d9e965b48ce6cf55ce0d7f74f7d8ec\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://6ba9211a7f69bbb44649c35211eb29d193c09032ec600064ef9d04b4625dd8ba\\\",\\\"dweb:/ipfs/QmQSjQvtguYgMJSkkKRhHjxasfX9xfTbrbcZ1QmjUVb787\\\"]},\\\"lib/v4-core/src/libraries/SafeCast.sol\\\":{\\\"keccak256\\\":\\\"0x42c4a24f996a14d358be397b71f7ec9d7daf666aaec78002c63315a6ee67aa86\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://c3db86e2ba3679105fc32edec656c70282e1fede6cab11217702443f6c26fa59\\\",\\\"dweb:/ipfs/QmX4yaaSPdKQzYNRsezjTvZKsubzS8JRTEGFD3fPpTTCcj\\\"]},\\\"lib/v4-core/src/libraries/SqrtPriceMath.sol\\\":{\\\"keccak256\\\":\\\"0xf8079fe6e3460db495451d06b1705e18f1c4075c1af96a31ad313545f7082982\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://582fc51546723a0a8acccf782f69b530bacf9b3ef929458e82569b7121f0b138\\\",\\\"dweb:/ipfs/QmSBXcmqZdFsM7M4sRaiyQAxykCeMNFKyKgBcwSMTw1bcF\\\"]},\\\"lib/v4-core/src/libraries/StateLibrary.sol\\\":{\\\"keccak256\\\":\\\"0x96db333ee126a841dd959e38e452cc59d73583cb0437a1d48b2052e33a74f952\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://8672bba1eb69608299b0904f4ff305238eb18479d371c26518f278c9ee184cd0\\\",\\\"dweb:/ipfs/QmTLu3s6ECvsEDHStQv8HTVHYtvkviBbdjPrFJd4SpVRFY\\\"]},\\\"lib/v4-core/src/libraries/SwapMath.sol\\\":{\\\"keccak256\\\":\\\"0x6baa782ae523269c079cc763639a9b91a25fcfa1743c049c76e43741ef494bd9\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://035c337e62e05262a5bd5d3bc85bc9a383c1013001216b429f49cf1e129a0812\\\",\\\"dweb:/ipfs/QmU7s4h58Fh2A6mM8yeorZ2ygwEJMQw8zdZLLkHeDoSWxD\\\"]},\\\"lib/v4-core/src/libraries/TickBitmap.sol\\\":{\\\"keccak256\\\":\\\"0x6779f89e28a0b4af6e09d518caf014b7e8fc627400f5561f86fed11635b1458a\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://a64dee983106de3be3f968be94368c1e37592f5418aa2a39e8dd358d5a962b0d\\\",\\\"dweb:/ipfs/QmYuECZTiEeQVxDLYx6pBSSnVrg56Apw75bugQiM3FmGwy\\\"]},\\\"lib/v4-core/src/libraries/TickMath.sol\\\":{\\\"keccak256\\\":\\\"0x4e1a11e154eb06106cb1c4598f06cca5f5ca16eaa33494ba2f0e74981123eca8\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://a79a57f7b240783b045168d1c4f774ac1812caf8f9a83cb6959a86b0b07b6c70\\\",\\\"dweb:/ipfs/QmTb5kvxwDNW8jDuQaqdJ445cCFejNkUqEB17Bjo8UBiva\\\"]},\\\"lib/v4-core/src/libraries/TransientStateLibrary.sol\\\":{\\\"keccak256\\\":\\\"0x7d1e0875747bd89b32c25f1a48da2766e5f4aff1f671ad5f3c0c07ebbbcb946a\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://d76cfeb1cb60595b41ecc51c8a12fb4bf63a7fc733d0b1a2e3adb55abeb1f9d5\\\",\\\"dweb:/ipfs/Qmb8oX7DtsRpw3tTtdWZwGhauj1evq43d3PLwe4nSDAKkV\\\"]},\\\"lib/v4-core/src/libraries/UnsafeMath.sol\\\":{\\\"keccak256\\\":\\\"0xa6e55e0a43a15df2df471d9972cd48f613d07c663ecb8bbeaf7623f6f99bcce4\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://02ea6e13879fc5a5f35149a2f1cd8af3a1f0877ff69101dad53841d16f515572\\\",\\\"dweb:/ipfs/QmcpL4gdG6hL2w1wqs2Vw4J1EFCwBs9T1Qd4p16CtECQkn\\\"]},\\\"lib/v4-core/src/types/BalanceDelta.sol\\\":{\\\"keccak256\\\":\\\"0xa719c8fe51e0a9524280178f19f6851bcc3b3b60e73618f3d60905d35ae5569f\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://7436928dc9de35c6c7c5c636cb51adaf295cfd590da83b19a004ae33cbec9ef9\\\",\\\"dweb:/ipfs/QmRJ9yZkUpzk4433GX3LgVVL8jwpbSYSUwXcucKisf3v4H\\\"]},\\\"lib/v4-core/src/types/BeforeSwapDelta.sol\\\":{\\\"keccak256\\\":\\\"0x2a774312d91285313d569da1a718c909655da5432310417692097a1d4dc83a78\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://a2c7a0379955cff9c17ab9e61f95e42909aa5947c22740f86ce940d09856f782\\\",\\\"dweb:/ipfs/QmaAuo8UBYXsGrVuKh8iRoAAdqwtg1jDq515cW1ZRP5m9K\\\"]},\\\"lib/v4-core/src/types/Currency.sol\\\":{\\\"keccak256\\\":\\\"0x4a0b84b282577ff6f8acf13ec9f4d32dbb9348748b49611d00e68bee96609c93\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://45f9d62ab3d51b52957279e353853ba1547c3182c9a1e3d1846ada4a90263b01\\\",\\\"dweb:/ipfs/QmS8NG84ccQS1yXVD8cv3eKX7J1UKxuJhbUfHTQR2opKF5\\\"]},\\\"lib/v4-core/src/types/PoolId.sol\\\":{\\\"keccak256\\\":\\\"0x308311916ea0f5c2fd878b6a2751eb223d170a69e33f601fae56dfe3c5d392af\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://669c2cd7ac17690b5d8831e0bda72822376c3a04b36afed6d31df4d75fe60918\\\",\\\"dweb:/ipfs/QmT6EpkxqU8VF3WsgrZ66F3s1cCQRffR95z1HDYZz7ph6y\\\"]},\\\"lib/v4-core/src/types/PoolKey.sol\\\":{\\\"keccak256\\\":\\\"0xf89856e0580d7a4856d3187a76858377ccee9d59702d230c338d84388221b786\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://6f3118fa189025695c37fdf0bdd1190f085ad097484d3c88cf4c56d1db65f639\\\",\\\"dweb:/ipfs/QmamXpgtB8GV1CaFLvqefPWSoikLDhMk1yU4heBnVzU8gi\\\"]},\\\"lib/v4-core/src/types/PoolOperation.sol\\\":{\\\"keccak256\\\":\\\"0x7a1a107fc1f2208abb2c9364c8c54e56e98dca27673e9441bed2b949b6382162\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://4ad2470383bc5595d5af17840c64971f457adac68895a4db41ba5c71a4478e07\\\",\\\"dweb:/ipfs/QmdwKhBHDZFuqXrR2BfDBD9r7rB2ULGQBznsajRTkTmL4c\\\"]},\\\"lib/v4-core/src/types/Slot0.sol\\\":{\\\"keccak256\\\":\\\"0x8b4912fac7e25ea680056748121113f902d56f8b2640f421d5c38d438db11c1b\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://c19b1ff5b951fb54129268d2be37d82c8bb3ea6e29ac9bc78a8a37794fc082b8\\\",\\\"dweb:/ipfs/QmTAQ2mUoiT77hoWJAfn9pyoGy47qaevn45QHrbyovGt2C\\\"]},\\\"lib/v4-periphery/src/PositionManager.sol\\\":{\\\"keccak256\\\":\\\"0x0c28bf323e06f12b8cfe0f10324a7f7c043af1b3dbf4c9ddd0b582545920b6a2\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://0659bb3388a5f09c5f5ed8979b67fb451e701c4d85414e66e9a1ceac82d81194\\\",\\\"dweb:/ipfs/QmS9JDqc8w657bCFEnz3qMzPSSWwd3DDXJAuaq7mGAXHYr\\\"]},\\\"lib/v4-periphery/src/base/BaseActionsRouter.sol\\\":{\\\"keccak256\\\":\\\"0xc9ed11618c4d82c5b723841a7d8eaf61600118c593e01e9929a193ecdb1ad63a\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://b048aa814ef6bdeec79eba67aa765186d74b58f98f4b2be913cc291a15986169\\\",\\\"dweb:/ipfs/QmRoFpoCG7DYJtc3uewYwwj2Eb4bXLrefgV3t8vekY3XWg\\\"]},\\\"lib/v4-periphery/src/base/DeltaResolver.sol\\\":{\\\"keccak256\\\":\\\"0x94a2da2be5c924df65a8e1e29f585bbe4c37777fedd43b45989c66d509a4a83c\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://42bba590f6e817fd56328b74ae99bfdc4df57386d0a69ee22b9108341953ed36\\\",\\\"dweb:/ipfs/QmdusastK7FWYouLz9gvV5J3z8MQbNKLJNNHTrc1vi7DWw\\\"]},\\\"lib/v4-periphery/src/base/EIP712_v4.sol\\\":{\\\"keccak256\\\":\\\"0x151e85890822c1b0fe85ec3c021826cb42f615e2b9d6fcdd79019681a6ee5588\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://c5df84221ba4fe59c8223e94bec954b7f7602d4ad81d2f0c046a67c21c1d24be\\\",\\\"dweb:/ipfs/QmbTUqqHxRxEDyrMPApozbC6DEYMZGa27dWu3KodNACiLy\\\"]},\\\"lib/v4-periphery/src/base/ERC721Permit_v4.sol\\\":{\\\"keccak256\\\":\\\"0xb1c3d4cc1fa0c7f9562674917d9ffdd119a1ccdb3adca44b2832d5c91c068125\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://752a8a679a9cc9e56a8e95fc1fa1d8c39a951a479b6c0b1109238f73520045df\\\",\\\"dweb:/ipfs/QmRzLo9KRcJH38Fx2xvweVmvMbTRKzyDR7R7Fui4Ca9cma\\\"]},\\\"lib/v4-periphery/src/base/ImmutableState.sol\\\":{\\\"keccak256\\\":\\\"0x1867c9fa2f9b4fa73bab0fcdc9d19ccef4eeac552273d8b84a170cd1cc90350a\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://af2d699b439e13b599632fddfe82718aebd41055fba7c075f186675c588d1337\\\",\\\"dweb:/ipfs/Qmc111gckSKb9aESn3wRFLeLiS4KGujaUcaYJgRnCRfwQU\\\"]},\\\"lib/v4-periphery/src/base/Multicall_v4.sol\\\":{\\\"keccak256\\\":\\\"0x654c6e65bd9bbf12b2cc393f8523db04e85ec45e829200de3895709479d6d569\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://d7ee5441ed14cdad5328f8e844403c2969fe2ecd9d110d7b80954bfa41f52d69\\\",\\\"dweb:/ipfs/QmQ1r1qmGyg1JXUgmjzi3WxjAmkLtMpUVsRWfYJsRRo3sP\\\"]},\\\"lib/v4-periphery/src/base/NativeWrapper.sol\\\":{\\\"keccak256\\\":\\\"0xfb756bc69e401d621f615746d881cfef7e98f3f563775905a1eca79a074a35ca\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://507c9b3ddf79ec34b8ae472dfc4d6840343a9a172d7c6f33eec290e0078e9254\\\",\\\"dweb:/ipfs/QmWhGck33w1s343mtojttgisJcsdwDf6Ah6oTpjgsWcQWh\\\"]},\\\"lib/v4-periphery/src/base/Notifier.sol\\\":{\\\"keccak256\\\":\\\"0x5f2a29b2a528269643d026bf4698e6520eeb1e5fc773f9d5059b3e279a488bf6\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://63d5c541039f37ae89533a15fc311e3fec3d143fa11bac42e73964bdf74b3d06\\\",\\\"dweb:/ipfs/QmUrvqNYEYwEu1zRWLFVDUW2zEajbkNYxiNqUpc5aWx5ui\\\"]},\\\"lib/v4-periphery/src/base/Permit2Forwarder.sol\\\":{\\\"keccak256\\\":\\\"0xcdf793e6732cdf0c386f89573384032314b0893bf208b3d75ac71d3002674a3b\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://4f18d0be711c1d586854e2a78113bf84765e7158c9568b2c73f8750511a22ce7\\\",\\\"dweb:/ipfs/QmSe3zz9jvDZo2MqPgCpfNs3yA4xAWPB1deZBoRFzeZiN1\\\"]},\\\"lib/v4-periphery/src/base/PoolInitializer_v4.sol\\\":{\\\"keccak256\\\":\\\"0x068c85032e50ef6374958ff3e7dcc143527f669de1bbba831e552d033344a1e3\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://674c29491faef627b52cb81495bf3747cd7f7613e2ddcabb1dd258f93f966006\\\",\\\"dweb:/ipfs/Qmc1D31ubNDRdxVS6pxDzn7z8disSw7UScHu8rgfpxCAsz\\\"]},\\\"lib/v4-periphery/src/base/ReentrancyLock.sol\\\":{\\\"keccak256\\\":\\\"0x66dd19f8eb40b7a86afea0e5b1dcada6268041027b0dfc493b80ca1f66af217d\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://ac6d34517e2dd2c9cd03e16c5333defd003c134a4bff52ad95b673a5e8804609\\\",\\\"dweb:/ipfs/QmPSRdswfajCZCchH9j8rC7U3GLJ4w24gK35gxRVY3Qxz4\\\"]},\\\"lib/v4-periphery/src/base/SafeCallback.sol\\\":{\\\"keccak256\\\":\\\"0xd78b583df1b9ee06d58e83b84fc9f08971389b34dd34bc13db072e0c13c710da\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://c0a47f4bcd6060c4462153b9a7c52a60a460ace91acb6ddd5492eab28ec26173\\\",\\\"dweb:/ipfs/QmdRCTRS1dhFjWEy6z577j4xz9J5HPfHBwcNzAic8G59oT\\\"]},\\\"lib/v4-periphery/src/base/UnorderedNonce.sol\\\":{\\\"keccak256\\\":\\\"0x0ec175bf2213d75606ebb770227e8622ae9666fbde8ff2d1682d85890b81676e\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://079952902a4be56b5e963585349988fcbea853bf8271a5cb88e7629cafb06bcf\\\",\\\"dweb:/ipfs/Qmere81cd2Wq9Vq4rL5G1nW4Jv54YJeMr1oaej7468xrgi\\\"]},\\\"lib/v4-periphery/src/interfaces/IEIP712_v4.sol\\\":{\\\"keccak256\\\":\\\"0xd7f7115476e307a0bfc32a0f0a0f5434e9e5ca62a6c5af1e18b75e48161bb408\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://b1600b953556da38a7adc5ad2a2925ec5fb138fecf8eec48743646543195b736\\\",\\\"dweb:/ipfs/QmarZi2aiLVAfHXgnDWV1cCFiZk2DdPW7KJnWHqzuRChJR\\\"]},\\\"lib/v4-periphery/src/interfaces/IERC721Permit_v4.sol\\\":{\\\"keccak256\\\":\\\"0x103adbba724ef536abc536fe8a4d7dc12880724c562109b69f2adce4a91fa017\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://06f51b5a5a218e0bc866a83e7821be53c9db9de0ca921f16abd3d13ea0eab69d\\\",\\\"dweb:/ipfs/QmbnhLy992hpQZyphTkj7fpr6jKKVva2AzfmLiDZEuqHAk\\\"]},\\\"lib/v4-periphery/src/interfaces/IImmutableState.sol\\\":{\\\"keccak256\\\":\\\"0x36ab3100e87457ecf04887f4f540e34fd7f21d8e3b83880cb679239e60b7b06b\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://7f290c7ce8e4832608d637a51b13dff95abecf6549485448e647a11c8ed01341\\\",\\\"dweb:/ipfs/QmfD1R6mTp8j4EjQXmQZW3vCh11EYFjnvoaw8rXRP27mMq\\\"]},\\\"lib/v4-periphery/src/interfaces/IMsgSender.sol\\\":{\\\"keccak256\\\":\\\"0xcc7d4e3f2fde34cf1ad9f05a8e43977e04d19624f71eb8a8c295feaf64b362a3\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://1e02044b5e19cc9ca24d23f55667142fde6daefba66408b56c4f620b625fc189\\\",\\\"dweb:/ipfs/QmUqWdRBqWi2tZkNAPhzLZbknP26TZbD8iRQMd3fdZGFgi\\\"]},\\\"lib/v4-periphery/src/interfaces/IMulticall_v4.sol\\\":{\\\"keccak256\\\":\\\"0x336bec303f7ff86497d2679464c5adad5040f412b3d0769ce5e1d2a42f7e2c08\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://7734f047d98d331c8abc51ad9f358ceee0a6dcae8d89ac49084b84de0d2d42e7\\\",\\\"dweb:/ipfs/QmWij2h7mU36LsXhb9P6pkYXrSCua4ixeWaVFSrsEcEmPQ\\\"]},\\\"lib/v4-periphery/src/interfaces/INotifier.sol\\\":{\\\"keccak256\\\":\\\"0xfdc5187a98240a1691aae98b7dd2444d4c2bfb4746f3c34de9f3d18399c17c5e\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://683af56401ec4f8817e8dfe150e7b3febaf0baaf40efe8d0d0475f735275f746\\\",\\\"dweb:/ipfs/QmRQ6S3nFnSc2jjDcQTvUJdTf4xKPojmvCkpvgyr6qTuVV\\\"]},\\\"lib/v4-periphery/src/interfaces/IPermit2Forwarder.sol\\\":{\\\"keccak256\\\":\\\"0xfad472937280e861125ff12aa6f9c2cf7440fbb20a2cc29485c24662ad4279c5\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://31bfbc331f5972fc373d9469fd1ca1d14818db3275f21b7b590f20820cb4439d\\\",\\\"dweb:/ipfs/QmX3Bv9wfYpAFZKBcxKsQSXUrSC8mqNBdzh6XVMS72aNx9\\\"]},\\\"lib/v4-periphery/src/interfaces/IPoolInitializer_v4.sol\\\":{\\\"keccak256\\\":\\\"0x2e4feda94650a2642039e0309ffdec480ee050bc40864bf5e1dba42bb4dc9e98\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://964c178b4da8bab9ef898b94bb26d7c17cc44c5cf20485f55dcf5e9c7e1b1d92\\\",\\\"dweb:/ipfs/QmVd2c3SYteyr5xZgUS4sDAiZF43dLwVAEKdCfvQbkZpRJ\\\"]},\\\"lib/v4-periphery/src/interfaces/IPositionDescriptor.sol\\\":{\\\"keccak256\\\":\\\"0x5a4327e608b35ba2d3451c267b609336efbd780912080dbb1a21563db25c9768\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://c783c7a4834d610586ef6caf79806f4e339ad488046766d03fe3d014d11093e4\\\",\\\"dweb:/ipfs/QmcQWiNQz1hAcJRwFfw5NnSz6zcgAE5HytdVL8MAQJUrv4\\\"]},\\\"lib/v4-periphery/src/interfaces/IPositionManager.sol\\\":{\\\"keccak256\\\":\\\"0x62dfa0cbee8314ee7e6787db8bc1d364245c340f940875ac7ff11e89d074fc7e\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://26f560c77d8a187bf93a710b827e3167eab3446922192fa8f92f208da2103834\\\",\\\"dweb:/ipfs/Qmbzp5gSYdTpMBF9aAb2GraxMEQZb5LRJCyg8VaRUyjTFc\\\"]},\\\"lib/v4-periphery/src/interfaces/ISubscriber.sol\\\":{\\\"keccak256\\\":\\\"0x34ceadec4a63019680e543fe73197f198a55c825d86e18f327840354760b57e7\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://31734feafe1fe162a0702ddf862fcc3bd97505931afb3c685033c0185d898051\\\",\\\"dweb:/ipfs/QmQEANYVyaXTNzXKcjUVfPhLU71Bix5vxQH75BpPWMkWgw\\\"]},\\\"lib/v4-periphery/src/interfaces/IUnorderedNonce.sol\\\":{\\\"keccak256\\\":\\\"0xd7f32fee74dc7d1a3b078ca1263961baccaa6bf434c79e8fe0e092e30c3e0ec3\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://e7d1e92d89d5f49c84aa82f3b259678c2c97a4473b22d753ca4411a6b0cec36d\\\",\\\"dweb:/ipfs/QmNZoQyminStaAdaLqoDLoWaBU5QWrWjXFjmBm4aFhzL8i\\\"]},\\\"lib/v4-periphery/src/interfaces/IV4Router.sol\\\":{\\\"keccak256\\\":\\\"0xc4133fae25e61cc2447d7331729f6035322d7c1fe26b39b225422bf98cc63459\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://3c24ff8428504e973e947a059f96289a66c520cd7f8ef47a3224f9cb6abdaf25\\\",\\\"dweb:/ipfs/QmVqxYnngWXXcCiuTC143vTEJrjZK5NXWB92pjvVbuJBQ5\\\"]},\\\"lib/v4-periphery/src/interfaces/external/IWETH9.sol\\\":{\\\"keccak256\\\":\\\"0xe88abf12501ac275619aec0687240a07d26968aecbbcdfea88ba8bbd5d6e5e14\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://7097065d4492b4eccb1a73f99af1e5bec45404c6b973b8f5965c4c91403f5f92\\\",\\\"dweb:/ipfs/QmZK8oEqmjmTqhBoh3D3fBpyKGkUEFnptY8xwH9xpNjDm2\\\"]},\\\"lib/v4-periphery/src/libraries/ActionConstants.sol\\\":{\\\"keccak256\\\":\\\"0x3d6f0e5b4a7b1e60bad93e73dce5db67fb66bebef11c31ed8355014a79aa03b3\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://6dfa42e24b1b5c7f66e75304ab034fbb6768518eb2410ccfff8b3defdd1658f2\\\",\\\"dweb:/ipfs/QmQQ7fud9mmv7PEWPAQiNzeZhNkWf28Z6nCHc2e6WJFfa7\\\"]},\\\"lib/v4-periphery/src/libraries/Actions.sol\\\":{\\\"keccak256\\\":\\\"0x8efd4b8b289177ee27e557d9d0a5a9f973d66fe1eb1ef8959d316b11987ca830\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://07fe35f194eb99465028f0546359befea574d844da53767d32f22b233c3bcc98\\\",\\\"dweb:/ipfs/Qmc19631uFxABTHAbGrDrroexi9GdyxWntaum1v8npPYz5\\\"]},\\\"lib/v4-periphery/src/libraries/CalldataDecoder.sol\\\":{\\\"keccak256\\\":\\\"0x26df49e13fb5410fd4db253cca877dfdfb3a1ba03e394d054c0e0514a88a56e5\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://72a0c98c52171708f332f83d517deeb97fdd50ecf28f2510e1866e54593a6ff8\\\",\\\"dweb:/ipfs/QmY4LiDUfSKGj86nML7B6a8euiPciUqwYehasAyAVnMCHq\\\"]},\\\"lib/v4-periphery/src/libraries/ERC721PermitHash.sol\\\":{\\\"keccak256\\\":\\\"0xd8024f516738a1f968169875efd4ba803049c933cf6ea5e36189df9915f4e3f2\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://58b45295f87c31f516a727a2a40ba2f34ac57ebd5520c42ea59946d2ffc0f5df\\\",\\\"dweb:/ipfs/QmW8xC2xS18r4yhGbhSJTN1DfCgPT6oKHxwwszutn2sPuz\\\"]},\\\"lib/v4-periphery/src/libraries/LiquidityAmounts.sol\\\":{\\\"keccak256\\\":\\\"0x8ea74b89831877ffe657f8461164a01a6f3c7e46f415410854fca8d28a8cab53\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://f4015f62e5e8aa154baa555dc39ce36b498e6d875a53f793d62b8556e6b97ccb\\\",\\\"dweb:/ipfs/QmUVHyEe3hZZZQum5ct6yDY8qduj62Ta7f7x5Kw95LpQbg\\\"]},\\\"lib/v4-periphery/src/libraries/Locker.sol\\\":{\\\"keccak256\\\":\\\"0x5c0859290a277fbfba8579b506426d3fc4b2ff7d8b691c03dd23aa85797fdae1\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://18ad9effea8da74b9988373dddddd6669f11701fc954f77d2cb58beb9a9cc3ad\\\",\\\"dweb:/ipfs/QmQdBMoXdVACo6k6rumWj15UPDCqGpWNSPvQbejxKuV9RJ\\\"]},\\\"lib/v4-periphery/src/libraries/PathKey.sol\\\":{\\\"keccak256\\\":\\\"0xbbd79ffefe045f025263e389539021266fb4d371463aefba405e1ff1d3fcf9bc\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://2d1c47b81a01218be46ee79f0a8837095479b94dc5cfd18abbf2006709f0ea89\\\",\\\"dweb:/ipfs/QmRb6CQ13Zp7f3WF5jbZtsF2szhxpPgcuWs9mjwQXxzqtg\\\"]},\\\"lib/v4-periphery/src/libraries/PositionInfoLibrary.sol\\\":{\\\"keccak256\\\":\\\"0xc5ddf96bd088bc87ea50a20f907fc932fb28397a42682a301b268a11b7f34078\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://7dfeb4dc747537240f8167243e8066b6f5f08057386fb8bda93f82973fc18ad6\\\",\\\"dweb:/ipfs/Qmby9DAAaHj8hjsMUnqY3vjqCHKGAKrT5EULMmeGcjbbGx\\\"]},\\\"lib/v4-periphery/src/libraries/SlippageCheck.sol\\\":{\\\"keccak256\\\":\\\"0x9b7872e403b417dfbcf9835b16109f80f7abed702652a9817e28f07189983b4b\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://911974b8e37b3be02150090b64d841fcc1153277d20f75315b3b8eb02c111e66\\\",\\\"dweb:/ipfs/QmRYe4UAYG5TNqB2ygM3n7e3GFMhJmW1c29WZjGDfGQyxQ\\\"]},\\\"lib/v4-periphery/src/utils/BaseHook.sol\\\":{\\\"keccak256\\\":\\\"0x6268607345149d912996d1c2bac693b2102304cc97c19ec4fef184d6fa390e89\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://d6c0dddffa6c5eb3c10bc45d56d58bc3f4773778322fa10a4acf46e2292b61b3\\\",\\\"dweb:/ipfs/Qmc1Srhh6ne5Lsi2Y5BBz8pgPLmJdg8uN1UCeJzKnr6Kra\\\"]},\\\"src/Id.sol\\\":{\\\"keccak256\\\":\\\"0x3bb11d70fa987732cac775a44d3c033f047da299a81265a574a9c9babecf6cb7\\\",\\\"license\\\":\\\"All Rights Reserved\\\",\\\"urls\\\":[\\\"bzz-raw://23a72eb1871363dceba551f2799df29b7c428c435597f9098d7dc485eb4b6938\\\",\\\"dweb:/ipfs/QmUmRj4dNnH61YDF2kEDeAtfrF5Mn3hnjh1u8FjUAjHNPs\\\"]},\\\"src/Market.sol\\\":{\\\"keccak256\\\":\\\"0x2284cc41dbb7bb315bef80ecb3b0025a3bf74851a0acfafce887bf2e371b6fd1\\\",\\\"license\\\":\\\"All Rights Reserved\\\",\\\"urls\\\":[\\\"bzz-raw://70babe2a2541627a474c645a30e69a3d97cfdd81da55befaf9df302c11997574\\\",\\\"dweb:/ipfs/QmUN6CsDBhaoD1xvHpQesC5mkgkmPN5HS5X5eoH8E45e9v\\\"]},\\\"src/MarketUtilsSwapHook.sol\\\":{\\\"keccak256\\\":\\\"0x71087027e7a193afec66a68c1a476dcc20cd9e1715d4194e16f9f5ca2128d934\\\",\\\"license\\\":\\\"All Rights Reserved\\\",\\\"urls\\\":[\\\"bzz-raw://47166f8df039c7289bcd4de1d73bec555d485ae5786c69c870d3635958285aa9\\\",\\\"dweb:/ipfs/QmcpQ4mSGh2mv3U4JXbdefr8A42jrjipFXhnR1mmt8XSC6\\\"]},\\\"src/Tokens.sol\\\":{\\\"keccak256\\\":\\\"0xa6818a226a9b702c02958a1b4bfe371d7fb8b5885abdf1e052f7263ec7f927c4\\\",\\\"license\\\":\\\"All Rights Reserved\\\",\\\"urls\\\":[\\\"bzz-raw://07efc71f2d1db501ae0acdf59a315ee1b355d615e43f288adb4ccb2126098c16\\\",\\\"dweb:/ipfs/QmPReLjGL1rTqxJPKVDQWTrtobcSBV752EQpbY5w82PbmL\\\"]},\\\"src/USDC.sol\\\":{\\\"keccak256\\\":\\\"0xfe6fcd303379ff125605f2b510cba7c0548a5b5084a926defc2655e5e98e9a17\\\",\\\"license\\\":\\\"All Rights Reserved\\\",\\\"urls\\\":[\\\"bzz-raw://e7fa5064804c84496a8730835890c42f574ccf296205e16facd9810b41d7381b\\\",\\\"dweb:/ipfs/QmaYo22jNzvqemRA3fMEALCnLyh8zQzq1PCFai4ctrVSnH\\\"]},\\\"src/common/MarketData.sol\\\":{\\\"keccak256\\\":\\\"0x8f2d6f931079a6f5d8ef03084f4c1c634e5b5b2019f0917e51c8412b4bd85e7c\\\",\\\"license\\\":\\\"All Rights Reserved\\\",\\\"urls\\\":[\\\"bzz-raw://d644c1b4d37b931f2b6fcf6f6cf23e4fd4ae8f09776e655625094d423dbadee9\\\",\\\"dweb:/ipfs/QmRi5AhbAeN1BDSPjwrwzjFASnVbqWDCgJiLPgcWSnWMJX\\\"]},\\\"src/interfaces/IFlareHybridResolver.sol\\\":{\\\"keccak256\\\":\\\"0xfcaaeb5715db3e9e0e83979e9394e7c0f24d44da918296b2a0ae5612e842d2ae\\\",\\\"license\\\":\\\"All Rights Reserved\\\",\\\"urls\\\":[\\\"bzz-raw://bdaaae59fd31af8e61a13d12fa37f0c56526d35180858ee293d0280b0e3cbfe7\\\",\\\"dweb:/ipfs/QmS6AswkAfm9qnNgo2CmvgVyfS4ThaH5mVB12NwzAoDmTb\\\"]},\\\"src/interfaces/IMarket.sol\\\":{\\\"keccak256\\\":\\\"0xfa5bdc83c5375b9bd259df40fe416344f8a4c1bfd866f637818523bd53e16022\\\",\\\"license\\\":\\\"All Rights Reserved\\\",\\\"urls\\\":[\\\"bzz-raw://80d453e7cd2650e408e169d18179d2d638de6367d06f8e8ce5a1836859f92173\\\",\\\"dweb:/ipfs/QmW76QayLrWLXPD9G46mhiVL15fdRXeTAoTfWZbyNSihRZ\\\"]},\\\"src/interfaces/IMarketResolver.sol\\\":{\\\"keccak256\\\":\\\"0xd00badd60313617578333755e39cb3dcc8dc72e64ffd127f2cb9e13678c9ed41\\\",\\\"license\\\":\\\"All Rights Reserved\\\",\\\"urls\\\":[\\\"bzz-raw://42311e09403e5cc12452e2727dbcc453e0630a18a6731e0bab7b5aca8a22802b\\\",\\\"dweb:/ipfs/QmNj5ywhD86HZBAiwp8oWtZvXy3nBiof3PSkHEq2dACy1B\\\"]},\\\"src/libraries/PriceLibrary.sol\\\":{\\\"keccak256\\\":\\\"0xcd1aeae708f45f8e5f76a2a9c7d838d2bf7fc16e69efd887bc170857a6a3273f\\\",\\\"license\\\":\\\"All Rights Reserved\\\",\\\"urls\\\":[\\\"bzz-raw://d2ffe62fa049a176c09efa5c129b5f053df07c290cf32f5d5139563c84015114\\\",\\\"dweb:/ipfs/QmNq4YwkXLQSNYcTbDKz5u8DjKvhk8QPwPxvcP1eyto9Sk\\\"]}},\\\"version\\\":1}\",\"metadata\":{\"compiler\":{\"version\":\"0.8.26+commit.8a97fa7a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"admin\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_poolManager\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_positionManager\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_permit2\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_swapHook\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_usdc\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"type\":\"error\",\"name\":\"MarketClosed\"},{\"inputs\":[],\"type\":\"error\",\"name\":\"MarketNotSettled\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"type\":\"error\",\"name\":\"OwnableInvalidOwner\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"type\":\"error\",\"name\":\"OwnableUnauthorizedAccount\"},{\"inputs\":[],\"type\":\"error\",\"name\":\"ProposalNotTradable\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"marketId\",\"type\":\"uint256\",\"indexed\":true},{\"internalType\":\"uint256\",\"name\":\"createdAt\",\"type\":\"uint256\",\"indexed\":false},{\"internalType\":\"address\",\"name\":\"creator\",\"type\":\"address\",\"indexed\":false},{\"internalType\":\"string\",\"name\":\"title\",\"type\":\"string\",\"indexed\":false}],\"type\":\"event\",\"name\":\"MarketCreated\",\"anonymous\":false},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"marketId\",\"type\":\"uint256\",\"indexed\":true},{\"internalType\":\"bool\",\"name\":\"passed\",\"type\":\"bool\",\"indexed\":false}],\"type\":\"event\",\"name\":\"MarketSettled\",\"anonymous\":false},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\",\"indexed\":true},{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\",\"indexed\":true}],\"type\":\"event\",\"name\":\"OwnershipTransferred\",\"anonymous\":false},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"marketId\",\"type\":\"uint256\",\"indexed\":true},{\"internalType\":\"uint256\",\"name\":\"proposalId\",\"type\":\"uint256\",\"indexed\":true},{\"internalType\":\"uint256\",\"name\":\"createdAt\",\"type\":\"uint256\",\"indexed\":false},{\"internalType\":\"address\",\"name\":\"creator\",\"type\":\"address\",\"indexed\":false}],\"type\":\"event\",\"name\":\"ProposalCreated\",\"anonymous\":false},{\"inputs\":[],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"POOL_FEE\",\"outputs\":[{\"internalType\":\"uint24\",\"name\":\"\",\"type\":\"uint24\"}]},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"acceptedProposals\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}]},{\"inputs\":[{\"internalType\":\"uint24\",\"name\":\"newFee\",\"type\":\"uint24\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\",\"name\":\"changeFee\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"depositor\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"proposalId\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\",\"name\":\"claimVirtualTokenForProposal\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"creator\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"resolver\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"minDeposit\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"title\",\"type\":\"string\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\",\"name\":\"createMarket\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"marketId\",\"type\":\"uint256\"}]},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"marketId\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"title\",\"type\":\"string\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\",\"name\":\"createProposal\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"marketId\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"title\",\"type\":\"string\"},{\"internalType\":\"bytes\",\"name\":\"resolutionConfigData\",\"type\":\"bytes\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\",\"name\":\"createProposalWithResolution\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"depositor\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"marketId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\",\"name\":\"depositToMarket\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"deposits\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}]},{\"inputs\":[],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"getAllMarketIds\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"marketIds\",\"type\":\"uint256[]\"}]},{\"inputs\":[],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"getAllMarketsInfo\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"marketIds\",\"type\":\"uint256[]\"},{\"internalType\":\"struct MarketConfig[]\",\"name\":\"marketsData\",\"type\":\"tuple[]\",\"components\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"createdAt\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"minDeposit\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"creator\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"marketToken\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"resolver\",\"type\":\"address\"},{\"internalType\":\"enum MarketStatus\",\"name\":\"status\",\"type\":\"uint8\"},{\"internalType\":\"string\",\"name\":\"title\",\"type\":\"string\"}]}]},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"marketId\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"getMarketInfoWithProposals\",\"outputs\":[{\"internalType\":\"struct MarketConfig\",\"name\":\"market\",\"type\":\"tuple\",\"components\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"createdAt\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"minDeposit\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"creator\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"marketToken\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"resolver\",\"type\":\"address\"},{\"internalType\":\"enum MarketStatus\",\"name\":\"status\",\"type\":\"uint8\"},{\"internalType\":\"string\",\"name\":\"title\",\"type\":\"string\"}]},{\"internalType\":\"uint256[]\",\"name\":\"proposalIds\",\"type\":\"uint256[]\"},{\"internalType\":\"struct Market.ProposalInfo[]\",\"name\":\"proposalData\",\"type\":\"tuple[]\",\"components\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"createdAt\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"creator\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"title\",\"type\":\"string\"},{\"internalType\":\"address\",\"name\":\"vusdAddress\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"yesTokenAddress\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"noTokenAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"yesPrice\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"noPrice\",\"type\":\"uint256\"}]}]},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"marketId\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"getMarketInfoWithProposalsAndUserBalances\",\"outputs\":[{\"internalType\":\"struct MarketConfig\",\"name\":\"market\",\"type\":\"tuple\",\"components\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"createdAt\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"minDeposit\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"creator\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"marketToken\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"resolver\",\"type\":\"address\"},{\"internalType\":\"enum MarketStatus\",\"name\":\"status\",\"type\":\"uint8\"},{\"internalType\":\"string\",\"name\":\"title\",\"type\":\"string\"}]},{\"internalType\":\"uint256\",\"name\":\"userMarketDepositBalance\",\"type\":\"uint256\"},{\"internalType\":\"uint256[]\",\"name\":\"proposalIds\",\"type\":\"uint256[]\"},{\"internalType\":\"struct Market.ProposalInfoWithBalances[]\",\"name\":\"proposalData\",\"type\":\"tuple[]\",\"components\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"createdAt\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"creator\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"title\",\"type\":\"string\"},{\"internalType\":\"address\",\"name\":\"vusdAddress\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"yesTokenAddress\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"noTokenAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"yesPrice\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"noPrice\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"yesBalance\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"noBalance\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"vusdBalance\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"claimableVUSD\",\"type\":\"uint256\"}]}]},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"proposalId\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"getProposalInfo\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"marketId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"createdAt\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"creator\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"title\",\"type\":\"string\"},{\"internalType\":\"address\",\"name\":\"vusdAddress\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"yesTokenAddress\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"noTokenAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"yesPrice\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"noPrice\",\"type\":\"uint256\"}]},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"proposalId\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"getProposalPrices\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"yesPrice\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"noPrice\",\"type\":\"uint256\"}]},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"proposalId\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"getUserDeposit\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"totalDeposited\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"alreadyClaimed\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"available\",\"type\":\"uint256\"}]},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"proposalId\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"getUserProposalBalances\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"yesBalance\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"noBalance\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"vusdBalance\",\"type\":\"uint256\"}]},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"proposalId\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"getUserProposalCompleteInfo\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"marketDepositBalance\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"claimableVUSD\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"currentVUSDBalance\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"yesBalance\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"noBalance\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"yesPrice\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"noPrice\",\"type\":\"uint256\"}]},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"proposalId\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"getUserProposalPosition\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"yesBalance\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"noBalance\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"vusdBalance\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"totalDeposited\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"availableDeposit\",\"type\":\"uint256\"}]},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"proposalId\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"getUserVUSDInfo\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"claimableVUSD\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"currentVUSDBalance\",\"type\":\"uint256\"}]},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"marketId\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\",\"name\":\"graduateMarket\"},{\"inputs\":[],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"hook\",\"outputs\":[{\"internalType\":\"contract MarketUtilsSwapHook\",\"name\":\"\",\"type\":\"address\"}]},{\"inputs\":[],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"id\",\"outputs\":[{\"internalType\":\"contract Id\",\"name\":\"\",\"type\":\"address\"}]},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"marketMax\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"yesPrice\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"proposalId\",\"type\":\"uint256\"}]},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"marketProposals\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}]},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"markets\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"createdAt\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"minDeposit\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"creator\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"marketToken\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"resolver\",\"type\":\"address\"},{\"internalType\":\"enum MarketStatus\",\"name\":\"status\",\"type\":\"uint8\"},{\"internalType\":\"string\",\"name\":\"title\",\"type\":\"string\"}]},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"proposalId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\",\"name\":\"mintYesNo\"},{\"inputs\":[],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}]},{\"inputs\":[],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"permit2\",\"outputs\":[{\"internalType\":\"contract IPermit2\",\"name\":\"\",\"type\":\"address\"}]},{\"inputs\":[],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"poolManager\",\"outputs\":[{\"internalType\":\"contract IPoolManager\",\"name\":\"\",\"type\":\"address\"}]},{\"inputs\":[],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"positionManager\",\"outputs\":[{\"internalType\":\"contract IPositionManager\",\"name\":\"\",\"type\":\"address\"}]},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"proposalDepositClaims\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}]},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"proposals\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"marketId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"createdAt\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"creator\",\"type\":\"address\"},{\"internalType\":\"contract VUSD\",\"name\":\"vUSD\",\"type\":\"address\"},{\"internalType\":\"contract DecisionToken\",\"name\":\"yesToken\",\"type\":\"address\"},{\"internalType\":\"contract DecisionToken\",\"name\":\"noToken\",\"type\":\"address\"},{\"internalType\":\"struct PoolKey\",\"name\":\"yesPoolKey\",\"type\":\"tuple\",\"components\":[{\"internalType\":\"Currency\",\"name\":\"currency0\",\"type\":\"address\"},{\"internalType\":\"Currency\",\"name\":\"currency1\",\"type\":\"address\"},{\"internalType\":\"uint24\",\"name\":\"fee\",\"type\":\"uint24\"},{\"internalType\":\"int24\",\"name\":\"tickSpacing\",\"type\":\"int24\"},{\"internalType\":\"contract IHooks\",\"name\":\"hooks\",\"type\":\"address\"}]},{\"internalType\":\"struct PoolKey\",\"name\":\"noPoolKey\",\"type\":\"tuple\",\"components\":[{\"internalType\":\"Currency\",\"name\":\"currency0\",\"type\":\"address\"},{\"internalType\":\"Currency\",\"name\":\"currency1\",\"type\":\"address\"},{\"internalType\":\"uint24\",\"name\":\"fee\",\"type\":\"uint24\"},{\"internalType\":\"int24\",\"name\":\"tickSpacing\",\"type\":\"int24\"},{\"internalType\":\"contract IHooks\",\"name\":\"hooks\",\"type\":\"address\"}]},{\"internalType\":\"string\",\"name\":\"title\",\"type\":\"string\"}]},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"marketId\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\",\"name\":\"redeemRewards\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"proposalId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\",\"name\":\"redeemYesNo\"},{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\",\"name\":\"renounceOwnership\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"marketId\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"yesOrNo\",\"type\":\"bool\"},{\"internalType\":\"bytes\",\"name\":\"proof\",\"type\":\"bytes\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\",\"name\":\"resolveMarket\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\",\"name\":\"transferOwnership\"},{\"inputs\":[{\"internalType\":\"struct PoolKey\",\"name\":\"poolKey\",\"type\":\"tuple\",\"components\":[{\"internalType\":\"Currency\",\"name\":\"currency0\",\"type\":\"address\"},{\"internalType\":\"Currency\",\"name\":\"currency1\",\"type\":\"address\"},{\"internalType\":\"uint24\",\"name\":\"fee\",\"type\":\"uint24\"},{\"internalType\":\"int24\",\"name\":\"tickSpacing\",\"type\":\"int24\"},{\"internalType\":\"contract IHooks\",\"name\":\"hooks\",\"type\":\"address\"}]},{\"internalType\":\"int24\",\"name\":\"avgTick\",\"type\":\"int24\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\",\"name\":\"updatePostSwap\"},{\"inputs\":[],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"usdc\",\"outputs\":[{\"internalType\":\"contract USDC\",\"name\":\"\",\"type\":\"address\"}]},{\"inputs\":[{\"internalType\":\"struct PoolKey\",\"name\":\"poolKey\",\"type\":\"tuple\",\"components\":[{\"internalType\":\"Currency\",\"name\":\"currency0\",\"type\":\"address\"},{\"internalType\":\"Currency\",\"name\":\"currency1\",\"type\":\"address\"},{\"internalType\":\"uint24\",\"name\":\"fee\",\"type\":\"uint24\"},{\"internalType\":\"int24\",\"name\":\"tickSpacing\",\"type\":\"int24\"},{\"internalType\":\"contract IHooks\",\"name\":\"hooks\",\"type\":\"address\"}]}],\"stateMutability\":\"nonpayable\",\"type\":\"function\",\"name\":\"validateSwap\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"getAllMarketIds()\":{\"returns\":{\"marketIds\":\"Array of all market IDs that have been created\"}},\"getAllMarketsInfo()\":{\"details\":\"Optimized function to fetch all markets in a single call\",\"returns\":{\"marketIds\":\"Array of all market IDs\",\"marketsData\":\"Array of market configurations\"}},\"getMarketInfoWithProposals(uint256)\":{\"params\":{\"marketId\":\"The market ID\"},\"returns\":{\"market\":\"Market configuration\",\"proposalData\":\"Array of proposal data (id, createdAt, creator, title, vusdAddress, yesTokenAddress, noTokenAddress, yesPrice, noPrice)\",\"proposalIds\":\"Array of proposal IDs in this market\"}},\"getMarketInfoWithProposalsAndUserBalances(uint256,address)\":{\"details\":\"Optimized function for frontend to get all data needed for market detail page\",\"params\":{\"marketId\":\"The market ID\",\"user\":\"The user address to get balances for\"},\"returns\":{\"market\":\"Market configuration\",\"proposalData\":\"Array of proposal data with prices and user balances\",\"proposalIds\":\"Array of proposal IDs in this market\",\"userMarketDepositBalance\":\"User's total USDC deposit in this market (6 decimals)\"}},\"getProposalInfo(uint256)\":{\"params\":{\"proposalId\":\"The proposal ID\"},\"returns\":{\"createdAt\":\"Timestamp when proposal was created\",\"creator\":\"Address of proposal creator\",\"marketId\":\"The market ID this proposal belongs to\",\"noPrice\":\"Current NO price in VUSD (18 decimals)\",\"noTokenAddress\":\"NO token address\",\"title\":\"Proposal title\",\"vusdAddress\":\"VUSD token address\",\"yesPrice\":\"Current YES price in VUSD (18 decimals)\",\"yesTokenAddress\":\"YES token address\"}},\"getProposalPrices(uint256)\":{\"params\":{\"proposalId\":\"The proposal ID\"},\"returns\":{\"noPrice\":\"Current NO price in VUSD (18 decimals)\",\"yesPrice\":\"Current YES price in VUSD (18 decimals)\"}},\"getUserDeposit(uint256,address)\":{\"params\":{\"proposalId\":\"The proposal ID\",\"user\":\"The user address\"},\"returns\":{\"alreadyClaimed\":\"USDC already claimed/used for this proposal (6 decimals)\",\"available\":\"Amount available to claim for this proposal (6 decimals)\",\"totalDeposited\":\"Total USDC deposited by user in the market (6 decimals)\"}},\"getUserProposalBalances(uint256,address)\":{\"params\":{\"proposalId\":\"The proposal ID\",\"user\":\"The user address\"},\"returns\":{\"noBalance\":\"NO token balance (18 decimals)\",\"vusdBalance\":\"VUSD balance (18 decimals)\",\"yesBalance\":\"YES token balance (18 decimals)\"}},\"getUserProposalCompleteInfo(uint256,address)\":{\"details\":\"Returns all data needed for UI in a single call\",\"params\":{\"proposalId\":\"The proposal ID\",\"user\":\"The user address\"},\"returns\":{\"claimableVUSD\":\"Amount of VUSD user can claim for this proposal (18 decimals)\",\"currentVUSDBalance\":\"Current VUSD balance user has for this proposal (18 decimals)\",\"marketDepositBalance\":\"Total USDC deposited in market (6 decimals)\",\"noBalance\":\"NO token balance (18 decimals)\",\"noPrice\":\"Current NO price in VUSD (18 decimals)\",\"yesBalance\":\"YES token balance (18 decimals)\",\"yesPrice\":\"Current YES price in VUSD (18 decimals)\"}},\"getUserProposalPosition(uint256,address)\":{\"params\":{\"proposalId\":\"The proposal ID\",\"user\":\"The user address\"},\"returns\":{\"availableDeposit\":\"Available USDC to claim (6 decimals)\",\"noBalance\":\"NO token balance (18 decimals)\",\"totalDeposited\":\"Total USDC deposited (6 decimals)\",\"vusdBalance\":\"VUSD balance (18 decimals)\",\"yesBalance\":\"YES token balance (18 decimals)\"}},\"getUserVUSDInfo(uint256,address)\":{\"details\":\"Returns both values in VUSD terms (18 decimals) for easy comparison\",\"params\":{\"proposalId\":\"The proposal ID\",\"user\":\"The user address\"},\"returns\":{\"claimableVUSD\":\"Amount of VUSD user can claim (18 decimals)\",\"currentVUSDBalance\":\"Current VUSD balance user has (18 decimals)\"}},\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby disabling any functionality that is only available to the owner.\"},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"getAllMarketIds()\":{\"notice\":\"Get all available market IDs\"},\"getAllMarketsInfo()\":{\"notice\":\"Get all markets with their basic information for home page\"},\"getMarketInfoWithProposals(uint256)\":{\"notice\":\"Get market information with all its proposals\"},\"getMarketInfoWithProposalsAndUserBalances(uint256,address)\":{\"notice\":\"Get market information with all proposals, prices, and user balances in a single call\"},\"getProposalInfo(uint256)\":{\"notice\":\"Get comprehensive proposal information for UI\"},\"getProposalPrices(uint256)\":{\"notice\":\"Get current YES and NO prices for a proposal\"},\"getUserDeposit(uint256,address)\":{\"notice\":\"Get user's deposit information for a proposal\"},\"getUserProposalBalances(uint256,address)\":{\"notice\":\"Get user's token balances for a proposal\"},\"getUserProposalCompleteInfo(uint256,address)\":{\"notice\":\"Get complete user information for a proposal (deposits, balances, prices)\"},\"getUserProposalPosition(uint256,address)\":{\"notice\":\"Get user's complete position for a proposal (balances + deposit info)\"},\"getUserVUSDInfo(uint256,address)\":{\"notice\":\"Get user's VUSD claimable amount and current balance for a proposal\"}},\"version\":1}},\"settings\":{\"remappings\":[\"@ensdomains/=lib/v4-core/node_modules/@ensdomains/\",\"@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/\",\"@uniswap/permit2/=lib/permit2/\",\"@uniswap/universal-router/=lib/universal-router/\",\"@uniswap/v2-core/=lib/v2-core/\",\"@uniswap/v3-core/=lib/v3-core/\",\"@uniswap/v3-periphery/=lib/v3-periphery/\",\"@uniswap/v4-core/=lib/v4-core/\",\"@uniswap/v4-periphery/=lib/v4-periphery/\",\"ds-test/=lib/universal-router/lib/forge-std/lib/ds-test/src/\",\"erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\"forge-gas-snapshot/=lib/permit2/lib/forge-gas-snapshot/src/\",\"forge-std/=lib/forge-std/src/\",\"halmos-cheatcodes/=lib/openzeppelin-contracts/lib/halmos-cheatcodes/src/\",\"hardhat/=lib/v4-core/node_modules/hardhat/\",\"openzeppelin-contracts/=lib/openzeppelin-contracts/\",\"permit2/=lib/permit2/\",\"solmate/=lib/universal-router/lib/solmate/\",\"universal-router/=lib/universal-router/\",\"v2-core/=lib/v2-core/contracts/\",\"v3-core/=lib/v3-core/\",\"v3-periphery/=lib/v3-periphery/contracts/\",\"v4-core/=lib/v4-core/src/\",\"v4-periphery/=lib/v4-periphery/\"],\"optimizer\":{\"enabled\":true,\"runs\":200},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"compilationTarget\":{\"src/Market.sol\":\"Market\"},\"evmVersion\":\"cancun\",\"libraries\":{},\"viaIR\":true},\"sources\":{\"lib/forge-std/src/console.sol\":{\"keccak256\":\"0x4bbf47eb762cef93729d6ef15e78789957147039b113e5d4df48e3d3fd16d0f5\",\"urls\":[\"bzz-raw://af9e3a7c3d82fb5b10b57ca4d1a82f2acbef80c077f6f6ef0cc0187c7bfd9f57\",\"dweb:/ipfs/QmR9VzmnBDJpgiDP6CHT6truehukF9HpYvuP6kRiJbDwPP\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/access/AccessControl.sol\":{\"keccak256\":\"0xc1bebdee8943bd5e9ef1e0f2e63296aa1dd4171a66b9e74d0286220e891e1458\",\"urls\":[\"bzz-raw://928cf2f0042c606f3dcb21bd8a272573f462a215cd65285d2d6b407f31e9bd67\",\"dweb:/ipfs/QmWGxjckno6sfjHPX5naPnsfsyisgy4PJDf46eLw9umfpx\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/access/IAccessControl.sol\":{\"keccak256\":\"0x4d9a2b261b56a1e4a37bb038151dec98b952fed16de2bdfdda27e38e2b12b530\",\"urls\":[\"bzz-raw://f724110f7aeb6151af800ab8c12e6060b29bda9e013f0ccb331eb754d6a7cbf0\",\"dweb:/ipfs/QmUcjzCZpxtUPdEThtAzE1f9LvuJiUGZxTdH9N6bHrb5Cf\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/access/Ownable.sol\":{\"keccak256\":\"0xff6d0bb2e285473e5311d9d3caacb525ae3538a80758c10649a4d61029b017bb\",\"urls\":[\"bzz-raw://8ed324d3920bb545059d66ab97d43e43ee85fd3bd52e03e401f020afb0b120f6\",\"dweb:/ipfs/QmfEckWLmZkDDcoWrkEvMWhms66xwTLff9DDhegYpvHo1a\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/interfaces/IERC1363.sol\":{\"keccak256\":\"0x9b6b3e7803bc5f2f8cd7ad57db8ac1def61a9930a5a3107df4882e028a9605d7\",\"urls\":[\"bzz-raw://da62d6be1f5c6edf577f0cb45666a8aa9c2086a4bac87d95d65f02e2f4c36a4b\",\"dweb:/ipfs/QmNkpvBpoCMvX8JwAFNSc5XxJ2q5BXJpL5L1txb4QkqVFF\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/interfaces/IERC165.sol\":{\"keccak256\":\"0xde7e9fd9aee8d4f40772f96bb3b58836cbc6dfc0227014a061947f8821ea9724\",\"urls\":[\"bzz-raw://11fea9f8bc98949ac6709f0c1699db7430d2948137aa94d5a9e95a91f61a710a\",\"dweb:/ipfs/QmQdfRXxQjwP6yn3DVo1GHPpriKNcFghSPi94Z1oKEFUNS\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/interfaces/IERC20.sol\":{\"keccak256\":\"0xce41876e78d1badc0512229b4d14e4daf83bc1003d7f83978d18e0e56f965b9c\",\"urls\":[\"bzz-raw://a2608291cb038b388d80b79a06b6118a42f7894ff67b7da10ec0dbbf5b2973ba\",\"dweb:/ipfs/QmWohqcBLbcxmA4eGPhZDXe5RYMMEEpFq22nfkaUMvTfw1\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/interfaces/draft-IERC6093.sol\":{\"keccak256\":\"0x880da465c203cec76b10d72dbd87c80f387df4102274f23eea1f9c9b0918792b\",\"urls\":[\"bzz-raw://399594cd8bb0143bc9e55e0f1d071d0d8c850a394fb7a319d50edd55d9ed822b\",\"dweb:/ipfs/QmbPZzgtT6LEm9CMqWfagQFwETbV1ztpECBB1DtQHrKiRz\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol\":{\"keccak256\":\"0x41f6b3b9e030561e7896dbef372b499cc8d418a80c3884a4d65a68f2fdc7493a\",\"urls\":[\"bzz-raw://80b0992a11b2fd1f75ced2971696d07bbd1d19ce6761dd50d8b6d48aa435f42a\",\"dweb:/ipfs/QmZDe5xd2gXHjVEjv9t8C1KQ68K5T8qFwdinwQgmP3rF3x\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xe06a3f08a987af6ad2e1c1e774405d4fe08f1694b67517438b467cecf0da0ef7\",\"urls\":[\"bzz-raw://df6f0c459663c9858b6cba2cda1d14a7d05a985bed6d2de72bd8e78c25ee79db\",\"dweb:/ipfs/QmeTTxZ7qVk9rjEv2R4CpCwdf8UMCcRqDNMvzNxHc3Fnn9\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Burnable.sol\":{\"keccak256\":\"0x2659248df25e34000ed214b3dc8da2160bc39874c992b477d9e2b1b3283dc073\",\"urls\":[\"bzz-raw://c345af1b0e7ea28d1216d6a04ab28f5534a5229b9edf9ca3cd0e84950ae58d26\",\"dweb:/ipfs/QmY63jtSrYpLRe8Gj1ep2vMDCKxGNNG3hnNVKBVnrs2nmA\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Pausable.sol\":{\"keccak256\":\"0x756aee61d83960d324973de3a64920a02b480efe662b611fb05ea506d844aa55\",\"urls\":[\"bzz-raw://4dfb71ab2f5fcc530226a25bba4d808f4d22a7f383cae4a3be3629ec057b276c\",\"dweb:/ipfs/QmRzyetUjbr9Gx1pcXYSsE5rz4XypfEbZgmBvZKUNUJQLR\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Wrapper.sol\":{\"keccak256\":\"0xe2cacb80ff6ca05c0d0a20f2a3a86465dabe77f24804d34c26f26e8bc0f560e4\",\"urls\":[\"bzz-raw://620c7c6c24c28059ac5d915a4e00bad0ab87864ff2623991458a775804cd58bf\",\"dweb:/ipfs/QmSSUiYwDXwBA126Mq6UsFhWR6nfMxcwj8xCKrScbYG1fn\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol\":{\"keccak256\":\"0x70f2f713b13b7ce4610bcd0ac9fec0f3cc43693b043abcb8dc40a42a726eb330\",\"urls\":[\"bzz-raw://c13d13304ac79a83ab1c30168967d19e2203342ebbd6a9bbce4db7550522dcbf\",\"dweb:/ipfs/QmeN5jKMN2vw5bhacr6tkg78afbTTZUeaacNHqjWt4Ew1r\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol\":{\"keccak256\":\"0x982c5cb790ab941d1e04f807120a71709d4c313ba0bfc16006447ffbd27fbbd5\",\"urls\":[\"bzz-raw://8150ceb4ac947e8a442b2a9c017e01e880b2be2dd958f1fa9bc405f4c5a86508\",\"dweb:/ipfs/QmbcBmFX66AY6Kbhnd5gx7zpkgqnUafo43XnmayAM7zVdB\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/utils/Context.sol\":{\"keccak256\":\"0x493033a8d1b176a037b2cc6a04dad01a5c157722049bbecf632ca876224dd4b2\",\"urls\":[\"bzz-raw://6a708e8a5bdb1011c2c381c9a5cfd8a9a956d7d0a9dc1bd8bcdaf52f76ef2f12\",\"dweb:/ipfs/Qmax9WHBnVsZP46ZxEMNRQpLQnrdE4dK8LehML1Py8FowF\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/utils/Pausable.sol\":{\"keccak256\":\"0xdb484371dfbb848cb6f5d70464e9ac9b2900e4164ead76bbce4fef0b44bcc68f\",\"urls\":[\"bzz-raw://f9d6f6f6600a2bec622f699081b58350873b5e63ce05464d17d674a290bb8a7c\",\"dweb:/ipfs/QmQKVzSQY1PM3Bid4QhgVVZyx6B4Jx7XgaQzLKHj38vJz8\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol\":{\"keccak256\":\"0xddce8e17e3d3f9ed818b4f4c4478a8262aab8b11ed322f1bf5ed705bb4bd97fa\",\"urls\":[\"bzz-raw://8084aa71a4cc7d2980972412a88fe4f114869faea3fefa5436431644eb5c0287\",\"dweb:/ipfs/Qmbqfs5dRdPvHVKY8kTaeyc65NdqXRQwRK7h9s5UJEhD1p\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0x79796192ec90263f21b464d5bc90b777a525971d3de8232be80d9c4f9fb353b8\",\"urls\":[\"bzz-raw://f6fda447a62815e8064f47eff0dd1cf58d9207ad69b5d32280f8d7ed1d1e4621\",\"dweb:/ipfs/QmfDRc7pxfaXB2Dh9np5Uf29Na3pQ7tafRS684wd3GLjVL\"],\"license\":\"MIT\"},\"lib/permit2/src/interfaces/IAllowanceTransfer.sol\":{\"keccak256\":\"0x37f0ac203b6ef605c9533e1a739477e8e9dcea90710b40e645a367f8a21ace29\",\"urls\":[\"bzz-raw://e0104d72aeaec1cd66cc232e7de7b7ead08608efcc179491b8a66387614670b0\",\"dweb:/ipfs/QmfAZDyuNC9FXXbnJUwqHNwmAK6uRrXxtWEytLsxjskPsN\"],\"license\":\"MIT\"},\"lib/permit2/src/interfaces/IEIP712.sol\":{\"keccak256\":\"0xfdccf2b9639070803cd0e4198427fb0df3cc452ca59bd3b8a0d957a9a4254138\",\"urls\":[\"bzz-raw://f7c936ac42ce89e827db905a1544397f8bdf46db34cdb6aa1b90dea42fdb4c72\",\"dweb:/ipfs/QmVgurxo1N31qZqkPBirw9Z7S9tLYmv6jSwQp8R8ur2cBk\"],\"license\":\"MIT\"},\"lib/permit2/src/interfaces/IERC1271.sol\":{\"keccak256\":\"0x0a546b8535127fb4a49d36d5f306fd5a8bbe6125a1852f935b9bb85a04c1acef\",\"urls\":[\"bzz-raw://4b99651e2df98e283a97c46d8d1ac4eff0d6a3618e25f7f85294472a670b541c\",\"dweb:/ipfs/QmYRy5G8fXE8BfmyvGEbESEYZPPg3zJEFxHzR5GJZEMMTk\"],\"license\":\"MIT\"},\"lib/permit2/src/interfaces/IPermit2.sol\":{\"keccak256\":\"0xaa631cc9f53e699301d94233007110a345e6779011def484e8dd97b8fe0af771\",\"urls\":[\"bzz-raw://fc0502cf19c9c18f320a3001201e89e350393b75837f6b7971de18b2de06f30d\",\"dweb:/ipfs/QmT9SfhdJ7VJNNrf94g4H5usyi7ShqWGx7Cqsz9jZTjX96\"],\"license\":\"MIT\"},\"lib/permit2/src/interfaces/ISignatureTransfer.sol\":{\"keccak256\":\"0xe6df9966f8841dc3958ee86169c89de97e7f614c81c28b9dc947b12d732df64e\",\"urls\":[\"bzz-raw://3d4eafdee7f48c3be8350a94eb6edd0bfb2af2c105df65787a77174f356c0317\",\"dweb:/ipfs/QmY1j2adeeAhNpn6cUuthemxGCdLXHTfyMh9yTKsY4mZ2d\"],\"license\":\"MIT\"},\"lib/permit2/src/libraries/SignatureVerification.sol\":{\"keccak256\":\"0x99f437ffe99aa1ff7885aec8b971f48efac00c6ebc59c02eec78c9ca850a5e30\",\"urls\":[\"bzz-raw://9365414bdb67813d4ef6c89fa152dff05fc2a64992a1a4f212fa414dbdee3eab\",\"dweb:/ipfs/QmfJxSszF1rjmMoNXW5oQMo9gARMHAXYTu68fkZvdEu58i\"],\"license\":\"MIT\"},\"lib/universal-router/contracts/modules/uniswap/v2/UniswapV2Library.sol\":{\"keccak256\":\"0x829d48c1b69d2e1bc078a57aae8d87dc31d920b01c62d6268d20d517fd24150c\",\"urls\":[\"bzz-raw://b87236ea4c1e64c12434f31abbd658ca3fc510ebe65be731d84d3ce8efa71c32\",\"dweb:/ipfs/QmUerjg5Ebt3pfQZtk2sArUy414gQtHwvFNgsQNe4PhxbN\"],\"license\":\"GPL-3.0-or-later\"},\"lib/universal-router/lib/solmate/src/auth/Owned.sol\":{\"keccak256\":\"0xfedb27d14c508342c33eb067c9a02eabcdb0f9dcf93b04ded1001f580d12d0ea\",\"urls\":[\"bzz-raw://1ff52bbee698b9cf9e4574615e6550be0887ccf355f6571e23d6f25b332e79b4\",\"dweb:/ipfs/QmVorA2apojVRStzS7h8aFccR3Uv32G6HVtBtFHZrE7YXx\"],\"license\":\"AGPL-3.0-only\"},\"lib/universal-router/lib/solmate/src/tokens/ERC721.sol\":{\"keccak256\":\"0x04af19f16f00ba65ae168d6d10da5210dc18da6bcec6974dccf984ba388aa22d\",\"urls\":[\"bzz-raw://098e69f22b67da6927e03203c12ebfda5b0490518f6d9cce7853001ac5ad8403\",\"dweb:/ipfs/QmYyzfurQe88PsVjRNfutV3gS7Vi68f7zgtVZVtLfd4ViK\"],\"license\":\"AGPL-3.0-only\"},\"lib/universal-router/lib/solmate/src/utils/FixedPointMathLib.sol\":{\"keccak256\":\"0x1b62af9baf5b8e991ed7531bc87f45550ba9d61e8dbff5caf237ccaf3a3fd843\",\"urls\":[\"bzz-raw://b7b38b977c5305b18ceefbeed4c9ceaaaefa419b520de62de6604ea661f8c0a9\",\"dweb:/ipfs/QmecMRzgfMyDVa2pvBqMMDLYBappaj7Aa3qcMoQYEQrhWi\"],\"license\":\"AGPL-3.0-only\"},\"lib/v2-core/contracts/interfaces/IUniswapV2Pair.sol\":{\"keccak256\":\"0x7c9bc70e5996c763e02ff38905282bc24fb242b0ef2519a003b36824fc524a4b\",\"urls\":[\"bzz-raw://85d5ad2dd23ee127f40907a12865a1e8cb5828814f6f2480285e1827dd72dedf\",\"dweb:/ipfs/QmayKQWJgWmr46DqWseADyUanmqxh662hPNdAkdHRjiQQH\"],\"license\":null},\"lib/v4-core/src/ERC6909.sol\":{\"keccak256\":\"0x22476a1c183be1b547a509b3e6906abaccb6408375f798fce805ff7877aca09f\",\"urls\":[\"bzz-raw://e85580e1563ea0556705132fb6bd038ca4aa355749039923853ebcb76b7c84e6\",\"dweb:/ipfs/QmVoxPrbagRKpFdRWoaCSKmStYLZrhNFuedcuyGycSGR7q\"],\"license\":\"MIT\"},\"lib/v4-core/src/ERC6909Claims.sol\":{\"keccak256\":\"0xf496ef3a5a9bf4f4aa2eec951dbeff09a01ef058bb9f64b1664cf46c9e85cd49\",\"urls\":[\"bzz-raw://2a0a97c359a7a4c526ba9fc4ceb20af8050f9cf7886ea7e1f38c9c10b4a3750c\",\"dweb:/ipfs/QmPy6pCQbvzCdJRqG1thHRSwEZoLBAaLo3KQnueL3wxb8i\"],\"license\":\"MIT\"},\"lib/v4-core/src/Extsload.sol\":{\"keccak256\":\"0x784074bd04a1541c7c6ace074e30245746133fd37c3ba16b025dce394db986ce\",\"urls\":[\"bzz-raw://35f1f4fb306bf01e98b7eca012b85f3ab978b39fa5136193363e2519c4435e51\",\"dweb:/ipfs/QmeGrjGMt71dJymVhkEadh5CuCW5GxRqNEZLi5AJxvC5tU\"],\"license\":\"MIT\"},\"lib/v4-core/src/Exttload.sol\":{\"keccak256\":\"0x769ee2733a08112c652274f4b972c45fb56cc46109f233b9a30f81561b15dd54\",\"urls\":[\"bzz-raw://dd19e88d50ae77c1ed5581baca1c75b3fb828d0b58cded90188d55c4e336266c\",\"dweb:/ipfs/Qmc8YM6Tfpwwa4qivHHzRxNdhZzdzGiD7VexWsDvkaQTxG\"],\"license\":\"MIT\"},\"lib/v4-core/src/NoDelegateCall.sol\":{\"keccak256\":\"0xacb81aecb7c74c86650a035462dae38c313b4b7b5842e14b645f864f61da2b51\",\"urls\":[\"bzz-raw://363a0e15fc30ea68a5d52a78772facecde6433ea156e3ec2ce25068c97cd5ad6\",\"dweb:/ipfs/QmYhWaF3wH71SDx5TZr9qEXXQf5FYQvdjoo3B2qWiAbm18\"],\"license\":\"MIT\"},\"lib/v4-core/src/PoolManager.sol\":{\"keccak256\":\"0xf9ff5d5e261a21a5e72a01c5badd988beeff437e0f6b82fd56f80be42d727c07\",\"urls\":[\"bzz-raw://4a92a25102c73245e1343f0dbc8400b8bac3c464ba064aa5574b9584a12e6c72\",\"dweb:/ipfs/QmfCcvspZ8XzDeQjEd2FfM76wzkfE9KDgBoqAcqhf3nsnu\"],\"license\":\"BUSL-1.1\"},\"lib/v4-core/src/ProtocolFees.sol\":{\"keccak256\":\"0x81362ef1d19670b41cefc2b6f2dc0333b6743fe39a1929edd36bd9b6a1111755\",\"urls\":[\"bzz-raw://de483bbd8bf9a53b9644d7f9a6a6fe77ae527b755cf29e1db8725de89e70c7aa\",\"dweb:/ipfs/Qmex3PcgJGbYsuDNaMXc8mg5fW1DNaPGiNToPpAAzz6GEq\"],\"license\":\"MIT\"},\"lib/v4-core/src/interfaces/IExtsload.sol\":{\"keccak256\":\"0x80b53ca4907d6f0088c3b931f2b72cad1dc4615a95094d96bd0fb8dff8d5ba43\",\"urls\":[\"bzz-raw://375c69148622aab7a3537d5fd37d373a8e9731022c8d87bdaee46233b0a99fe1\",\"dweb:/ipfs/QmXFjdoYRxsA5B1kyuxEXgNf3FBoL1zPvy26Qy8EtpdFRN\"],\"license\":\"MIT\"},\"lib/v4-core/src/interfaces/IExttload.sol\":{\"keccak256\":\"0xc6b68283ebd8d1c789df536756726eed51c589134bb20821b236a0d22a135937\",\"urls\":[\"bzz-raw://294394f72dfc219689209f4130d85601dfd0d63c8d47578050d312db70f9b6c8\",\"dweb:/ipfs/QmTDMQ3oxCGHgEBU48a3Lp4S1rRjc8vVCxkhE5ZNej1bsY\"],\"license\":\"MIT\"},\"lib/v4-core/src/interfaces/IHooks.sol\":{\"keccak256\":\"0xc131ffa2d04c10a012fe715fe2c115811526b7ea34285cf0a04ce7ce8320da8d\",\"urls\":[\"bzz-raw://3b212358897db5d99c21244d88f97b2e788527552cb430629b472a8cc6289aec\",\"dweb:/ipfs/QmQtwV4dDe2RYk2ErLpaAX7U82jWh1L6Lw2HRuKDvBi84G\"],\"license\":\"MIT\"},\"lib/v4-core/src/interfaces/IPoolManager.sol\":{\"keccak256\":\"0xbdab3544da3d32dfdf7457baa94e17d5a3012952428559e013ffac45d067038e\",\"urls\":[\"bzz-raw://ce95ff864468e37c76adf71df061d4f3d6f3a5ec1f9bc3aea090463bc72798f4\",\"dweb:/ipfs/QmSbWh1pLbz51yQF4HEu5NRhr8XVv9JYGEw1hq1HudAnCi\"],\"license\":\"MIT\"},\"lib/v4-core/src/interfaces/IProtocolFees.sol\":{\"keccak256\":\"0x32a666e588a2f66334430357bb1e2424fe7eebeb98a3364b1dd16eb6ccca9848\",\"urls\":[\"bzz-raw://85751d302125881f72e5f8af051c2d5d9b1f606ebaea8ca7d04fccdd27cc252d\",\"dweb:/ipfs/QmeRwomeh9NWm6A6fgNA4KZPQZHPpdKsPQyYsHSFmvud7J\"],\"license\":\"MIT\"},\"lib/v4-core/src/interfaces/callback/IUnlockCallback.sol\":{\"keccak256\":\"0x58c82f2bd9d7c097ed09bd0991fedc403b0ec270eb3d0158bfb095c06a03d719\",\"urls\":[\"bzz-raw://91168ca26a10980df2cdc3fbfe8ddf372c002b7ef19e3c59a0c9870d64198f1b\",\"dweb:/ipfs/QmUSpaM825vd1SwvF38esgbdLgYiPwefKaFERTWvUi6uSK\"],\"license\":\"MIT\"},\"lib/v4-core/src/interfaces/external/IERC20Minimal.sol\":{\"keccak256\":\"0xeccadf1bf69ba2eb51f2fe4fa511bc7bb05bbd6b9f9a3cb8e5d83d9582613e0f\",\"urls\":[\"bzz-raw://118757369892687b99ef46ce28d6861f62c098285bd7687a4f17f7e44e5f81de\",\"dweb:/ipfs/QmUxqbYqQtcEwwFbb9e6BBMePEaSgN8C45v6RKubD4ib8d\"],\"license\":\"MIT\"},\"lib/v4-core/src/interfaces/external/IERC6909Claims.sol\":{\"keccak256\":\"0xa586f345739e52b0488a0fe40b6e375cce67fdd25758408b0efcb5133ad96a48\",\"urls\":[\"bzz-raw://e8c557b7e52abdbbd82e415a1acc27921446a7fd090b7d4877e52be72619547f\",\"dweb:/ipfs/QmXE2KNPbXmGX8BQF3ei6zhzRTnhoTQg39XmqMnkhbr6QK\"],\"license\":\"MIT\"},\"lib/v4-core/src/libraries/BitMath.sol\":{\"keccak256\":\"0x51b9be4f5c4fd3e80cbc9631a65244a2eb2be250b6b7f128a2035080e18aee8d\",\"urls\":[\"bzz-raw://fe98bbd5498e912146b9319827fc63621eb66ff55d5baae0fa02a7a972ab8d1e\",\"dweb:/ipfs/QmY5hCuyrtgsJtk4AavrxcvBkRrChfr4N6ZnhdC8roPpNi\"],\"license\":\"MIT\"},\"lib/v4-core/src/libraries/CurrencyDelta.sol\":{\"keccak256\":\"0x80dbd898cf0f90c5c27192689b16c34edc765d6ab21b8358e3bb792c7fef238c\",\"urls\":[\"bzz-raw://107698da024313f132d9fe28deb920b5c03d14624889c3ce5720e588f03635bb\",\"dweb:/ipfs/QmQteUbhj5SsWbvSF6U8niBUSrETqVbEwULc8E7vS4Kbnn\"],\"license\":\"BUSL-1.1\"},\"lib/v4-core/src/libraries/CurrencyReserves.sol\":{\"keccak256\":\"0x1576616129933fcdf3b684cea33cffd9c95e18fafbd2832a8c48ac3d8526d4c3\",\"urls\":[\"bzz-raw://33b050efb9b81803b18f562271e7cca2ec5362c4d505860d6419b4a345636725\",\"dweb:/ipfs/QmQtFtTwKZ5pFVGD2ENDUXvp7ECFvzqeCuJ1miJcUHdmiX\"],\"license\":\"BUSL-1.1\"},\"lib/v4-core/src/libraries/CustomRevert.sol\":{\"keccak256\":\"0x111ed3031b6990c80a93ae35dde6b6ac0b7e6af471388fdd7461e91edda9b7de\",\"urls\":[\"bzz-raw://c9ea883c98d6ae1829160d0977bb5195761cfd5bc81692d0a941f45717f594cd\",\"dweb:/ipfs/QmZPwxzaeMNv536wzrAMrMswu7vMHuqPVpjcqL3YvCMoxt\"],\"license\":\"MIT\"},\"lib/v4-core/src/libraries/FixedPoint128.sol\":{\"keccak256\":\"0xad236e10853f4b4b20a35a9bb52b857c4fc79874846b7e444e06ead7f2630542\",\"urls\":[\"bzz-raw://0de1f9a06520b1a689660943faa14fc0b8344ab41fab9e6012ea34bff4b9b3eb\",\"dweb:/ipfs/QmRNMPTyko7W6d6KxuTsnDBa9oZgDK4xiwRRq3H9ASTbwy\"],\"license\":\"MIT\"},\"lib/v4-core/src/libraries/FixedPoint96.sol\":{\"keccak256\":\"0xef5c3fd41aee26bb12aa1c32873cfee88e67eddfe7c2b32283786265ac669741\",\"urls\":[\"bzz-raw://4de298d02f662a1c36c7be0a150f18c2a161408a5d3e48432e707efd01fac9a4\",\"dweb:/ipfs/QmSiM4oeMmLVKmAtJXz2feYkv4R9ZcyBpkTRW5Nhw5KDyJ\"],\"license\":\"MIT\"},\"lib/v4-core/src/libraries/FullMath.sol\":{\"keccak256\":\"0x4fc73a00817193fd3cac1cc03d8167d21af97d75f1815a070ee31a90c702b4c2\",\"urls\":[\"bzz-raw://c3b2d66d36b1ad56b1ab6e2eb8a816740877b40b461c93f125e88621c8378e52\",\"dweb:/ipfs/QmPGvMZzKQvNiWKd8aRzzdW7oAizwrMgcMtnaworDkVHFC\"],\"license\":\"MIT\"},\"lib/v4-core/src/libraries/Hooks.sol\":{\"keccak256\":\"0xd679b4b2d429689bc44f136050ebc958fb2d7d0d3a3c7b3e48c08ab4fba09aaa\",\"urls\":[\"bzz-raw://287190cb72840e5eb63cc7a8a1d0b9150af17d8e4ea0323f47c7e7928f2033cb\",\"dweb:/ipfs/QmVfqWBnAQM2jUcuREDdvjcP21gNuLU35CoL3NG5CEhNcx\"],\"license\":\"MIT\"},\"lib/v4-core/src/libraries/LPFeeLibrary.sol\":{\"keccak256\":\"0xbf6914e01014e7c1044111feb7df7a3d96bb503b3da827ad8464b1955580d13b\",\"urls\":[\"bzz-raw://33823c20a91882c9aacdcbb02f0558c05209f4d5954aa6dd4fa17c95664db475\",\"dweb:/ipfs/QmR7owkFgpfztpp1QUg3ut3nw9iPVQqLGP4hzgmZtRUQ2J\"],\"license\":\"MIT\"},\"lib/v4-core/src/libraries/LiquidityMath.sol\":{\"keccak256\":\"0x000ef2eadcc1eb7b2c18a77655f94e76e0e860f605783484657ef65fd6eda353\",\"urls\":[\"bzz-raw://a766b620a7a22798b43c6c1f23b5c6cff0ebf588deb89842bad05208d448cd99\",\"dweb:/ipfs/QmVKjaFJdzkqA3ey2Byum8iTCMssWVD8MmVC8rw62Tj5WD\"],\"license\":\"MIT\"},\"lib/v4-core/src/libraries/Lock.sol\":{\"keccak256\":\"0x9338be4b5695f1da5f3d3f7a3eeaf7a356c1045458289586ac0cbe9cef77c6d5\",\"urls\":[\"bzz-raw://485ec42ed6155469d612a9a0c18068ebfbad74448792a338a435503de3ef1b2c\",\"dweb:/ipfs/QmVnnv5u74MYatfRmBgrcfFYQcsMAJMG9jQ6ju8UiydKNF\"],\"license\":\"BUSL-1.1\"},\"lib/v4-core/src/libraries/NonzeroDeltaCount.sol\":{\"keccak256\":\"0x0666ebd5d3528d7d52c48538296367a4cff97a578cf13365c51983fae3219b87\",\"urls\":[\"bzz-raw://d27f1be3bd09d85c53d3e6a539dd6529ddd8b2b764ccb47fd7765fc81f9add59\",\"dweb:/ipfs/QmQdZujNXhKEXQBkKtF5jbdvo1yXMqPDUoBBaF9S5u3Kpm\"],\"license\":\"BUSL-1.1\"},\"lib/v4-core/src/libraries/ParseBytes.sol\":{\"keccak256\":\"0x7533b13f53ee2c2c55500100b22ffd6e37e7523c27874edc98663d53a8672b15\",\"urls\":[\"bzz-raw://82449058634fde28a085f3c59a6a5f412550c02181590593fd84c3e8b329aa17\",\"dweb:/ipfs/Qmev4E9Au6SsE4wsArChCwfg94KhHc5gYsEsZUnjF5sRLa\"],\"license\":\"MIT\"},\"lib/v4-core/src/libraries/Pool.sol\":{\"keccak256\":\"0xb8191707c5913f5e2f589cec5167e3fac4a5b86bd84f61fdba0fbe6a8ce8a3a0\",\"urls\":[\"bzz-raw://a609f9c365f05becf61877d9dc767e7825bce8c34607dbfc0f0437a71f6ff407\",\"dweb:/ipfs/QmThDUzLePs2Hbp6XTpRSHT67rdsjQLhdmS6krm8cpKSey\"],\"license\":\"BUSL-1.1\"},\"lib/v4-core/src/libraries/Position.sol\":{\"keccak256\":\"0xddab2a831f1befb6abf5567e77c4582169ca8156cf69eb4f22d8e87f7226a3f9\",\"urls\":[\"bzz-raw://c79fe61b50f3b70cff503abfa6f5643fcbefb9b794855bee1019b1e6d9c083b2\",\"dweb:/ipfs/QmbKmYNQesaMz8bo1b7TMHQcAwaDd3eDPrE5pAdPPZTtk5\"],\"license\":\"BUSL-1.1\"},\"lib/v4-core/src/libraries/ProtocolFeeLibrary.sol\":{\"keccak256\":\"0xf483001899229ab10f5a626fe1c5866134d9e965b48ce6cf55ce0d7f74f7d8ec\",\"urls\":[\"bzz-raw://6ba9211a7f69bbb44649c35211eb29d193c09032ec600064ef9d04b4625dd8ba\",\"dweb:/ipfs/QmQSjQvtguYgMJSkkKRhHjxasfX9xfTbrbcZ1QmjUVb787\"],\"license\":\"MIT\"},\"lib/v4-core/src/libraries/SafeCast.sol\":{\"keccak256\":\"0x42c4a24f996a14d358be397b71f7ec9d7daf666aaec78002c63315a6ee67aa86\",\"urls\":[\"bzz-raw://c3db86e2ba3679105fc32edec656c70282e1fede6cab11217702443f6c26fa59\",\"dweb:/ipfs/QmX4yaaSPdKQzYNRsezjTvZKsubzS8JRTEGFD3fPpTTCcj\"],\"license\":\"MIT\"},\"lib/v4-core/src/libraries/SqrtPriceMath.sol\":{\"keccak256\":\"0xf8079fe6e3460db495451d06b1705e18f1c4075c1af96a31ad313545f7082982\",\"urls\":[\"bzz-raw://582fc51546723a0a8acccf782f69b530bacf9b3ef929458e82569b7121f0b138\",\"dweb:/ipfs/QmSBXcmqZdFsM7M4sRaiyQAxykCeMNFKyKgBcwSMTw1bcF\"],\"license\":\"MIT\"},\"lib/v4-core/src/libraries/StateLibrary.sol\":{\"keccak256\":\"0x96db333ee126a841dd959e38e452cc59d73583cb0437a1d48b2052e33a74f952\",\"urls\":[\"bzz-raw://8672bba1eb69608299b0904f4ff305238eb18479d371c26518f278c9ee184cd0\",\"dweb:/ipfs/QmTLu3s6ECvsEDHStQv8HTVHYtvkviBbdjPrFJd4SpVRFY\"],\"license\":\"MIT\"},\"lib/v4-core/src/libraries/SwapMath.sol\":{\"keccak256\":\"0x6baa782ae523269c079cc763639a9b91a25fcfa1743c049c76e43741ef494bd9\",\"urls\":[\"bzz-raw://035c337e62e05262a5bd5d3bc85bc9a383c1013001216b429f49cf1e129a0812\",\"dweb:/ipfs/QmU7s4h58Fh2A6mM8yeorZ2ygwEJMQw8zdZLLkHeDoSWxD\"],\"license\":\"MIT\"},\"lib/v4-core/src/libraries/TickBitmap.sol\":{\"keccak256\":\"0x6779f89e28a0b4af6e09d518caf014b7e8fc627400f5561f86fed11635b1458a\",\"urls\":[\"bzz-raw://a64dee983106de3be3f968be94368c1e37592f5418aa2a39e8dd358d5a962b0d\",\"dweb:/ipfs/QmYuECZTiEeQVxDLYx6pBSSnVrg56Apw75bugQiM3FmGwy\"],\"license\":\"MIT\"},\"lib/v4-core/src/libraries/TickMath.sol\":{\"keccak256\":\"0x4e1a11e154eb06106cb1c4598f06cca5f5ca16eaa33494ba2f0e74981123eca8\",\"urls\":[\"bzz-raw://a79a57f7b240783b045168d1c4f774ac1812caf8f9a83cb6959a86b0b07b6c70\",\"dweb:/ipfs/QmTb5kvxwDNW8jDuQaqdJ445cCFejNkUqEB17Bjo8UBiva\"],\"license\":\"MIT\"},\"lib/v4-core/src/libraries/TransientStateLibrary.sol\":{\"keccak256\":\"0x7d1e0875747bd89b32c25f1a48da2766e5f4aff1f671ad5f3c0c07ebbbcb946a\",\"urls\":[\"bzz-raw://d76cfeb1cb60595b41ecc51c8a12fb4bf63a7fc733d0b1a2e3adb55abeb1f9d5\",\"dweb:/ipfs/Qmb8oX7DtsRpw3tTtdWZwGhauj1evq43d3PLwe4nSDAKkV\"],\"license\":\"MIT\"},\"lib/v4-core/src/libraries/UnsafeMath.sol\":{\"keccak256\":\"0xa6e55e0a43a15df2df471d9972cd48f613d07c663ecb8bbeaf7623f6f99bcce4\",\"urls\":[\"bzz-raw://02ea6e13879fc5a5f35149a2f1cd8af3a1f0877ff69101dad53841d16f515572\",\"dweb:/ipfs/QmcpL4gdG6hL2w1wqs2Vw4J1EFCwBs9T1Qd4p16CtECQkn\"],\"license\":\"MIT\"},\"lib/v4-core/src/types/BalanceDelta.sol\":{\"keccak256\":\"0xa719c8fe51e0a9524280178f19f6851bcc3b3b60e73618f3d60905d35ae5569f\",\"urls\":[\"bzz-raw://7436928dc9de35c6c7c5c636cb51adaf295cfd590da83b19a004ae33cbec9ef9\",\"dweb:/ipfs/QmRJ9yZkUpzk4433GX3LgVVL8jwpbSYSUwXcucKisf3v4H\"],\"license\":\"MIT\"},\"lib/v4-core/src/types/BeforeSwapDelta.sol\":{\"keccak256\":\"0x2a774312d91285313d569da1a718c909655da5432310417692097a1d4dc83a78\",\"urls\":[\"bzz-raw://a2c7a0379955cff9c17ab9e61f95e42909aa5947c22740f86ce940d09856f782\",\"dweb:/ipfs/QmaAuo8UBYXsGrVuKh8iRoAAdqwtg1jDq515cW1ZRP5m9K\"],\"license\":\"MIT\"},\"lib/v4-core/src/types/Currency.sol\":{\"keccak256\":\"0x4a0b84b282577ff6f8acf13ec9f4d32dbb9348748b49611d00e68bee96609c93\",\"urls\":[\"bzz-raw://45f9d62ab3d51b52957279e353853ba1547c3182c9a1e3d1846ada4a90263b01\",\"dweb:/ipfs/QmS8NG84ccQS1yXVD8cv3eKX7J1UKxuJhbUfHTQR2opKF5\"],\"license\":\"MIT\"},\"lib/v4-core/src/types/PoolId.sol\":{\"keccak256\":\"0x308311916ea0f5c2fd878b6a2751eb223d170a69e33f601fae56dfe3c5d392af\",\"urls\":[\"bzz-raw://669c2cd7ac17690b5d8831e0bda72822376c3a04b36afed6d31df4d75fe60918\",\"dweb:/ipfs/QmT6EpkxqU8VF3WsgrZ66F3s1cCQRffR95z1HDYZz7ph6y\"],\"license\":\"MIT\"},\"lib/v4-core/src/types/PoolKey.sol\":{\"keccak256\":\"0xf89856e0580d7a4856d3187a76858377ccee9d59702d230c338d84388221b786\",\"urls\":[\"bzz-raw://6f3118fa189025695c37fdf0bdd1190f085ad097484d3c88cf4c56d1db65f639\",\"dweb:/ipfs/QmamXpgtB8GV1CaFLvqefPWSoikLDhMk1yU4heBnVzU8gi\"],\"license\":\"MIT\"},\"lib/v4-core/src/types/PoolOperation.sol\":{\"keccak256\":\"0x7a1a107fc1f2208abb2c9364c8c54e56e98dca27673e9441bed2b949b6382162\",\"urls\":[\"bzz-raw://4ad2470383bc5595d5af17840c64971f457adac68895a4db41ba5c71a4478e07\",\"dweb:/ipfs/QmdwKhBHDZFuqXrR2BfDBD9r7rB2ULGQBznsajRTkTmL4c\"],\"license\":\"MIT\"},\"lib/v4-core/src/types/Slot0.sol\":{\"keccak256\":\"0x8b4912fac7e25ea680056748121113f902d56f8b2640f421d5c38d438db11c1b\",\"urls\":[\"bzz-raw://c19b1ff5b951fb54129268d2be37d82c8bb3ea6e29ac9bc78a8a37794fc082b8\",\"dweb:/ipfs/QmTAQ2mUoiT77hoWJAfn9pyoGy47qaevn45QHrbyovGt2C\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/PositionManager.sol\":{\"keccak256\":\"0x0c28bf323e06f12b8cfe0f10324a7f7c043af1b3dbf4c9ddd0b582545920b6a2\",\"urls\":[\"bzz-raw://0659bb3388a5f09c5f5ed8979b67fb451e701c4d85414e66e9a1ceac82d81194\",\"dweb:/ipfs/QmS9JDqc8w657bCFEnz3qMzPSSWwd3DDXJAuaq7mGAXHYr\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/base/BaseActionsRouter.sol\":{\"keccak256\":\"0xc9ed11618c4d82c5b723841a7d8eaf61600118c593e01e9929a193ecdb1ad63a\",\"urls\":[\"bzz-raw://b048aa814ef6bdeec79eba67aa765186d74b58f98f4b2be913cc291a15986169\",\"dweb:/ipfs/QmRoFpoCG7DYJtc3uewYwwj2Eb4bXLrefgV3t8vekY3XWg\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/base/DeltaResolver.sol\":{\"keccak256\":\"0x94a2da2be5c924df65a8e1e29f585bbe4c37777fedd43b45989c66d509a4a83c\",\"urls\":[\"bzz-raw://42bba590f6e817fd56328b74ae99bfdc4df57386d0a69ee22b9108341953ed36\",\"dweb:/ipfs/QmdusastK7FWYouLz9gvV5J3z8MQbNKLJNNHTrc1vi7DWw\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/base/EIP712_v4.sol\":{\"keccak256\":\"0x151e85890822c1b0fe85ec3c021826cb42f615e2b9d6fcdd79019681a6ee5588\",\"urls\":[\"bzz-raw://c5df84221ba4fe59c8223e94bec954b7f7602d4ad81d2f0c046a67c21c1d24be\",\"dweb:/ipfs/QmbTUqqHxRxEDyrMPApozbC6DEYMZGa27dWu3KodNACiLy\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/base/ERC721Permit_v4.sol\":{\"keccak256\":\"0xb1c3d4cc1fa0c7f9562674917d9ffdd119a1ccdb3adca44b2832d5c91c068125\",\"urls\":[\"bzz-raw://752a8a679a9cc9e56a8e95fc1fa1d8c39a951a479b6c0b1109238f73520045df\",\"dweb:/ipfs/QmRzLo9KRcJH38Fx2xvweVmvMbTRKzyDR7R7Fui4Ca9cma\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/base/ImmutableState.sol\":{\"keccak256\":\"0x1867c9fa2f9b4fa73bab0fcdc9d19ccef4eeac552273d8b84a170cd1cc90350a\",\"urls\":[\"bzz-raw://af2d699b439e13b599632fddfe82718aebd41055fba7c075f186675c588d1337\",\"dweb:/ipfs/Qmc111gckSKb9aESn3wRFLeLiS4KGujaUcaYJgRnCRfwQU\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/base/Multicall_v4.sol\":{\"keccak256\":\"0x654c6e65bd9bbf12b2cc393f8523db04e85ec45e829200de3895709479d6d569\",\"urls\":[\"bzz-raw://d7ee5441ed14cdad5328f8e844403c2969fe2ecd9d110d7b80954bfa41f52d69\",\"dweb:/ipfs/QmQ1r1qmGyg1JXUgmjzi3WxjAmkLtMpUVsRWfYJsRRo3sP\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/base/NativeWrapper.sol\":{\"keccak256\":\"0xfb756bc69e401d621f615746d881cfef7e98f3f563775905a1eca79a074a35ca\",\"urls\":[\"bzz-raw://507c9b3ddf79ec34b8ae472dfc4d6840343a9a172d7c6f33eec290e0078e9254\",\"dweb:/ipfs/QmWhGck33w1s343mtojttgisJcsdwDf6Ah6oTpjgsWcQWh\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/base/Notifier.sol\":{\"keccak256\":\"0x5f2a29b2a528269643d026bf4698e6520eeb1e5fc773f9d5059b3e279a488bf6\",\"urls\":[\"bzz-raw://63d5c541039f37ae89533a15fc311e3fec3d143fa11bac42e73964bdf74b3d06\",\"dweb:/ipfs/QmUrvqNYEYwEu1zRWLFVDUW2zEajbkNYxiNqUpc5aWx5ui\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/base/Permit2Forwarder.sol\":{\"keccak256\":\"0xcdf793e6732cdf0c386f89573384032314b0893bf208b3d75ac71d3002674a3b\",\"urls\":[\"bzz-raw://4f18d0be711c1d586854e2a78113bf84765e7158c9568b2c73f8750511a22ce7\",\"dweb:/ipfs/QmSe3zz9jvDZo2MqPgCpfNs3yA4xAWPB1deZBoRFzeZiN1\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/base/PoolInitializer_v4.sol\":{\"keccak256\":\"0x068c85032e50ef6374958ff3e7dcc143527f669de1bbba831e552d033344a1e3\",\"urls\":[\"bzz-raw://674c29491faef627b52cb81495bf3747cd7f7613e2ddcabb1dd258f93f966006\",\"dweb:/ipfs/Qmc1D31ubNDRdxVS6pxDzn7z8disSw7UScHu8rgfpxCAsz\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/base/ReentrancyLock.sol\":{\"keccak256\":\"0x66dd19f8eb40b7a86afea0e5b1dcada6268041027b0dfc493b80ca1f66af217d\",\"urls\":[\"bzz-raw://ac6d34517e2dd2c9cd03e16c5333defd003c134a4bff52ad95b673a5e8804609\",\"dweb:/ipfs/QmPSRdswfajCZCchH9j8rC7U3GLJ4w24gK35gxRVY3Qxz4\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/base/SafeCallback.sol\":{\"keccak256\":\"0xd78b583df1b9ee06d58e83b84fc9f08971389b34dd34bc13db072e0c13c710da\",\"urls\":[\"bzz-raw://c0a47f4bcd6060c4462153b9a7c52a60a460ace91acb6ddd5492eab28ec26173\",\"dweb:/ipfs/QmdRCTRS1dhFjWEy6z577j4xz9J5HPfHBwcNzAic8G59oT\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/base/UnorderedNonce.sol\":{\"keccak256\":\"0x0ec175bf2213d75606ebb770227e8622ae9666fbde8ff2d1682d85890b81676e\",\"urls\":[\"bzz-raw://079952902a4be56b5e963585349988fcbea853bf8271a5cb88e7629cafb06bcf\",\"dweb:/ipfs/Qmere81cd2Wq9Vq4rL5G1nW4Jv54YJeMr1oaej7468xrgi\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/interfaces/IEIP712_v4.sol\":{\"keccak256\":\"0xd7f7115476e307a0bfc32a0f0a0f5434e9e5ca62a6c5af1e18b75e48161bb408\",\"urls\":[\"bzz-raw://b1600b953556da38a7adc5ad2a2925ec5fb138fecf8eec48743646543195b736\",\"dweb:/ipfs/QmarZi2aiLVAfHXgnDWV1cCFiZk2DdPW7KJnWHqzuRChJR\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/interfaces/IERC721Permit_v4.sol\":{\"keccak256\":\"0x103adbba724ef536abc536fe8a4d7dc12880724c562109b69f2adce4a91fa017\",\"urls\":[\"bzz-raw://06f51b5a5a218e0bc866a83e7821be53c9db9de0ca921f16abd3d13ea0eab69d\",\"dweb:/ipfs/QmbnhLy992hpQZyphTkj7fpr6jKKVva2AzfmLiDZEuqHAk\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/interfaces/IImmutableState.sol\":{\"keccak256\":\"0x36ab3100e87457ecf04887f4f540e34fd7f21d8e3b83880cb679239e60b7b06b\",\"urls\":[\"bzz-raw://7f290c7ce8e4832608d637a51b13dff95abecf6549485448e647a11c8ed01341\",\"dweb:/ipfs/QmfD1R6mTp8j4EjQXmQZW3vCh11EYFjnvoaw8rXRP27mMq\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/interfaces/IMsgSender.sol\":{\"keccak256\":\"0xcc7d4e3f2fde34cf1ad9f05a8e43977e04d19624f71eb8a8c295feaf64b362a3\",\"urls\":[\"bzz-raw://1e02044b5e19cc9ca24d23f55667142fde6daefba66408b56c4f620b625fc189\",\"dweb:/ipfs/QmUqWdRBqWi2tZkNAPhzLZbknP26TZbD8iRQMd3fdZGFgi\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/interfaces/IMulticall_v4.sol\":{\"keccak256\":\"0x336bec303f7ff86497d2679464c5adad5040f412b3d0769ce5e1d2a42f7e2c08\",\"urls\":[\"bzz-raw://7734f047d98d331c8abc51ad9f358ceee0a6dcae8d89ac49084b84de0d2d42e7\",\"dweb:/ipfs/QmWij2h7mU36LsXhb9P6pkYXrSCua4ixeWaVFSrsEcEmPQ\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/interfaces/INotifier.sol\":{\"keccak256\":\"0xfdc5187a98240a1691aae98b7dd2444d4c2bfb4746f3c34de9f3d18399c17c5e\",\"urls\":[\"bzz-raw://683af56401ec4f8817e8dfe150e7b3febaf0baaf40efe8d0d0475f735275f746\",\"dweb:/ipfs/QmRQ6S3nFnSc2jjDcQTvUJdTf4xKPojmvCkpvgyr6qTuVV\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/interfaces/IPermit2Forwarder.sol\":{\"keccak256\":\"0xfad472937280e861125ff12aa6f9c2cf7440fbb20a2cc29485c24662ad4279c5\",\"urls\":[\"bzz-raw://31bfbc331f5972fc373d9469fd1ca1d14818db3275f21b7b590f20820cb4439d\",\"dweb:/ipfs/QmX3Bv9wfYpAFZKBcxKsQSXUrSC8mqNBdzh6XVMS72aNx9\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/interfaces/IPoolInitializer_v4.sol\":{\"keccak256\":\"0x2e4feda94650a2642039e0309ffdec480ee050bc40864bf5e1dba42bb4dc9e98\",\"urls\":[\"bzz-raw://964c178b4da8bab9ef898b94bb26d7c17cc44c5cf20485f55dcf5e9c7e1b1d92\",\"dweb:/ipfs/QmVd2c3SYteyr5xZgUS4sDAiZF43dLwVAEKdCfvQbkZpRJ\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/interfaces/IPositionDescriptor.sol\":{\"keccak256\":\"0x5a4327e608b35ba2d3451c267b609336efbd780912080dbb1a21563db25c9768\",\"urls\":[\"bzz-raw://c783c7a4834d610586ef6caf79806f4e339ad488046766d03fe3d014d11093e4\",\"dweb:/ipfs/QmcQWiNQz1hAcJRwFfw5NnSz6zcgAE5HytdVL8MAQJUrv4\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/interfaces/IPositionManager.sol\":{\"keccak256\":\"0x62dfa0cbee8314ee7e6787db8bc1d364245c340f940875ac7ff11e89d074fc7e\",\"urls\":[\"bzz-raw://26f560c77d8a187bf93a710b827e3167eab3446922192fa8f92f208da2103834\",\"dweb:/ipfs/Qmbzp5gSYdTpMBF9aAb2GraxMEQZb5LRJCyg8VaRUyjTFc\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/interfaces/ISubscriber.sol\":{\"keccak256\":\"0x34ceadec4a63019680e543fe73197f198a55c825d86e18f327840354760b57e7\",\"urls\":[\"bzz-raw://31734feafe1fe162a0702ddf862fcc3bd97505931afb3c685033c0185d898051\",\"dweb:/ipfs/QmQEANYVyaXTNzXKcjUVfPhLU71Bix5vxQH75BpPWMkWgw\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/interfaces/IUnorderedNonce.sol\":{\"keccak256\":\"0xd7f32fee74dc7d1a3b078ca1263961baccaa6bf434c79e8fe0e092e30c3e0ec3\",\"urls\":[\"bzz-raw://e7d1e92d89d5f49c84aa82f3b259678c2c97a4473b22d753ca4411a6b0cec36d\",\"dweb:/ipfs/QmNZoQyminStaAdaLqoDLoWaBU5QWrWjXFjmBm4aFhzL8i\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/interfaces/IV4Router.sol\":{\"keccak256\":\"0xc4133fae25e61cc2447d7331729f6035322d7c1fe26b39b225422bf98cc63459\",\"urls\":[\"bzz-raw://3c24ff8428504e973e947a059f96289a66c520cd7f8ef47a3224f9cb6abdaf25\",\"dweb:/ipfs/QmVqxYnngWXXcCiuTC143vTEJrjZK5NXWB92pjvVbuJBQ5\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/interfaces/external/IWETH9.sol\":{\"keccak256\":\"0xe88abf12501ac275619aec0687240a07d26968aecbbcdfea88ba8bbd5d6e5e14\",\"urls\":[\"bzz-raw://7097065d4492b4eccb1a73f99af1e5bec45404c6b973b8f5965c4c91403f5f92\",\"dweb:/ipfs/QmZK8oEqmjmTqhBoh3D3fBpyKGkUEFnptY8xwH9xpNjDm2\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/libraries/ActionConstants.sol\":{\"keccak256\":\"0x3d6f0e5b4a7b1e60bad93e73dce5db67fb66bebef11c31ed8355014a79aa03b3\",\"urls\":[\"bzz-raw://6dfa42e24b1b5c7f66e75304ab034fbb6768518eb2410ccfff8b3defdd1658f2\",\"dweb:/ipfs/QmQQ7fud9mmv7PEWPAQiNzeZhNkWf28Z6nCHc2e6WJFfa7\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/libraries/Actions.sol\":{\"keccak256\":\"0x8efd4b8b289177ee27e557d9d0a5a9f973d66fe1eb1ef8959d316b11987ca830\",\"urls\":[\"bzz-raw://07fe35f194eb99465028f0546359befea574d844da53767d32f22b233c3bcc98\",\"dweb:/ipfs/Qmc19631uFxABTHAbGrDrroexi9GdyxWntaum1v8npPYz5\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/libraries/CalldataDecoder.sol\":{\"keccak256\":\"0x26df49e13fb5410fd4db253cca877dfdfb3a1ba03e394d054c0e0514a88a56e5\",\"urls\":[\"bzz-raw://72a0c98c52171708f332f83d517deeb97fdd50ecf28f2510e1866e54593a6ff8\",\"dweb:/ipfs/QmY4LiDUfSKGj86nML7B6a8euiPciUqwYehasAyAVnMCHq\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/libraries/ERC721PermitHash.sol\":{\"keccak256\":\"0xd8024f516738a1f968169875efd4ba803049c933cf6ea5e36189df9915f4e3f2\",\"urls\":[\"bzz-raw://58b45295f87c31f516a727a2a40ba2f34ac57ebd5520c42ea59946d2ffc0f5df\",\"dweb:/ipfs/QmW8xC2xS18r4yhGbhSJTN1DfCgPT6oKHxwwszutn2sPuz\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/libraries/LiquidityAmounts.sol\":{\"keccak256\":\"0x8ea74b89831877ffe657f8461164a01a6f3c7e46f415410854fca8d28a8cab53\",\"urls\":[\"bzz-raw://f4015f62e5e8aa154baa555dc39ce36b498e6d875a53f793d62b8556e6b97ccb\",\"dweb:/ipfs/QmUVHyEe3hZZZQum5ct6yDY8qduj62Ta7f7x5Kw95LpQbg\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/libraries/Locker.sol\":{\"keccak256\":\"0x5c0859290a277fbfba8579b506426d3fc4b2ff7d8b691c03dd23aa85797fdae1\",\"urls\":[\"bzz-raw://18ad9effea8da74b9988373dddddd6669f11701fc954f77d2cb58beb9a9cc3ad\",\"dweb:/ipfs/QmQdBMoXdVACo6k6rumWj15UPDCqGpWNSPvQbejxKuV9RJ\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/libraries/PathKey.sol\":{\"keccak256\":\"0xbbd79ffefe045f025263e389539021266fb4d371463aefba405e1ff1d3fcf9bc\",\"urls\":[\"bzz-raw://2d1c47b81a01218be46ee79f0a8837095479b94dc5cfd18abbf2006709f0ea89\",\"dweb:/ipfs/QmRb6CQ13Zp7f3WF5jbZtsF2szhxpPgcuWs9mjwQXxzqtg\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/libraries/PositionInfoLibrary.sol\":{\"keccak256\":\"0xc5ddf96bd088bc87ea50a20f907fc932fb28397a42682a301b268a11b7f34078\",\"urls\":[\"bzz-raw://7dfeb4dc747537240f8167243e8066b6f5f08057386fb8bda93f82973fc18ad6\",\"dweb:/ipfs/Qmby9DAAaHj8hjsMUnqY3vjqCHKGAKrT5EULMmeGcjbbGx\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/libraries/SlippageCheck.sol\":{\"keccak256\":\"0x9b7872e403b417dfbcf9835b16109f80f7abed702652a9817e28f07189983b4b\",\"urls\":[\"bzz-raw://911974b8e37b3be02150090b64d841fcc1153277d20f75315b3b8eb02c111e66\",\"dweb:/ipfs/QmRYe4UAYG5TNqB2ygM3n7e3GFMhJmW1c29WZjGDfGQyxQ\"],\"license\":\"MIT\"},\"lib/v4-periphery/src/utils/BaseHook.sol\":{\"keccak256\":\"0x6268607345149d912996d1c2bac693b2102304cc97c19ec4fef184d6fa390e89\",\"urls\":[\"bzz-raw://d6c0dddffa6c5eb3c10bc45d56d58bc3f4773778322fa10a4acf46e2292b61b3\",\"dweb:/ipfs/Qmc1Srhh6ne5Lsi2Y5BBz8pgPLmJdg8uN1UCeJzKnr6Kra\"],\"license\":\"MIT\"},\"src/Id.sol\":{\"keccak256\":\"0x3bb11d70fa987732cac775a44d3c033f047da299a81265a574a9c9babecf6cb7\",\"urls\":[\"bzz-raw://23a72eb1871363dceba551f2799df29b7c428c435597f9098d7dc485eb4b6938\",\"dweb:/ipfs/QmUmRj4dNnH61YDF2kEDeAtfrF5Mn3hnjh1u8FjUAjHNPs\"],\"license\":\"All Rights Reserved\"},\"src/Market.sol\":{\"keccak256\":\"0x2284cc41dbb7bb315bef80ecb3b0025a3bf74851a0acfafce887bf2e371b6fd1\",\"urls\":[\"bzz-raw://70babe2a2541627a474c645a30e69a3d97cfdd81da55befaf9df302c11997574\",\"dweb:/ipfs/QmUN6CsDBhaoD1xvHpQesC5mkgkmPN5HS5X5eoH8E45e9v\"],\"license\":\"All Rights Reserved\"},\"src/MarketUtilsSwapHook.sol\":{\"keccak256\":\"0x71087027e7a193afec66a68c1a476dcc20cd9e1715d4194e16f9f5ca2128d934\",\"urls\":[\"bzz-raw://47166f8df039c7289bcd4de1d73bec555d485ae5786c69c870d3635958285aa9\",\"dweb:/ipfs/QmcpQ4mSGh2mv3U4JXbdefr8A42jrjipFXhnR1mmt8XSC6\"],\"license\":\"All Rights Reserved\"},\"src/Tokens.sol\":{\"keccak256\":\"0xa6818a226a9b702c02958a1b4bfe371d7fb8b5885abdf1e052f7263ec7f927c4\",\"urls\":[\"bzz-raw://07efc71f2d1db501ae0acdf59a315ee1b355d615e43f288adb4ccb2126098c16\",\"dweb:/ipfs/QmPReLjGL1rTqxJPKVDQWTrtobcSBV752EQpbY5w82PbmL\"],\"license\":\"All Rights Reserved\"},\"src/USDC.sol\":{\"keccak256\":\"0xfe6fcd303379ff125605f2b510cba7c0548a5b5084a926defc2655e5e98e9a17\",\"urls\":[\"bzz-raw://e7fa5064804c84496a8730835890c42f574ccf296205e16facd9810b41d7381b\",\"dweb:/ipfs/QmaYo22jNzvqemRA3fMEALCnLyh8zQzq1PCFai4ctrVSnH\"],\"license\":\"All Rights Reserved\"},\"src/common/MarketData.sol\":{\"keccak256\":\"0x8f2d6f931079a6f5d8ef03084f4c1c634e5b5b2019f0917e51c8412b4bd85e7c\",\"urls\":[\"bzz-raw://d644c1b4d37b931f2b6fcf6f6cf23e4fd4ae8f09776e655625094d423dbadee9\",\"dweb:/ipfs/QmRi5AhbAeN1BDSPjwrwzjFASnVbqWDCgJiLPgcWSnWMJX\"],\"license\":\"All Rights Reserved\"},\"src/interfaces/IFlareHybridResolver.sol\":{\"keccak256\":\"0xfcaaeb5715db3e9e0e83979e9394e7c0f24d44da918296b2a0ae5612e842d2ae\",\"urls\":[\"bzz-raw://bdaaae59fd31af8e61a13d12fa37f0c56526d35180858ee293d0280b0e3cbfe7\",\"dweb:/ipfs/QmS6AswkAfm9qnNgo2CmvgVyfS4ThaH5mVB12NwzAoDmTb\"],\"license\":\"All Rights Reserved\"},\"src/interfaces/IMarket.sol\":{\"keccak256\":\"0xfa5bdc83c5375b9bd259df40fe416344f8a4c1bfd866f637818523bd53e16022\",\"urls\":[\"bzz-raw://80d453e7cd2650e408e169d18179d2d638de6367d06f8e8ce5a1836859f92173\",\"dweb:/ipfs/QmW76QayLrWLXPD9G46mhiVL15fdRXeTAoTfWZbyNSihRZ\"],\"license\":\"All Rights Reserved\"},\"src/interfaces/IMarketResolver.sol\":{\"keccak256\":\"0xd00badd60313617578333755e39cb3dcc8dc72e64ffd127f2cb9e13678c9ed41\",\"urls\":[\"bzz-raw://42311e09403e5cc12452e2727dbcc453e0630a18a6731e0bab7b5aca8a22802b\",\"dweb:/ipfs/QmNj5ywhD86HZBAiwp8oWtZvXy3nBiof3PSkHEq2dACy1B\"],\"license\":\"All Rights Reserved\"},\"src/libraries/PriceLibrary.sol\":{\"keccak256\":\"0xcd1aeae708f45f8e5f76a2a9c7d838d2bf7fc16e69efd887bc170857a6a3273f\",\"urls\":[\"bzz-raw://d2ffe62fa049a176c09efa5c129b5f053df07c290cf32f5d5139563c84015114\",\"dweb:/ipfs/QmNq4YwkXLQSNYcTbDKz5u8DjKvhk8QPwPxvcP1eyto9Sk\"],\"license\":\"All Rights Reserved\"}},\"version\":1},\"id\":251}"));}),
+"[project]/src/abis/FlareHybridResolver.json (json)", ((__turbopack_context__) => {
+
+__turbopack_context__.v(JSON.parse("{\"abi\":[{\"type\":\"constructor\",\"inputs\":[{\"name\":\"_ftsoRegistry\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_fdc\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_owner\",\"type\":\"address\",\"internalType\":\"address\"}],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"CONFIGURER_ROLE\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"DEFAULT_ADMIN_ROLE\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"fdc\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"address\",\"internalType\":\"contract IFlareDataConnector\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"fdcRequestIds\",\"inputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[{\"name\":\"\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"fdcRequestTimestamps\",\"inputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"ftsoRegistry\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"address\",\"internalType\":\"contract IFtsoRegistry\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"getFDCAttestationStatus\",\"inputs\":[{\"name\":\"proposalId\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[{\"name\":\"requestId\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"},{\"name\":\"available\",\"type\":\"bool\",\"internalType\":\"bool\"},{\"name\":\"data\",\"type\":\"bytes\",\"internalType\":\"bytes\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"getFTSOPrice\",\"inputs\":[{\"name\":\"tokenAddress\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[{\"name\":\"price\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"timestamp\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"getRoleAdmin\",\"inputs\":[{\"name\":\"role\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}],\"outputs\":[{\"name\":\"\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"grantConfigurerRole\",\"inputs\":[{\"name\":\"account\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"grantRole\",\"inputs\":[{\"name\":\"role\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"},{\"name\":\"account\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"hasRole\",\"inputs\":[{\"name\":\"role\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"},{\"name\":\"account\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[{\"name\":\"\",\"type\":\"bool\",\"internalType\":\"bool\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"owner\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"address\",\"internalType\":\"address\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"renounceOwnership\",\"inputs\":[],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"renounceRole\",\"inputs\":[{\"name\":\"role\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"},{\"name\":\"callerConfirmation\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"resolutionConfigs\",\"inputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[{\"name\":\"resolutionType\",\"type\":\"uint8\",\"internalType\":\"enum ResolutionType\"},{\"name\":\"tokenAddress\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"ftsoAddress\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"targetPrice\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"targetMarketCap\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"dataSource\",\"type\":\"string\",\"internalType\":\"string\"},{\"name\":\"query\",\"type\":\"bytes\",\"internalType\":\"bytes\"},{\"name\":\"expectedData\",\"type\":\"bytes\",\"internalType\":\"bytes\"},{\"name\":\"timestamp\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"revokeConfigurerRole\",\"inputs\":[{\"name\":\"account\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"revokeRole\",\"inputs\":[{\"name\":\"role\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"},{\"name\":\"account\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"setResolutionConfig\",\"inputs\":[{\"name\":\"proposalId\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"config\",\"type\":\"tuple\",\"internalType\":\"struct ResolutionConfig\",\"components\":[{\"name\":\"resolutionType\",\"type\":\"uint8\",\"internalType\":\"enum ResolutionType\"},{\"name\":\"tokenAddress\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"ftsoAddress\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"targetPrice\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"targetMarketCap\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"dataSource\",\"type\":\"string\",\"internalType\":\"string\"},{\"name\":\"query\",\"type\":\"bytes\",\"internalType\":\"bytes\"},{\"name\":\"expectedData\",\"type\":\"bytes\",\"internalType\":\"bytes\"},{\"name\":\"timestamp\",\"type\":\"uint256\",\"internalType\":\"uint256\"}]}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"submitFDCRequest\",\"inputs\":[{\"name\":\"proposalId\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"supportsInterface\",\"inputs\":[{\"name\":\"interfaceId\",\"type\":\"bytes4\",\"internalType\":\"bytes4\"}],\"outputs\":[{\"name\":\"\",\"type\":\"bool\",\"internalType\":\"bool\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"transferOwnership\",\"inputs\":[{\"name\":\"newOwner\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"verifyResolution\",\"inputs\":[{\"name\":\"proposalId\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"yesOrNo\",\"type\":\"bool\",\"internalType\":\"bool\"},{\"name\":\"proof\",\"type\":\"bytes\",\"internalType\":\"bytes\"}],\"outputs\":[{\"name\":\"\",\"type\":\"bool\",\"internalType\":\"bool\"}],\"stateMutability\":\"view\"},{\"type\":\"event\",\"name\":\"FDCRequestSubmitted\",\"inputs\":[{\"name\":\"proposalId\",\"type\":\"uint256\",\"indexed\":true,\"internalType\":\"uint256\"},{\"name\":\"requestId\",\"type\":\"bytes32\",\"indexed\":true,\"internalType\":\"bytes32\"},{\"name\":\"dataSource\",\"type\":\"string\",\"indexed\":false,\"internalType\":\"string\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"OwnershipTransferred\",\"inputs\":[{\"name\":\"previousOwner\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"},{\"name\":\"newOwner\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"ResolutionConfigSet\",\"inputs\":[{\"name\":\"proposalId\",\"type\":\"uint256\",\"indexed\":true,\"internalType\":\"uint256\"},{\"name\":\"resolutionType\",\"type\":\"uint8\",\"indexed\":false,\"internalType\":\"enum ResolutionType\"},{\"name\":\"tokenAddress\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"ResolutionVerified\",\"inputs\":[{\"name\":\"proposalId\",\"type\":\"uint256\",\"indexed\":true,\"internalType\":\"uint256\"},{\"name\":\"outcome\",\"type\":\"bool\",\"indexed\":false,\"internalType\":\"bool\"},{\"name\":\"resolutionType\",\"type\":\"uint8\",\"indexed\":false,\"internalType\":\"enum ResolutionType\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"RoleAdminChanged\",\"inputs\":[{\"name\":\"role\",\"type\":\"bytes32\",\"indexed\":true,\"internalType\":\"bytes32\"},{\"name\":\"previousAdminRole\",\"type\":\"bytes32\",\"indexed\":true,\"internalType\":\"bytes32\"},{\"name\":\"newAdminRole\",\"type\":\"bytes32\",\"indexed\":true,\"internalType\":\"bytes32\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"RoleGranted\",\"inputs\":[{\"name\":\"role\",\"type\":\"bytes32\",\"indexed\":true,\"internalType\":\"bytes32\"},{\"name\":\"account\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"},{\"name\":\"sender\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"RoleRevoked\",\"inputs\":[{\"name\":\"role\",\"type\":\"bytes32\",\"indexed\":true,\"internalType\":\"bytes32\"},{\"name\":\"account\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"},{\"name\":\"sender\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"}],\"anonymous\":false},{\"type\":\"error\",\"name\":\"AccessControlBadConfirmation\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"AccessControlUnauthorizedAccount\",\"inputs\":[{\"name\":\"account\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"neededRole\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}]},{\"type\":\"error\",\"name\":\"AttestationNotAvailable\",\"inputs\":[{\"name\":\"requestId\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}]},{\"type\":\"error\",\"name\":\"ConfigNotSet\",\"inputs\":[{\"name\":\"proposalId\",\"type\":\"uint256\",\"internalType\":\"uint256\"}]},{\"type\":\"error\",\"name\":\"FDCRequestNotFound\",\"inputs\":[{\"name\":\"proposalId\",\"type\":\"uint256\",\"internalType\":\"uint256\"}]},{\"type\":\"error\",\"name\":\"FTSONotAvailable\",\"inputs\":[{\"name\":\"token\",\"type\":\"address\",\"internalType\":\"address\"}]},{\"type\":\"error\",\"name\":\"InvalidResolutionType\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"OutcomeMismatch\",\"inputs\":[{\"name\":\"expected\",\"type\":\"bool\",\"internalType\":\"bool\"},{\"name\":\"actual\",\"type\":\"bool\",\"internalType\":\"bool\"}]},{\"type\":\"error\",\"name\":\"OwnableInvalidOwner\",\"inputs\":[{\"name\":\"owner\",\"type\":\"address\",\"internalType\":\"address\"}]},{\"type\":\"error\",\"name\":\"OwnableUnauthorizedAccount\",\"inputs\":[{\"name\":\"account\",\"type\":\"address\",\"internalType\":\"address\"}]}],\"bytecode\":{\"object\":\"0x60c03461012a57601f611e2738819003918201601f19168301916001600160401b0383118484101761012e5780849260609460405283398101031261012a5761004781610142565b90610060604061005960208401610142565b9201610142565b6001600160a01b038116929091908315610117575f80546001600160a01b03198116861782556100d295916001600160a01b03909116907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09080a36001600160a01b039081166080521660a052610156565b50604051611c2790816101e08239608051818181610e8901528181610ff40152611b04015260a0518181816102ad01528181610f11015281816114f701526119080152f35b631e4fbdf760e01b5f525f60045260245ffd5b5f80fd5b634e487b7160e01b5f52604160045260245ffd5b51906001600160a01b038216820361012a57565b6001600160a01b0381165f9081525f80516020611e07833981519152602052604090205460ff166101da576001600160a01b03165f8181525f80516020611e0783398151915260205260408120805460ff191660011790553391907f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d8180a4600190565b505f9056fe6080806040526004361015610012575f80fd5b5f3560e01c90816301ffc9a714611138575080631e0d6ec314610fb1578063248a9ca314610f7e5780632f2ff15d14610f405780633275f21c14610efc57806336568abe14610eb857806338b5f86914610e7457806365bdc0c914610e4b578063715018a614610df45780637782da2f14610c6f5780638a828e4e14610c465780638da5cb5b14610c1f57806391d1485414610bd6578063941f58cf146106425780639ba2e35d14610618578063a217fddf146105fe578063a26ce6f8146105d4578063abbb9f4c146105ad578063b0245250146104d3578063ca0f228b1461048d578063d547741f14610448578063f2fde38b146103c35763fb6cc44b14610119575f80fd5b346103bf5760603660031901126103bf576004356024358015158091036103bf576044356001600160401b0381116103bf57610159903690600401611362565b50815f52600260205260405f206040519061017382611203565b805461018260ff8216846113b5565b60081c6001600160a01b039081166020840152600182015416604083015260028101546060830152600381015460808301526101c060048201611240565b60a08301526101d160058201611240565b60c083015260076101e460068301611240565b9160e08401928352015461010083019081528251600581101561037a576004149081156103b5575b506103a2578151600581101561037a5715801561038e575b1561025f57506102359192506119d2565b15159080820361024a57602060405160018152f35b635589006560e11b5f5260045260245260445ffd5b908051600581101561037a57600214908115610365575b501561035657825f52600360205260405f205492831561034457506040516328c44a9960e21b815260048101849052905f826024817f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03165afa918215610339575f905f93610312575b50156102ff576102fa9293505190611b90565b610235565b83630143bcd560e41b5f5260045260245ffd5b90506103319192503d805f833e610329818361121f565b810190611456565b91905f6102e7565b6040513d5f823e3d90fd5b632605ad7960e21b5f5260045260245ffd5b63e1d645bf60e01b5f5260045ffd5b905051600581101561037a576003145f610276565b634e487b7160e01b5f52602160045260245ffd5b508151600581101561037a57600114610224565b83630f933b6b60e31b5f5260045260245ffd5b905051155f61020c565b5f80fd5b346103bf5760203660031901126103bf576103dc61118b565b6103e461187d565b6001600160a01b03168015610435575f80546001600160a01b03198116831782556001600160a01b0316907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09080a3005b631e4fbdf760e01b5f525f60045260245ffd5b346103bf5760403660031901126103bf5761048b6004356104676111a1565b90610486610481825f526001602052600160405f20015490565b61160a565b6117f9565b005b346103bf5760203660031901126103bf576104cf6104ac6004356114c9565b6040939193519384938452151560208401526060604084015260608301906112ed565b0390f35b346103bf5760203660031901126103bf576004355f52600260205260405f20805460018060a01b03600183015416916105a2600282015491610594600382015461058661052260048501611240565b61052e60058601611240565b92600761053d60068801611240565b960154976040519a8a6105548d60ff819e166112e0565b60081c6001600160a01b031660208c015260408b015260608a0152608089015261012060a089018190528801906112ed565b9086820360c08801526112ed565b9084820360e08601526112ed565b906101008301520390f35b346103bf575f3660031901126103bf5760206040515f80516020611bb28339815191528152f35b346103bf5760203660031901126103bf576004355f526004602052602060405f2054604051908152f35b346103bf575f3660031901126103bf5760206040515f8152f35b346103bf5760203660031901126103bf576004355f526003602052602060405f2054604051908152f35b346103bf5760403660031901126103bf576004356024356001600160401b0381116103bf57806004019061012060031982360301126103bf576106836115c1565b81359160058310156103bf5760048314610b985760248201916106a5836113c1565b9160448201906106b4826113c1565b6064840135946084850135888a60a4880193886106d186896113d5565b8c60c48401996106e18b8d6113d5565b94909560e4019c8d6106f2916113d5565b9690916040519a6107028c611203565b61070c908c6113b5565b6001600160a01b0398891660208c019081529390981660408b0190815260608b0194855260808b018c815293989395909361074891369161132c565b9560a08b01968752369061075b9261132c565b9560c08a01968752369061076e9261132c565b9560e089019687526101008901974289525f52600260205260405f20985190600582101561037a5789549051610100600160a81b0360089190911b1660ff929092166001600160a81b031990911617178855516001880180546001600160a01b039092166001600160a01b031990921691909117905551600287015551600386015551805160048601916001600160401b038211610abe5761081a8261081485546111cb565b85611407565b602090601f8311600114610b355761084992915f9183610a4c575b50508160011b915f199060031b1c19161790565b90555b51805160058501916001600160401b038211610abe576108708261081485546111cb565b602090601f8311600114610ad25761089e92915f9183610a4c5750508160011b915f199060031b1c19161790565b90555b51805160068401916001600160401b038211610abe576108c58261081485546111cb565b602090601f8311600114610a575791806108f89260079695945f92610a4c5750508160011b915f199060031b1c19161790565b90555b519101555f9660028a148015610a3f575b610966575b505050505050506103bf577f43e36f09ac952b92fb82145eb9ff058db90b281e095bdb8487e88cb869a5656b916109496040926113c1565b610955835180936112e0565b6001600160a01b03166020820152a2005b604051958861097488611203565b6103bf57610992908b88526109888b6111b7565b60208901526111b7565b604087015260608601526080850152356001600160401b0381116103bf578401366023820112156103bf576109d190369060246004820135910161132c565b60a0840152356001600160401b0381116103bf576109f59060043691860101611362565b60c0830152356001600160401b0381116103bf57610a3392610a206101049260043691840101611362565b60e08401520135610100820152856118a3565b84808080808080610911565b505f975060038a1461090c565b015190505f80610835565b90601f19831691845f52815f20925f5b818110610aa6575091600193918560079897969410610a8e575b505050811b0190556108fb565b01515f1960f88460031b161c191690555f8080610a81565b92936020600181928786015181550195019301610a67565b634e487b7160e01b5f52604160045260245ffd5b90601f19831691845f52815f20925f5b818110610b1d5750908460019594939210610b05575b505050811b0190556108a1565b01515f1960f88460031b161c191690555f8080610af8565b92936020600181928786015181550195019301610ae2565b90601f19831691845f52815f20925f5b818110610b805750908460019594939210610b68575b505050811b01905561084c565b01515f1960f88460031b161c191690555f8080610b5b565b92936020600181928786015181550195019301610b45565b60405162461bcd60e51b815260206004820152601660248201527543616e6e6f7420736574204d414e55414c207479706560501b6044820152606490fd5b346103bf5760403660031901126103bf57610bef6111a1565b6004355f52600160205260405f209060018060a01b03165f52602052602060ff60405f2054166040519015158152f35b346103bf575f3660031901126103bf575f546040516001600160a01b039091168152602090f35b346103bf5760203660031901126103bf5761048b610c6261118b565b610c6a611572565b611768565b346103bf5760203660031901126103bf57600435610c8b6115c1565b805f52600260205260405f20600760405191610ca683611203565b8054610cb560ff8216856113b5565b60081c6001600160a01b03908116602085015260018201541660408401526002810154606084015260038101546080840152610cf360048201611240565b60a0840152610d0460058201611240565b60c0840152610d1560068201611240565b60e084015201546101008201528051600581101561037a576002148015610de0575b15610d9b57815f52600360205260405f2054610d565761048b916118a3565b60405162461bcd60e51b815260206004820152601960248201527f5265717565737420616c7265616479207375626d6974746564000000000000006044820152606490fd5b60405162461bcd60e51b815260206004820152601a60248201527f4e6f7420616e20464443207265736f6c7574696f6e20747970650000000000006044820152606490fd5b508051600581101561037a57600314610d37565b346103bf575f3660031901126103bf57610e0c61187d565b5f80546001600160a01b0319811682556001600160a01b03167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e08280a3005b346103bf5760203660031901126103bf5761048b610e6761118b565b610e6f611572565b611644565b346103bf575f3660031901126103bf576040517f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03168152602090f35b346103bf5760403660031901126103bf57610ed16111a1565b336001600160a01b03821603610eed5761048b906004356117f9565b63334bd91960e11b5f5260045ffd5b346103bf575f3660031901126103bf576040517f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03168152602090f35b346103bf5760403660031901126103bf5761048b600435610f5f6111a1565b90610f79610481825f526001602052600160405f20015490565b6116dc565b346103bf5760203660031901126103bf576020610fa96004355f526001602052600160405f20015490565b604051908152f35b346103bf5760203660031901126103bf57610fca61118b565b6040516310b0234160e21b81526001600160a01b03918216600482015290602090829060249082907f0000000000000000000000000000000000000000000000000000000000000000165afa908115610339575f91611109575b506001600160a01b031680156110cf57604080516375c8e9bf60e11b815291829060049082905afa908115610339575f905f9261109d575b506509184e72a0008102908082046509184e72a00014901517156110895760409182519182526020820152f35b634e487b7160e01b5f52601160045260245ffd5b90506110c1915060403d6040116110c8575b6110b9818361121f565b81019061139f565b908261105c565b503d6110af565b60405162461bcd60e51b81526020600482015260126024820152714654534f206e6f7420617661696c61626c6560701b6044820152606490fd5b61112b915060203d602011611131575b611123818361121f565b810190611380565b81611024565b503d611119565b346103bf5760203660031901126103bf576004359063ffffffff60e01b82168092036103bf57602091637965db0b60e01b811490811561117a575b5015158152f35b6301ffc9a760e01b14905083611173565b600435906001600160a01b03821682036103bf57565b602435906001600160a01b03821682036103bf57565b35906001600160a01b03821682036103bf57565b90600182811c921680156111f9575b60208310146111e557565b634e487b7160e01b5f52602260045260245ffd5b91607f16916111da565b61012081019081106001600160401b03821117610abe57604052565b90601f801991011681019081106001600160401b03821117610abe57604052565b9060405191825f825492611253846111cb565b80845293600181169081156112be575060011461127a575b506112789250038361121f565b565b90505f9291925260205f20905f915b8183106112a2575050906020611278928201015f61126b565b6020919350806001915483858901015201910190918492611289565b90506020925061127894915060ff191682840152151560051b8201015f61126b565b90600582101561037a5752565b805180835260209291819084018484015e5f828201840152601f01601f1916010190565b6001600160401b038111610abe57601f01601f191660200190565b92919261133882611311565b91611346604051938461121f565b8294818452818301116103bf578281602093845f960137010152565b9080601f830112156103bf5781602061137d9335910161132c565b90565b908160209103126103bf57516001600160a01b03811681036103bf5790565b91908260409103126103bf576020825192015190565b600582101561037a5752565b356001600160a01b03811681036103bf5790565b903590601e19813603018212156103bf57018035906001600160401b0382116103bf576020019181360383136103bf57565b601f821161141457505050565b5f5260205f20906020601f840160051c8301931061144c575b601f0160051c01905b818110611441575050565b5f8155600101611436565b909150819061142d565b91906040838203126103bf57825180151581036103bf57926020810151906001600160401b0382116103bf570181601f820112156103bf5780519061149a82611311565b926114a8604051948561121f565b828452602083830101116103bf57815f9260208093018386015e8301015290565b5f52600360205260405f20548015611559576040516328c44a9960e21b815260048101829052915f836024817f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03165afa918215610339575f935f93611537575b50929190565b90925061154f9193503d805f833e610329818361121f565b929092915f611531565b505f905f9060405161156c60208261121f565b5f815290565b335f9081527fa6eef7e35abe7026729641147f7915573c7e97b47efa546f5f6e3230263bcb49602052604090205460ff16156115aa57565b63e2517d3f60e01b5f52336004525f60245260445ffd5b335f9081525f80516020611bd2833981519152602052604090205460ff16156115e657565b63e2517d3f60e01b5f52336004525f80516020611bb283398151915260245260445ffd5b5f81815260016020908152604080832033845290915290205460ff161561162e5750565b63e2517d3f60e01b5f523360045260245260445ffd5b6001600160a01b0381165f9081525f80516020611bd2833981519152602052604090205460ff166116d7576001600160a01b03165f8181525f80516020611bd283398151915260205260408120805460ff191660011790553391905f80516020611bb2833981519152907f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d9080a4600190565b505f90565b5f8181526001602090815260408083206001600160a01b038616845290915290205460ff16611762575f8181526001602081815260408084206001600160a01b0396909616808552959091528220805460ff19169091179055339291907f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d9080a4600190565b50505f90565b6001600160a01b0381165f9081525f80516020611bd2833981519152602052604090205460ff16156116d7576001600160a01b03165f8181525f80516020611bd283398151915260205260408120805460ff191690553391905f80516020611bb2833981519152907ff6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b9080a4600190565b5f8181526001602090815260408083206001600160a01b038616845290915290205460ff1615611762575f8181526001602090815260408083206001600160a01b0395909516808452949091528120805460ff19169055339291907ff6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b9080a4600190565b5f546001600160a01b0316330361189057565b63118cdaa760e01b5f523360045260245ffd5b60a0820160c0815193015192620151804201804211611089576020916118e9916118fb604051978894859463053711d760e01b86526060600487015260648601906112ed565b848103600319016024860152906112ed565b604483019190915203815f7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03165af1928315610339575f9361199c575b506119977f708b9a1e67031be0ccf6d48bb9990f5d9ea10c0600f4f01defa7409b1a40196291835f5260036020528460405f2055835f5260046020524260405f2055516040519182916020835260208301906112ed565b0390a3565b9092506020813d6020116119ca575b816119b86020938361121f565b810103126103bf575191611997611940565b3d91506119ab565b6040810180516001600160a01b031615611ad35751600491906040906001600160a01b03165b81516375c8e9bf60e11b815293849182906001600160a01b03165afa8015610339575f925f91611aae575b5015611a74576509184e72a0008202918083046509184e72a000149015171561108957805190600582101561037a57606091600103611a6d57608081015115611a6d570151111590565b0151111590565b60405162461bcd60e51b8152602060048201526012602482015271496e76616c6964204654534f20707269636560701b6044820152606490fd5b9050611aca91925060403d6040116110c8576110b9818361121f565b9190915f611a23565b50602081810180516040516310b0234160e21b81526001600160a01b039182166004820152919290829060249082907f0000000000000000000000000000000000000000000000000000000000000000165afa908115610339575f91611b71575b506001600160a01b0316908115611b5157509060406004926119f8565b5163020d3a9160e51b5f9081526001600160a01b03909116600452602490fd5b611b8a915060203d60201161113157611123818361121f565b5f611b34565b90805180611ba057505051151590565b82516020938401209290910120149056fef45c97b23e2beeefda80e1ce5cb3e234aa7b6888ad5cbabb75bfd654dd8e102d15fa9a06af7b28cd82d99ceca023ffd2085f89d27d594a8a91969f0cfc8349dda2646970667358221220b6de592b6b1773d7a03641b569c29d4701feb97b3829ea71e757e6253afb273b64736f6c634300081a0033a6eef7e35abe7026729641147f7915573c7e97b47efa546f5f6e3230263bcb49\",\"sourceMap\":\"889:10300:250:-:0;;;;;;;;;;;;;-1:-1:-1;;889:10300:250;;;;-1:-1:-1;;;;;889:10300:250;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;:::i;:::-;;;;:::i;:::-;-1:-1:-1;;;;;889:10300:250;;;;;;1273:26:23;;1269:95;;-1:-1:-1;889:10300:250;;-1:-1:-1;;;;;;889:10300:250;;;;;;2309:38;;889:10300;-1:-1:-1;;;;;889:10300:250;;;;3052:40:23;;-1:-1:-1;3052:40:23;-1:-1:-1;;;;;889:10300:250;;;2215:43;;889:10300;;2268:31;2309:38;:::i;:::-;;889:10300;;;;;;;;2215:43;889:10300;;;;;;;;;;;;;;;2268:31;889:10300;;;;;;;;;;;;;;;;;;;;;1269:95:23;1322:31;;;-1:-1:-1;1322:31:23;-1:-1:-1;1322:31:23;889:10300:250;;-1:-1:-1;1322:31:23;889:10300:250;-1:-1:-1;889:10300:250;;;;;;-1:-1:-1;889:10300:250;;;;;-1:-1:-1;889:10300:250;;;;-1:-1:-1;;;;;889:10300:250;;;;;;:::o;6179:316:21:-;-1:-1:-1;;;;;889:10300:250;;1297:1:23;889:10300:250;;;-1:-1:-1;;;;;;;;;;;889:10300:250;;;;;;;;;;-1:-1:-1;;;;;889:10300:250;1297:1:23;889:10300:250;;;-1:-1:-1;;;;;;;;;;;889:10300:250;;;;;;;-1:-1:-1;;889:10300:250;2954:6:21;889:10300:250;;;735:10:50;;889:10300:250;6370:40:21;1297:1:23;;6370:40:21;2954:6;6424:11;:::o;6272:217::-;6466:12;1297:1:23;6466:12:21;:::o\",\"linkReferences\":{}},\"deployedBytecode\":{\"object\":\"0x6080806040526004361015610012575f80fd5b5f3560e01c90816301ffc9a714611138575080631e0d6ec314610fb1578063248a9ca314610f7e5780632f2ff15d14610f405780633275f21c14610efc57806336568abe14610eb857806338b5f86914610e7457806365bdc0c914610e4b578063715018a614610df45780637782da2f14610c6f5780638a828e4e14610c465780638da5cb5b14610c1f57806391d1485414610bd6578063941f58cf146106425780639ba2e35d14610618578063a217fddf146105fe578063a26ce6f8146105d4578063abbb9f4c146105ad578063b0245250146104d3578063ca0f228b1461048d578063d547741f14610448578063f2fde38b146103c35763fb6cc44b14610119575f80fd5b346103bf5760603660031901126103bf576004356024358015158091036103bf576044356001600160401b0381116103bf57610159903690600401611362565b50815f52600260205260405f206040519061017382611203565b805461018260ff8216846113b5565b60081c6001600160a01b039081166020840152600182015416604083015260028101546060830152600381015460808301526101c060048201611240565b60a08301526101d160058201611240565b60c083015260076101e460068301611240565b9160e08401928352015461010083019081528251600581101561037a576004149081156103b5575b506103a2578151600581101561037a5715801561038e575b1561025f57506102359192506119d2565b15159080820361024a57602060405160018152f35b635589006560e11b5f5260045260245260445ffd5b908051600581101561037a57600214908115610365575b501561035657825f52600360205260405f205492831561034457506040516328c44a9960e21b815260048101849052905f826024817f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03165afa918215610339575f905f93610312575b50156102ff576102fa9293505190611b90565b610235565b83630143bcd560e41b5f5260045260245ffd5b90506103319192503d805f833e610329818361121f565b810190611456565b91905f6102e7565b6040513d5f823e3d90fd5b632605ad7960e21b5f5260045260245ffd5b63e1d645bf60e01b5f5260045ffd5b905051600581101561037a576003145f610276565b634e487b7160e01b5f52602160045260245ffd5b508151600581101561037a57600114610224565b83630f933b6b60e31b5f5260045260245ffd5b905051155f61020c565b5f80fd5b346103bf5760203660031901126103bf576103dc61118b565b6103e461187d565b6001600160a01b03168015610435575f80546001600160a01b03198116831782556001600160a01b0316907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09080a3005b631e4fbdf760e01b5f525f60045260245ffd5b346103bf5760403660031901126103bf5761048b6004356104676111a1565b90610486610481825f526001602052600160405f20015490565b61160a565b6117f9565b005b346103bf5760203660031901126103bf576104cf6104ac6004356114c9565b6040939193519384938452151560208401526060604084015260608301906112ed565b0390f35b346103bf5760203660031901126103bf576004355f52600260205260405f20805460018060a01b03600183015416916105a2600282015491610594600382015461058661052260048501611240565b61052e60058601611240565b92600761053d60068801611240565b960154976040519a8a6105548d60ff819e166112e0565b60081c6001600160a01b031660208c015260408b015260608a0152608089015261012060a089018190528801906112ed565b9086820360c08801526112ed565b9084820360e08601526112ed565b906101008301520390f35b346103bf575f3660031901126103bf5760206040515f80516020611bb28339815191528152f35b346103bf5760203660031901126103bf576004355f526004602052602060405f2054604051908152f35b346103bf575f3660031901126103bf5760206040515f8152f35b346103bf5760203660031901126103bf576004355f526003602052602060405f2054604051908152f35b346103bf5760403660031901126103bf576004356024356001600160401b0381116103bf57806004019061012060031982360301126103bf576106836115c1565b81359160058310156103bf5760048314610b985760248201916106a5836113c1565b9160448201906106b4826113c1565b6064840135946084850135888a60a4880193886106d186896113d5565b8c60c48401996106e18b8d6113d5565b94909560e4019c8d6106f2916113d5565b9690916040519a6107028c611203565b61070c908c6113b5565b6001600160a01b0398891660208c019081529390981660408b0190815260608b0194855260808b018c815293989395909361074891369161132c565b9560a08b01968752369061075b9261132c565b9560c08a01968752369061076e9261132c565b9560e089019687526101008901974289525f52600260205260405f20985190600582101561037a5789549051610100600160a81b0360089190911b1660ff929092166001600160a81b031990911617178855516001880180546001600160a01b039092166001600160a01b031990921691909117905551600287015551600386015551805160048601916001600160401b038211610abe5761081a8261081485546111cb565b85611407565b602090601f8311600114610b355761084992915f9183610a4c575b50508160011b915f199060031b1c19161790565b90555b51805160058501916001600160401b038211610abe576108708261081485546111cb565b602090601f8311600114610ad25761089e92915f9183610a4c5750508160011b915f199060031b1c19161790565b90555b51805160068401916001600160401b038211610abe576108c58261081485546111cb565b602090601f8311600114610a575791806108f89260079695945f92610a4c5750508160011b915f199060031b1c19161790565b90555b519101555f9660028a148015610a3f575b610966575b505050505050506103bf577f43e36f09ac952b92fb82145eb9ff058db90b281e095bdb8487e88cb869a5656b916109496040926113c1565b610955835180936112e0565b6001600160a01b03166020820152a2005b604051958861097488611203565b6103bf57610992908b88526109888b6111b7565b60208901526111b7565b604087015260608601526080850152356001600160401b0381116103bf578401366023820112156103bf576109d190369060246004820135910161132c565b60a0840152356001600160401b0381116103bf576109f59060043691860101611362565b60c0830152356001600160401b0381116103bf57610a3392610a206101049260043691840101611362565b60e08401520135610100820152856118a3565b84808080808080610911565b505f975060038a1461090c565b015190505f80610835565b90601f19831691845f52815f20925f5b818110610aa6575091600193918560079897969410610a8e575b505050811b0190556108fb565b01515f1960f88460031b161c191690555f8080610a81565b92936020600181928786015181550195019301610a67565b634e487b7160e01b5f52604160045260245ffd5b90601f19831691845f52815f20925f5b818110610b1d5750908460019594939210610b05575b505050811b0190556108a1565b01515f1960f88460031b161c191690555f8080610af8565b92936020600181928786015181550195019301610ae2565b90601f19831691845f52815f20925f5b818110610b805750908460019594939210610b68575b505050811b01905561084c565b01515f1960f88460031b161c191690555f8080610b5b565b92936020600181928786015181550195019301610b45565b60405162461bcd60e51b815260206004820152601660248201527543616e6e6f7420736574204d414e55414c207479706560501b6044820152606490fd5b346103bf5760403660031901126103bf57610bef6111a1565b6004355f52600160205260405f209060018060a01b03165f52602052602060ff60405f2054166040519015158152f35b346103bf575f3660031901126103bf575f546040516001600160a01b039091168152602090f35b346103bf5760203660031901126103bf5761048b610c6261118b565b610c6a611572565b611768565b346103bf5760203660031901126103bf57600435610c8b6115c1565b805f52600260205260405f20600760405191610ca683611203565b8054610cb560ff8216856113b5565b60081c6001600160a01b03908116602085015260018201541660408401526002810154606084015260038101546080840152610cf360048201611240565b60a0840152610d0460058201611240565b60c0840152610d1560068201611240565b60e084015201546101008201528051600581101561037a576002148015610de0575b15610d9b57815f52600360205260405f2054610d565761048b916118a3565b60405162461bcd60e51b815260206004820152601960248201527f5265717565737420616c7265616479207375626d6974746564000000000000006044820152606490fd5b60405162461bcd60e51b815260206004820152601a60248201527f4e6f7420616e20464443207265736f6c7574696f6e20747970650000000000006044820152606490fd5b508051600581101561037a57600314610d37565b346103bf575f3660031901126103bf57610e0c61187d565b5f80546001600160a01b0319811682556001600160a01b03167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e08280a3005b346103bf5760203660031901126103bf5761048b610e6761118b565b610e6f611572565b611644565b346103bf575f3660031901126103bf576040517f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03168152602090f35b346103bf5760403660031901126103bf57610ed16111a1565b336001600160a01b03821603610eed5761048b906004356117f9565b63334bd91960e11b5f5260045ffd5b346103bf575f3660031901126103bf576040517f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03168152602090f35b346103bf5760403660031901126103bf5761048b600435610f5f6111a1565b90610f79610481825f526001602052600160405f20015490565b6116dc565b346103bf5760203660031901126103bf576020610fa96004355f526001602052600160405f20015490565b604051908152f35b346103bf5760203660031901126103bf57610fca61118b565b6040516310b0234160e21b81526001600160a01b03918216600482015290602090829060249082907f0000000000000000000000000000000000000000000000000000000000000000165afa908115610339575f91611109575b506001600160a01b031680156110cf57604080516375c8e9bf60e11b815291829060049082905afa908115610339575f905f9261109d575b506509184e72a0008102908082046509184e72a00014901517156110895760409182519182526020820152f35b634e487b7160e01b5f52601160045260245ffd5b90506110c1915060403d6040116110c8575b6110b9818361121f565b81019061139f565b908261105c565b503d6110af565b60405162461bcd60e51b81526020600482015260126024820152714654534f206e6f7420617661696c61626c6560701b6044820152606490fd5b61112b915060203d602011611131575b611123818361121f565b810190611380565b81611024565b503d611119565b346103bf5760203660031901126103bf576004359063ffffffff60e01b82168092036103bf57602091637965db0b60e01b811490811561117a575b5015158152f35b6301ffc9a760e01b14905083611173565b600435906001600160a01b03821682036103bf57565b602435906001600160a01b03821682036103bf57565b35906001600160a01b03821682036103bf57565b90600182811c921680156111f9575b60208310146111e557565b634e487b7160e01b5f52602260045260245ffd5b91607f16916111da565b61012081019081106001600160401b03821117610abe57604052565b90601f801991011681019081106001600160401b03821117610abe57604052565b9060405191825f825492611253846111cb565b80845293600181169081156112be575060011461127a575b506112789250038361121f565b565b90505f9291925260205f20905f915b8183106112a2575050906020611278928201015f61126b565b6020919350806001915483858901015201910190918492611289565b90506020925061127894915060ff191682840152151560051b8201015f61126b565b90600582101561037a5752565b805180835260209291819084018484015e5f828201840152601f01601f1916010190565b6001600160401b038111610abe57601f01601f191660200190565b92919261133882611311565b91611346604051938461121f565b8294818452818301116103bf578281602093845f960137010152565b9080601f830112156103bf5781602061137d9335910161132c565b90565b908160209103126103bf57516001600160a01b03811681036103bf5790565b91908260409103126103bf576020825192015190565b600582101561037a5752565b356001600160a01b03811681036103bf5790565b903590601e19813603018212156103bf57018035906001600160401b0382116103bf576020019181360383136103bf57565b601f821161141457505050565b5f5260205f20906020601f840160051c8301931061144c575b601f0160051c01905b818110611441575050565b5f8155600101611436565b909150819061142d565b91906040838203126103bf57825180151581036103bf57926020810151906001600160401b0382116103bf570181601f820112156103bf5780519061149a82611311565b926114a8604051948561121f565b828452602083830101116103bf57815f9260208093018386015e8301015290565b5f52600360205260405f20548015611559576040516328c44a9960e21b815260048101829052915f836024817f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03165afa918215610339575f935f93611537575b50929190565b90925061154f9193503d805f833e610329818361121f565b929092915f611531565b505f905f9060405161156c60208261121f565b5f815290565b335f9081527fa6eef7e35abe7026729641147f7915573c7e97b47efa546f5f6e3230263bcb49602052604090205460ff16156115aa57565b63e2517d3f60e01b5f52336004525f60245260445ffd5b335f9081525f80516020611bd2833981519152602052604090205460ff16156115e657565b63e2517d3f60e01b5f52336004525f80516020611bb283398151915260245260445ffd5b5f81815260016020908152604080832033845290915290205460ff161561162e5750565b63e2517d3f60e01b5f523360045260245260445ffd5b6001600160a01b0381165f9081525f80516020611bd2833981519152602052604090205460ff166116d7576001600160a01b03165f8181525f80516020611bd283398151915260205260408120805460ff191660011790553391905f80516020611bb2833981519152907f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d9080a4600190565b505f90565b5f8181526001602090815260408083206001600160a01b038616845290915290205460ff16611762575f8181526001602081815260408084206001600160a01b0396909616808552959091528220805460ff19169091179055339291907f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d9080a4600190565b50505f90565b6001600160a01b0381165f9081525f80516020611bd2833981519152602052604090205460ff16156116d7576001600160a01b03165f8181525f80516020611bd283398151915260205260408120805460ff191690553391905f80516020611bb2833981519152907ff6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b9080a4600190565b5f8181526001602090815260408083206001600160a01b038616845290915290205460ff1615611762575f8181526001602090815260408083206001600160a01b0395909516808452949091528120805460ff19169055339291907ff6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b9080a4600190565b5f546001600160a01b0316330361189057565b63118cdaa760e01b5f523360045260245ffd5b60a0820160c0815193015192620151804201804211611089576020916118e9916118fb604051978894859463053711d760e01b86526060600487015260648601906112ed565b848103600319016024860152906112ed565b604483019190915203815f7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03165af1928315610339575f9361199c575b506119977f708b9a1e67031be0ccf6d48bb9990f5d9ea10c0600f4f01defa7409b1a40196291835f5260036020528460405f2055835f5260046020524260405f2055516040519182916020835260208301906112ed565b0390a3565b9092506020813d6020116119ca575b816119b86020938361121f565b810103126103bf575191611997611940565b3d91506119ab565b6040810180516001600160a01b031615611ad35751600491906040906001600160a01b03165b81516375c8e9bf60e11b815293849182906001600160a01b03165afa8015610339575f925f91611aae575b5015611a74576509184e72a0008202918083046509184e72a000149015171561108957805190600582101561037a57606091600103611a6d57608081015115611a6d570151111590565b0151111590565b60405162461bcd60e51b8152602060048201526012602482015271496e76616c6964204654534f20707269636560701b6044820152606490fd5b9050611aca91925060403d6040116110c8576110b9818361121f565b9190915f611a23565b50602081810180516040516310b0234160e21b81526001600160a01b039182166004820152919290829060249082907f0000000000000000000000000000000000000000000000000000000000000000165afa908115610339575f91611b71575b506001600160a01b0316908115611b5157509060406004926119f8565b5163020d3a9160e51b5f9081526001600160a01b03909116600452602490fd5b611b8a915060203d60201161113157611123818361121f565b5f611b34565b90805180611ba057505051151590565b82516020938401209290910120149056fef45c97b23e2beeefda80e1ce5cb3e234aa7b6888ad5cbabb75bfd654dd8e102d15fa9a06af7b28cd82d99ceca023ffd2085f89d27d594a8a91969f0cfc8349dda2646970667358221220b6de592b6b1773d7a03641b569c29d4701feb97b3829ea71e757e6253afb273b64736f6c634300081a0033\",\"sourceMap\":\"889:10300:250:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;889:10300:250;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;889:10300:250;;;;;;;;;;;:::i;:::-;;;;;5628:17;889:10300;;;;;;;;;;;:::i;:::-;;;;;;;;;:::i;:::-;;;-1:-1:-1;;;;;889:10300:250;;;;;;;;;;;;;;;;5628:17;889:10300;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;:::i;:::-;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;5672:46;:71;;;;;889:10300;5668:133;;;889:10300;;;;;;;;5851:50;:125;;;;889:10300;5834:506;;;6001:41;;;;;;:::i;:::-;889:10300;;6354:18;;;;6350:89;;889:10300;;;;;;;6350:89;6395:33;;;889:10300;6395:33;889:10300;;;;;;6395:33;5834:506;889:10300;;;;;;;;;5628:17;6076:47;:127;;;;;5834:506;-1:-1:-1;6059:281:250;;;889:10300;;;;;;;;;;8547:23;;;8543:91;;-1:-1:-1;889:10300:250;;-1:-1:-1;;;8680:29:250;;889:10300;8680:29;;889:10300;;;;-1:-1:-1;889:10300:250;;;8680:3;-1:-1:-1;;;;;889:10300:250;8680:29;;;;;;;889:10300;;;8680:29;;;6059:281;8723:8;;8719:80;;8871:42;8893:19;;;;8871:42;;:::i;:::-;5834:506;;8719:80;8754:34;;;;889:10300;8754:34;889:10300;;;;8754:34;8680:29;;;;;;;;;889:10300;8680:29;;;;;;:::i;:::-;;;;;:::i;:::-;;;;;;;889:10300;;;;;;;;;8543:91;8593:30;;;889:10300;8593:30;889:10300;;;;8593:30;6059:281;6306:23;;;889:10300;6306:23;889:10300;;6306:23;6076:127;889:10300;;;;;;;;;;6143:60;6076:127;;;889:10300;;;;;;;;;;;;5851:125;889:10300;;;;;;;;;;5921:55;5851:125;;5668:133;5766:24;;;;889:10300;5766:24;889:10300;;;;5766:24;5672:71;889:10300;;;5722:21;5672:71;;;889:10300;;;;;;;;;;-1:-1:-1;;889:10300:250;;;;;;:::i;:::-;1500:62:23;;:::i;:::-;-1:-1:-1;;;;;889:10300:250;2627:22:23;;2623:91;;889:10300:250;;;-1:-1:-1;;;;;;889:10300:250;;;;;;-1:-1:-1;;;;;889:10300:250;;3052:40:23;;889:10300:250;3052:40:23;889:10300:250;2623:91:23;2672:31;;;889:10300:250;2672:31:23;889:10300:250;;;;;2672:31:23;889:10300:250;;;;;;-1:-1:-1;;889:10300:250;;;;4747:26:21;889:10300:250;;;;:::i;:::-;4717:18:21;2475:4;4717:18;;-1:-1:-1;889:10300:250;3901:6:21;889:10300:250;;3901:6:21;889:10300:250;-1:-1:-1;889:10300:250;3901:22:21;889:10300:250;3810:120:21;;4717:18;2475:4;:::i;:::-;4747:26;:::i;:::-;889:10300:250;;;;;;;-1:-1:-1;;889:10300:250;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;-1:-1:-1;;889:10300:250;;;;;;;;1195:61;889:10300;;;;;;;;;;;;;1195:61;;889:10300;;1195:61;889:10300;1195:61;;;889:10300;1195:61;889:10300;1195:61;;;889:10300;;1195:61;889:10300;1195:61;;;:::i;:::-;;;;;;:::i;:::-;;;;;;;;:::i;:::-;;;889:10300;;;;;;;;;;;;;:::i;:::-;;;-1:-1:-1;;;;;889:10300:250;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;:::i;:::-;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;-1:-1:-1;;889:10300:250;;;;;;;-1:-1:-1;;;;;;;;;;;889:10300:250;;;;;;;;;-1:-1:-1;;889:10300:250;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;889:10300:250;;;;;;;;;;;;;;;;;-1:-1:-1;;889:10300:250;;;;;;;;1336:48;889:10300;;;;;;;;;;;;;;;;;;;-1:-1:-1;;889:10300:250;;;;;;;;-1:-1:-1;;;;;889:10300:250;;;;;;;;;;;;;;;;;;2475:4:21;;:::i;:::-;889:10300:250;;;;;;;;;;2984:46;;889:10300;;;3196:19;;;;;;:::i;:::-;3242:18;;;;;;;;:::i;:::-;3287;;;889:10300;3336:22;;;;889:10300;3384:17;;;;;;;;;;;:::i;:::-;3422:12;;;;;;;;;:::i;:::-;3462:19;;;;;;;;;;:::i;:::-;889:10300;;;;;;;;;:::i;:::-;3100:432;;;;:::i;:::-;-1:-1:-1;;;;;889:10300:250;;;;3100:432;;889:10300;;;;;;;;3100:432;;889:10300;;;3287:18;3100:432;;889:10300;;;3336:22;3100:432;;889:10300;;;3100:432;;;;;;889:10300;;;;;:::i;:::-;3100:432;3384:17;3100:432;;889:10300;;;;;;;;:::i;:::-;3100:432;3422:12;3100:432;;889:10300;;;;;;;;:::i;:::-;3100:432;889:10300;3100:432;;889:10300;;;3100:432;;;3506:15;;889:10300;;;;3068:17;889:10300;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;889:10300:250;;;;;;;;;;;-1:-1:-1;;;;;;889:10300:250;;;;;;;;-1:-1:-1;889:10300:250;;;;-1:-1:-1;;;;;889:10300:250;;;-1:-1:-1;;;;;;889:10300:250;;;;;;;;;;3068:17;889:10300;;;;;;;;;;;;;;;-1:-1:-1;;;;;889:10300:250;;;;;;;;;;:::i;:::-;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;889:10300:250;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;889:10300:250;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;3612:47;3068:17;3612:47;;:127;;;;889:10300;3595:217;;889:10300;;;;;;;;;;3827:75;3882:19;;889:10300;3882:19;;:::i;:::-;889:10300;;;;;;:::i;:::-;-1:-1:-1;;;;;889:10300:250;;;;;3827:75;889:10300;3595:217;889:10300;;;;;;;:::i;:::-;;;;;;;;;;;:::i;:::-;;;;;;:::i;:::-;;;;;3287:18;889:10300;;;3336:22;889:10300;;;;-1:-1:-1;;;;;889:10300:250;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;3384:17;889:10300;;;;-1:-1:-1;;;;;889:10300:250;;;;;;;;;;;;;:::i;:::-;3422:12;889:10300;;;;-1:-1:-1;;;;;889:10300:250;;;;3764:37;889:10300;;;;;;;;;;;:::i;:::-;;;;;;;3100:432;889:10300;;;3764:37;;:::i;:::-;3595:217;;;;;;;;;3612:127;-1:-1:-1;889:10300:250;;-1:-1:-1;889:10300:250;3679:60;;3612:127;;889:10300;;;;-1:-1:-1;889:10300:250;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;889:10300:250;;;;;;;;;;;;-1:-1:-1;;;889:10300:250;;;;;;;;;;;;;-1:-1:-1;;889:10300:250;;;;;;:::i;:::-;;;;;;;;;;;2954:29:21;889:10300:250;;;;;;-1:-1:-1;889:10300:250;;;;;;-1:-1:-1;889:10300:250;;;;;;;;;;;;;;;;;-1:-1:-1;;889:10300:250;;;;;;;;-1:-1:-1;;;;;889:10300:250;;;;;;;;;;;;;;-1:-1:-1;;889:10300:250;;;;11143:37;889:10300;;:::i;:::-;2475:4:21;;:::i;:::-;11143:37:250;:::i;889:10300::-;;;;;;-1:-1:-1;;889:10300:250;;;;;;2475:4:21;;:::i;:::-;889:10300:250;;;4755:17;889:10300;;;;;;;;;;;;:::i;:::-;;;;;;;;;:::i;:::-;;;-1:-1:-1;;;;;889:10300:250;;;;;;;;;;;;;;;;4755:17;889:10300;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;:::i;:::-;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;4755:17;4815:47;:127;;;;889:10300;;;;;;;;;;;;;;;;5122:6;;;:::i;889:10300::-;;;-1:-1:-1;;;889:10300:250;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;889:10300:250;;;;;;;;;;;;;;;;;;;;4815:127;889:10300;;;;;;;;;;4882:60;4815:127;;889:10300;;;;;;-1:-1:-1;;889:10300:250;;;;1500:62:23;;:::i;:::-;889:10300:250;;;-1:-1:-1;;;;;;889:10300:250;;;;-1:-1:-1;;;;;889:10300:250;3052:40:23;889:10300:250;;3052:40:23;889:10300:250;;;;;;;-1:-1:-1;;889:10300:250;;;;10945:36;889:10300;;:::i;:::-;2475:4:21;;:::i;:::-;10945:36:250;:::i;889:10300::-;;;;;;-1:-1:-1;;889:10300:250;;;;;;1044:43;-1:-1:-1;;;;;889:10300:250;;;;;;;;;;;;-1:-1:-1;;889:10300:250;;;;;;:::i;:::-;735:10:50;-1:-1:-1;;;;;889:10300:250;;5421:34:21;5417:102;;5529:37;889:10300:250;;;5529:37:21;:::i;5417:102::-;5478:30;;;889:10300:250;5478:30:21;889:10300:250;;5478:30:21;889:10300:250;;;;;;-1:-1:-1;;889:10300:250;;;;;;1093:40;-1:-1:-1;;;;;889:10300:250;;;;;;;;;;;;-1:-1:-1;;889:10300:250;;;;4330:25:21;889:10300:250;;;;:::i;:::-;4300:18:21;2475:4;4300:18;;-1:-1:-1;889:10300:250;3901:6:21;889:10300:250;;3901:6:21;889:10300:250;-1:-1:-1;889:10300:250;3901:22:21;889:10300:250;3810:120:21;;2475:4;4330:25;:::i;889:10300:250:-;;;;;;-1:-1:-1;;889:10300:250;;;;;;;;-1:-1:-1;889:10300:250;3901:6:21;889:10300:250;;3901:6:21;889:10300:250;-1:-1:-1;889:10300:250;3901:22:21;889:10300:250;3810:120:21;;889:10300:250;;;;;;;;;;;;;-1:-1:-1;;889:10300:250;;;;;;:::i;:::-;;;-1:-1:-1;;;9952:34:250;;-1:-1:-1;;;;;889:10300:250;;;;9952:34;;889:10300;;;;;;9952:34;;889:10300;;9952:12;889:10300;9952:34;;;;;;;889:10300;9952:34;;;889:10300;-1:-1:-1;;;;;;889:10300:250;10004:22;;889:10300;;;;;-1:-1:-1;;;10130:22:250;;889:10300;;;;;;;10130:22;;;;;;;889:10300;;;10130:22;;;889:10300;;10215:4;889:10300;;;;;;10215:4;889:10300;;;;;;;;;;;;;;;;;;;;;;;;;;;;9952:34;889:10300;;10130:22;;;;;;889:10300;10130:22;889:10300;10130:22;;;;;;;;:::i;:::-;;;;;:::i;:::-;;;;;;;;;;889:10300;;;-1:-1:-1;;;889:10300:250;;;;;;;;9952:34;889:10300;;;-1:-1:-1;;;889:10300:250;;;;;;;9952:34;;;;889:10300;9952:34;889:10300;9952:34;;;;;;;;:::i;:::-;;;;;:::i;:::-;;;;;;;;;889:10300;;;;;;-1:-1:-1;;889:10300:250;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;2673:47:21;;;:87;;;;889:10300:250;;;;;;;2673:87:21;-1:-1:-1;;;862:40:59;;-1:-1:-1;2673:87:21;;;889:10300:250;;;;-1:-1:-1;;;;;889:10300:250;;;;;;:::o;:::-;;;;-1:-1:-1;;;;;889:10300:250;;;;;;:::o;:::-;;;-1:-1:-1;;;;;889:10300:250;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;889:10300:250;;;;;;;:::o;:::-;;;;;;;;;;;;;-1:-1:-1;;;;;889:10300:250;;;;;;;:::o;:::-;;;;;;-1:-1:-1;889:10300:250;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;:::o;:::-;;;-1:-1:-1;889:10300:250;;;;;-1:-1:-1;889:10300:250;;-1:-1:-1;889:10300:250;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;-1:-1:-1;889:10300:250;;;;;;;;-1:-1:-1;;889:10300:250;;;;:::o;:::-;-1:-1:-1;;;;;889:10300:250;;;;;;-1:-1:-1;;889:10300:250;;;;:::o;:::-;;;;;;;:::i;:::-;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;-1:-1:-1;889:10300:250;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;:::i;:::-;;:::o;:::-;;;;;;;;;;-1:-1:-1;;;;;889:10300:250;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;:::o;:::-;;-1:-1:-1;;;;;889:10300:250;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;889:10300:250;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;:::o;:::-;-1:-1:-1;889:10300:250;;-1:-1:-1;889:10300:250;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;-1:-1:-1;889:10300:250;;;;;;;;;-1:-1:-1;889:10300:250;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;889:10300:250;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;:::i;:::-;;;;;;;;;;;;;-1:-1:-1;889:10300:250;;;;;;;;;;;;;;:::o;10313:446::-;889:10300;;10493:13;889:10300;;;;;;10532:23;;10528:84;;889:10300;;-1:-1:-1;;;10669:29:250;;;;;889:10300;;;;-1:-1:-1;889:10300:250;10669:29;889:10300;10669:3;-1:-1:-1;;;;;889:10300:250;10669:29;;;;;;;889:10300;;;10669:29;;;10313:446;10708:44;;;10313:446;:::o;10669:29::-;;;;;;;;;;889:10300;10669:29;;;;;;:::i;:::-;;;;;;;;10528:84;10571:30;889:10300;10571:30;889:10300;;;;;;;;:::i;:::-;;;;10571:30;:::o;3199:103:21:-;735:10:50;889:10300:250;;;;;;;;;;;;;3519:23:21;3515:108;;3199:103::o;3515:108::-;3565:47;;;889:10300:250;3565:47:21;735:10:50;3565:47:21;889:10300:250;;;;;;3565:47:21;3199:103;735:10:50;-1:-1:-1;889:10300:250;;;-1:-1:-1;;;;;;;;;;;889:10300:250;;;;;;;;3519:23:21;3515:108;;3199:103::o;3515:108::-;3565:47;;;-1:-1:-1;3565:47:21;735:10:50;3565:47:21;889:10300:250;-1:-1:-1;;;;;;;;;;;889:10300:250;;;-1:-1:-1;3565:47:21;3199:103;-1:-1:-1;889:10300:250;;;2954:6:21;889:10300:250;;;;;;;;735:10:50;889:10300:250;;;;;;;;;;3519:23:21;3515:108;;3199:103;:::o;3515:108::-;3565:47;;;-1:-1:-1;3565:47:21;735:10:50;3565:47:21;889:10300:250;;;;-1:-1:-1;3565:47:21;6179:316;-1:-1:-1;;;;;889:10300:250;;;;;;-1:-1:-1;;;;;;;;;;;889:10300:250;;;;;;;;;;-1:-1:-1;;;;;889:10300:250;;;;;-1:-1:-1;;;;;;;;;;;889:10300:250;;;;;;;-1:-1:-1;;889:10300:250;2954:6:21;889:10300:250;;;735:10:50;;889:10300:250;-1:-1:-1;;;;;;;;;;;1009:28:250;6370:40:21;;889:10300:250;6370:40:21;2954:6;6424:11;:::o;6272:217::-;6466:12;889:10300:250;6466:12:21;:::o;6179:316::-;889:10300:250;;;;2954:6:21;889:10300:250;;;;;;;;-1:-1:-1;;;;;889:10300:250;;;;;;;;;;;;;;;;;;2954:6:21;889:10300:250;;;;;;;;-1:-1:-1;;;;;889:10300:250;;;;;;;;;;;;;;;-1:-1:-1;;889:10300:250;;;;;;735:10:50;;889:10300:250;;6370:40:21;;889:10300:250;6370:40:21;2954:6;6424:11;:::o;6272:217::-;6466:12;;889:10300:250;6466:12:21;:::o;6732:317::-;-1:-1:-1;;;;;889:10300:250;;;;;;-1:-1:-1;;;;;;;;;;;889:10300:250;;;;;;;;;;;-1:-1:-1;;;;;889:10300:250;;;;;-1:-1:-1;;;;;;;;;;;889:10300:250;;;;;;;-1:-1:-1;;889:10300:250;;;735:10:50;;889:10300:250;-1:-1:-1;;;;;;;;;;;1009:28:250;6924:40:21;;889:10300:250;6924:40:21;2954:6;6978:11;:::o;6732:317::-;889:10300:250;;;;2954:6:21;889:10300:250;;;;;;;;-1:-1:-1;;;;;889:10300:250;;;;;;;;;;;;;;;;;;;2954:6:21;889:10300:250;;;;;;;;-1:-1:-1;;;;;889:10300:250;;;;;;;;;;;;;;;-1:-1:-1;;889:10300:250;;;735:10:50;;889:10300:250;;6924:40:21;;889:10300:250;6924:40:21;2954:6;6978:11;:::o;1796:162:23:-;1710:6;889:10300:250;-1:-1:-1;;;;;889:10300:250;735:10:50;1855:23:23;1851:101;;1796:162::o;1851:101::-;1901:40;;;1710:6;1901:40;735:10:50;1901:40:23;889:10300:250;;1710:6:23;1901:40;4068:458:250;4222:17;;;4253:12;4222:17;;4253:12;;;4279:15;4297:8;4279:15;889:10300;4279:15;;889:10300;;;;;;;;;;;;;;;;;;4186:148;;889:10300;4186:148;;;889:10300;;;;;;:::i;:::-;;;;-1:-1:-1;;889:10300:250;;;;;;;:::i;:::-;;;;;;;;4186:148;889:10300;-1:-1:-1;4186:3:250;-1:-1:-1;;;;;889:10300:250;4186:148;;;;;;;-1:-1:-1;4186:148:250;;;4068:458;889:10300;;4458:61;889:10300;;-1:-1:-1;889:10300:250;4345:13;889:10300;;;;-1:-1:-1;889:10300:250;;;-1:-1:-1;889:10300:250;4186:148;889:10300;;4279:15;889:10300;-1:-1:-1;889:10300:250;;4501:17;889:10300;;;;;;;;;;;;;:::i;:::-;4458:61;;;4068:458::o;4186:148::-;;;;889:10300;4186:148;;889:10300;4186:148;;;;;;889:10300;4186:148;;;:::i;:::-;;;889:10300;;;;;;;4186:148;;;;;-1:-1:-1;4186:148:250;;6545:1750;6747:18;;;889:10300;;-1:-1:-1;;;;;889:10300:250;6747:32;889:10300;;;7130:22;;889:10300;6747:18;;-1:-1:-1;;;;;889:10300:250;6743:340;889:10300;;-1:-1:-1;;;7130:22:250;;889:10300;;;;;-1:-1:-1;;;;;889:10300:250;7130:22;;;;;;-1:-1:-1;;;7130:22:250;;;6743:340;7170:13;;889:10300;;7320:4;889:10300;;;;;;7320:4;889:10300;;;;;;;;;;;;;;;;8030:18;;7385:30;7360:55;7385:30;;7677:22;;;889:10300;7677:26;:22;;8030:18;889:10300;-1:-1:-1;8015:33:250;8008:40;:::o;7673:469::-;8109:18;889:10300;-1:-1:-1;8094:33:250;8087:40;:::o;889:10300::-;6747:18;889:10300;-1:-1:-1;;;889:10300:250;;;7130:22;889:10300;;;;;;;;-1:-1:-1;;;889:10300:250;;;;;;;7130:22;;;;;;;6747:18;7130:22;6747:18;7130:22;;;;;;;:::i;:::-;;;;;;;6743:340;-1:-1:-1;6898:19:250;;;;889:10300;;6747:18;889:10300;-1:-1:-1;;;6877:41:250;;-1:-1:-1;;;;;889:10300:250;;;6877:41;;;889:10300;6898:19;;;889:10300;;6877:41;;889:10300;;6877:12;889:10300;6877:41;;;;;;;-1:-1:-1;6877:41:250;;;6743:340;-1:-1:-1;;;;;;889:10300:250;;6936:22;;6932:105;;7050:22;;6747:18;7130:22;7050;6743:340;;6932:105;889:10300;-1:-1:-1;;;;6985:37:250;;;-1:-1:-1;;;;;889:10300:250;;;6877:41;889:10300;6877:41;;6985:37;6877:41;;;;6898:19;6877:41;6898:19;6877:41;;;;;;;:::i;:::-;;;;9117:623;;889:10300;;9275:23;9271:114;;889:10300;;;9707:26;;9117:623;:::o;9271:114::-;889:10300;;;;;;9321:26;889:10300;;;;9351:23;9321:53;;9314:60::o\",\"linkReferences\":{},\"immutableReferences\":{\"88114\":[{\"start\":3721,\"length\":32},{\"start\":4084,\"length\":32},{\"start\":6916,\"length\":32}],\"88117\":[{\"start\":685,\"length\":32},{\"start\":3857,\"length\":32},{\"start\":5367,\"length\":32},{\"start\":6408,\"length\":32}]}},\"methodIdentifiers\":{\"CONFIGURER_ROLE()\":\"abbb9f4c\",\"DEFAULT_ADMIN_ROLE()\":\"a217fddf\",\"fdc()\":\"3275f21c\",\"fdcRequestIds(uint256)\":\"9ba2e35d\",\"fdcRequestTimestamps(uint256)\":\"a26ce6f8\",\"ftsoRegistry()\":\"38b5f869\",\"getFDCAttestationStatus(uint256)\":\"ca0f228b\",\"getFTSOPrice(address)\":\"1e0d6ec3\",\"getRoleAdmin(bytes32)\":\"248a9ca3\",\"grantConfigurerRole(address)\":\"65bdc0c9\",\"grantRole(bytes32,address)\":\"2f2ff15d\",\"hasRole(bytes32,address)\":\"91d14854\",\"owner()\":\"8da5cb5b\",\"renounceOwnership()\":\"715018a6\",\"renounceRole(bytes32,address)\":\"36568abe\",\"resolutionConfigs(uint256)\":\"b0245250\",\"revokeConfigurerRole(address)\":\"8a828e4e\",\"revokeRole(bytes32,address)\":\"d547741f\",\"setResolutionConfig(uint256,(uint8,address,address,uint256,uint256,string,bytes,bytes,uint256))\":\"941f58cf\",\"submitFDCRequest(uint256)\":\"7782da2f\",\"supportsInterface(bytes4)\":\"01ffc9a7\",\"transferOwnership(address)\":\"f2fde38b\",\"verifyResolution(uint256,bool,bytes)\":\"fb6cc44b\"},\"rawMetadata\":\"{\\\"compiler\\\":{\\\"version\\\":\\\"0.8.26+commit.8a97fa7a\\\"},\\\"language\\\":\\\"Solidity\\\",\\\"output\\\":{\\\"abi\\\":[{\\\"inputs\\\":[{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"_ftsoRegistry\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"_fdc\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"_owner\\\",\\\"type\\\":\\\"address\\\"}],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"constructor\\\"},{\\\"inputs\\\":[],\\\"name\\\":\\\"AccessControlBadConfirmation\\\",\\\"type\\\":\\\"error\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"account\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"bytes32\\\",\\\"name\\\":\\\"neededRole\\\",\\\"type\\\":\\\"bytes32\\\"}],\\\"name\\\":\\\"AccessControlUnauthorizedAccount\\\",\\\"type\\\":\\\"error\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"bytes32\\\",\\\"name\\\":\\\"requestId\\\",\\\"type\\\":\\\"bytes32\\\"}],\\\"name\\\":\\\"AttestationNotAvailable\\\",\\\"type\\\":\\\"error\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"proposalId\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"name\\\":\\\"ConfigNotSet\\\",\\\"type\\\":\\\"error\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"proposalId\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"name\\\":\\\"FDCRequestNotFound\\\",\\\"type\\\":\\\"error\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"token\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"FTSONotAvailable\\\",\\\"type\\\":\\\"error\\\"},{\\\"inputs\\\":[],\\\"name\\\":\\\"InvalidResolutionType\\\",\\\"type\\\":\\\"error\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"bool\\\",\\\"name\\\":\\\"expected\\\",\\\"type\\\":\\\"bool\\\"},{\\\"internalType\\\":\\\"bool\\\",\\\"name\\\":\\\"actual\\\",\\\"type\\\":\\\"bool\\\"}],\\\"name\\\":\\\"OutcomeMismatch\\\",\\\"type\\\":\\\"error\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"owner\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"OwnableInvalidOwner\\\",\\\"type\\\":\\\"error\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"account\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"OwnableUnauthorizedAccount\\\",\\\"type\\\":\\\"error\\\"},{\\\"anonymous\\\":false,\\\"inputs\\\":[{\\\"indexed\\\":true,\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"proposalId\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"indexed\\\":true,\\\"internalType\\\":\\\"bytes32\\\",\\\"name\\\":\\\"requestId\\\",\\\"type\\\":\\\"bytes32\\\"},{\\\"indexed\\\":false,\\\"internalType\\\":\\\"string\\\",\\\"name\\\":\\\"dataSource\\\",\\\"type\\\":\\\"string\\\"}],\\\"name\\\":\\\"FDCRequestSubmitted\\\",\\\"type\\\":\\\"event\\\"},{\\\"anonymous\\\":false,\\\"inputs\\\":[{\\\"indexed\\\":true,\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"previousOwner\\\",\\\"type\\\":\\\"address\\\"},{\\\"indexed\\\":true,\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"newOwner\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"OwnershipTransferred\\\",\\\"type\\\":\\\"event\\\"},{\\\"anonymous\\\":false,\\\"inputs\\\":[{\\\"indexed\\\":true,\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"proposalId\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"indexed\\\":false,\\\"internalType\\\":\\\"enum ResolutionType\\\",\\\"name\\\":\\\"resolutionType\\\",\\\"type\\\":\\\"uint8\\\"},{\\\"indexed\\\":false,\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"tokenAddress\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"ResolutionConfigSet\\\",\\\"type\\\":\\\"event\\\"},{\\\"anonymous\\\":false,\\\"inputs\\\":[{\\\"indexed\\\":true,\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"proposalId\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"indexed\\\":false,\\\"internalType\\\":\\\"bool\\\",\\\"name\\\":\\\"outcome\\\",\\\"type\\\":\\\"bool\\\"},{\\\"indexed\\\":false,\\\"internalType\\\":\\\"enum ResolutionType\\\",\\\"name\\\":\\\"resolutionType\\\",\\\"type\\\":\\\"uint8\\\"}],\\\"name\\\":\\\"ResolutionVerified\\\",\\\"type\\\":\\\"event\\\"},{\\\"anonymous\\\":false,\\\"inputs\\\":[{\\\"indexed\\\":true,\\\"internalType\\\":\\\"bytes32\\\",\\\"name\\\":\\\"role\\\",\\\"type\\\":\\\"bytes32\\\"},{\\\"indexed\\\":true,\\\"internalType\\\":\\\"bytes32\\\",\\\"name\\\":\\\"previousAdminRole\\\",\\\"type\\\":\\\"bytes32\\\"},{\\\"indexed\\\":true,\\\"internalType\\\":\\\"bytes32\\\",\\\"name\\\":\\\"newAdminRole\\\",\\\"type\\\":\\\"bytes32\\\"}],\\\"name\\\":\\\"RoleAdminChanged\\\",\\\"type\\\":\\\"event\\\"},{\\\"anonymous\\\":false,\\\"inputs\\\":[{\\\"indexed\\\":true,\\\"internalType\\\":\\\"bytes32\\\",\\\"name\\\":\\\"role\\\",\\\"type\\\":\\\"bytes32\\\"},{\\\"indexed\\\":true,\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"account\\\",\\\"type\\\":\\\"address\\\"},{\\\"indexed\\\":true,\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"sender\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"RoleGranted\\\",\\\"type\\\":\\\"event\\\"},{\\\"anonymous\\\":false,\\\"inputs\\\":[{\\\"indexed\\\":true,\\\"internalType\\\":\\\"bytes32\\\",\\\"name\\\":\\\"role\\\",\\\"type\\\":\\\"bytes32\\\"},{\\\"indexed\\\":true,\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"account\\\",\\\"type\\\":\\\"address\\\"},{\\\"indexed\\\":true,\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"sender\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"RoleRevoked\\\",\\\"type\\\":\\\"event\\\"},{\\\"inputs\\\":[],\\\"name\\\":\\\"CONFIGURER_ROLE\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"bytes32\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"bytes32\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[],\\\"name\\\":\\\"DEFAULT_ADMIN_ROLE\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"bytes32\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"bytes32\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[],\\\"name\\\":\\\"fdc\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"contract IFlareDataConnector\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"address\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"name\\\":\\\"fdcRequestIds\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"bytes32\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"bytes32\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"name\\\":\\\"fdcRequestTimestamps\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[],\\\"name\\\":\\\"ftsoRegistry\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"contract IFtsoRegistry\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"address\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"proposalId\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"name\\\":\\\"getFDCAttestationStatus\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"bytes32\\\",\\\"name\\\":\\\"requestId\\\",\\\"type\\\":\\\"bytes32\\\"},{\\\"internalType\\\":\\\"bool\\\",\\\"name\\\":\\\"available\\\",\\\"type\\\":\\\"bool\\\"},{\\\"internalType\\\":\\\"bytes\\\",\\\"name\\\":\\\"data\\\",\\\"type\\\":\\\"bytes\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"tokenAddress\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"getFTSOPrice\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"price\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"timestamp\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"bytes32\\\",\\\"name\\\":\\\"role\\\",\\\"type\\\":\\\"bytes32\\\"}],\\\"name\\\":\\\"getRoleAdmin\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"bytes32\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"bytes32\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"account\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"grantConfigurerRole\\\",\\\"outputs\\\":[],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"bytes32\\\",\\\"name\\\":\\\"role\\\",\\\"type\\\":\\\"bytes32\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"account\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"grantRole\\\",\\\"outputs\\\":[],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"bytes32\\\",\\\"name\\\":\\\"role\\\",\\\"type\\\":\\\"bytes32\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"account\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"hasRole\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"bool\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"bool\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[],\\\"name\\\":\\\"owner\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"address\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[],\\\"name\\\":\\\"renounceOwnership\\\",\\\"outputs\\\":[],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"bytes32\\\",\\\"name\\\":\\\"role\\\",\\\"type\\\":\\\"bytes32\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"callerConfirmation\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"renounceRole\\\",\\\"outputs\\\":[],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"name\\\":\\\"resolutionConfigs\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"enum ResolutionType\\\",\\\"name\\\":\\\"resolutionType\\\",\\\"type\\\":\\\"uint8\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"tokenAddress\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"ftsoAddress\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"targetPrice\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"targetMarketCap\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"string\\\",\\\"name\\\":\\\"dataSource\\\",\\\"type\\\":\\\"string\\\"},{\\\"internalType\\\":\\\"bytes\\\",\\\"name\\\":\\\"query\\\",\\\"type\\\":\\\"bytes\\\"},{\\\"internalType\\\":\\\"bytes\\\",\\\"name\\\":\\\"expectedData\\\",\\\"type\\\":\\\"bytes\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"timestamp\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"account\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"revokeConfigurerRole\\\",\\\"outputs\\\":[],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"bytes32\\\",\\\"name\\\":\\\"role\\\",\\\"type\\\":\\\"bytes32\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"account\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"revokeRole\\\",\\\"outputs\\\":[],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"proposalId\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"components\\\":[{\\\"internalType\\\":\\\"enum ResolutionType\\\",\\\"name\\\":\\\"resolutionType\\\",\\\"type\\\":\\\"uint8\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"tokenAddress\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"ftsoAddress\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"targetPrice\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"targetMarketCap\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"string\\\",\\\"name\\\":\\\"dataSource\\\",\\\"type\\\":\\\"string\\\"},{\\\"internalType\\\":\\\"bytes\\\",\\\"name\\\":\\\"query\\\",\\\"type\\\":\\\"bytes\\\"},{\\\"internalType\\\":\\\"bytes\\\",\\\"name\\\":\\\"expectedData\\\",\\\"type\\\":\\\"bytes\\\"},{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"timestamp\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"internalType\\\":\\\"struct ResolutionConfig\\\",\\\"name\\\":\\\"config\\\",\\\"type\\\":\\\"tuple\\\"}],\\\"name\\\":\\\"setResolutionConfig\\\",\\\"outputs\\\":[],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"proposalId\\\",\\\"type\\\":\\\"uint256\\\"}],\\\"name\\\":\\\"submitFDCRequest\\\",\\\"outputs\\\":[],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"bytes4\\\",\\\"name\\\":\\\"interfaceId\\\",\\\"type\\\":\\\"bytes4\\\"}],\\\"name\\\":\\\"supportsInterface\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"bool\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"bool\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"newOwner\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"transferOwnership\\\",\\\"outputs\\\":[],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"proposalId\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"bool\\\",\\\"name\\\":\\\"yesOrNo\\\",\\\"type\\\":\\\"bool\\\"},{\\\"internalType\\\":\\\"bytes\\\",\\\"name\\\":\\\"proof\\\",\\\"type\\\":\\\"bytes\\\"}],\\\"name\\\":\\\"verifyResolution\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"bool\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"bool\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"}],\\\"devdoc\\\":{\\\"details\\\":\\\"Supports multiple resolution types: FTSO price feeds, FTSO market cap, FDC API calls, and FDC blockchain eventsSupports multiple proposals and markets - each proposal can have its own independent resolution configurationEach proposalId maps to a unique ResolutionConfig, allowing the same resolver instance to handle multiple markets and proposals\\\",\\\"errors\\\":{\\\"AccessControlBadConfirmation()\\\":[{\\\"details\\\":\\\"The caller of a function is not the expected one. NOTE: Don't confuse with {AccessControlUnauthorizedAccount}.\\\"}],\\\"AccessControlUnauthorizedAccount(address,bytes32)\\\":[{\\\"details\\\":\\\"The `account` is missing a role.\\\"}],\\\"OwnableInvalidOwner(address)\\\":[{\\\"details\\\":\\\"The owner is not a valid owner account. (eg. `address(0)`)\\\"}],\\\"OwnableUnauthorizedAccount(address)\\\":[{\\\"details\\\":\\\"The caller account is not authorized to perform an operation.\\\"}]},\\\"events\\\":{\\\"RoleAdminChanged(bytes32,bytes32,bytes32)\\\":{\\\"details\\\":\\\"Emitted when `newAdminRole` is set as ``role``'s admin role, replacing `previousAdminRole` `DEFAULT_ADMIN_ROLE` is the starting admin for all roles, despite {RoleAdminChanged} not being emitted to signal this.\\\"},\\\"RoleGranted(bytes32,address,address)\\\":{\\\"details\\\":\\\"Emitted when `account` is granted `role`. `sender` is the account that originated the contract call. This account bears the admin role (for the granted role). Expected in cases where the role was granted using the internal {AccessControl-_grantRole}.\\\"},\\\"RoleRevoked(bytes32,address,address)\\\":{\\\"details\\\":\\\"Emitted when `account` is revoked `role`. `sender` is the account that originated the contract call:   - if using `revokeRole`, it is the admin role bearer   - if using `renounceRole`, it is the role bearer (i.e. `account`)\\\"}},\\\"kind\\\":\\\"dev\\\",\\\"methods\\\":{\\\"getRoleAdmin(bytes32)\\\":{\\\"details\\\":\\\"Returns the admin role that controls `role`. See {grantRole} and {revokeRole}. To change a role's admin, use {_setRoleAdmin}.\\\"},\\\"grantRole(bytes32,address)\\\":{\\\"details\\\":\\\"Grants `role` to `account`. If `account` had not been already granted `role`, emits a {RoleGranted} event. Requirements: - the caller must have ``role``'s admin role. May emit a {RoleGranted} event.\\\"},\\\"hasRole(bytes32,address)\\\":{\\\"details\\\":\\\"Returns `true` if `account` has been granted `role`.\\\"},\\\"owner()\\\":{\\\"details\\\":\\\"Returns the address of the current owner.\\\"},\\\"renounceOwnership()\\\":{\\\"details\\\":\\\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby disabling any functionality that is only available to the owner.\\\"},\\\"renounceRole(bytes32,address)\\\":{\\\"details\\\":\\\"Revokes `role` from the calling account. Roles are often managed via {grantRole} and {revokeRole}: this function's purpose is to provide a mechanism for accounts to lose their privileges if they are compromised (such as when a trusted device is misplaced). If the calling account had been revoked `role`, emits a {RoleRevoked} event. Requirements: - the caller must be `callerConfirmation`. May emit a {RoleRevoked} event.\\\"},\\\"revokeRole(bytes32,address)\\\":{\\\"details\\\":\\\"Revokes `role` from `account`. If `account` had been granted `role`, emits a {RoleRevoked} event. Requirements: - the caller must have ``role``'s admin role. May emit a {RoleRevoked} event.\\\"},\\\"setResolutionConfig(uint256,(uint8,address,address,uint256,uint256,string,bytes,bytes,uint256))\\\":{\\\"details\\\":\\\"Each proposalId maps to an independent ResolutionConfig, allowing this resolver to support multiple proposals and marketsProposalIds are unique per Market contract, so multiple markets can safely share the same resolver instance\\\",\\\"params\\\":{\\\"config\\\":\\\"The resolution configuration\\\",\\\"proposalId\\\":\\\"The proposal ID (unique across all markets using this resolver)\\\"}},\\\"supportsInterface(bytes4)\\\":{\\\"details\\\":\\\"See {IERC165-supportsInterface}.\\\"},\\\"transferOwnership(address)\\\":{\\\"details\\\":\\\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\\\"},\\\"verifyResolution(uint256,bool,bytes)\\\":{\\\"params\\\":{\\\"proof\\\":\\\"Not used for automatic resolution, kept for interface compatibility\\\",\\\"proposalId\\\":\\\"The proposal ID to verify\\\",\\\"yesOrNo\\\":\\\"The claimed outcome (true = YES, false = NO)\\\"}}},\\\"title\\\":\\\"FlareHybridResolver\\\",\\\"version\\\":1},\\\"userdoc\\\":{\\\"kind\\\":\\\"user\\\",\\\"methods\\\":{\\\"getFDCAttestationStatus(uint256)\\\":{\\\"notice\\\":\\\"Get FDC attestation status (helper function)\\\"},\\\"getFTSOPrice(address)\\\":{\\\"notice\\\":\\\"Get FTSO price for a token (helper function)\\\"},\\\"grantConfigurerRole(address)\\\":{\\\"notice\\\":\\\"Grant configurer role (for setting resolution configs)\\\"},\\\"revokeConfigurerRole(address)\\\":{\\\"notice\\\":\\\"Revoke configurer role\\\"},\\\"setResolutionConfig(uint256,(uint8,address,address,uint256,uint256,string,bytes,bytes,uint256))\\\":{\\\"notice\\\":\\\"Set resolution configuration for a proposal\\\"},\\\"submitFDCRequest(uint256)\\\":{\\\"notice\\\":\\\"Manually submit FDC request (if config was set without auto-submit)\\\"},\\\"verifyResolution(uint256,bool,bytes)\\\":{\\\"notice\\\":\\\"Verify market resolution using Flare infrastructure\\\"}},\\\"notice\\\":\\\"Resolver that uses Flare's FTSO and FDC for automatic market resolution\\\",\\\"version\\\":1}},\\\"settings\\\":{\\\"compilationTarget\\\":{\\\"src/FlareHybridResolver.sol\\\":\\\"FlareHybridResolver\\\"},\\\"evmVersion\\\":\\\"cancun\\\",\\\"libraries\\\":{},\\\"metadata\\\":{\\\"bytecodeHash\\\":\\\"ipfs\\\"},\\\"optimizer\\\":{\\\"enabled\\\":true,\\\"runs\\\":200},\\\"remappings\\\":[\\\":@ensdomains/=lib/v4-core/node_modules/@ensdomains/\\\",\\\":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/\\\",\\\":@uniswap/permit2/=lib/permit2/\\\",\\\":@uniswap/universal-router/=lib/universal-router/\\\",\\\":@uniswap/v2-core/=lib/v2-core/\\\",\\\":@uniswap/v3-core/=lib/v3-core/\\\",\\\":@uniswap/v3-periphery/=lib/v3-periphery/\\\",\\\":@uniswap/v4-core/=lib/v4-core/\\\",\\\":@uniswap/v4-periphery/=lib/v4-periphery/\\\",\\\":ds-test/=lib/universal-router/lib/forge-std/lib/ds-test/src/\\\",\\\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\\\",\\\":forge-gas-snapshot/=lib/permit2/lib/forge-gas-snapshot/src/\\\",\\\":forge-std/=lib/forge-std/src/\\\",\\\":halmos-cheatcodes/=lib/openzeppelin-contracts/lib/halmos-cheatcodes/src/\\\",\\\":hardhat/=lib/v4-core/node_modules/hardhat/\\\",\\\":openzeppelin-contracts/=lib/openzeppelin-contracts/\\\",\\\":permit2/=lib/permit2/\\\",\\\":solmate/=lib/universal-router/lib/solmate/\\\",\\\":universal-router/=lib/universal-router/\\\",\\\":v2-core/=lib/v2-core/contracts/\\\",\\\":v3-core/=lib/v3-core/\\\",\\\":v3-periphery/=lib/v3-periphery/contracts/\\\",\\\":v4-core/=lib/v4-core/src/\\\",\\\":v4-periphery/=lib/v4-periphery/\\\"],\\\"viaIR\\\":true},\\\"sources\\\":{\\\"lib/openzeppelin-contracts/contracts/access/AccessControl.sol\\\":{\\\"keccak256\\\":\\\"0xc1bebdee8943bd5e9ef1e0f2e63296aa1dd4171a66b9e74d0286220e891e1458\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://928cf2f0042c606f3dcb21bd8a272573f462a215cd65285d2d6b407f31e9bd67\\\",\\\"dweb:/ipfs/QmWGxjckno6sfjHPX5naPnsfsyisgy4PJDf46eLw9umfpx\\\"]},\\\"lib/openzeppelin-contracts/contracts/access/IAccessControl.sol\\\":{\\\"keccak256\\\":\\\"0x4d9a2b261b56a1e4a37bb038151dec98b952fed16de2bdfdda27e38e2b12b530\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://f724110f7aeb6151af800ab8c12e6060b29bda9e013f0ccb331eb754d6a7cbf0\\\",\\\"dweb:/ipfs/QmUcjzCZpxtUPdEThtAzE1f9LvuJiUGZxTdH9N6bHrb5Cf\\\"]},\\\"lib/openzeppelin-contracts/contracts/access/Ownable.sol\\\":{\\\"keccak256\\\":\\\"0xff6d0bb2e285473e5311d9d3caacb525ae3538a80758c10649a4d61029b017bb\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://8ed324d3920bb545059d66ab97d43e43ee85fd3bd52e03e401f020afb0b120f6\\\",\\\"dweb:/ipfs/QmfEckWLmZkDDcoWrkEvMWhms66xwTLff9DDhegYpvHo1a\\\"]},\\\"lib/openzeppelin-contracts/contracts/utils/Context.sol\\\":{\\\"keccak256\\\":\\\"0x493033a8d1b176a037b2cc6a04dad01a5c157722049bbecf632ca876224dd4b2\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://6a708e8a5bdb1011c2c381c9a5cfd8a9a956d7d0a9dc1bd8bcdaf52f76ef2f12\\\",\\\"dweb:/ipfs/Qmax9WHBnVsZP46ZxEMNRQpLQnrdE4dK8LehML1Py8FowF\\\"]},\\\"lib/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol\\\":{\\\"keccak256\\\":\\\"0xddce8e17e3d3f9ed818b4f4c4478a8262aab8b11ed322f1bf5ed705bb4bd97fa\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://8084aa71a4cc7d2980972412a88fe4f114869faea3fefa5436431644eb5c0287\\\",\\\"dweb:/ipfs/Qmbqfs5dRdPvHVKY8kTaeyc65NdqXRQwRK7h9s5UJEhD1p\\\"]},\\\"lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol\\\":{\\\"keccak256\\\":\\\"0x79796192ec90263f21b464d5bc90b777a525971d3de8232be80d9c4f9fb353b8\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://f6fda447a62815e8064f47eff0dd1cf58d9207ad69b5d32280f8d7ed1d1e4621\\\",\\\"dweb:/ipfs/QmfDRc7pxfaXB2Dh9np5Uf29Na3pQ7tafRS684wd3GLjVL\\\"]},\\\"src/FlareHybridResolver.sol\\\":{\\\"keccak256\\\":\\\"0x73c25484b93f6a761707d73af97c974a2af9e6afb1c787c2d189d02455e48f0b\\\",\\\"license\\\":\\\"All Rights Reserved\\\",\\\"urls\\\":[\\\"bzz-raw://185a0490171805478d4d03015513dad3bfeb3ee818866fb3d8476a6c8ef90179\\\",\\\"dweb:/ipfs/QmPvrYv2fL9h2G99VYgEY3VYRn9LEejbF429hnDBg8s1V6\\\"]},\\\"src/interfaces/IFlareFDC.sol\\\":{\\\"keccak256\\\":\\\"0x2ed8af04591fc401d1c335b3135b971b3f7c4a3c195d30e1b09a6336a4847e3a\\\",\\\"license\\\":\\\"All Rights Reserved\\\",\\\"urls\\\":[\\\"bzz-raw://37bc0f0a286a33c247df971cbee3f6cfe794581f3960591f8f72b12aff47d987\\\",\\\"dweb:/ipfs/QmSDuEE2bw8j3ssVYp8teEMPEvvp2JTj6kA1bF5rVWgZLJ\\\"]},\\\"src/interfaces/IFlareFTSO.sol\\\":{\\\"keccak256\\\":\\\"0xfc061adbd4b7cb1ef4f3bcda26eda724e5b9f636bbb4c0d09cd18357ca4c0d19\\\",\\\"license\\\":\\\"All Rights Reserved\\\",\\\"urls\\\":[\\\"bzz-raw://c452f07fcb37916f8a48cce83a302ada7cd6ac906d1edd08b9c066f9d34a1df5\\\",\\\"dweb:/ipfs/QmYgzV5nGpW5h94Kd4CEsBVe419suZ1kByjxMKmqHjtGHA\\\"]},\\\"src/interfaces/IFlareHybridResolver.sol\\\":{\\\"keccak256\\\":\\\"0xfcaaeb5715db3e9e0e83979e9394e7c0f24d44da918296b2a0ae5612e842d2ae\\\",\\\"license\\\":\\\"All Rights Reserved\\\",\\\"urls\\\":[\\\"bzz-raw://bdaaae59fd31af8e61a13d12fa37f0c56526d35180858ee293d0280b0e3cbfe7\\\",\\\"dweb:/ipfs/QmS6AswkAfm9qnNgo2CmvgVyfS4ThaH5mVB12NwzAoDmTb\\\"]},\\\"src/interfaces/IMarketResolver.sol\\\":{\\\"keccak256\\\":\\\"0xd00badd60313617578333755e39cb3dcc8dc72e64ffd127f2cb9e13678c9ed41\\\",\\\"license\\\":\\\"All Rights Reserved\\\",\\\"urls\\\":[\\\"bzz-raw://42311e09403e5cc12452e2727dbcc453e0630a18a6731e0bab7b5aca8a22802b\\\",\\\"dweb:/ipfs/QmNj5ywhD86HZBAiwp8oWtZvXy3nBiof3PSkHEq2dACy1B\\\"]}},\\\"version\\\":1}\",\"metadata\":{\"compiler\":{\"version\":\"0.8.26+commit.8a97fa7a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_ftsoRegistry\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_fdc\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_owner\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"type\":\"error\",\"name\":\"AccessControlBadConfirmation\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"neededRole\",\"type\":\"bytes32\"}],\"type\":\"error\",\"name\":\"AccessControlUnauthorizedAccount\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"requestId\",\"type\":\"bytes32\"}],\"type\":\"error\",\"name\":\"AttestationNotAvailable\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"proposalId\",\"type\":\"uint256\"}],\"type\":\"error\",\"name\":\"ConfigNotSet\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"proposalId\",\"type\":\"uint256\"}],\"type\":\"error\",\"name\":\"FDCRequestNotFound\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"}],\"type\":\"error\",\"name\":\"FTSONotAvailable\"},{\"inputs\":[],\"type\":\"error\",\"name\":\"InvalidResolutionType\"},{\"inputs\":[{\"internalType\":\"bool\",\"name\":\"expected\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"actual\",\"type\":\"bool\"}],\"type\":\"error\",\"name\":\"OutcomeMismatch\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"type\":\"error\",\"name\":\"OwnableInvalidOwner\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"type\":\"error\",\"name\":\"OwnableUnauthorizedAccount\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"proposalId\",\"type\":\"uint256\",\"indexed\":true},{\"internalType\":\"bytes32\",\"name\":\"requestId\",\"type\":\"bytes32\",\"indexed\":true},{\"internalType\":\"string\",\"name\":\"dataSource\",\"type\":\"string\",\"indexed\":false}],\"type\":\"event\",\"name\":\"FDCRequestSubmitted\",\"anonymous\":false},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\",\"indexed\":true},{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\",\"indexed\":true}],\"type\":\"event\",\"name\":\"OwnershipTransferred\",\"anonymous\":false},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"proposalId\",\"type\":\"uint256\",\"indexed\":true},{\"internalType\":\"enum ResolutionType\",\"name\":\"resolutionType\",\"type\":\"uint8\",\"indexed\":false},{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\",\"indexed\":false}],\"type\":\"event\",\"name\":\"ResolutionConfigSet\",\"anonymous\":false},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"proposalId\",\"type\":\"uint256\",\"indexed\":true},{\"internalType\":\"bool\",\"name\":\"outcome\",\"type\":\"bool\",\"indexed\":false},{\"internalType\":\"enum ResolutionType\",\"name\":\"resolutionType\",\"type\":\"uint8\",\"indexed\":false}],\"type\":\"event\",\"name\":\"ResolutionVerified\",\"anonymous\":false},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\",\"indexed\":true},{\"internalType\":\"bytes32\",\"name\":\"previousAdminRole\",\"type\":\"bytes32\",\"indexed\":true},{\"internalType\":\"bytes32\",\"name\":\"newAdminRole\",\"type\":\"bytes32\",\"indexed\":true}],\"type\":\"event\",\"name\":\"RoleAdminChanged\",\"anonymous\":false},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\",\"indexed\":true},{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\",\"indexed\":true},{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\",\"indexed\":true}],\"type\":\"event\",\"name\":\"RoleGranted\",\"anonymous\":false},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\",\"indexed\":true},{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\",\"indexed\":true},{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\",\"indexed\":true}],\"type\":\"event\",\"name\":\"RoleRevoked\",\"anonymous\":false},{\"inputs\":[],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"CONFIGURER_ROLE\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}]},{\"inputs\":[],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"DEFAULT_ADMIN_ROLE\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}]},{\"inputs\":[],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"fdc\",\"outputs\":[{\"internalType\":\"contract IFlareDataConnector\",\"name\":\"\",\"type\":\"address\"}]},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"fdcRequestIds\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}]},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"fdcRequestTimestamps\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}]},{\"inputs\":[],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"ftsoRegistry\",\"outputs\":[{\"internalType\":\"contract IFtsoRegistry\",\"name\":\"\",\"type\":\"address\"}]},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"proposalId\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"getFDCAttestationStatus\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"requestId\",\"type\":\"bytes32\"},{\"internalType\":\"bool\",\"name\":\"available\",\"type\":\"bool\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}]},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"getFTSOPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"price\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"}]},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"getRoleAdmin\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}]},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\",\"name\":\"grantConfigurerRole\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\",\"name\":\"grantRole\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"hasRole\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}]},{\"inputs\":[],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}]},{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\",\"name\":\"renounceOwnership\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"callerConfirmation\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\",\"name\":\"renounceRole\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"resolutionConfigs\",\"outputs\":[{\"internalType\":\"enum ResolutionType\",\"name\":\"resolutionType\",\"type\":\"uint8\"},{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"ftsoAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"targetPrice\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"targetMarketCap\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"dataSource\",\"type\":\"string\"},{\"internalType\":\"bytes\",\"name\":\"query\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"expectedData\",\"type\":\"bytes\"},{\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"}]},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\",\"name\":\"revokeConfigurerRole\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\",\"name\":\"revokeRole\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"proposalId\",\"type\":\"uint256\"},{\"internalType\":\"struct ResolutionConfig\",\"name\":\"config\",\"type\":\"tuple\",\"components\":[{\"internalType\":\"enum ResolutionType\",\"name\":\"resolutionType\",\"type\":\"uint8\"},{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"ftsoAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"targetPrice\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"targetMarketCap\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"dataSource\",\"type\":\"string\"},{\"internalType\":\"bytes\",\"name\":\"query\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"expectedData\",\"type\":\"bytes\"},{\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"}]}],\"stateMutability\":\"nonpayable\",\"type\":\"function\",\"name\":\"setResolutionConfig\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"proposalId\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\",\"name\":\"submitFDCRequest\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}]},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\",\"name\":\"transferOwnership\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"proposalId\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"yesOrNo\",\"type\":\"bool\"},{\"internalType\":\"bytes\",\"name\":\"proof\",\"type\":\"bytes\"}],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"verifyResolution\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}]}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"getRoleAdmin(bytes32)\":{\"details\":\"Returns the admin role that controls `role`. See {grantRole} and {revokeRole}. To change a role's admin, use {_setRoleAdmin}.\"},\"grantRole(bytes32,address)\":{\"details\":\"Grants `role` to `account`. If `account` had not been already granted `role`, emits a {RoleGranted} event. Requirements: - the caller must have ``role``'s admin role. May emit a {RoleGranted} event.\"},\"hasRole(bytes32,address)\":{\"details\":\"Returns `true` if `account` has been granted `role`.\"},\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby disabling any functionality that is only available to the owner.\"},\"renounceRole(bytes32,address)\":{\"details\":\"Revokes `role` from the calling account. Roles are often managed via {grantRole} and {revokeRole}: this function's purpose is to provide a mechanism for accounts to lose their privileges if they are compromised (such as when a trusted device is misplaced). If the calling account had been revoked `role`, emits a {RoleRevoked} event. Requirements: - the caller must be `callerConfirmation`. May emit a {RoleRevoked} event.\"},\"revokeRole(bytes32,address)\":{\"details\":\"Revokes `role` from `account`. If `account` had been granted `role`, emits a {RoleRevoked} event. Requirements: - the caller must have ``role``'s admin role. May emit a {RoleRevoked} event.\"},\"setResolutionConfig(uint256,(uint8,address,address,uint256,uint256,string,bytes,bytes,uint256))\":{\"details\":\"Each proposalId maps to an independent ResolutionConfig, allowing this resolver to support multiple proposals and marketsProposalIds are unique per Market contract, so multiple markets can safely share the same resolver instance\",\"params\":{\"config\":\"The resolution configuration\",\"proposalId\":\"The proposal ID (unique across all markets using this resolver)\"}},\"supportsInterface(bytes4)\":{\"details\":\"See {IERC165-supportsInterface}.\"},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"},\"verifyResolution(uint256,bool,bytes)\":{\"params\":{\"proof\":\"Not used for automatic resolution, kept for interface compatibility\",\"proposalId\":\"The proposal ID to verify\",\"yesOrNo\":\"The claimed outcome (true = YES, false = NO)\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"getFDCAttestationStatus(uint256)\":{\"notice\":\"Get FDC attestation status (helper function)\"},\"getFTSOPrice(address)\":{\"notice\":\"Get FTSO price for a token (helper function)\"},\"grantConfigurerRole(address)\":{\"notice\":\"Grant configurer role (for setting resolution configs)\"},\"revokeConfigurerRole(address)\":{\"notice\":\"Revoke configurer role\"},\"setResolutionConfig(uint256,(uint8,address,address,uint256,uint256,string,bytes,bytes,uint256))\":{\"notice\":\"Set resolution configuration for a proposal\"},\"submitFDCRequest(uint256)\":{\"notice\":\"Manually submit FDC request (if config was set without auto-submit)\"},\"verifyResolution(uint256,bool,bytes)\":{\"notice\":\"Verify market resolution using Flare infrastructure\"}},\"version\":1}},\"settings\":{\"remappings\":[\"@ensdomains/=lib/v4-core/node_modules/@ensdomains/\",\"@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/\",\"@uniswap/permit2/=lib/permit2/\",\"@uniswap/universal-router/=lib/universal-router/\",\"@uniswap/v2-core/=lib/v2-core/\",\"@uniswap/v3-core/=lib/v3-core/\",\"@uniswap/v3-periphery/=lib/v3-periphery/\",\"@uniswap/v4-core/=lib/v4-core/\",\"@uniswap/v4-periphery/=lib/v4-periphery/\",\"ds-test/=lib/universal-router/lib/forge-std/lib/ds-test/src/\",\"erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\"forge-gas-snapshot/=lib/permit2/lib/forge-gas-snapshot/src/\",\"forge-std/=lib/forge-std/src/\",\"halmos-cheatcodes/=lib/openzeppelin-contracts/lib/halmos-cheatcodes/src/\",\"hardhat/=lib/v4-core/node_modules/hardhat/\",\"openzeppelin-contracts/=lib/openzeppelin-contracts/\",\"permit2/=lib/permit2/\",\"solmate/=lib/universal-router/lib/solmate/\",\"universal-router/=lib/universal-router/\",\"v2-core/=lib/v2-core/contracts/\",\"v3-core/=lib/v3-core/\",\"v3-periphery/=lib/v3-periphery/contracts/\",\"v4-core/=lib/v4-core/src/\",\"v4-periphery/=lib/v4-periphery/\"],\"optimizer\":{\"enabled\":true,\"runs\":200},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"compilationTarget\":{\"src/FlareHybridResolver.sol\":\"FlareHybridResolver\"},\"evmVersion\":\"cancun\",\"libraries\":{},\"viaIR\":true},\"sources\":{\"lib/openzeppelin-contracts/contracts/access/AccessControl.sol\":{\"keccak256\":\"0xc1bebdee8943bd5e9ef1e0f2e63296aa1dd4171a66b9e74d0286220e891e1458\",\"urls\":[\"bzz-raw://928cf2f0042c606f3dcb21bd8a272573f462a215cd65285d2d6b407f31e9bd67\",\"dweb:/ipfs/QmWGxjckno6sfjHPX5naPnsfsyisgy4PJDf46eLw9umfpx\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/access/IAccessControl.sol\":{\"keccak256\":\"0x4d9a2b261b56a1e4a37bb038151dec98b952fed16de2bdfdda27e38e2b12b530\",\"urls\":[\"bzz-raw://f724110f7aeb6151af800ab8c12e6060b29bda9e013f0ccb331eb754d6a7cbf0\",\"dweb:/ipfs/QmUcjzCZpxtUPdEThtAzE1f9LvuJiUGZxTdH9N6bHrb5Cf\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/access/Ownable.sol\":{\"keccak256\":\"0xff6d0bb2e285473e5311d9d3caacb525ae3538a80758c10649a4d61029b017bb\",\"urls\":[\"bzz-raw://8ed324d3920bb545059d66ab97d43e43ee85fd3bd52e03e401f020afb0b120f6\",\"dweb:/ipfs/QmfEckWLmZkDDcoWrkEvMWhms66xwTLff9DDhegYpvHo1a\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/utils/Context.sol\":{\"keccak256\":\"0x493033a8d1b176a037b2cc6a04dad01a5c157722049bbecf632ca876224dd4b2\",\"urls\":[\"bzz-raw://6a708e8a5bdb1011c2c381c9a5cfd8a9a956d7d0a9dc1bd8bcdaf52f76ef2f12\",\"dweb:/ipfs/Qmax9WHBnVsZP46ZxEMNRQpLQnrdE4dK8LehML1Py8FowF\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol\":{\"keccak256\":\"0xddce8e17e3d3f9ed818b4f4c4478a8262aab8b11ed322f1bf5ed705bb4bd97fa\",\"urls\":[\"bzz-raw://8084aa71a4cc7d2980972412a88fe4f114869faea3fefa5436431644eb5c0287\",\"dweb:/ipfs/Qmbqfs5dRdPvHVKY8kTaeyc65NdqXRQwRK7h9s5UJEhD1p\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0x79796192ec90263f21b464d5bc90b777a525971d3de8232be80d9c4f9fb353b8\",\"urls\":[\"bzz-raw://f6fda447a62815e8064f47eff0dd1cf58d9207ad69b5d32280f8d7ed1d1e4621\",\"dweb:/ipfs/QmfDRc7pxfaXB2Dh9np5Uf29Na3pQ7tafRS684wd3GLjVL\"],\"license\":\"MIT\"},\"src/FlareHybridResolver.sol\":{\"keccak256\":\"0x73c25484b93f6a761707d73af97c974a2af9e6afb1c787c2d189d02455e48f0b\",\"urls\":[\"bzz-raw://185a0490171805478d4d03015513dad3bfeb3ee818866fb3d8476a6c8ef90179\",\"dweb:/ipfs/QmPvrYv2fL9h2G99VYgEY3VYRn9LEejbF429hnDBg8s1V6\"],\"license\":\"All Rights Reserved\"},\"src/interfaces/IFlareFDC.sol\":{\"keccak256\":\"0x2ed8af04591fc401d1c335b3135b971b3f7c4a3c195d30e1b09a6336a4847e3a\",\"urls\":[\"bzz-raw://37bc0f0a286a33c247df971cbee3f6cfe794581f3960591f8f72b12aff47d987\",\"dweb:/ipfs/QmSDuEE2bw8j3ssVYp8teEMPEvvp2JTj6kA1bF5rVWgZLJ\"],\"license\":\"All Rights Reserved\"},\"src/interfaces/IFlareFTSO.sol\":{\"keccak256\":\"0xfc061adbd4b7cb1ef4f3bcda26eda724e5b9f636bbb4c0d09cd18357ca4c0d19\",\"urls\":[\"bzz-raw://c452f07fcb37916f8a48cce83a302ada7cd6ac906d1edd08b9c066f9d34a1df5\",\"dweb:/ipfs/QmYgzV5nGpW5h94Kd4CEsBVe419suZ1kByjxMKmqHjtGHA\"],\"license\":\"All Rights Reserved\"},\"src/interfaces/IFlareHybridResolver.sol\":{\"keccak256\":\"0xfcaaeb5715db3e9e0e83979e9394e7c0f24d44da918296b2a0ae5612e842d2ae\",\"urls\":[\"bzz-raw://bdaaae59fd31af8e61a13d12fa37f0c56526d35180858ee293d0280b0e3cbfe7\",\"dweb:/ipfs/QmS6AswkAfm9qnNgo2CmvgVyfS4ThaH5mVB12NwzAoDmTb\"],\"license\":\"All Rights Reserved\"},\"src/interfaces/IMarketResolver.sol\":{\"keccak256\":\"0xd00badd60313617578333755e39cb3dcc8dc72e64ffd127f2cb9e13678c9ed41\",\"urls\":[\"bzz-raw://42311e09403e5cc12452e2727dbcc453e0630a18a6731e0bab7b5aca8a22802b\",\"dweb:/ipfs/QmNj5ywhD86HZBAiwp8oWtZvXy3nBiof3PSkHEq2dACy1B\"],\"license\":\"All Rights Reserved\"}},\"version\":1},\"id\":250}"));}),
+"[project]/src/abis/BasicMarketResolver.json (json)", ((__turbopack_context__) => {
+
+__turbopack_context__.v(JSON.parse("{\"abi\":[{\"type\":\"constructor\",\"inputs\":[{\"name\":\"systemAdmin\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"accountHolder\",\"type\":\"address\",\"internalType\":\"address\"}],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"ACCOUNT_HOLDER_ROLE\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"DEFAULT_ADMIN_ROLE\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"getRoleAdmin\",\"inputs\":[{\"name\":\"role\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}],\"outputs\":[{\"name\":\"\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"grantRole\",\"inputs\":[{\"name\":\"role\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"},{\"name\":\"account\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"hasRole\",\"inputs\":[{\"name\":\"role\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"},{\"name\":\"account\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[{\"name\":\"\",\"type\":\"bool\",\"internalType\":\"bool\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"owner\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"address\",\"internalType\":\"address\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"renounceOwnership\",\"inputs\":[],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"renounceRole\",\"inputs\":[{\"name\":\"role\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"},{\"name\":\"callerConfirmation\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"revokeRole\",\"inputs\":[{\"name\":\"role\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"},{\"name\":\"account\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"supportsInterface\",\"inputs\":[{\"name\":\"interfaceId\",\"type\":\"bytes4\",\"internalType\":\"bytes4\"}],\"outputs\":[{\"name\":\"\",\"type\":\"bool\",\"internalType\":\"bool\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"transferOwnership\",\"inputs\":[{\"name\":\"newOwner\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"verifyResolution\",\"inputs\":[{\"name\":\"proposalId\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"yesOrNo\",\"type\":\"bool\",\"internalType\":\"bool\"},{\"name\":\"proof\",\"type\":\"bytes\",\"internalType\":\"bytes\"}],\"outputs\":[{\"name\":\"passed\",\"type\":\"bool\",\"internalType\":\"bool\"}],\"stateMutability\":\"view\"},{\"type\":\"event\",\"name\":\"OwnershipTransferred\",\"inputs\":[{\"name\":\"previousOwner\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"},{\"name\":\"newOwner\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"RoleAdminChanged\",\"inputs\":[{\"name\":\"role\",\"type\":\"bytes32\",\"indexed\":true,\"internalType\":\"bytes32\"},{\"name\":\"previousAdminRole\",\"type\":\"bytes32\",\"indexed\":true,\"internalType\":\"bytes32\"},{\"name\":\"newAdminRole\",\"type\":\"bytes32\",\"indexed\":true,\"internalType\":\"bytes32\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"RoleGranted\",\"inputs\":[{\"name\":\"role\",\"type\":\"bytes32\",\"indexed\":true,\"internalType\":\"bytes32\"},{\"name\":\"account\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"},{\"name\":\"sender\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"RoleRevoked\",\"inputs\":[{\"name\":\"role\",\"type\":\"bytes32\",\"indexed\":true,\"internalType\":\"bytes32\"},{\"name\":\"account\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"},{\"name\":\"sender\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"}],\"anonymous\":false},{\"type\":\"error\",\"name\":\"AccessControlBadConfirmation\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"AccessControlUnauthorizedAccount\",\"inputs\":[{\"name\":\"account\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"neededRole\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}]},{\"type\":\"error\",\"name\":\"OwnableInvalidOwner\",\"inputs\":[{\"name\":\"owner\",\"type\":\"address\",\"internalType\":\"address\"}]},{\"type\":\"error\",\"name\":\"OwnableUnauthorizedAccount\",\"inputs\":[{\"name\":\"account\",\"type\":\"address\",\"internalType\":\"address\"}]}],\"bytecode\":{\"object\":\"0x6080346100d357601f610dbd38819003918201601f19168301916001600160401b038311848410176100d75780849260409485528339810103126100d357610052602061004b836100eb565b92016100eb565b6001600160a01b039091169081156100c0575f80546001600160a01b03198116841782556100b093916001600160a01b03909116907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09080a36100ff565b50604051610bf290816101ab8239f35b631e4fbdf760e01b5f525f60045260245ffd5b5f80fd5b634e487b7160e01b5f52604160045260245ffd5b51906001600160a01b03821682036100d357565b6001600160a01b0381165f9081525f80516020610d9d833981519152602052604090205460ff166101a5576001600160a01b03165f8181525f80516020610d9d83398151915260205260408120805460ff191660011790553391907f965e66db1ee773f10ddbae43dea4c0ce80cd1d36639de3baeb089f8b66904e00907f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d9080a4600190565b505f9056fe6080806040526004361015610012575f80fd5b5f3560e01c90816301ffc9a71461074f57508063248a9ca31461071c5780632f2ff15d146106de57806336568abe1461069a578063715018a6146106435780638da5cb5b1461061c57806391d14854146105d3578063a217fddf146105b9578063d547741f14610574578063f2fde38b146104eb578063fb6cc44b146100de5763fce86f4e146100a0575f80fd5b346100da575f3660031901126100da5760206040517f965e66db1ee773f10ddbae43dea4c0ce80cd1d36639de3baeb089f8b66904e008152f35b5f80fd5b346100da5760603660031901126100da576024358015158091036100da5760443567ffffffffffffffff81116100da57366023820112156100da5780600401356101278161080a565b9061013560405192836107e8565b808252602082019236602483830101116100da57815f92602460209301863783010152805181019060208201926020828403126100da57519067ffffffffffffffff82116100da570190604090829003126100da5760405191610197836107b8565b602082015167ffffffffffffffff81116100da578160206101ba92850101610826565b835260408201519167ffffffffffffffff83116100da576101de9201602001610826565b6020820191818352815180925f9372184f03e93ff9f4daa797ed6e38ed64bf6a1f0160401b8310156104c8575b806d04ee2d6d415b85acef8100000000600a9210156104ad575b662386f26fc10000811015610499575b6305f5e100811015610488575b612710811015610479575b606481101561046b575b1015610461575b6001840191600a60216102896102738661080a565b9561028160405197886107e8565b80875261080a565b602086019790601f19013689378501015b5f1901916f181899199a1a9b1b9c1cb0b131b232b360811b8282061a8353049081156102c857600a9061029a565b505061032d61034394603a6020604051948593828501977f19457468657265756d205369676e6564204d6573736167653a0a00000000000089525180918587015e8401908382015f8152815193849201905e01015f815203601f1981018352826107e8565b5190205f549151916001600160a01b03166109dc565b1561042457516040818051810103126100da5760405190610363826107b8565b60208101519081151582036100da5760409183520151806020830152600435036103df575115150361039a57602060405160018152f35b60405162461bcd60e51b815260206004820152601860248201527f4e6f742074686520636c61696d6564206f7574636f6d652e00000000000000006044820152606490fd5b60405162461bcd60e51b815260206004820152601d60248201527f4e6f74207468652070726f706f73616c20696e207175657374696f6e2e0000006044820152606490fd5b60405162461bcd60e51b8152602060048201526015602482015274283937b7b3103237b2b9b713ba103b32b934b33c9760591b6044820152606490fd5b926001019261025e565b606460029104950194610257565b6127106004910495019461024d565b6305f5e10060089104950194610242565b662386f26fc1000060109104950194610235565b6d04ee2d6d415b85acef810000000060209104950194610225565b506040935072184f03e93ff9f4daa797ed6e38ed64bf6a1f0160401b820461020b565b346100da5760203660031901126100da576004356001600160a01b038116908190036100da576105196109b6565b8015610561575f80546001600160a01b03198116831782556001600160a01b0316907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09080a3005b631e4fbdf760e01b5f525f60045260245ffd5b346100da5760403660031901126100da576105b76004356105936107a2565b906105b26105ad825f526001602052600160405f20015490565b61086c565b610932565b005b346100da575f3660031901126100da5760206040515f8152f35b346100da5760403660031901126100da576105ec6107a2565b6004355f52600160205260405f209060018060a01b03165f52602052602060ff60405f2054166040519015158152f35b346100da575f3660031901126100da575f546040516001600160a01b039091168152602090f35b346100da575f3660031901126100da5761065b6109b6565b5f80546001600160a01b0319811682556001600160a01b03167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e08280a3005b346100da5760403660031901126100da576106b36107a2565b336001600160a01b038216036106cf576105b790600435610932565b63334bd91960e11b5f5260045ffd5b346100da5760403660031901126100da576105b76004356106fd6107a2565b906107176105ad825f526001602052600160405f20015490565b6108a6565b346100da5760203660031901126100da5760206107476004355f526001602052600160405f20015490565b604051908152f35b346100da5760203660031901126100da576004359063ffffffff60e01b82168092036100da57602091637965db0b60e01b8114908115610791575b5015158152f35b6301ffc9a760e01b1490508361078a565b602435906001600160a01b03821682036100da57565b6040810190811067ffffffffffffffff8211176107d457604052565b634e487b7160e01b5f52604160045260245ffd5b90601f8019910116810190811067ffffffffffffffff8211176107d457604052565b67ffffffffffffffff81116107d457601f01601f191660200190565b81601f820112156100da5780519061083d8261080a565b9261084b60405194856107e8565b828452602083830101116100da57815f9260208093018386015e8301015290565b5f81815260016020908152604080832033845290915290205460ff16156108905750565b63e2517d3f60e01b5f523360045260245260445ffd5b5f8181526001602090815260408083206001600160a01b038616845290915290205460ff1661092c575f8181526001602081815260408084206001600160a01b0396909616808552959091528220805460ff19169091179055339291907f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d9080a4600190565b50505f90565b5f8181526001602090815260408083206001600160a01b038616845290915290205460ff161561092c575f8181526001602090815260408083206001600160a01b0395909516808452949091528120805460ff19169055339291907ff6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b9080a4600190565b5f546001600160a01b031633036109c957565b63118cdaa760e01b5f523360045260245ffd5b9190823b610a2b57906109ee91610af5565b506004811015610a1757159182610a0457505090565b6001600160a01b03918216911614919050565b634e487b7160e01b5f52602160045260245ffd5b915f926020610a866084869560405193849181830196630b135d3f60e11b88526024840152604060448401528051918291826064860152018484015e87838284010152601f801991011681010301601f1981018352826107e8565b51915afa3d15610aee573d610a9a8161080a565b90610aa860405192836107e8565b81523d5f602083013e5b81610ae0575b81610ac1575090565b90506020818051810103126100da5760200151630b135d3f60e11b1490565b905060208151101590610ab8565b6060610ab2565b8151919060418303610b2557610b1e9250602082015190606060408401519301515f1a90610b2f565b9192909190565b50505f9160029190565b91907f7fffffffffffffffffffffffffffffff5d576e7357a4501ddfe92f46681b20a08411610bb1579160209360809260ff5f9560405194855216868401526040830152606082015282805260015afa15610ba6575f516001600160a01b03811615610b9c57905f905f90565b505f906001905f90565b6040513d5f823e3d90fd5b5050505f916003919056fea2646970667358221220b36307e7c74e77948036dc7c788c9a536e3a4cefd4874538705a1a4276c4d46964736f6c634300081a0033fcc145ee182f633ab949f1117d4162318c0d2b9385951420af79844f7282ecfd\",\"sourceMap\":\"527:989:249:-:0;;;;;;;;;;;;;-1:-1:-1;;527:989:249;;;;-1:-1:-1;;;;;527:989:249;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;:::i;:::-;-1:-1:-1;;;;;527:989:249;;;;1273:26:23;;1269:95;;-1:-1:-1;527:989:249;;-1:-1:-1;;;;;;527:989:249;;;;;;777:46;;527:989;-1:-1:-1;;;;;527:989:249;;;;3052:40:23;;-1:-1:-1;3052:40:23;777:46:249;:::i;:::-;;527:989;;;;;;;;;1269:95:23;1322:31;;;-1:-1:-1;1322:31:23;-1:-1:-1;1322:31:23;527:989:249;;-1:-1:-1;1322:31:23;527:989:249;-1:-1:-1;527:989:249;;;;;;-1:-1:-1;527:989:249;;;;;-1:-1:-1;527:989:249;;;;-1:-1:-1;;;;;527:989:249;;;;;;:::o;6179:316:21:-;-1:-1:-1;;;;;527:989:249;;;;;;-1:-1:-1;;;;;;;;;;;527:989:249;;;;;;;;;;-1:-1:-1;;;;;527:989:249;;;;;-1:-1:-1;;;;;;;;;;;527:989:249;;;;;;;-1:-1:-1;;527:989:249;2954:6:21;527:989:249;;;735:10:50;;527:989:249;651:32;;6370:40:21;;527:989:249;6370:40:21;2954:6;6424:11;:::o;6272:217::-;6466:12;527:989:249;6466:12:21;:::o\",\"linkReferences\":{}},\"deployedBytecode\":{\"object\":\"0x6080806040526004361015610012575f80fd5b5f3560e01c90816301ffc9a71461074f57508063248a9ca31461071c5780632f2ff15d146106de57806336568abe1461069a578063715018a6146106435780638da5cb5b1461061c57806391d14854146105d3578063a217fddf146105b9578063d547741f14610574578063f2fde38b146104eb578063fb6cc44b146100de5763fce86f4e146100a0575f80fd5b346100da575f3660031901126100da5760206040517f965e66db1ee773f10ddbae43dea4c0ce80cd1d36639de3baeb089f8b66904e008152f35b5f80fd5b346100da5760603660031901126100da576024358015158091036100da5760443567ffffffffffffffff81116100da57366023820112156100da5780600401356101278161080a565b9061013560405192836107e8565b808252602082019236602483830101116100da57815f92602460209301863783010152805181019060208201926020828403126100da57519067ffffffffffffffff82116100da570190604090829003126100da5760405191610197836107b8565b602082015167ffffffffffffffff81116100da578160206101ba92850101610826565b835260408201519167ffffffffffffffff83116100da576101de9201602001610826565b6020820191818352815180925f9372184f03e93ff9f4daa797ed6e38ed64bf6a1f0160401b8310156104c8575b806d04ee2d6d415b85acef8100000000600a9210156104ad575b662386f26fc10000811015610499575b6305f5e100811015610488575b612710811015610479575b606481101561046b575b1015610461575b6001840191600a60216102896102738661080a565b9561028160405197886107e8565b80875261080a565b602086019790601f19013689378501015b5f1901916f181899199a1a9b1b9c1cb0b131b232b360811b8282061a8353049081156102c857600a9061029a565b505061032d61034394603a6020604051948593828501977f19457468657265756d205369676e6564204d6573736167653a0a00000000000089525180918587015e8401908382015f8152815193849201905e01015f815203601f1981018352826107e8565b5190205f549151916001600160a01b03166109dc565b1561042457516040818051810103126100da5760405190610363826107b8565b60208101519081151582036100da5760409183520151806020830152600435036103df575115150361039a57602060405160018152f35b60405162461bcd60e51b815260206004820152601860248201527f4e6f742074686520636c61696d6564206f7574636f6d652e00000000000000006044820152606490fd5b60405162461bcd60e51b815260206004820152601d60248201527f4e6f74207468652070726f706f73616c20696e207175657374696f6e2e0000006044820152606490fd5b60405162461bcd60e51b8152602060048201526015602482015274283937b7b3103237b2b9b713ba103b32b934b33c9760591b6044820152606490fd5b926001019261025e565b606460029104950194610257565b6127106004910495019461024d565b6305f5e10060089104950194610242565b662386f26fc1000060109104950194610235565b6d04ee2d6d415b85acef810000000060209104950194610225565b506040935072184f03e93ff9f4daa797ed6e38ed64bf6a1f0160401b820461020b565b346100da5760203660031901126100da576004356001600160a01b038116908190036100da576105196109b6565b8015610561575f80546001600160a01b03198116831782556001600160a01b0316907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09080a3005b631e4fbdf760e01b5f525f60045260245ffd5b346100da5760403660031901126100da576105b76004356105936107a2565b906105b26105ad825f526001602052600160405f20015490565b61086c565b610932565b005b346100da575f3660031901126100da5760206040515f8152f35b346100da5760403660031901126100da576105ec6107a2565b6004355f52600160205260405f209060018060a01b03165f52602052602060ff60405f2054166040519015158152f35b346100da575f3660031901126100da575f546040516001600160a01b039091168152602090f35b346100da575f3660031901126100da5761065b6109b6565b5f80546001600160a01b0319811682556001600160a01b03167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e08280a3005b346100da5760403660031901126100da576106b36107a2565b336001600160a01b038216036106cf576105b790600435610932565b63334bd91960e11b5f5260045ffd5b346100da5760403660031901126100da576105b76004356106fd6107a2565b906107176105ad825f526001602052600160405f20015490565b6108a6565b346100da5760203660031901126100da5760206107476004355f526001602052600160405f20015490565b604051908152f35b346100da5760203660031901126100da576004359063ffffffff60e01b82168092036100da57602091637965db0b60e01b8114908115610791575b5015158152f35b6301ffc9a760e01b1490508361078a565b602435906001600160a01b03821682036100da57565b6040810190811067ffffffffffffffff8211176107d457604052565b634e487b7160e01b5f52604160045260245ffd5b90601f8019910116810190811067ffffffffffffffff8211176107d457604052565b67ffffffffffffffff81116107d457601f01601f191660200190565b81601f820112156100da5780519061083d8261080a565b9261084b60405194856107e8565b828452602083830101116100da57815f9260208093018386015e8301015290565b5f81815260016020908152604080832033845290915290205460ff16156108905750565b63e2517d3f60e01b5f523360045260245260445ffd5b5f8181526001602090815260408083206001600160a01b038616845290915290205460ff1661092c575f8181526001602081815260408084206001600160a01b0396909616808552959091528220805460ff19169091179055339291907f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d9080a4600190565b50505f90565b5f8181526001602090815260408083206001600160a01b038616845290915290205460ff161561092c575f8181526001602090815260408083206001600160a01b0395909516808452949091528120805460ff19169055339291907ff6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b9080a4600190565b5f546001600160a01b031633036109c957565b63118cdaa760e01b5f523360045260245ffd5b9190823b610a2b57906109ee91610af5565b506004811015610a1757159182610a0457505090565b6001600160a01b03918216911614919050565b634e487b7160e01b5f52602160045260245ffd5b915f926020610a866084869560405193849181830196630b135d3f60e11b88526024840152604060448401528051918291826064860152018484015e87838284010152601f801991011681010301601f1981018352826107e8565b51915afa3d15610aee573d610a9a8161080a565b90610aa860405192836107e8565b81523d5f602083013e5b81610ae0575b81610ac1575090565b90506020818051810103126100da5760200151630b135d3f60e11b1490565b905060208151101590610ab8565b6060610ab2565b8151919060418303610b2557610b1e9250602082015190606060408401519301515f1a90610b2f565b9192909190565b50505f9160029190565b91907f7fffffffffffffffffffffffffffffff5d576e7357a4501ddfe92f46681b20a08411610bb1579160209360809260ff5f9560405194855216868401526040830152606082015282805260015afa15610ba6575f516001600160a01b03811615610b9c57905f905f90565b505f906001905f90565b6040513d5f823e3d90fd5b5050505f916003919056fea2646970667358221220b36307e7c74e77948036dc7c788c9a536e3a4cefd4874538705a1a4276c4d46964736f6c634300081a0033\",\"sourceMap\":\"527:989:249:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;527:989:249;;;;;;;651:32;527:989;;;;;;;;;;;;;-1:-1:-1;;527:989:249;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1017:26;;;527:989;1017:26;;527:989;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;1430:17:55;29226:18:61;527:989:249;29282:17:61;-1:-1:-1;;;29282:17:61;;;29278:103;;527:989:249;29398:17:61;29407:8;29978:7;29398:17;;;29394:103;;527:989:249;29523:8:61;29514:17;;;29510:103;;527:989:249;29639:7:61;29630:16;;;29626:100;;527:989:249;29752:7:61;29743:16;;;29739:100;;527:989:249;29865:7:61;29856:16;;;29852:100;;527:989:249;29969:16:61;;29965:66;;527:989:249;;;;;29978:7:61;1545:92:55;527:989:249;;;;:::i;:::-;;;;;;;;:::i;:::-;;;;;:::i;:::-;;;;;;-1:-1:-1;;527:989:249;;;;1545:92:55;;;1650:247;-1:-1:-1;;527:989:249;;-1:-1:-1;;;1704:111:55;;;;527:989:249;1704:111:55;527:989:249;1865:10:55;;;1861:21;;29978:7:61;;1650:247:55;;1861:21;1877:5;;527:989:249;1143:74;1877:5:55;527:989:249;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;2286:107:57;;527:989:249;;1195:21;;;-1:-1:-1;;;;;527:989:249;1143:74;:::i;:::-;527:989;;;1290:16;527:989;;;;1279:39;;527:989;;;;;;;;;;:::i;:::-;;1279:39;;527:989;;;;;;;;;;;;;;;;;;;;;;1336:32;527:989;;;;;1420:37;527:989;;;;;;;;;;;;-1:-1:-1;;;527:989:249;;;;;;;;;;;;;;;;;29865:7:61;;527:989:249;;;;-1:-1:-1;;;527:989:249;;;;;;;;;;;;;;;;;29865:7:61;;527:989:249;;;;-1:-1:-1;;;527:989:249;;;;;;;;;;;;-1:-1:-1;;;527:989:249;;;;29865:7:61;;527:989:249;29965:66:61;527:989:249;;;29965:66:61;;;29852:100;29865:7;29936:1;527:989:249;;;;29852:100:61;;;29739;29752:7;527:989:249;;;;;29739:100:61;;;29626;29639:7;29710:1;527:989:249;;;;29626:100:61;;;29510:103;29523:8;29596:2;527:989:249;;;;29510:103:61;;;29394;29407:8;527:989:249;;;;;29394:103:61;;;29278;-1:-1:-1;527:989:249;;-1:-1:-1;;;;527:989:249;;29278:103:61;;527:989:249;;;;;;-1:-1:-1;;527:989:249;;;;;;-1:-1:-1;;;;;527:989:249;;;;;;;;1500:62:23;;:::i;:::-;2627:22;;2623:91;;527:989:249;;;-1:-1:-1;;;;;;527:989:249;;;;;;-1:-1:-1;;;;;527:989:249;;3052:40:23;;527:989:249;3052:40:23;527:989:249;2623:91:23;2672:31;;;527:989:249;2672:31:23;527:989:249;;;;;2672:31:23;527:989:249;;;;;;-1:-1:-1;;527:989:249;;;;4747:26:21;527:989:249;;;;:::i;:::-;4717:18:21;2475:4;4717:18;;-1:-1:-1;527:989:249;3901:6:21;527:989:249;;3901:6:21;527:989:249;-1:-1:-1;527:989:249;3901:22:21;527:989:249;3810:120:21;;4717:18;2475:4;:::i;:::-;4747:26;:::i;:::-;527:989:249;;;;;;;-1:-1:-1;;527:989:249;;;;;;;;;;;;;;;;;-1:-1:-1;;527:989:249;;;;;;:::i;:::-;;;;;;;;;;;2954:29:21;527:989:249;;;;;;-1:-1:-1;527:989:249;;;;;;-1:-1:-1;527:989:249;;;;;;;;;;;;;;;;;-1:-1:-1;;527:989:249;;;;;;;;-1:-1:-1;;;;;527:989:249;;;;;;;;;;;;;;-1:-1:-1;;527:989:249;;;;1500:62:23;;:::i;:::-;527:989:249;;;-1:-1:-1;;;;;;527:989:249;;;;-1:-1:-1;;;;;527:989:249;3052:40:23;527:989:249;;3052:40:23;527:989:249;;;;;;;-1:-1:-1;;527:989:249;;;;;;:::i;:::-;735:10:50;-1:-1:-1;;;;;527:989:249;;5421:34:21;5417:102;;5529:37;527:989:249;;;5529:37:21;:::i;5417:102::-;5478:30;;;527:989:249;5478:30:21;527:989:249;;5478:30:21;527:989:249;;;;;;-1:-1:-1;;527:989:249;;;;4330:25:21;527:989:249;;;;:::i;:::-;4300:18:21;2475:4;4300:18;;-1:-1:-1;527:989:249;3901:6:21;527:989:249;;3901:6:21;527:989:249;-1:-1:-1;527:989:249;3901:22:21;527:989:249;3810:120:21;;2475:4;4330:25;:::i;527:989:249:-;;;;;;-1:-1:-1;;527:989:249;;;;;;;;-1:-1:-1;527:989:249;3901:6:21;527:989:249;;3901:6:21;527:989:249;-1:-1:-1;527:989:249;3901:22:21;527:989:249;3810:120:21;;527:989:249;;;;;;;;;;;;;-1:-1:-1;;527:989:249;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;2673:47:21;;;:87;;;;527:989:249;;;;;;;2673:87:21;-1:-1:-1;;;862:40:59;;-1:-1:-1;2673:87:21;;;527:989:249;;;;-1:-1:-1;;;;;527:989:249;;;;;;:::o;:::-;;;;;;;;;;;;;;;:::o;:::-;;;;-1:-1:-1;527:989:249;;;;;-1:-1:-1;527:989:249;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;-1:-1:-1;;527:989:249;;;;:::o;:::-;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;:::i;:::-;;;;;;;;;;;;;-1:-1:-1;527:989:249;;;;;;;;;;;;;;:::o;3199:103:21:-;-1:-1:-1;527:989:249;;;2954:6:21;527:989:249;;;;;;;;735:10:50;527:989:249;;;;;;;;;;3519:23:21;3515:108;;3199:103;:::o;3515:108::-;3565:47;;;-1:-1:-1;3565:47:21;735:10:50;3565:47:21;527:989:249;;;;-1:-1:-1;3565:47:21;6179:316;527:989:249;;;;2954:6:21;527:989:249;;;;;;;;-1:-1:-1;;;;;527:989:249;;;;;;;;;;;;;;;;;;2954:6:21;527:989:249;;;;;;;;-1:-1:-1;;;;;527:989:249;;;;;;;;;;;;;;;-1:-1:-1;;527:989:249;;;;;;735:10:50;;527:989:249;;6370:40:21;;527:989:249;6370:40:21;2954:6;6424:11;:::o;6272:217::-;6466:12;;527:989:249;6466:12:21;:::o;6732:317::-;527:989:249;;;;2954:6:21;527:989:249;;;;;;;;-1:-1:-1;;;;;527:989:249;;;;;;;;;;;;;;;;;;;2954:6:21;527:989:249;;;;;;;;-1:-1:-1;;;;;527:989:249;;;;;;;;;;;;;;;-1:-1:-1;;527:989:249;;;735:10:50;;527:989:249;;6924:40:21;;527:989:249;6924:40:21;2954:6;6978:11;:::o;1796:162:23:-;1710:6;527:989:249;-1:-1:-1;;;;;527:989:249;735:10:50;1855:23:23;1851:101;;1796:162::o;1851:101::-;1901:40;;;1710:6;1901:40;735:10:50;1901:40:23;527:989:249;;1710:6:23;1901:40;1041:429:58;;;1167:18;;;;1254:33;;;;:::i;:::-;527:989:249;;;;;;;1308:33:58;:56;;;;1301:63;;;:::o;1308:56::-;-1:-1:-1;;;;;527:989:249;;;;;1345:19:58;;1301:63;-1:-1:-1;1301:63:58:o;527:989:249:-;;;;;;;;;;;;1163:301:58;527:989:249;;;2105:60:58;;527:989:249;;;;;2105:60:58;;;;;;;;;;;;;;;527:989:249;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2105:60:58;;527:989:249;;2105:60:58;;;;;;:::i;:::-;2074:101;;;;527:989:249;;;;;;;;:::i;:::-;;;;;;;;:::i;:::-;;;;;2105:60:58;527:989:249;;;;2193:42:58;;;527:989:249;2193:134:58;;;1395:58;;:::o;2193:134::-;527:989:249;;2105:60:58;527:989:249;;;2251:29:58;;527:989:249;;;;2105:60:58;2251:29;527:989:249;-1:-1:-1;;;2251:76:58;;1395:58::o;2193:42::-;527:989:249;;2105:60:58;527:989:249;;2216:19:58;;2193:42;;;527:989:249;;;;2129:778:56;527:989:249;;;2129:778:56;2319:2;2299:22;;2319:2;;2751:25;2535:196;;;;;;;;;;;;;;;-1:-1:-1;2535:196:56;2751:25;;:::i;:::-;2744:32;;;;;:::o;2295:606::-;2807:83;;2823:1;2807:83;2827:35;2807:83;;:::o;5203:1551::-;;;6283:66;6270:79;;6266:164;;527:989:249;;;;;;-1:-1:-1;527:989:249;;;;;;;;;;;;;;;;;;;6541:24:56;;;;;;;;;-1:-1:-1;6541:24:56;-1:-1:-1;;;;;527:989:249;;6579:20:56;6575:113;;6698:49;-1:-1:-1;6698:49:56;-1:-1:-1;5203:1551:56;:::o;6575:113::-;6615:62;-1:-1:-1;6615:62:56;6541:24;6615:62;-1:-1:-1;6615:62:56;:::o;6541:24::-;527:989:249;;;-1:-1:-1;527:989:249;;;;;6266:164:56;6365:54;;;6381:1;6365:54;6385:30;6365:54;;:::o\",\"linkReferences\":{}},\"methodIdentifiers\":{\"ACCOUNT_HOLDER_ROLE()\":\"fce86f4e\",\"DEFAULT_ADMIN_ROLE()\":\"a217fddf\",\"getRoleAdmin(bytes32)\":\"248a9ca3\",\"grantRole(bytes32,address)\":\"2f2ff15d\",\"hasRole(bytes32,address)\":\"91d14854\",\"owner()\":\"8da5cb5b\",\"renounceOwnership()\":\"715018a6\",\"renounceRole(bytes32,address)\":\"36568abe\",\"revokeRole(bytes32,address)\":\"d547741f\",\"supportsInterface(bytes4)\":\"01ffc9a7\",\"transferOwnership(address)\":\"f2fde38b\",\"verifyResolution(uint256,bool,bytes)\":\"fb6cc44b\"},\"rawMetadata\":\"{\\\"compiler\\\":{\\\"version\\\":\\\"0.8.26+commit.8a97fa7a\\\"},\\\"language\\\":\\\"Solidity\\\",\\\"output\\\":{\\\"abi\\\":[{\\\"inputs\\\":[{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"systemAdmin\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"accountHolder\\\",\\\"type\\\":\\\"address\\\"}],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"constructor\\\"},{\\\"inputs\\\":[],\\\"name\\\":\\\"AccessControlBadConfirmation\\\",\\\"type\\\":\\\"error\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"account\\\",\\\"type\\\":\\\"address\\\"},{\\\"internalType\\\":\\\"bytes32\\\",\\\"name\\\":\\\"neededRole\\\",\\\"type\\\":\\\"bytes32\\\"}],\\\"name\\\":\\\"AccessControlUnauthorizedAccount\\\",\\\"type\\\":\\\"error\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"owner\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"OwnableInvalidOwner\\\",\\\"type\\\":\\\"error\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"account\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"OwnableUnauthorizedAccount\\\",\\\"type\\\":\\\"error\\\"},{\\\"anonymous\\\":false,\\\"inputs\\\":[{\\\"indexed\\\":true,\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"previousOwner\\\",\\\"type\\\":\\\"address\\\"},{\\\"indexed\\\":true,\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"newOwner\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"OwnershipTransferred\\\",\\\"type\\\":\\\"event\\\"},{\\\"anonymous\\\":false,\\\"inputs\\\":[{\\\"indexed\\\":true,\\\"internalType\\\":\\\"bytes32\\\",\\\"name\\\":\\\"role\\\",\\\"type\\\":\\\"bytes32\\\"},{\\\"indexed\\\":true,\\\"internalType\\\":\\\"bytes32\\\",\\\"name\\\":\\\"previousAdminRole\\\",\\\"type\\\":\\\"bytes32\\\"},{\\\"indexed\\\":true,\\\"internalType\\\":\\\"bytes32\\\",\\\"name\\\":\\\"newAdminRole\\\",\\\"type\\\":\\\"bytes32\\\"}],\\\"name\\\":\\\"RoleAdminChanged\\\",\\\"type\\\":\\\"event\\\"},{\\\"anonymous\\\":false,\\\"inputs\\\":[{\\\"indexed\\\":true,\\\"internalType\\\":\\\"bytes32\\\",\\\"name\\\":\\\"role\\\",\\\"type\\\":\\\"bytes32\\\"},{\\\"indexed\\\":true,\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"account\\\",\\\"type\\\":\\\"address\\\"},{\\\"indexed\\\":true,\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"sender\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"RoleGranted\\\",\\\"type\\\":\\\"event\\\"},{\\\"anonymous\\\":false,\\\"inputs\\\":[{\\\"indexed\\\":true,\\\"internalType\\\":\\\"bytes32\\\",\\\"name\\\":\\\"role\\\",\\\"type\\\":\\\"bytes32\\\"},{\\\"indexed\\\":true,\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"account\\\",\\\"type\\\":\\\"address\\\"},{\\\"indexed\\\":true,\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"sender\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"RoleRevoked\\\",\\\"type\\\":\\\"event\\\"},{\\\"inputs\\\":[],\\\"name\\\":\\\"ACCOUNT_HOLDER_ROLE\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"bytes32\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"bytes32\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[],\\\"name\\\":\\\"DEFAULT_ADMIN_ROLE\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"bytes32\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"bytes32\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"bytes32\\\",\\\"name\\\":\\\"role\\\",\\\"type\\\":\\\"bytes32\\\"}],\\\"name\\\":\\\"getRoleAdmin\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"bytes32\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"bytes32\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"bytes32\\\",\\\"name\\\":\\\"role\\\",\\\"type\\\":\\\"bytes32\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"account\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"grantRole\\\",\\\"outputs\\\":[],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"bytes32\\\",\\\"name\\\":\\\"role\\\",\\\"type\\\":\\\"bytes32\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"account\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"hasRole\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"bool\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"bool\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[],\\\"name\\\":\\\"owner\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"address\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[],\\\"name\\\":\\\"renounceOwnership\\\",\\\"outputs\\\":[],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"bytes32\\\",\\\"name\\\":\\\"role\\\",\\\"type\\\":\\\"bytes32\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"callerConfirmation\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"renounceRole\\\",\\\"outputs\\\":[],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"bytes32\\\",\\\"name\\\":\\\"role\\\",\\\"type\\\":\\\"bytes32\\\"},{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"account\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"revokeRole\\\",\\\"outputs\\\":[],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"bytes4\\\",\\\"name\\\":\\\"interfaceId\\\",\\\"type\\\":\\\"bytes4\\\"}],\\\"name\\\":\\\"supportsInterface\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"bool\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"bool\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"address\\\",\\\"name\\\":\\\"newOwner\\\",\\\"type\\\":\\\"address\\\"}],\\\"name\\\":\\\"transferOwnership\\\",\\\"outputs\\\":[],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"function\\\"},{\\\"inputs\\\":[{\\\"internalType\\\":\\\"uint256\\\",\\\"name\\\":\\\"proposalId\\\",\\\"type\\\":\\\"uint256\\\"},{\\\"internalType\\\":\\\"bool\\\",\\\"name\\\":\\\"yesOrNo\\\",\\\"type\\\":\\\"bool\\\"},{\\\"internalType\\\":\\\"bytes\\\",\\\"name\\\":\\\"proof\\\",\\\"type\\\":\\\"bytes\\\"}],\\\"name\\\":\\\"verifyResolution\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"bool\\\",\\\"name\\\":\\\"passed\\\",\\\"type\\\":\\\"bool\\\"}],\\\"stateMutability\\\":\\\"view\\\",\\\"type\\\":\\\"function\\\"}],\\\"devdoc\\\":{\\\"errors\\\":{\\\"AccessControlBadConfirmation()\\\":[{\\\"details\\\":\\\"The caller of a function is not the expected one. NOTE: Don't confuse with {AccessControlUnauthorizedAccount}.\\\"}],\\\"AccessControlUnauthorizedAccount(address,bytes32)\\\":[{\\\"details\\\":\\\"The `account` is missing a role.\\\"}],\\\"OwnableInvalidOwner(address)\\\":[{\\\"details\\\":\\\"The owner is not a valid owner account. (eg. `address(0)`)\\\"}],\\\"OwnableUnauthorizedAccount(address)\\\":[{\\\"details\\\":\\\"The caller account is not authorized to perform an operation.\\\"}]},\\\"events\\\":{\\\"RoleAdminChanged(bytes32,bytes32,bytes32)\\\":{\\\"details\\\":\\\"Emitted when `newAdminRole` is set as ``role``'s admin role, replacing `previousAdminRole` `DEFAULT_ADMIN_ROLE` is the starting admin for all roles, despite {RoleAdminChanged} not being emitted to signal this.\\\"},\\\"RoleGranted(bytes32,address,address)\\\":{\\\"details\\\":\\\"Emitted when `account` is granted `role`. `sender` is the account that originated the contract call. This account bears the admin role (for the granted role). Expected in cases where the role was granted using the internal {AccessControl-_grantRole}.\\\"},\\\"RoleRevoked(bytes32,address,address)\\\":{\\\"details\\\":\\\"Emitted when `account` is revoked `role`. `sender` is the account that originated the contract call:   - if using `revokeRole`, it is the admin role bearer   - if using `renounceRole`, it is the role bearer (i.e. `account`)\\\"}},\\\"kind\\\":\\\"dev\\\",\\\"methods\\\":{\\\"getRoleAdmin(bytes32)\\\":{\\\"details\\\":\\\"Returns the admin role that controls `role`. See {grantRole} and {revokeRole}. To change a role's admin, use {_setRoleAdmin}.\\\"},\\\"grantRole(bytes32,address)\\\":{\\\"details\\\":\\\"Grants `role` to `account`. If `account` had not been already granted `role`, emits a {RoleGranted} event. Requirements: - the caller must have ``role``'s admin role. May emit a {RoleGranted} event.\\\"},\\\"hasRole(bytes32,address)\\\":{\\\"details\\\":\\\"Returns `true` if `account` has been granted `role`.\\\"},\\\"owner()\\\":{\\\"details\\\":\\\"Returns the address of the current owner.\\\"},\\\"renounceOwnership()\\\":{\\\"details\\\":\\\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby disabling any functionality that is only available to the owner.\\\"},\\\"renounceRole(bytes32,address)\\\":{\\\"details\\\":\\\"Revokes `role` from the calling account. Roles are often managed via {grantRole} and {revokeRole}: this function's purpose is to provide a mechanism for accounts to lose their privileges if they are compromised (such as when a trusted device is misplaced). If the calling account had been revoked `role`, emits a {RoleRevoked} event. Requirements: - the caller must be `callerConfirmation`. May emit a {RoleRevoked} event.\\\"},\\\"revokeRole(bytes32,address)\\\":{\\\"details\\\":\\\"Revokes `role` from `account`. If `account` had been granted `role`, emits a {RoleRevoked} event. Requirements: - the caller must have ``role``'s admin role. May emit a {RoleRevoked} event.\\\"},\\\"supportsInterface(bytes4)\\\":{\\\"details\\\":\\\"See {IERC165-supportsInterface}.\\\"},\\\"transferOwnership(address)\\\":{\\\"details\\\":\\\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\\\"}},\\\"version\\\":1},\\\"userdoc\\\":{\\\"kind\\\":\\\"user\\\",\\\"methods\\\":{},\\\"version\\\":1}},\\\"settings\\\":{\\\"compilationTarget\\\":{\\\"src/BasicMarketResolver.sol\\\":\\\"BasicMarketResolver\\\"},\\\"evmVersion\\\":\\\"cancun\\\",\\\"libraries\\\":{},\\\"metadata\\\":{\\\"bytecodeHash\\\":\\\"ipfs\\\"},\\\"optimizer\\\":{\\\"enabled\\\":true,\\\"runs\\\":200},\\\"remappings\\\":[\\\":@ensdomains/=lib/v4-core/node_modules/@ensdomains/\\\",\\\":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/\\\",\\\":@uniswap/permit2/=lib/permit2/\\\",\\\":@uniswap/universal-router/=lib/universal-router/\\\",\\\":@uniswap/v2-core/=lib/v2-core/\\\",\\\":@uniswap/v3-core/=lib/v3-core/\\\",\\\":@uniswap/v3-periphery/=lib/v3-periphery/\\\",\\\":@uniswap/v4-core/=lib/v4-core/\\\",\\\":@uniswap/v4-periphery/=lib/v4-periphery/\\\",\\\":ds-test/=lib/universal-router/lib/forge-std/lib/ds-test/src/\\\",\\\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\\\",\\\":forge-gas-snapshot/=lib/permit2/lib/forge-gas-snapshot/src/\\\",\\\":forge-std/=lib/forge-std/src/\\\",\\\":halmos-cheatcodes/=lib/openzeppelin-contracts/lib/halmos-cheatcodes/src/\\\",\\\":hardhat/=lib/v4-core/node_modules/hardhat/\\\",\\\":openzeppelin-contracts/=lib/openzeppelin-contracts/\\\",\\\":permit2/=lib/permit2/\\\",\\\":solmate/=lib/universal-router/lib/solmate/\\\",\\\":universal-router/=lib/universal-router/\\\",\\\":v2-core/=lib/v2-core/contracts/\\\",\\\":v3-core/=lib/v3-core/\\\",\\\":v3-periphery/=lib/v3-periphery/contracts/\\\",\\\":v4-core/=lib/v4-core/src/\\\",\\\":v4-periphery/=lib/v4-periphery/\\\"],\\\"viaIR\\\":true},\\\"sources\\\":{\\\"lib/openzeppelin-contracts/contracts/access/AccessControl.sol\\\":{\\\"keccak256\\\":\\\"0xc1bebdee8943bd5e9ef1e0f2e63296aa1dd4171a66b9e74d0286220e891e1458\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://928cf2f0042c606f3dcb21bd8a272573f462a215cd65285d2d6b407f31e9bd67\\\",\\\"dweb:/ipfs/QmWGxjckno6sfjHPX5naPnsfsyisgy4PJDf46eLw9umfpx\\\"]},\\\"lib/openzeppelin-contracts/contracts/access/IAccessControl.sol\\\":{\\\"keccak256\\\":\\\"0x4d9a2b261b56a1e4a37bb038151dec98b952fed16de2bdfdda27e38e2b12b530\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://f724110f7aeb6151af800ab8c12e6060b29bda9e013f0ccb331eb754d6a7cbf0\\\",\\\"dweb:/ipfs/QmUcjzCZpxtUPdEThtAzE1f9LvuJiUGZxTdH9N6bHrb5Cf\\\"]},\\\"lib/openzeppelin-contracts/contracts/access/Ownable.sol\\\":{\\\"keccak256\\\":\\\"0xff6d0bb2e285473e5311d9d3caacb525ae3538a80758c10649a4d61029b017bb\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://8ed324d3920bb545059d66ab97d43e43ee85fd3bd52e03e401f020afb0b120f6\\\",\\\"dweb:/ipfs/QmfEckWLmZkDDcoWrkEvMWhms66xwTLff9DDhegYpvHo1a\\\"]},\\\"lib/openzeppelin-contracts/contracts/interfaces/IERC1271.sol\\\":{\\\"keccak256\\\":\\\"0x3d4cd07258d675b6dfa3d9dfd623a77b38fb9935f4a5381ff4bc969948720976\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://30abb60a4d98ad9a33de4fa5e9072342e12df3a79e9c71b5f59ce049ae8cd535\\\",\\\"dweb:/ipfs/QmT6NXJDjsf8H14nPYQsFELDB8q5ZTmG9cjdX2bEQJW7ST\\\"]},\\\"lib/openzeppelin-contracts/contracts/utils/Context.sol\\\":{\\\"keccak256\\\":\\\"0x493033a8d1b176a037b2cc6a04dad01a5c157722049bbecf632ca876224dd4b2\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://6a708e8a5bdb1011c2c381c9a5cfd8a9a956d7d0a9dc1bd8bcdaf52f76ef2f12\\\",\\\"dweb:/ipfs/Qmax9WHBnVsZP46ZxEMNRQpLQnrdE4dK8LehML1Py8FowF\\\"]},\\\"lib/openzeppelin-contracts/contracts/utils/Panic.sol\\\":{\\\"keccak256\\\":\\\"0xf7fe324703a64fc51702311dc51562d5cb1497734f074e4f483bfb6717572d7a\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://c6a5ff4f9fd8649b7ee20800b7fa387d3465bd77cf20c2d1068cd5c98e1ed57a\\\",\\\"dweb:/ipfs/QmVSaVJf9FXFhdYEYeCEfjMVHrxDh5qL4CGkxdMWpQCrqG\\\"]},\\\"lib/openzeppelin-contracts/contracts/utils/Strings.sol\\\":{\\\"keccak256\\\":\\\"0x81c274a60a7ae232ae3dc9ff3a4011b4849a853c13b0832cd3351bb1bb2f0dae\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://9da0c20dc74358a2a76330818f3bac9d1e2ce3371aec847b9cbf5d147fbae4f6\\\",\\\"dweb:/ipfs/QmeczhmnFv1hbXKGLwbYXY6Rrytc9a5A2YaRi5QMMgjPnb\\\"]},\\\"lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol\\\":{\\\"keccak256\\\":\\\"0x69f54c02b7d81d505910ec198c11ed4c6a728418a868b906b4a0cf29946fda84\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://8e25e4bdb7ae1f21d23bfee996e22736fc0ab44cfabedac82a757b1edc5623b9\\\",\\\"dweb:/ipfs/QmQdWQvB6JCP9ZMbzi8EvQ1PTETqkcTWrbcVurS7DKpa5n\\\"]},\\\"lib/openzeppelin-contracts/contracts/utils/cryptography/MessageHashUtils.sol\\\":{\\\"keccak256\\\":\\\"0x26670fef37d4adf55570ba78815eec5f31cb017e708f61886add4fc4da665631\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://b16d45febff462bafd8a5669f904796a835baf607df58a8461916d3bf4f08c59\\\",\\\"dweb:/ipfs/QmU2eJFpjmT4vxeJWJyLeQb8Xht1kdB8Y6MKLDPFA9WPux\\\"]},\\\"lib/openzeppelin-contracts/contracts/utils/cryptography/SignatureChecker.sol\\\":{\\\"keccak256\\\":\\\"0xbdc3bb48ccedb818cd75a6d74a16df55a822e9f6d3cc54c59f576f10aab67b5f\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://2284f25f2478f419d7781573b17a89d0e7c5589a865d55e2d6ed5163aee23aa8\\\",\\\"dweb:/ipfs/QmNsr2625APBQiNKpYnX5VcSnYgfUHR9Uzzp9pRXjoDqK7\\\"]},\\\"lib/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol\\\":{\\\"keccak256\\\":\\\"0xddce8e17e3d3f9ed818b4f4c4478a8262aab8b11ed322f1bf5ed705bb4bd97fa\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://8084aa71a4cc7d2980972412a88fe4f114869faea3fefa5436431644eb5c0287\\\",\\\"dweb:/ipfs/Qmbqfs5dRdPvHVKY8kTaeyc65NdqXRQwRK7h9s5UJEhD1p\\\"]},\\\"lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol\\\":{\\\"keccak256\\\":\\\"0x79796192ec90263f21b464d5bc90b777a525971d3de8232be80d9c4f9fb353b8\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://f6fda447a62815e8064f47eff0dd1cf58d9207ad69b5d32280f8d7ed1d1e4621\\\",\\\"dweb:/ipfs/QmfDRc7pxfaXB2Dh9np5Uf29Na3pQ7tafRS684wd3GLjVL\\\"]},\\\"lib/openzeppelin-contracts/contracts/utils/math/Math.sol\\\":{\\\"keccak256\\\":\\\"0x1225214420c83ebcca88f2ae2b50f053aaa7df7bd684c3e878d334627f2edfc6\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://6c5fab4970634f9ab9a620983dc1c8a30153981a0b1a521666e269d0a11399d3\\\",\\\"dweb:/ipfs/QmVRnBC575MESGkEHndjujtR7qub2FzU9RWy9eKLp4hPZB\\\"]},\\\"lib/openzeppelin-contracts/contracts/utils/math/SafeCast.sol\\\":{\\\"keccak256\\\":\\\"0x195533c86d0ef72bcc06456a4f66a9b941f38eb403739b00f21fd7c1abd1ae54\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://b1d578337048cad08c1c03041cca5978eff5428aa130c781b271ad9e5566e1f8\\\",\\\"dweb:/ipfs/QmPFKL2r9CBsMwmUqqdcFPfHZB2qcs9g1HDrPxzWSxomvy\\\"]},\\\"lib/openzeppelin-contracts/contracts/utils/math/SignedMath.sol\\\":{\\\"keccak256\\\":\\\"0xb1970fac7b64e6c09611e6691791e848d5e3fe410fa5899e7df2e0afd77a99e3\\\",\\\"license\\\":\\\"MIT\\\",\\\"urls\\\":[\\\"bzz-raw://db5fbb3dddd8b7047465b62575d96231ba8a2774d37fb4737fbf23340fabbb03\\\",\\\"dweb:/ipfs/QmVUSvooZKEdEdap619tcJjTLcAuH6QBdZqAzWwnAXZAWJ\\\"]},\\\"src/BasicMarketResolver.sol\\\":{\\\"keccak256\\\":\\\"0x19bd2b533eb284d7320108cb1c98aeedda371529f70177c27bae5a997d095ab4\\\",\\\"license\\\":\\\"All Rights Reserved\\\",\\\"urls\\\":[\\\"bzz-raw://4111d385b62448082d27d1610ec2d71d2aae4a2914e1d20919bc340de63efd01\\\",\\\"dweb:/ipfs/QmRL29NbEJKN8Asc1Af9SmwRWeuV7gi3s85eg5uivk8VDS\\\"]},\\\"src/interfaces/IMarketResolver.sol\\\":{\\\"keccak256\\\":\\\"0xd00badd60313617578333755e39cb3dcc8dc72e64ffd127f2cb9e13678c9ed41\\\",\\\"license\\\":\\\"All Rights Reserved\\\",\\\"urls\\\":[\\\"bzz-raw://42311e09403e5cc12452e2727dbcc453e0630a18a6731e0bab7b5aca8a22802b\\\",\\\"dweb:/ipfs/QmNj5ywhD86HZBAiwp8oWtZvXy3nBiof3PSkHEq2dACy1B\\\"]}},\\\"version\\\":1}\",\"metadata\":{\"compiler\":{\"version\":\"0.8.26+commit.8a97fa7a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"systemAdmin\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"accountHolder\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"type\":\"error\",\"name\":\"AccessControlBadConfirmation\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"neededRole\",\"type\":\"bytes32\"}],\"type\":\"error\",\"name\":\"AccessControlUnauthorizedAccount\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"type\":\"error\",\"name\":\"OwnableInvalidOwner\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"type\":\"error\",\"name\":\"OwnableUnauthorizedAccount\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\",\"indexed\":true},{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\",\"indexed\":true}],\"type\":\"event\",\"name\":\"OwnershipTransferred\",\"anonymous\":false},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\",\"indexed\":true},{\"internalType\":\"bytes32\",\"name\":\"previousAdminRole\",\"type\":\"bytes32\",\"indexed\":true},{\"internalType\":\"bytes32\",\"name\":\"newAdminRole\",\"type\":\"bytes32\",\"indexed\":true}],\"type\":\"event\",\"name\":\"RoleAdminChanged\",\"anonymous\":false},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\",\"indexed\":true},{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\",\"indexed\":true},{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\",\"indexed\":true}],\"type\":\"event\",\"name\":\"RoleGranted\",\"anonymous\":false},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\",\"indexed\":true},{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\",\"indexed\":true},{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\",\"indexed\":true}],\"type\":\"event\",\"name\":\"RoleRevoked\",\"anonymous\":false},{\"inputs\":[],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"ACCOUNT_HOLDER_ROLE\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}]},{\"inputs\":[],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"DEFAULT_ADMIN_ROLE\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}]},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"getRoleAdmin\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}]},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\",\"name\":\"grantRole\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"hasRole\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}]},{\"inputs\":[],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}]},{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\",\"name\":\"renounceOwnership\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"callerConfirmation\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\",\"name\":\"renounceRole\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\",\"name\":\"revokeRole\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}]},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\",\"name\":\"transferOwnership\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"proposalId\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"yesOrNo\",\"type\":\"bool\"},{\"internalType\":\"bytes\",\"name\":\"proof\",\"type\":\"bytes\"}],\"stateMutability\":\"view\",\"type\":\"function\",\"name\":\"verifyResolution\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"passed\",\"type\":\"bool\"}]}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"getRoleAdmin(bytes32)\":{\"details\":\"Returns the admin role that controls `role`. See {grantRole} and {revokeRole}. To change a role's admin, use {_setRoleAdmin}.\"},\"grantRole(bytes32,address)\":{\"details\":\"Grants `role` to `account`. If `account` had not been already granted `role`, emits a {RoleGranted} event. Requirements: - the caller must have ``role``'s admin role. May emit a {RoleGranted} event.\"},\"hasRole(bytes32,address)\":{\"details\":\"Returns `true` if `account` has been granted `role`.\"},\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby disabling any functionality that is only available to the owner.\"},\"renounceRole(bytes32,address)\":{\"details\":\"Revokes `role` from the calling account. Roles are often managed via {grantRole} and {revokeRole}: this function's purpose is to provide a mechanism for accounts to lose their privileges if they are compromised (such as when a trusted device is misplaced). If the calling account had been revoked `role`, emits a {RoleRevoked} event. Requirements: - the caller must be `callerConfirmation`. May emit a {RoleRevoked} event.\"},\"revokeRole(bytes32,address)\":{\"details\":\"Revokes `role` from `account`. If `account` had been granted `role`, emits a {RoleRevoked} event. Requirements: - the caller must have ``role``'s admin role. May emit a {RoleRevoked} event.\"},\"supportsInterface(bytes4)\":{\"details\":\"See {IERC165-supportsInterface}.\"},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"remappings\":[\"@ensdomains/=lib/v4-core/node_modules/@ensdomains/\",\"@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/\",\"@uniswap/permit2/=lib/permit2/\",\"@uniswap/universal-router/=lib/universal-router/\",\"@uniswap/v2-core/=lib/v2-core/\",\"@uniswap/v3-core/=lib/v3-core/\",\"@uniswap/v3-periphery/=lib/v3-periphery/\",\"@uniswap/v4-core/=lib/v4-core/\",\"@uniswap/v4-periphery/=lib/v4-periphery/\",\"ds-test/=lib/universal-router/lib/forge-std/lib/ds-test/src/\",\"erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\"forge-gas-snapshot/=lib/permit2/lib/forge-gas-snapshot/src/\",\"forge-std/=lib/forge-std/src/\",\"halmos-cheatcodes/=lib/openzeppelin-contracts/lib/halmos-cheatcodes/src/\",\"hardhat/=lib/v4-core/node_modules/hardhat/\",\"openzeppelin-contracts/=lib/openzeppelin-contracts/\",\"permit2/=lib/permit2/\",\"solmate/=lib/universal-router/lib/solmate/\",\"universal-router/=lib/universal-router/\",\"v2-core/=lib/v2-core/contracts/\",\"v3-core/=lib/v3-core/\",\"v3-periphery/=lib/v3-periphery/contracts/\",\"v4-core/=lib/v4-core/src/\",\"v4-periphery/=lib/v4-periphery/\"],\"optimizer\":{\"enabled\":true,\"runs\":200},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"compilationTarget\":{\"src/BasicMarketResolver.sol\":\"BasicMarketResolver\"},\"evmVersion\":\"cancun\",\"libraries\":{},\"viaIR\":true},\"sources\":{\"lib/openzeppelin-contracts/contracts/access/AccessControl.sol\":{\"keccak256\":\"0xc1bebdee8943bd5e9ef1e0f2e63296aa1dd4171a66b9e74d0286220e891e1458\",\"urls\":[\"bzz-raw://928cf2f0042c606f3dcb21bd8a272573f462a215cd65285d2d6b407f31e9bd67\",\"dweb:/ipfs/QmWGxjckno6sfjHPX5naPnsfsyisgy4PJDf46eLw9umfpx\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/access/IAccessControl.sol\":{\"keccak256\":\"0x4d9a2b261b56a1e4a37bb038151dec98b952fed16de2bdfdda27e38e2b12b530\",\"urls\":[\"bzz-raw://f724110f7aeb6151af800ab8c12e6060b29bda9e013f0ccb331eb754d6a7cbf0\",\"dweb:/ipfs/QmUcjzCZpxtUPdEThtAzE1f9LvuJiUGZxTdH9N6bHrb5Cf\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/access/Ownable.sol\":{\"keccak256\":\"0xff6d0bb2e285473e5311d9d3caacb525ae3538a80758c10649a4d61029b017bb\",\"urls\":[\"bzz-raw://8ed324d3920bb545059d66ab97d43e43ee85fd3bd52e03e401f020afb0b120f6\",\"dweb:/ipfs/QmfEckWLmZkDDcoWrkEvMWhms66xwTLff9DDhegYpvHo1a\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/interfaces/IERC1271.sol\":{\"keccak256\":\"0x3d4cd07258d675b6dfa3d9dfd623a77b38fb9935f4a5381ff4bc969948720976\",\"urls\":[\"bzz-raw://30abb60a4d98ad9a33de4fa5e9072342e12df3a79e9c71b5f59ce049ae8cd535\",\"dweb:/ipfs/QmT6NXJDjsf8H14nPYQsFELDB8q5ZTmG9cjdX2bEQJW7ST\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/utils/Context.sol\":{\"keccak256\":\"0x493033a8d1b176a037b2cc6a04dad01a5c157722049bbecf632ca876224dd4b2\",\"urls\":[\"bzz-raw://6a708e8a5bdb1011c2c381c9a5cfd8a9a956d7d0a9dc1bd8bcdaf52f76ef2f12\",\"dweb:/ipfs/Qmax9WHBnVsZP46ZxEMNRQpLQnrdE4dK8LehML1Py8FowF\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/utils/Panic.sol\":{\"keccak256\":\"0xf7fe324703a64fc51702311dc51562d5cb1497734f074e4f483bfb6717572d7a\",\"urls\":[\"bzz-raw://c6a5ff4f9fd8649b7ee20800b7fa387d3465bd77cf20c2d1068cd5c98e1ed57a\",\"dweb:/ipfs/QmVSaVJf9FXFhdYEYeCEfjMVHrxDh5qL4CGkxdMWpQCrqG\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/utils/Strings.sol\":{\"keccak256\":\"0x81c274a60a7ae232ae3dc9ff3a4011b4849a853c13b0832cd3351bb1bb2f0dae\",\"urls\":[\"bzz-raw://9da0c20dc74358a2a76330818f3bac9d1e2ce3371aec847b9cbf5d147fbae4f6\",\"dweb:/ipfs/QmeczhmnFv1hbXKGLwbYXY6Rrytc9a5A2YaRi5QMMgjPnb\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol\":{\"keccak256\":\"0x69f54c02b7d81d505910ec198c11ed4c6a728418a868b906b4a0cf29946fda84\",\"urls\":[\"bzz-raw://8e25e4bdb7ae1f21d23bfee996e22736fc0ab44cfabedac82a757b1edc5623b9\",\"dweb:/ipfs/QmQdWQvB6JCP9ZMbzi8EvQ1PTETqkcTWrbcVurS7DKpa5n\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/utils/cryptography/MessageHashUtils.sol\":{\"keccak256\":\"0x26670fef37d4adf55570ba78815eec5f31cb017e708f61886add4fc4da665631\",\"urls\":[\"bzz-raw://b16d45febff462bafd8a5669f904796a835baf607df58a8461916d3bf4f08c59\",\"dweb:/ipfs/QmU2eJFpjmT4vxeJWJyLeQb8Xht1kdB8Y6MKLDPFA9WPux\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/utils/cryptography/SignatureChecker.sol\":{\"keccak256\":\"0xbdc3bb48ccedb818cd75a6d74a16df55a822e9f6d3cc54c59f576f10aab67b5f\",\"urls\":[\"bzz-raw://2284f25f2478f419d7781573b17a89d0e7c5589a865d55e2d6ed5163aee23aa8\",\"dweb:/ipfs/QmNsr2625APBQiNKpYnX5VcSnYgfUHR9Uzzp9pRXjoDqK7\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol\":{\"keccak256\":\"0xddce8e17e3d3f9ed818b4f4c4478a8262aab8b11ed322f1bf5ed705bb4bd97fa\",\"urls\":[\"bzz-raw://8084aa71a4cc7d2980972412a88fe4f114869faea3fefa5436431644eb5c0287\",\"dweb:/ipfs/Qmbqfs5dRdPvHVKY8kTaeyc65NdqXRQwRK7h9s5UJEhD1p\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0x79796192ec90263f21b464d5bc90b777a525971d3de8232be80d9c4f9fb353b8\",\"urls\":[\"bzz-raw://f6fda447a62815e8064f47eff0dd1cf58d9207ad69b5d32280f8d7ed1d1e4621\",\"dweb:/ipfs/QmfDRc7pxfaXB2Dh9np5Uf29Na3pQ7tafRS684wd3GLjVL\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/utils/math/Math.sol\":{\"keccak256\":\"0x1225214420c83ebcca88f2ae2b50f053aaa7df7bd684c3e878d334627f2edfc6\",\"urls\":[\"bzz-raw://6c5fab4970634f9ab9a620983dc1c8a30153981a0b1a521666e269d0a11399d3\",\"dweb:/ipfs/QmVRnBC575MESGkEHndjujtR7qub2FzU9RWy9eKLp4hPZB\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/utils/math/SafeCast.sol\":{\"keccak256\":\"0x195533c86d0ef72bcc06456a4f66a9b941f38eb403739b00f21fd7c1abd1ae54\",\"urls\":[\"bzz-raw://b1d578337048cad08c1c03041cca5978eff5428aa130c781b271ad9e5566e1f8\",\"dweb:/ipfs/QmPFKL2r9CBsMwmUqqdcFPfHZB2qcs9g1HDrPxzWSxomvy\"],\"license\":\"MIT\"},\"lib/openzeppelin-contracts/contracts/utils/math/SignedMath.sol\":{\"keccak256\":\"0xb1970fac7b64e6c09611e6691791e848d5e3fe410fa5899e7df2e0afd77a99e3\",\"urls\":[\"bzz-raw://db5fbb3dddd8b7047465b62575d96231ba8a2774d37fb4737fbf23340fabbb03\",\"dweb:/ipfs/QmVUSvooZKEdEdap619tcJjTLcAuH6QBdZqAzWwnAXZAWJ\"],\"license\":\"MIT\"},\"src/BasicMarketResolver.sol\":{\"keccak256\":\"0x19bd2b533eb284d7320108cb1c98aeedda371529f70177c27bae5a997d095ab4\",\"urls\":[\"bzz-raw://4111d385b62448082d27d1610ec2d71d2aae4a2914e1d20919bc340de63efd01\",\"dweb:/ipfs/QmRL29NbEJKN8Asc1Af9SmwRWeuV7gi3s85eg5uivk8VDS\"],\"license\":\"All Rights Reserved\"},\"src/interfaces/IMarketResolver.sol\":{\"keccak256\":\"0xd00badd60313617578333755e39cb3dcc8dc72e64ffd127f2cb9e13678c9ed41\",\"urls\":[\"bzz-raw://42311e09403e5cc12452e2727dbcc453e0630a18a6731e0bab7b5aca8a22802b\",\"dweb:/ipfs/QmNj5ywhD86HZBAiwp8oWtZvXy3nBiof3PSkHEq2dACy1B\"],\"license\":\"All Rights Reserved\"}},\"version\":1},\"id\":249}"));}),
+"[project]/src/lib/contracts.ts [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "createContractClient",
+    ()=>createContractClient,
+    "getWalletClient",
+    ()=>getWalletClient,
+    "publicClient",
+    ()=>publicClient
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$viem$2f$_esm$2f$clients$2f$createPublicClient$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/viem/_esm/clients/createPublicClient.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$viem$2f$_esm$2f$clients$2f$createWalletClient$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/viem/_esm/clients/createWalletClient.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$viem$2f$_esm$2f$clients$2f$transports$2f$http$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/viem/_esm/clients/transports/http.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$viem$2f$_esm$2f$clients$2f$transports$2f$custom$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/viem/_esm/clients/transports/custom.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$abis$2f$Market$2e$json__$28$json$29$__ = __turbopack_context__.i("[project]/src/abis/Market.json (json)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$abis$2f$FlareHybridResolver$2e$json__$28$json$29$__ = __turbopack_context__.i("[project]/src/abis/FlareHybridResolver.json (json)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$abis$2f$BasicMarketResolver$2e$json__$28$json$29$__ = __turbopack_context__.i("[project]/src/abis/BasicMarketResolver.json (json)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/config/contracts.ts [app-ssr] (ecmascript)");
+;
+;
+;
+;
+;
+// Extract ABI from JSON files (they have {abi: [...]} structure)
+const marketABI = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$abis$2f$Market$2e$json__$28$json$29$__["default"].abi || __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$abis$2f$Market$2e$json__$28$json$29$__["default"];
+const flareResolverABI = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$abis$2f$FlareHybridResolver$2e$json__$28$json$29$__["default"].abi || __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$abis$2f$FlareHybridResolver$2e$json__$28$json$29$__["default"];
+const basicResolverABI = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$abis$2f$BasicMarketResolver$2e$json__$28$json$29$__["default"].abi || __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$abis$2f$BasicMarketResolver$2e$json__$28$json$29$__["default"];
+// ERC20 ABI for token interactions
+const ERC20_ABI = [
+    {
+        constant: true,
+        inputs: [
+            {
+                name: "_owner",
+                type: "address"
+            }
+        ],
+        name: "balanceOf",
+        outputs: [
+            {
+                name: "balance",
+                type: "uint256"
+            }
+        ],
+        type: "function"
+    },
+    {
+        constant: false,
+        inputs: [
+            {
+                name: "_spender",
+                type: "address"
+            },
+            {
+                name: "_value",
+                type: "uint256"
+            }
+        ],
+        name: "approve",
+        outputs: [
+            {
+                name: "",
+                type: "bool"
+            }
+        ],
+        type: "function"
+    },
+    {
+        constant: true,
+        inputs: [
+            {
+                name: "_owner",
+                type: "address"
+            },
+            {
+                name: "_spender",
+                type: "address"
+            }
+        ],
+        name: "allowance",
+        outputs: [
+            {
+                name: "",
+                type: "uint256"
+            }
+        ],
+        type: "function"
+    },
+    {
+        constant: true,
+        inputs: [],
+        name: "decimals",
+        outputs: [
+            {
+                name: "",
+                type: "uint8"
+            }
+        ],
+        type: "function"
+    }
+];
+const publicClient = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$viem$2f$_esm$2f$clients$2f$createPublicClient$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createPublicClient"])({
+    chain: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CHAIN_CONFIG"],
+    transport: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$viem$2f$_esm$2f$clients$2f$transports$2f$http$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["http"])()
+});
+function createContractClient(walletClient) {
+    return {
+        // Market Contract
+        market: {
+            // Read functions
+            read: {
+                markets: (marketId)=>publicClient.readContract({
+                        address: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CONTRACTS"].MARKET,
+                        abi: marketABI,
+                        functionName: "markets",
+                        args: [
+                            marketId
+                        ]
+                    }),
+                proposals: (proposalId)=>publicClient.readContract({
+                        address: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CONTRACTS"].MARKET,
+                        abi: marketABI,
+                        functionName: "proposals",
+                        args: [
+                            proposalId
+                        ]
+                    }),
+                deposits: (marketId, user)=>publicClient.readContract({
+                        address: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CONTRACTS"].MARKET,
+                        abi: marketABI,
+                        functionName: "deposits",
+                        args: [
+                            marketId,
+                            user
+                        ]
+                    }),
+                marketMax: (marketId)=>publicClient.readContract({
+                        address: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CONTRACTS"].MARKET,
+                        abi: marketABI,
+                        functionName: "marketMax",
+                        args: [
+                            marketId
+                        ]
+                    }),
+                marketProposals: (marketId)=>publicClient.readContract({
+                        address: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CONTRACTS"].MARKET,
+                        abi: marketABI,
+                        functionName: "marketProposals",
+                        args: [
+                            marketId
+                        ]
+                    }),
+                getProposalInfo: (proposalId)=>publicClient.readContract({
+                        address: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CONTRACTS"].MARKET,
+                        abi: marketABI,
+                        functionName: "getProposalInfo",
+                        args: [
+                            proposalId
+                        ]
+                    }),
+                getProposalInfoWithBalances: (proposalId, user)=>publicClient.readContract({
+                        address: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CONTRACTS"].MARKET,
+                        abi: marketABI,
+                        functionName: "getProposalInfoWithBalances",
+                        args: [
+                            proposalId,
+                            user
+                        ]
+                    })
+            },
+            // Write functions (require wallet)
+            write: walletClient ? {
+                createMarket: async (creator, resolver, minDeposit, deadline, title)=>{
+                    const { request } = await publicClient.simulateContract({
+                        account: walletClient.account,
+                        address: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CONTRACTS"].MARKET,
+                        abi: marketABI,
+                        functionName: "createMarket",
+                        args: [
+                            creator,
+                            resolver,
+                            minDeposit,
+                            deadline,
+                            title
+                        ]
+                    });
+                    return walletClient.writeContract(request);
+                },
+                depositToMarket: async (depositor, marketId, amount)=>{
+                    const { request } = await publicClient.simulateContract({
+                        account: walletClient.account,
+                        address: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CONTRACTS"].MARKET,
+                        abi: marketABI,
+                        functionName: "depositToMarket",
+                        args: [
+                            depositor,
+                            marketId,
+                            amount
+                        ]
+                    });
+                    return walletClient.writeContract(request);
+                },
+                createProposal: async (marketId, title)=>{
+                    const { request } = await publicClient.simulateContract({
+                        account: walletClient.account,
+                        address: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CONTRACTS"].MARKET,
+                        abi: marketABI,
+                        functionName: "createProposal",
+                        args: [
+                            marketId,
+                            title
+                        ]
+                    });
+                    return walletClient.writeContract(request);
+                },
+                claimVirtualTokenForProposal: async (depositor, proposalId)=>{
+                    const { request } = await publicClient.simulateContract({
+                        account: walletClient.account,
+                        address: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CONTRACTS"].MARKET,
+                        abi: marketABI,
+                        functionName: "claimVirtualTokenForProposal",
+                        args: [
+                            depositor,
+                            proposalId
+                        ]
+                    });
+                    return walletClient.writeContract(request);
+                },
+                mintYesNo: async (proposalId, amount)=>{
+                    const { request } = await publicClient.simulateContract({
+                        account: walletClient.account,
+                        address: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CONTRACTS"].MARKET,
+                        abi: marketABI,
+                        functionName: "mintYesNo",
+                        args: [
+                            proposalId,
+                            amount
+                        ]
+                    });
+                    return walletClient.writeContract(request);
+                },
+                redeemYesNo: async (proposalId, amount)=>{
+                    const { request } = await publicClient.simulateContract({
+                        account: walletClient.account,
+                        address: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CONTRACTS"].MARKET,
+                        abi: marketABI,
+                        functionName: "redeemYesNo",
+                        args: [
+                            proposalId,
+                            amount
+                        ]
+                    });
+                    return walletClient.writeContract(request);
+                },
+                graduateMarket: async (marketId)=>{
+                    const { request } = await publicClient.simulateContract({
+                        account: walletClient.account,
+                        address: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CONTRACTS"].MARKET,
+                        abi: marketABI,
+                        functionName: "graduateMarket",
+                        args: [
+                            marketId
+                        ]
+                    });
+                    return walletClient.writeContract(request);
+                },
+                resolveMarket: async (marketId, yesOrNo, proof)=>{
+                    const { request } = await publicClient.simulateContract({
+                        account: walletClient.account,
+                        address: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CONTRACTS"].MARKET,
+                        abi: marketABI,
+                        functionName: "resolveMarket",
+                        args: [
+                            marketId,
+                            yesOrNo,
+                            proof
+                        ]
+                    });
+                    return walletClient.writeContract(request);
+                },
+                redeemRewards: async (marketId, user)=>{
+                    const { request } = await publicClient.simulateContract({
+                        account: walletClient.account,
+                        address: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CONTRACTS"].MARKET,
+                        abi: marketABI,
+                        functionName: "redeemRewards",
+                        args: [
+                            marketId,
+                            user
+                        ]
+                    });
+                    return walletClient.writeContract(request);
+                }
+            } : null
+        },
+        // Flare Hybrid Resolver
+        flareResolver: {
+            read: {
+                resolutionConfigs: (proposalId)=>publicClient.readContract({
+                        address: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CONTRACTS"].FLARE_HYBRID_RESOLVER,
+                        abi: flareResolverABI,
+                        functionName: "resolutionConfigs",
+                        args: [
+                            proposalId
+                        ]
+                    }),
+                verifyResolution: (proposalId, yesOrNo, proof)=>publicClient.readContract({
+                        address: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CONTRACTS"].FLARE_HYBRID_RESOLVER,
+                        abi: flareResolverABI,
+                        functionName: "verifyResolution",
+                        args: [
+                            proposalId,
+                            yesOrNo,
+                            proof
+                        ]
+                    })
+            },
+            write: walletClient ? {
+                setResolutionConfig: async (proposalId, config)=>{
+                    const { request } = await publicClient.simulateContract({
+                        account: walletClient.account,
+                        address: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CONTRACTS"].FLARE_HYBRID_RESOLVER,
+                        abi: flareResolverABI,
+                        functionName: "setResolutionConfig",
+                        args: [
+                            proposalId,
+                            config
+                        ]
+                    });
+                    return walletClient.writeContract(request);
+                }
+            } : null
+        }
+    };
+}
+function getWalletClient(provider) {
+    if (!provider) return undefined;
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$viem$2f$_esm$2f$clients$2f$createWalletClient$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createWalletClient"])({
+        chain: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CHAIN_CONFIG"],
+        transport: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$viem$2f$_esm$2f$clients$2f$transports$2f$custom$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["custom"])(provider),
+        account: provider.selectedAddress
+    });
+}
+}),
+"[project]/src/hooks/useToken.ts [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "useFLRBalance",
+    ()=>useFLRBalance,
+    "useToken",
+    ()=>useToken,
+    "useTokenBalance",
+    ()=>useTokenBalance
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$privy$2d$io$2f$react$2d$auth$2f$dist$2f$esm$2f$usePrivy$2d$BSIhOAz8$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__u__as__usePrivy$3e$__ = __turbopack_context__.i("[project]/node_modules/@privy-io/react-auth/dist/esm/usePrivy-BSIhOAz8.mjs [app-ssr] (ecmascript) <export u as usePrivy>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useQuery$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@tanstack/react-query/build/modern/useQuery.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useMutation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@tanstack/react-query/build/modern/useMutation.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$viem$2f$_esm$2f$clients$2f$createWalletClient$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/viem/_esm/clients/createWalletClient.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$viem$2f$_esm$2f$clients$2f$transports$2f$custom$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/viem/_esm/clients/transports/custom.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$viem$2f$_esm$2f$utils$2f$unit$2f$parseUnits$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/viem/_esm/utils/unit/parseUnits.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$viem$2f$_esm$2f$utils$2f$unit$2f$formatUnits$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/viem/_esm/utils/unit/formatUnits.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/contracts.ts [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/config/contracts.ts [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+// ERC20 ABI for token interactions
+const ERC20_ABI = [
+    {
+        constant: true,
+        inputs: [
+            {
+                name: "_owner",
+                type: "address"
+            }
+        ],
+        name: "balanceOf",
+        outputs: [
+            {
+                name: "balance",
+                type: "uint256"
+            }
+        ],
+        type: "function"
+    },
+    {
+        constant: false,
+        inputs: [
+            {
+                name: "_spender",
+                type: "address"
+            },
+            {
+                name: "_value",
+                type: "uint256"
+            }
+        ],
+        name: "approve",
+        outputs: [
+            {
+                name: "",
+                type: "bool"
+            }
+        ],
+        type: "function"
+    },
+    {
+        constant: true,
+        inputs: [
+            {
+                name: "_owner",
+                type: "address"
+            },
+            {
+                name: "_spender",
+                type: "address"
+            }
+        ],
+        name: "allowance",
+        outputs: [
+            {
+                name: "",
+                type: "uint256"
+            }
+        ],
+        type: "function"
+    },
+    {
+        constant: true,
+        inputs: [],
+        name: "decimals",
+        outputs: [
+            {
+                name: "",
+                type: "uint8"
+            }
+        ],
+        type: "function"
+    }
+];
+function useToken() {
+    const { user, ready } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$privy$2d$io$2f$react$2d$auth$2f$dist$2f$esm$2f$usePrivy$2d$BSIhOAz8$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__u__as__usePrivy$3e$__["usePrivy"])();
+    const queryClient = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useQueryClient"])();
+    // Get wallet client from Privy
+    const getClient = async ()=>{
+        if (!user?.wallet?.address) return undefined;
+        const provider = window.ethereum || window.privy?.provider;
+        if (!provider) return undefined;
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$viem$2f$_esm$2f$clients$2f$createWalletClient$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createWalletClient"])({
+            chain: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CHAIN_CONFIG"],
+            transport: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$viem$2f$_esm$2f$clients$2f$transports$2f$custom$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["custom"])(provider),
+            account: user.wallet.address
+        });
+    };
+    // Read USDC balance
+    const useUSDCBalance = (userAddress)=>{
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useQuery$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useQuery"])({
+            queryKey: [
+                "usdcBalance",
+                userAddress
+            ],
+            queryFn: async ()=>{
+                if (!userAddress) return BigInt(0);
+                return __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["publicClient"].readContract({
+                    address: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CONTRACTS"].USDC,
+                    abi: ERC20_ABI,
+                    functionName: "balanceOf",
+                    args: [
+                        userAddress
+                    ]
+                });
+            },
+            enabled: !!userAddress && ready
+        });
+    };
+    // Read USDC allowance
+    const useUSDCAllowance = (owner, spender)=>{
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useQuery$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useQuery"])({
+            queryKey: [
+                "usdcAllowance",
+                owner,
+                spender
+            ],
+            queryFn: async ()=>{
+                if (!owner || !spender) return BigInt(0);
+                return __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["publicClient"].readContract({
+                    address: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CONTRACTS"].USDC,
+                    abi: ERC20_ABI,
+                    functionName: "allowance",
+                    args: [
+                        owner,
+                        spender
+                    ]
+                });
+            },
+            enabled: !!owner && !!spender && ready
+        });
+    };
+    // Approve USDC mutation
+    const useApproveUSDC = ()=>{
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useMutation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMutation"])({
+            mutationFn: async ({ spender, amount })=>{
+                const walletClient = await getClient();
+                if (!walletClient) throw new Error("Wallet not connected");
+                const { request } = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["publicClient"].simulateContract({
+                    account: walletClient.account,
+                    address: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CONTRACTS"].USDC,
+                    abi: ERC20_ABI,
+                    functionName: "approve",
+                    args: [
+                        spender,
+                        amount
+                    ]
+                });
+                return walletClient.writeContract(request);
+            },
+            onSuccess: (_, variables)=>{
+                queryClient.invalidateQueries({
+                    queryKey: [
+                        "usdcAllowance",
+                        variables.spender
+                    ]
+                });
+            }
+        });
+    };
+    // Helper to format USDC (6 decimals)
+    const formatUSDC = (value)=>{
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$viem$2f$_esm$2f$utils$2f$unit$2f$formatUnits$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["formatUnits"])(value, 6);
+    };
+    // Helper to parse USDC (6 decimals)
+    const parseUSDC = (value)=>{
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$viem$2f$_esm$2f$utils$2f$unit$2f$parseUnits$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["parseUnits"])(value, 6);
+    };
+    return {
+        useUSDCBalance,
+        useUSDCAllowance,
+        useApproveUSDC,
+        formatUSDC,
+        parseUSDC
+    };
+}
+function useTokenBalance(userAddress, tokenAddress) {
+    const { ready } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$privy$2d$io$2f$react$2d$auth$2f$dist$2f$esm$2f$usePrivy$2d$BSIhOAz8$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__u__as__usePrivy$3e$__["usePrivy"])();
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useQuery$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useQuery"])({
+        queryKey: [
+            "tokenBalance",
+            userAddress,
+            tokenAddress
+        ],
+        queryFn: async ()=>{
+            if (!userAddress || !tokenAddress) return undefined;
+            try {
+                const balance = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["publicClient"].readContract({
+                    address: tokenAddress,
+                    abi: ERC20_ABI,
+                    functionName: "balanceOf",
+                    args: [
+                        userAddress
+                    ]
+                });
+                // Get token decimals
+                const decimals = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["publicClient"].readContract({
+                    address: tokenAddress,
+                    abi: ERC20_ABI,
+                    functionName: "decimals"
+                });
+                // Convert to number (formatted)
+                return Number((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$viem$2f$_esm$2f$utils$2f$unit$2f$formatUnits$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["formatUnits"])(balance, decimals));
+            } catch (error) {
+                console.error("Error fetching token balance:", error);
+                return undefined;
+            }
+        },
+        enabled: !!userAddress && !!tokenAddress && ready,
+        refetchInterval: 10000
+    });
+}
+function useFLRBalance(userAddress) {
+    const { ready } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$privy$2d$io$2f$react$2d$auth$2f$dist$2f$esm$2f$usePrivy$2d$BSIhOAz8$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__u__as__usePrivy$3e$__["usePrivy"])();
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useQuery$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useQuery"])({
+        queryKey: [
+            "flrBalance",
+            userAddress
+        ],
+        queryFn: async ()=>{
+            if (!userAddress) return undefined;
+            try {
+                const balance = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["publicClient"].getBalance({
+                    address: userAddress
+                });
+                // FLR has 18 decimals, convert to number
+                return Number((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$viem$2f$_esm$2f$utils$2f$unit$2f$formatUnits$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["formatUnits"])(balance, 18));
+            } catch (error) {
+                console.error("Error fetching FLR balance:", error);
+                return undefined;
+            }
+        },
+        enabled: !!userAddress && ready,
+        refetchInterval: 10000
+    });
+}
+}),
+"[project]/components/ui/dialog.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Dialog",
+    ()=>Dialog,
+    "DialogClose",
+    ()=>DialogClose,
+    "DialogContent",
+    ()=>DialogContent,
+    "DialogDescription",
+    ()=>DialogDescription,
+    "DialogFooter",
+    ()=>DialogFooter,
+    "DialogHeader",
+    ()=>DialogHeader,
+    "DialogOverlay",
+    ()=>DialogOverlay,
+    "DialogPortal",
+    ()=>DialogPortal,
+    "DialogTitle",
+    ()=>DialogTitle,
+    "DialogTrigger",
+    ()=>DialogTrigger
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@radix-ui/react-dialog/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__XIcon$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.js [app-ssr] (ecmascript) <export default as XIcon>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/utils.ts [app-ssr] (ecmascript)");
+'use client';
+;
+;
+;
+;
+function Dialog({ ...props }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Root"], {
+        "data-slot": "dialog",
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/components/ui/dialog.tsx",
+        lineNumber: 12,
+        columnNumber: 10
+    }, this);
+}
+function DialogTrigger({ ...props }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Trigger"], {
+        "data-slot": "dialog-trigger",
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/components/ui/dialog.tsx",
+        lineNumber: 18,
+        columnNumber: 10
+    }, this);
+}
+function DialogPortal({ ...props }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Portal"], {
+        "data-slot": "dialog-portal",
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/components/ui/dialog.tsx",
+        lineNumber: 24,
+        columnNumber: 10
+    }, this);
+}
+function DialogClose({ ...props }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Close"], {
+        "data-slot": "dialog-close",
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/components/ui/dialog.tsx",
+        lineNumber: 30,
+        columnNumber: 10
+    }, this);
+}
+function DialogOverlay({ className, ...props }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Overlay"], {
+        "data-slot": "dialog-overlay",
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])('data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-50 bg-black/50', className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/components/ui/dialog.tsx",
+        lineNumber: 38,
+        columnNumber: 5
+    }, this);
+}
+function DialogContent({ className, children, showCloseButton = true, ...props }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(DialogPortal, {
+        "data-slot": "dialog-portal",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(DialogOverlay, {}, void 0, false, {
+                fileName: "[project]/components/ui/dialog.tsx",
+                lineNumber: 59,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Content"], {
+                "data-slot": "dialog-content",
+                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])('bg-background data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] left-[50%] z-50 grid w-full max-w-[calc(100%-2rem)] translate-x-[-50%] translate-y-[-50%] gap-4 rounded-lg border p-6 shadow-lg duration-200 sm:max-w-lg', className),
+                ...props,
+                children: [
+                    children,
+                    showCloseButton && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Close"], {
+                        "data-slot": "dialog-close",
+                        className: "ring-offset-background focus:ring-ring data-[state=open]:bg-accent data-[state=open]:text-muted-foreground absolute top-4 right-4 rounded-xs opacity-70 transition-opacity hover:opacity-100 focus:ring-2 focus:ring-offset-2 focus:outline-hidden disabled:pointer-events-none [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__XIcon$3e$__["XIcon"], {}, void 0, false, {
+                                fileName: "[project]/components/ui/dialog.tsx",
+                                lineNumber: 74,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "sr-only",
+                                children: "Close"
+                            }, void 0, false, {
+                                fileName: "[project]/components/ui/dialog.tsx",
+                                lineNumber: 75,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/ui/dialog.tsx",
+                        lineNumber: 70,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/ui/dialog.tsx",
+                lineNumber: 60,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/ui/dialog.tsx",
+        lineNumber: 58,
+        columnNumber: 5
+    }, this);
+}
+function DialogHeader({ className, ...props }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        "data-slot": "dialog-header",
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])('flex flex-col gap-2 text-center sm:text-left', className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/components/ui/dialog.tsx",
+        lineNumber: 85,
+        columnNumber: 5
+    }, this);
+}
+function DialogFooter({ className, ...props }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        "data-slot": "dialog-footer",
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])('flex flex-col-reverse gap-2 sm:flex-row sm:justify-end', className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/components/ui/dialog.tsx",
+        lineNumber: 95,
+        columnNumber: 5
+    }, this);
+}
+function DialogTitle({ className, ...props }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Title"], {
+        "data-slot": "dialog-title",
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])('text-lg leading-none font-semibold', className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/components/ui/dialog.tsx",
+        lineNumber: 111,
+        columnNumber: 5
+    }, this);
+}
+function DialogDescription({ className, ...props }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Description"], {
+        "data-slot": "dialog-description",
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])('text-muted-foreground text-sm', className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/components/ui/dialog.tsx",
+        lineNumber: 124,
+        columnNumber: 5
+    }, this);
+}
+;
+}),
+"[project]/app/market/[id]/page.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>MarketDetailPage
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trending$2d$up$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__TrendingUp$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/trending-up.js [app-ssr] (ecmascript) <export default as TrendingUp>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-check.js [app-ssr] (ecmascript) <export default as CheckCircle2>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/clock.js [app-ssr] (ecmascript) <export default as Clock>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__XCircle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-x.js [app-ssr] (ecmascript) <export default as XCircle>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$external$2d$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ExternalLink$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/external-link.js [app-ssr] (ecmascript) <export default as ExternalLink>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$app$2d$header$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/app-header.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$price$2d$chart$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/price-chart.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/hooks/use-toast.ts [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$privy$2d$io$2f$react$2d$auth$2f$dist$2f$esm$2f$useWallets$2d$DuxHKVvE$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__u__as__useWallets$3e$__ = __turbopack_context__.i("[project]/node_modules/@privy-io/react-auth/dist/esm/useWallets-DuxHKVvE.mjs [app-ssr] (ecmascript) <export u as useWallets>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$privy$2d$io$2f$react$2d$auth$2f$dist$2f$esm$2f$usePrivy$2d$BSIhOAz8$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__u__as__usePrivy$3e$__ = __turbopack_context__.i("[project]/node_modules/@privy-io/react-auth/dist/esm/usePrivy-BSIhOAz8.mjs [app-ssr] (ecmascript) <export u as usePrivy>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$viem$2f$_esm$2f$clients$2f$createWalletClient$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/viem/_esm/clients/createWalletClient.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$viem$2f$_esm$2f$clients$2f$transports$2f$custom$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/viem/_esm/clients/transports/custom.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$viem$2f$_esm$2f$utils$2f$unit$2f$parseEther$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/viem/_esm/utils/unit/parseEther.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$viem$2f$_esm$2f$utils$2f$address$2f$getAddress$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/viem/_esm/utils/address/getAddress.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/config/contracts.ts [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useToken$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/hooks/useToken.ts [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/dialog.tsx [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+// Market data - in a real app, this would come from an API
+const markets = [
+    {
+        id: 1,
+        question: "Which AI model will dominate in 2026?",
+        category: "Technology",
+        options: [
+            {
+                name: "GPT-5",
+                amountBet: 234000000
+            },
+            {
+                name: "Claude-4",
+                amountBet: 182000000
+            },
+            {
+                name: "Gemini-X",
+                amountBet: 104000000
+            }
+        ],
+        volume: "$520M",
+        traders: "12.5K",
+        timeLeft: "45 days",
+        trend: 12
+    },
+    {
+        id: 2,
+        question: "Bitcoin price by end of 2025?",
+        category: "Crypto",
+        options: [
+            {
+                name: "$150k+",
+                amountBet: 315000000
+            },
+            {
+                name: "$100-150k",
+                amountBet: 285000000
+            },
+            {
+                name: "$50-100k",
+                amountBet: 150000000
+            }
+        ],
+        volume: "$750M",
+        traders: "28.9K",
+        timeLeft: "25 days",
+        trend: 8
+    },
+    {
+        id: 3,
+        question: "Will there be a US recession in 2025?",
+        category: "Economics",
+        options: [
+            {
+                name: "Yes",
+                amountBet: 234345000
+            },
+            {
+                name: "No",
+                amountBet: 286655000
+            }
+        ],
+        volume: "$521M",
+        traders: "14.5K",
+        timeLeft: "60 days",
+        trend: -3
+    },
+    {
+        id: 4,
+        question: "Will Apple release AR glasses in 2025?",
+        category: "Technology",
+        options: [
+            {
+                name: "Yes",
+                amountBet: 284920000
+            },
+            {
+                name: "Maybe",
+                amountBet: 100560000
+            },
+            {
+                name: "No",
+                amountBet: 33520000
+            }
+        ],
+        volume: "$419M",
+        traders: "9.8K",
+        timeLeft: "38 days",
+        trend: 5
+    },
+    {
+        id: 5,
+        question: "Which team will win Super Bowl LIX?",
+        category: "Sports",
+        options: [
+            {
+                name: "Kansas City Chiefs",
+                amountBet: 284640000
+            },
+            {
+                name: "Buffalo Bills",
+                amountBet: 160200000
+            },
+            {
+                name: "San Francisco 49ers",
+                amountBet: 195800000
+            },
+            {
+                name: "Other",
+                amountBet: 249360000
+            }
+        ],
+        volume: "$890M",
+        traders: "42.3K",
+        timeLeft: "12 days",
+        trend: 15
+    },
+    {
+        id: 6,
+        question: "Will Tesla stock reach $300 by 2026?",
+        category: "Stocks",
+        options: [
+            {
+                name: "Yes",
+                amountBet: 144400000
+            },
+            {
+                name: "No",
+                amountBet: 235600000
+            }
+        ],
+        volume: "$380M",
+        traders: "7.2K",
+        timeLeft: "90 days",
+        trend: -2
+    }
+];
+// Helper function to load from localStorage synchronously
+function loadFromLocalStorage(key, defaultValue) {
+    if ("TURBOPACK compile-time truthy", 1) return defaultValue;
+    //TURBOPACK unreachable
+    ;
+}
+function MarketDetailPage() {
+    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
+    const params = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useParams"])();
+    const marketId = Number.parseInt(params?.id);
+    const { toast } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useToast"])();
+    const { wallets } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$privy$2d$io$2f$react$2d$auth$2f$dist$2f$esm$2f$useWallets$2d$DuxHKVvE$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__u__as__useWallets$3e$__["useWallets"])();
+    const { authenticated } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$privy$2d$io$2f$react$2d$auth$2f$dist$2f$esm$2f$usePrivy$2d$BSIhOAz8$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__u__as__usePrivy$3e$__["usePrivy"])();
+    // Get the connected wallet (prefer external wallet like MetaMask)
+    const wallet = wallets.find((w)=>w.walletClientType === "metamask") || wallets[0];
+    // Fetch real FLR balance from blockchain
+    const { data: flrBalance, isLoading: isLoadingBalance } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useToken$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useFLRBalance"])(wallet?.address);
+    const [depositDialogOpen, setDepositDialogOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [isProcessingTransaction, setIsProcessingTransaction] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [depositAmount, setDepositAmount] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
+    // Load initial state from localStorage synchronously to prevent reset on remount
+    // Use real FLR balance if available, otherwise fall back to localStorage
+    const [userBalance, setUserBalance] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(()=>loadFromLocalStorage("userBalance", 1000));
+    // Update userBalance when real balance is fetched
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        if (flrBalance !== undefined && !isLoadingBalance) {
+            setUserBalance(flrBalance);
+        }
+    }, [
+        flrBalance,
+        isLoadingBalance
+    ]);
+    const [tradingBalance, setTradingBalance] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(()=>loadFromLocalStorage(`tradingBalance_${marketId}`, 0));
+    const [allocations, setAllocations] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(()=>loadFromLocalStorage(`allocations_${marketId}`, {}));
+    const [placedAllocations, setPlacedAllocations] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(()=>{
+        const saved = loadFromLocalStorage(`placedAllocations_${marketId}`, []);
+        return new Set(saved);
+    });
+    const [boughtPositions, setBoughtPositions] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(()=>{
+        const saved = loadFromLocalStorage(`boughtPositions_${marketId}`, []);
+        return saved || [];
+    });
+    const [editDialogOpen, setEditDialogOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [editAmount, setEditAmount] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
+    const [clearConfirmDialogOpen, setClearConfirmDialogOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [transactions, setTransactions] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(()=>{
+        if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+        ;
+        return [];
+    });
+    const market = markets.find((m)=>m.id === marketId);
+    // Function to send a real blockchain transaction
+    const sendBlockchainTransaction = async (amount, transactionType, transactionData)=>{
+        if (!authenticated || !wallet) {
+            toast({
+                title: "Wallet Not Connected",
+                description: "Please connect your MetaMask wallet to proceed.",
+                variant: "destructive"
+            });
+            return null;
+        }
+        try {
+            setIsProcessingTransaction(true);
+            // Get the Ethereum provider from Privy wallet
+            const provider = await wallet.getEthereumProvider();
+            // Check current chain and switch if needed
+            const currentChainId = await provider.request({
+                method: "eth_chainId"
+            });
+            const targetChainId = `0x${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CHAIN_CONFIG"].id.toString(16)}`;
+            // Switch wallet to Flare Testnet (Coston2) network if needed
+            if (currentChainId !== targetChainId) {
+                try {
+                    // Try to switch to the chain
+                    await provider.request({
+                        method: "wallet_switchEthereumChain",
+                        params: [
+                            {
+                                chainId: targetChainId
+                            }
+                        ]
+                    });
+                } catch (switchError) {
+                    // If chain switch fails (chain not added), try to add it
+                    if (switchError?.code === 4902 || switchError?.message?.includes("Unrecognized chain")) {
+                        try {
+                            // Add the network
+                            await provider.request({
+                                method: "wallet_addEthereumChain",
+                                params: [
+                                    {
+                                        chainId: targetChainId,
+                                        chainName: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CHAIN_CONFIG"].name,
+                                        nativeCurrency: {
+                                            name: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CHAIN_CONFIG"].nativeCurrency.name,
+                                            symbol: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CHAIN_CONFIG"].nativeCurrency.symbol,
+                                            decimals: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CHAIN_CONFIG"].nativeCurrency.decimals
+                                        },
+                                        rpcUrls: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CHAIN_CONFIG"].rpcUrls.default.http,
+                                        blockExplorerUrls: [
+                                            __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CHAIN_CONFIG"].blockExplorers.default.url
+                                        ]
+                                    }
+                                ]
+                            });
+                            // After adding, the chain should be switched automatically
+                            // But verify it switched
+                            const newChainId = await provider.request({
+                                method: "eth_chainId"
+                            });
+                            if (newChainId !== targetChainId) {
+                                // If it didn't switch automatically, try switching again
+                                await provider.request({
+                                    method: "wallet_switchEthereumChain",
+                                    params: [
+                                        {
+                                            chainId: targetChainId
+                                        }
+                                    ]
+                                });
+                            }
+                        } catch (addError) {
+                            toast({
+                                title: "Network Setup Required",
+                                description: `Please add Flare Testnet (Chain ID: ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CHAIN_CONFIG"].id}) to your wallet manually.`,
+                                variant: "destructive"
+                            });
+                            throw new Error("Network not available. Please add Flare Testnet to your wallet.");
+                        }
+                    } else if (switchError?.code === 4001) {
+                        // User rejected the request
+                        toast({
+                            title: "Transaction Cancelled",
+                            description: "You rejected the network switch request.",
+                            variant: "destructive"
+                        });
+                        throw new Error("Network switch rejected by user.");
+                    } else {
+                        // Other error
+                        console.warn("Chain switch failed:", switchError);
+                        toast({
+                            title: "Network Switch Failed",
+                            description: `Failed to switch to Flare Testnet. Please switch manually in your wallet.`,
+                            variant: "destructive"
+                        });
+                        throw switchError;
+                    }
+                }
+            }
+            // Create Viem wallet client using the provider
+            const walletClient = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$viem$2f$_esm$2f$clients$2f$createWalletClient$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createWalletClient"])({
+                account: wallet.address,
+                chain: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CHAIN_CONFIG"],
+                transport: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$viem$2f$_esm$2f$clients$2f$transports$2f$custom$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["custom"])(provider)
+            });
+            // Convert amount to wei (using native FLR token with 18 decimals)
+            // For USDC or other tokens, you'd need to use the token's decimals
+            const amountInWei = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$viem$2f$_esm$2f$utils$2f$unit$2f$parseEther$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["parseEther"])(amount.toString());
+            // Use the Market contract address for prediction market transactions
+            // getAddress validates and checksums the address
+            const recipientAddress = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$viem$2f$_esm$2f$utils$2f$address$2f$getAddress$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getAddress"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$contracts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CONTRACTS"].MARKET);
+            // Send transaction using Viem wallet client
+            // This will trigger MetaMask to show the transaction
+            const txHash = await walletClient.sendTransaction({
+                to: recipientAddress,
+                value: amountInWei
+            });
+            return txHash;
+        } catch (error) {
+            console.error("Transaction error:", error);
+            // Check if user rejected the transaction
+            if (error?.code === 4001 || error?.message?.includes("rejected") || error?.message?.includes("denied") || error?.code === "ACTION_REJECTED") {
+                toast({
+                    title: "Transaction Rejected",
+                    description: "You rejected the transaction in MetaMask.",
+                    variant: "destructive"
+                });
+            } else {
+                toast({
+                    title: "Transaction Failed",
+                    description: error?.message || "Failed to send transaction. Please try again.",
+                    variant: "destructive"
+                });
+            }
+            return null;
+        } finally{
+            setIsProcessingTransaction(false);
+        }
+    };
+    // Function to record a transaction (now with real blockchain integration)
+    const recordTransaction = async (transaction)=>{
+        // Send real blockchain transaction
+        const txHash = await sendBlockchainTransaction(transaction.amount, transaction.type, {
+            optionName: transaction.optionName,
+            selection: transaction.selection,
+            buySellMode: transaction.buySellMode
+        });
+        if (!txHash) {
+            // Transaction failed or was rejected
+            return null;
+        }
+        const newTransaction = {
+            ...transaction,
+            id: `tx_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
+            timestamp: Date.now(),
+            status: "completed",
+            txHash: txHash
+        };
+        setTransactions((prev)=>{
+            const updated = [
+                newTransaction,
+                ...prev
+            ];
+            // Save to localStorage
+            if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+            ;
+            return updated;
+        });
+        // Show success toast notification
+        if (transaction.type === "deposit") {
+            toast({
+                title: "Deposit Successful",
+                description: `Successfully deposited $${transaction.amount.toFixed(2)} for this market. Transaction: ${txHash.slice(0, 10)}...`,
+                variant: "default"
+            });
+        } else {
+            const actionText = transaction.buySellMode === "sell" ? "Sell" : "Buy";
+            toast({
+                title: "Transaction Successful",
+                description: `${actionText} bet of $${transaction.amount.toFixed(2)} placed for ${transaction.optionName} (${transaction.selection?.toUpperCase()}). Transaction: ${txHash.slice(0, 10)}...`,
+                variant: "default"
+            });
+        }
+        // Log transaction for debugging
+        console.log("Transaction recorded:", newTransaction);
+        return newTransaction;
+    };
+    // Persist state to localStorage whenever it changes (with debounce to avoid excessive writes)
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+        ;
+    }, [
+        userBalance
+    ]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+        ;
+    }, [
+        tradingBalance,
+        marketId
+    ]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        if (("TURBOPACK compile-time value", "undefined") !== "undefined" && allocations && Object.keys(allocations).length >= 0) //TURBOPACK unreachable
+        ;
+    }, [
+        allocations,
+        marketId
+    ]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+        ;
+    }, [
+        placedAllocations,
+        marketId
+    ]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+        ;
+    }, [
+        boughtPositions,
+        marketId
+    ]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        // Initialize allocations for all options
+        if (market) {
+            const initialAllocations = {};
+            market.options.forEach((_, idx)=>{
+                if (!allocations[idx]) {
+                    initialAllocations[idx] = {
+                        optionIndex: idx,
+                        selection: null,
+                        amount: 0,
+                        buySellMode: "buy"
+                    };
+                }
+            });
+            if (Object.keys(initialAllocations).length > 0) {
+                setAllocations((prev)=>({
+                        ...prev,
+                        ...initialAllocations
+                    }));
+            }
+        }
+    }, [
+        market
+    ]);
+    // VUSDC is now calculated directly as tradingBalance - allocation amount
+    // No need for separate state, calculated on the fly
+    if (!market) {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "min-h-screen bg-background text-foreground flex items-center justify-center",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "text-center",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "text-muted-foreground mb-4",
+                        children: "Market not found"
+                    }, void 0, false, {
+                        fileName: "[project]/app/market/[id]/page.tsx",
+                        lineNumber: 509,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        onClick: ()=>router.push("/"),
+                        className: "px-4 py-2 rounded-lg bg-foreground text-background hover:opacity-90",
+                        children: "Go Back"
+                    }, void 0, false, {
+                        fileName: "[project]/app/market/[id]/page.tsx",
+                        lineNumber: 510,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/app/market/[id]/page.tsx",
+                lineNumber: 508,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/app/market/[id]/page.tsx",
+            lineNumber: 507,
+            columnNumber: 7
+        }, this);
+    }
+    const parseVolume = (volumeStr)=>{
+        const match = volumeStr.match(/\$?([\d.]+)([MBK])?/i);
+        if (!match) return 0;
+        const value = parseFloat(match[1]);
+        const suffix = match[2]?.toUpperCase();
+        if (suffix === "B") return value * 1000000000;
+        if (suffix === "M") return value * 1000000;
+        if (suffix === "K") return value * 1000;
+        return value;
+    };
+    const formatCurrency = (value)=>{
+        if (value >= 1000000000) {
+            return `$${(value / 1000000000).toFixed(2)}B`;
+        } else if (value >= 1000000) {
+            return `$${(value / 1000000).toFixed(2)}M`;
+        } else if (value >= 1000) {
+            return `$${(value / 1000).toFixed(2)}K`;
+        }
+        return `$${value.toFixed(2)}`;
+    };
+    const getFormattedVolume = (volumeStr)=>{
+        const volumeInUSD = parseVolume(volumeStr);
+        return formatCurrency(volumeInUSD);
+    };
+    // Calculate price for Yes/No selection (Polymarket style: Yes + No = 100 cents)
+    const calculatePrice = (optionIndex, selection)=>{
+        const totalPool = market.options.reduce((sum, opt)=>sum + opt.amountBet, 0);
+        const option = market.options[optionIndex];
+        // Calculate probability percentage (0-100)
+        const probabilityPercent = option.amountBet / totalPool * 100;
+        if (selection === "yes") {
+            // Yes price in cents = probability percentage
+            return probabilityPercent;
+        } else {
+            // No price in cents = 100 - probability percentage
+            return 100 - probabilityPercent;
+        }
+    };
+    // Convert cents to dollars for display
+    const centsToDollars = (cents)=>{
+        return cents / 100;
+    };
+    // Calculate total allocated amount (for display purposes only)
+    const totalAllocated = Object.values(allocations).reduce((sum, alloc)=>sum + (alloc.selection ? alloc.amount : 0), 0);
+    // Calculate total allocation for a specific option (Yes + No combined)
+    const getOptionTotalAllocation = (optionIndex)=>{
+        const alloc = allocations[optionIndex];
+        if (!alloc) return 0;
+        // For the same option, if there's any allocation (Yes or No), return that amount
+        // Since you can only have one selection (Yes OR No) at a time, this works
+        return alloc.selection ? alloc.amount : 0;
+    };
+    // Get available amount to sell for a specific option and selection
+    const getAvailableToSell = (optionIndex, selection)=>{
+        const position = boughtPositions.find((pos)=>pos.optionIndex === optionIndex && pos.selection === selection);
+        return position ? position.amount : 0;
+    };
+    // Trading balance is the maximum amount you can allocate to EACH option (not a shared pool)
+    // So you can allocate the full amount to all options independently
+    // Handle allocation change
+    const handleAllocationChange = (optionIndex, selection, amount, buySellMode)=>{
+        const newAmount = Math.max(0, amount);
+        setAllocations((prev)=>{
+            const current = prev[optionIndex] || {
+                optionIndex,
+                selection: null,
+                amount: 0,
+                buySellMode: "buy"
+            };
+            return {
+                ...prev,
+                [optionIndex]: {
+                    optionIndex,
+                    selection,
+                    amount: newAmount,
+                    buySellMode: buySellMode || current.buySellMode || "buy"
+                }
+            };
+        });
+    // VUSDC will be updated automatically via useEffect when allocations change
+    };
+    // Calculate potential winnings for an allocation (Polymarket style)
+    // If you bet $X at price $P (in dollars), you get $X / $P shares
+    // If it wins, each share pays $1, so total return = $X / $P
+    const calculatePotentialWinnings = (optionIndex, selection, amount)=>{
+        const priceCents = calculatePrice(optionIndex, selection);
+        const priceDollars = centsToDollars(priceCents);
+        // Total return if it wins (includes original bet)
+        return amount / priceDollars;
+    };
+    // Calculate maximum potential winnings (since only one option can win)
+    const maxPotentialWinnings = Object.values(allocations).filter((alloc)=>alloc.selection !== null && alloc.amount > 0).reduce((max, alloc)=>{
+        if (alloc.selection) {
+            const potentialReturn = calculatePotentialWinnings(alloc.optionIndex, alloc.selection, alloc.amount);
+            return Math.max(max, potentialReturn);
+        }
+        return max;
+    }, 0);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "min-h-screen bg-background text-foreground",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$app$2d$header$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                title: "Market Details",
+                showBackButton: true,
+                onBackClick: ()=>router.push("/"),
+                userBalance: isLoadingBalance ? undefined : userBalance
+            }, userBalance, false, {
+                fileName: "[project]/app/market/[id]/page.tsx",
+                lineNumber: 643,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "sticky top-[65px] z-40 bg-background/95 backdrop-blur-sm border-b border-border/80",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "max-w-4xl mx-auto px-6 pt-3 pb-2.5",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex items-center justify-between gap-4",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex items-center gap-4",
+                                children: tradingBalance > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex items-center gap-2 px-3 py-1.5 rounded-md bg-green-500/10 border border-green-500/20",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "text-xs font-medium text-muted-foreground",
+                                            children: "FLR"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                            lineNumber: 659,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "text-sm font-semibold font-mono text-green-600 dark:text-green-400",
+                                            children: [
+                                                tradingBalance.toFixed(4),
+                                                " FLR"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                            lineNumber: 660,
+                                            columnNumber: 19
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                    lineNumber: 658,
+                                    columnNumber: 17
+                                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "text-xs text-muted-foreground",
+                                    children: "No funds deposited for this market"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                    lineNumber: 663,
+                                    columnNumber: 17
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/app/market/[id]/page.tsx",
+                                lineNumber: 655,
+                                columnNumber: 13
+                            }, this),
+                            !authenticated || !wallet ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "text-xs text-muted-foreground px-3 py-1.5",
+                                children: "Connect MetaMask to deposit"
+                            }, void 0, false, {
+                                fileName: "[project]/app/market/[id]/page.tsx",
+                                lineNumber: 669,
+                                columnNumber: 15
+                            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                onClick: ()=>setDepositDialogOpen(true),
+                                className: "px-5 py-2 rounded-lg bg-foreground text-background hover:opacity-90 transition-opacity font-semibold text-sm whitespace-nowrap",
+                                disabled: isProcessingTransaction,
+                                children: isProcessingTransaction ? "Processing..." : "Deposit for This Market"
+                            }, void 0, false, {
+                                fileName: "[project]/app/market/[id]/page.tsx",
+                                lineNumber: 673,
+                                columnNumber: 15
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/app/market/[id]/page.tsx",
+                        lineNumber: 654,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/app/market/[id]/page.tsx",
+                    lineNumber: 653,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/app/market/[id]/page.tsx",
+                lineNumber: 652,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
+                className: "max-w-4xl mx-auto px-6 py-8",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mb-8",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex items-center gap-2 mb-3",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "text-xs font-medium text-muted-foreground uppercase tracking-widest",
+                                        children: market.category
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/market/[id]/page.tsx",
+                                        lineNumber: 690,
+                                        columnNumber: 13
+                                    }, this),
+                                    market.trend && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: `flex items-center gap-1 text-xs font-medium ${market.trend > 0 ? "text-green-600 dark:text-green-400" : "text-red-600 dark:text-red-400"}`,
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trending$2d$up$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__TrendingUp$3e$__["TrendingUp"], {
+                                                size: 12
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/market/[id]/page.tsx",
+                                                lineNumber: 701,
+                                                columnNumber: 17
+                                            }, this),
+                                            market.trend > 0 ? "+" : "",
+                                            market.trend,
+                                            "%"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/app/market/[id]/page.tsx",
+                                        lineNumber: 694,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/app/market/[id]/page.tsx",
+                                lineNumber: 689,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "mb-4",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                    className: "text-2xl font-semibold",
+                                    children: market.question
+                                }, void 0, false, {
+                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                    lineNumber: 708,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/app/market/[id]/page.tsx",
+                                lineNumber: 707,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex gap-6 text-sm text-muted-foreground",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        children: [
+                                            "Volume: ",
+                                            getFormattedVolume(market.volume)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/app/market/[id]/page.tsx",
+                                        lineNumber: 711,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        children: [
+                                            "Traders: ",
+                                            market.traders
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/app/market/[id]/page.tsx",
+                                        lineNumber: 712,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        children: [
+                                            "Closes in: ",
+                                            market.timeLeft
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/app/market/[id]/page.tsx",
+                                        lineNumber: 713,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/app/market/[id]/page.tsx",
+                                lineNumber: 710,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/app/market/[id]/page.tsx",
+                        lineNumber: 688,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mb-8",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$price$2d$chart$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                            options: market.options
+                        }, void 0, false, {
+                            fileName: "[project]/app/market/[id]/page.tsx",
+                            lineNumber: 719,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/market/[id]/page.tsx",
+                        lineNumber: 718,
+                        columnNumber: 9
+                    }, this),
+                    tradingBalance > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mb-8 p-6 rounded-lg border border-border bg-muted/30",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex items-center justify-between mb-4",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                            className: "text-lg font-semibold mb-1",
+                                            children: "Trading Balance"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                            lineNumber: 727,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-sm text-muted-foreground",
+                                            children: "Available funds for this market"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                            lineNumber: 728,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                    lineNumber: 726,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "text-right",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "text-2xl font-bold font-mono",
+                                            children: [
+                                                tradingBalance.toFixed(4),
+                                                " FLR"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                            lineNumber: 731,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "text-xs text-muted-foreground mt-1",
+                                            children: [
+                                                "Max per option: ",
+                                                tradingBalance.toFixed(4),
+                                                " FLR"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                            lineNumber: 732,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "text-xs text-muted-foreground mt-1",
+                                            children: [
+                                                "Total allocated: ",
+                                                totalAllocated.toFixed(4),
+                                                " FLR"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                            lineNumber: 735,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                    lineNumber: 730,
+                                    columnNumber: 15
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/market/[id]/page.tsx",
+                            lineNumber: 725,
+                            columnNumber: 13
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/market/[id]/page.tsx",
+                        lineNumber: 724,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "space-y-6 mb-8",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                className: "text-lg font-semibold mb-4",
+                                children: "Allocate Your Trading Balance"
+                            }, void 0, false, {
+                                fileName: "[project]/app/market/[id]/page.tsx",
+                                lineNumber: 745,
+                                columnNumber: 11
+                            }, this),
+                            market.options.map((option, optionIndex)=>{
+                                const allocation = allocations[optionIndex] || {
+                                    optionIndex,
+                                    selection: null,
+                                    amount: 0,
+                                    buySellMode: "buy"
+                                };
+                                const yesPrice = calculatePrice(optionIndex, "yes");
+                                const noPrice = calculatePrice(optionIndex, "no");
+                                const totalPool = market.options.reduce((sum, opt)=>sum + opt.amountBet, 0);
+                                const optionPercentage = option.amountBet / totalPool * 100;
+                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: `option-${optionIndex} p-6 rounded-lg border border-border bg-muted/20 hover:bg-muted/30 dark:hover:bg-muted/50 transition-colors`,
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-center justify-between mb-4",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex-1",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                            className: "text-lg font-semibold mb-2",
+                                                            children: option.name
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                                            lineNumber: 766,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "flex items-center gap-4 text-sm text-muted-foreground",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    children: [
+                                                                        optionPercentage.toFixed(1),
+                                                                        "% probability"
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                                    lineNumber: 768,
+                                                                    columnNumber: 23
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    children: "•"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                                    lineNumber: 769,
+                                                                    columnNumber: 23
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    children: [
+                                                                        formatCurrency(option.amountBet),
+                                                                        " bet"
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                                    lineNumber: 770,
+                                                                    columnNumber: 23
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                                            lineNumber: 767,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                    lineNumber: 765,
+                                                    columnNumber: 19
+                                                }, this),
+                                                tradingBalance > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex items-center gap-2 px-3 py-1.5 rounded-md bg-blue-500/10 border border-blue-500/20",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "text-xs font-medium text-muted-foreground",
+                                                            children: "VFLR"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                                            lineNumber: 776,
+                                                            columnNumber: 23
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "text-sm font-semibold font-mono text-blue-600 dark:text-blue-400",
+                                                            children: [
+                                                                (tradingBalance - getOptionTotalAllocation(optionIndex)).toFixed(4),
+                                                                " FLR"
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                                            lineNumber: 777,
+                                                            columnNumber: 23
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                    lineNumber: 775,
+                                                    columnNumber: 21
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                            lineNumber: 764,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "mb-4 flex items-center gap-4",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex items-center gap-0",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                        onClick: ()=>{
+                                                            if (allocation.selection) {
+                                                                handleAllocationChange(optionIndex, allocation.selection, allocation.amount, "buy");
+                                                            } else {
+                                                                setAllocations((prev)=>({
+                                                                        ...prev,
+                                                                        [optionIndex]: {
+                                                                            ...prev[optionIndex] || {
+                                                                                optionIndex,
+                                                                                selection: null,
+                                                                                amount: 0,
+                                                                                buySellMode: "buy"
+                                                                            },
+                                                                            buySellMode: "buy"
+                                                                        }
+                                                                    }));
+                                                            }
+                                                        },
+                                                        className: `px-4 py-2 text-sm font-semibold transition-all relative ${(allocation.buySellMode || "buy") === "buy" ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`,
+                                                        children: [
+                                                            "Buy",
+                                                            (allocation.buySellMode || "buy") === "buy" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "absolute bottom-0 left-0 right-0 h-0.5 bg-foreground"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/market/[id]/page.tsx",
+                                                                lineNumber: 814,
+                                                                columnNumber: 25
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/app/market/[id]/page.tsx",
+                                                        lineNumber: 787,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                        onClick: ()=>{
+                                                            if (allocation.selection) {
+                                                                handleAllocationChange(optionIndex, allocation.selection, allocation.amount, "sell");
+                                                            } else {
+                                                                setAllocations((prev)=>({
+                                                                        ...prev,
+                                                                        [optionIndex]: {
+                                                                            ...prev[optionIndex] || {
+                                                                                optionIndex,
+                                                                                selection: null,
+                                                                                amount: 0,
+                                                                                buySellMode: "buy"
+                                                                            },
+                                                                            buySellMode: "sell"
+                                                                        }
+                                                                    }));
+                                                            }
+                                                        },
+                                                        className: `px-4 py-2 text-sm font-semibold transition-all relative ${allocation.buySellMode === "sell" ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`,
+                                                        children: [
+                                                            "Sell",
+                                                            allocation.buySellMode === "sell" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "absolute bottom-0 left-0 right-0 h-0.5 bg-foreground"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/market/[id]/page.tsx",
+                                                                lineNumber: 844,
+                                                                columnNumber: 25
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/app/market/[id]/page.tsx",
+                                                        lineNumber: 817,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/app/market/[id]/page.tsx",
+                                                lineNumber: 786,
+                                                columnNumber: 19
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                            lineNumber: 785,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "grid grid-cols-2 gap-4 mb-4",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                    onClick: ()=>{
+                                                        const currentMode = allocation.buySellMode || "buy";
+                                                        // In Sell mode, check if user has bought position for Yes
+                                                        if (currentMode === "sell") {
+                                                            const availableToSell = getAvailableToSell(optionIndex, "yes");
+                                                            if (availableToSell === 0) {
+                                                                // Can't sell if nothing was bought
+                                                                return;
+                                                            }
+                                                        }
+                                                        // In Buy mode, if switching from No to Yes, clear the No allocation and switch to Yes
+                                                        if (currentMode === "buy" && allocation.selection === "no" && allocation.amount > 0) {
+                                                            // Clear No and switch to Yes with 0 amount (VUSDC is shared)
+                                                            setAllocations((prev)=>({
+                                                                    ...prev,
+                                                                    [optionIndex]: {
+                                                                        optionIndex,
+                                                                        selection: "yes",
+                                                                        amount: 0,
+                                                                        buySellMode: currentMode
+                                                                    }
+                                                                }));
+                                                            setPlacedAllocations((prev)=>{
+                                                                const newSet = new Set(prev);
+                                                                newSet.delete(optionIndex);
+                                                                return newSet;
+                                                            });
+                                                            return;
+                                                        }
+                                                        if (allocation.selection === "yes" && allocation.buySellMode === currentMode) {
+                                                            // Deselect if already selected with same mode
+                                                            handleAllocationChange(optionIndex, null, 0, currentMode);
+                                                            setPlacedAllocations((prev)=>{
+                                                                const newSet = new Set(prev);
+                                                                newSet.delete(optionIndex);
+                                                                return newSet;
+                                                            });
+                                                        } else {
+                                                            // Switch to Yes
+                                                            const newAmount = currentMode === "sell" ? Math.min(allocation.amount || 0, getAvailableToSell(optionIndex, "yes")) : 0 // Always start with 0 when switching in Buy mode
+                                                            ;
+                                                            handleAllocationChange(optionIndex, "yes", newAmount, currentMode);
+                                                            // Clear placed status when selection changes
+                                                            if (placedAllocations.has(optionIndex)) {
+                                                                setPlacedAllocations((prev)=>{
+                                                                    const newSet = new Set(prev);
+                                                                    newSet.delete(optionIndex);
+                                                                    return newSet;
+                                                                });
+                                                            }
+                                                        }
+                                                    },
+                                                    className: `p-4 rounded-lg border-2 transition-all ${allocation.selection === "yes" && (allocation.buySellMode || "buy") === (allocation.buySellMode || "buy") ? "border-green-500 bg-green-500 text-white" : allocation.selection === "yes" ? "border-green-500/50 bg-green-500/10 text-green-600 dark:text-green-400" : "border-border bg-muted/30 hover:border-green-500/50 hover:bg-green-500/5 dark:hover:border-green-500 dark:hover:bg-green-500/15"}`,
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "text-left w-full",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "font-semibold mb-1",
+                                                                children: [
+                                                                    "Yes ",
+                                                                    yesPrice.toFixed(0),
+                                                                    "¢"
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/app/market/[id]/page.tsx",
+                                                                lineNumber: 924,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            allocation.buySellMode === "sell" && getAvailableToSell(optionIndex, "yes") > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "text-xs mt-1 text-muted-foreground",
+                                                                children: [
+                                                                    "Own: $",
+                                                                    getAvailableToSell(optionIndex, "yes").toFixed(2)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/app/market/[id]/page.tsx",
+                                                                lineNumber: 928,
+                                                                columnNumber: 25
+                                                            }, this),
+                                                            allocation.selection === "yes" && allocation.amount > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "text-xs mt-1 opacity-90",
+                                                                children: [
+                                                                    allocation.buySellMode === "sell" ? "Sell" : "Buy",
+                                                                    " $",
+                                                                    allocation.amount.toFixed(2)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/app/market/[id]/page.tsx",
+                                                                lineNumber: 933,
+                                                                columnNumber: 25
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/app/market/[id]/page.tsx",
+                                                        lineNumber: 923,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                    lineNumber: 853,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                    onClick: ()=>{
+                                                        const currentMode = allocation.buySellMode || "buy";
+                                                        // In Sell mode, check if user has bought position for No
+                                                        if (currentMode === "sell") {
+                                                            const availableToSell = getAvailableToSell(optionIndex, "no");
+                                                            if (availableToSell === 0) {
+                                                                // Can't sell if nothing was bought
+                                                                return;
+                                                            }
+                                                        }
+                                                        // In Buy mode, if switching from Yes to No, clear the Yes allocation and switch to No
+                                                        if (currentMode === "buy" && allocation.selection === "yes" && allocation.amount > 0) {
+                                                            // Clear Yes and switch to No with 0 amount (VUSDC is shared)
+                                                            setAllocations((prev)=>({
+                                                                    ...prev,
+                                                                    [optionIndex]: {
+                                                                        optionIndex,
+                                                                        selection: "no",
+                                                                        amount: 0,
+                                                                        buySellMode: currentMode
+                                                                    }
+                                                                }));
+                                                            setPlacedAllocations((prev)=>{
+                                                                const newSet = new Set(prev);
+                                                                newSet.delete(optionIndex);
+                                                                return newSet;
+                                                            });
+                                                            return;
+                                                        }
+                                                        if (allocation.selection === "no" && allocation.buySellMode === currentMode) {
+                                                            // Deselect if already selected with same mode
+                                                            handleAllocationChange(optionIndex, null, 0, currentMode);
+                                                            setPlacedAllocations((prev)=>{
+                                                                const newSet = new Set(prev);
+                                                                newSet.delete(optionIndex);
+                                                                return newSet;
+                                                            });
+                                                        } else {
+                                                            // Switch to No
+                                                            const newAmount = currentMode === "sell" ? Math.min(allocation.amount || 0, getAvailableToSell(optionIndex, "no")) : 0 // Always start with 0 when switching in Buy mode
+                                                            ;
+                                                            handleAllocationChange(optionIndex, "no", newAmount, currentMode);
+                                                            // Clear placed status when selection changes
+                                                            if (placedAllocations.has(optionIndex)) {
+                                                                setPlacedAllocations((prev)=>{
+                                                                    const newSet = new Set(prev);
+                                                                    newSet.delete(optionIndex);
+                                                                    return newSet;
+                                                                });
+                                                            }
+                                                        }
+                                                    },
+                                                    className: `p-4 rounded-lg border-2 transition-all ${allocation.selection === "no" && (allocation.buySellMode || "buy") === (allocation.buySellMode || "buy") ? "border-red-500 bg-red-500 text-white" : allocation.selection === "no" ? "border-red-500/50 bg-red-500/10 text-red-600 dark:text-red-400" : "border-border bg-muted/30 hover:border-red-500/50 hover:bg-red-500/5 dark:hover:border-red-500 dark:hover:bg-red-500/15"}`,
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "text-left w-full",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "font-semibold mb-1",
+                                                                children: [
+                                                                    "No ",
+                                                                    noPrice.toFixed(0),
+                                                                    "¢"
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/app/market/[id]/page.tsx",
+                                                                lineNumber: 1012,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            allocation.buySellMode === "sell" && getAvailableToSell(optionIndex, "no") > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "text-xs mt-1 text-muted-foreground",
+                                                                children: [
+                                                                    "Own: $",
+                                                                    getAvailableToSell(optionIndex, "no").toFixed(2)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/app/market/[id]/page.tsx",
+                                                                lineNumber: 1016,
+                                                                columnNumber: 25
+                                                            }, this),
+                                                            allocation.selection === "no" && allocation.amount > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "text-xs mt-1 opacity-90",
+                                                                children: [
+                                                                    allocation.buySellMode === "sell" ? "Sell" : "Buy",
+                                                                    " $",
+                                                                    allocation.amount.toFixed(2)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/app/market/[id]/page.tsx",
+                                                                lineNumber: 1021,
+                                                                columnNumber: 25
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/app/market/[id]/page.tsx",
+                                                        lineNumber: 1011,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                    lineNumber: 941,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                            lineNumber: 851,
+                                            columnNumber: 17
+                                        }, this),
+                                        allocation.selection && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "mt-4 p-4 rounded-lg bg-background border border-border",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                                    className: "text-xs font-medium text-muted-foreground uppercase tracking-widest block mb-2",
+                                                    children: "Amount to Allocate"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                    lineNumber: 1032,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex items-center gap-2 mb-3",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "text-muted-foreground",
+                                                            children: "$"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                                            lineNumber: 1036,
+                                                            columnNumber: 23
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                            type: "number",
+                                                            value: allocation.amount || "",
+                                                            onChange: (e)=>{
+                                                                let amount = Number.parseFloat(e.target.value) || 0;
+                                                                const currentMode = allocation.buySellMode || "buy";
+                                                                // In Sell mode, limit to available to sell
+                                                                if (currentMode === "sell" && allocation.selection) {
+                                                                    const maxSell = getAvailableToSell(optionIndex, allocation.selection);
+                                                                    amount = Math.min(amount, maxSell);
+                                                                }
+                                                                // In Buy mode, limit to available VUSDC (shared between Yes/No for same option)
+                                                                if (currentMode === "buy" && allocation.selection) {
+                                                                    const currentAllocation = allocations[optionIndex];
+                                                                    const otherAllocation = currentAllocation?.selection === allocation.selection ? 0 : currentAllocation?.amount || 0;
+                                                                    const availableVusdc = tradingBalance - otherAllocation;
+                                                                    amount = Math.min(amount, availableVusdc);
+                                                                }
+                                                                handleAllocationChange(optionIndex, allocation.selection, amount, currentMode);
+                                                                // Remove from placed allocations if amount changes
+                                                                if (placedAllocations.has(optionIndex)) {
+                                                                    setPlacedAllocations((prev)=>{
+                                                                        const newSet = new Set(prev);
+                                                                        newSet.delete(optionIndex);
+                                                                        return newSet;
+                                                                    });
+                                                                }
+                                                            },
+                                                            placeholder: "0.00",
+                                                            className: "flex-1 bg-transparent text-foreground font-mono focus:outline-none placeholder-muted-foreground/50",
+                                                            step: "0.01",
+                                                            min: "0",
+                                                            max: allocation.buySellMode === "sell" && allocation.selection ? getAvailableToSell(optionIndex, allocation.selection) : tradingBalance - getOptionTotalAllocation(optionIndex) + (allocation.selection ? allocation.amount : 0)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                                            lineNumber: 1037,
+                                                            columnNumber: 23
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                            onClick: async ()=>{
+                                                                const currentMode = allocation.buySellMode || "buy";
+                                                                let canPlace = false;
+                                                                if (currentMode === "sell") {
+                                                                    // In Sell mode, check if amount is within available to sell
+                                                                    const availableToSell = getAvailableToSell(optionIndex, allocation.selection);
+                                                                    canPlace = allocation.amount > 0 && allocation.amount <= availableToSell;
+                                                                } else {
+                                                                    // In Buy mode, check VUSDC (shared for Yes/No in same option)
+                                                                    const availableVusdc = tradingBalance - getOptionTotalAllocation(optionIndex) + allocation.amount;
+                                                                    canPlace = allocation.amount > 0 && allocation.amount <= availableVusdc;
+                                                                }
+                                                                if (canPlace) {
+                                                                    // Record transaction - Scenario 2: Place Bet (this will trigger MetaMask)
+                                                                    const tx = await recordTransaction({
+                                                                        type: "bet",
+                                                                        marketId: marketId,
+                                                                        marketQuestion: market?.question,
+                                                                        optionName: market?.options[optionIndex]?.name,
+                                                                        selection: allocation.selection || undefined,
+                                                                        buySellMode: currentMode,
+                                                                        amount: allocation.amount
+                                                                    });
+                                                                    // Only update state if transaction was successful
+                                                                    if (tx) {
+                                                                        setPlacedAllocations((prev)=>new Set(prev).add(optionIndex));
+                                                                        // If it's a Buy transaction, track the bought position
+                                                                        if (currentMode === "buy" && allocation.selection) {
+                                                                            setBoughtPositions((prev)=>{
+                                                                                const existing = prev.find((p)=>p.optionIndex === optionIndex && p.selection === allocation.selection);
+                                                                                if (existing) {
+                                                                                    // Update existing position
+                                                                                    return prev.map((p)=>p.optionIndex === optionIndex && p.selection === allocation.selection ? {
+                                                                                            ...p,
+                                                                                            amount: p.amount + allocation.amount
+                                                                                        } : p);
+                                                                                } else {
+                                                                                    // Add new position
+                                                                                    return [
+                                                                                        ...prev,
+                                                                                        {
+                                                                                            optionIndex,
+                                                                                            selection: allocation.selection,
+                                                                                            amount: allocation.amount
+                                                                                        }
+                                                                                    ];
+                                                                                }
+                                                                            });
+                                                                        }
+                                                                        // If it's a Sell transaction, reduce the bought position
+                                                                        if (currentMode === "sell" && allocation.selection) {
+                                                                            setBoughtPositions((prev)=>{
+                                                                                return prev.map((p)=>{
+                                                                                    if (p.optionIndex === optionIndex && p.selection === allocation.selection) {
+                                                                                        const newAmount = p.amount - allocation.amount;
+                                                                                        return newAmount > 0 ? {
+                                                                                            ...p,
+                                                                                            amount: newAmount
+                                                                                        } : null;
+                                                                                    }
+                                                                                    return p;
+                                                                                }).filter(Boolean);
+                                                                            });
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            disabled: !allocation.amount || allocation.amount <= 0 || (allocation.buySellMode === "sell" ? allocation.amount > getAvailableToSell(optionIndex, allocation.selection) : allocation.amount > tradingBalance - getOptionTotalAllocation(optionIndex) + allocation.amount) || placedAllocations.has(optionIndex) || isProcessingTransaction || !authenticated || !wallet,
+                                                            className: `px-4 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap ${allocation.amount > 0 && (allocation.buySellMode === "sell" ? allocation.amount <= getAvailableToSell(optionIndex, allocation.selection) : allocation.amount <= tradingBalance - getOptionTotalAllocation(optionIndex) + allocation.amount) && !placedAllocations.has(optionIndex) ? "bg-foreground text-background hover:opacity-90" : placedAllocations.has(optionIndex) ? "bg-green-600 dark:bg-green-500 text-white cursor-default" : "bg-muted text-muted-foreground cursor-not-allowed"}`,
+                                                            children: isProcessingTransaction ? "Processing..." : placedAllocations.has(optionIndex) ? "✓ Placed" : "Place"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                                            lineNumber: 1084,
+                                                            columnNumber: 23
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                    lineNumber: 1035,
+                                                    columnNumber: 21
+                                                }, this),
+                                                allocation.amount > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "text-sm text-muted-foreground",
+                                                    children: [
+                                                        "Potential return: $",
+                                                        calculatePotentialWinnings(optionIndex, allocation.selection, allocation.amount).toFixed(2),
+                                                        " (includes your $",
+                                                        allocation.amount.toFixed(2),
+                                                        " bet)"
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                    lineNumber: 1187,
+                                                    columnNumber: 23
+                                                }, this),
+                                                allocation.buySellMode === "sell" && allocation.selection && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+                                                    children: [
+                                                        allocation.amount > getAvailableToSell(optionIndex, allocation.selection) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "text-xs text-red-600 dark:text-red-400 mt-2",
+                                                            children: [
+                                                                "Warning: Cannot sell more than you bought. Available to sell: $",
+                                                                getAvailableToSell(optionIndex, allocation.selection).toFixed(2)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                                            lineNumber: 1198,
+                                                            columnNumber: 27
+                                                        }, this),
+                                                        getAvailableToSell(optionIndex, allocation.selection) > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "text-xs text-muted-foreground mt-2",
+                                                            children: [
+                                                                "Available to sell: $",
+                                                                getAvailableToSell(optionIndex, allocation.selection).toFixed(2)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                                            lineNumber: 1203,
+                                                            columnNumber: 27
+                                                        }, this),
+                                                        getAvailableToSell(optionIndex, allocation.selection) === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "text-xs text-muted-foreground mt-2",
+                                                            children: "No position to sell. Buy first to create a position."
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                                            lineNumber: 1208,
+                                                            columnNumber: 27
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true),
+                                                allocation.buySellMode !== "sell" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+                                                    children: [
+                                                        allocation.amount > tradingBalance - getOptionTotalAllocation(optionIndex) + allocation.amount && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "text-xs text-red-600 dark:text-red-400 mt-2",
+                                                            children: "Warning: Amount exceeds available VFLR. VFLR is shared between Yes/No for this option."
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                                            lineNumber: 1217,
+                                                            columnNumber: 27
+                                                        }, this),
+                                                        allocation.selection === "yes" && allocations[optionIndex]?.selection === "no" && allocations[optionIndex]?.amount > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "text-xs text-red-600 dark:text-red-400 mt-2",
+                                                            children: [
+                                                                "Warning: You already have ",
+                                                                allocations[optionIndex].amount.toFixed(4),
+                                                                ' FLR allocated to "No". VFLR is shared between Yes/No.'
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                                            lineNumber: 1222,
+                                                            columnNumber: 27
+                                                        }, this),
+                                                        allocation.selection === "no" && allocations[optionIndex]?.selection === "yes" && allocations[optionIndex]?.amount > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "text-xs text-red-600 dark:text-red-400 mt-2",
+                                                            children: [
+                                                                "Warning: You already have ",
+                                                                allocations[optionIndex].amount.toFixed(4),
+                                                                ' FLR allocated to "Yes". VFLR is shared between Yes/No.'
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                                            lineNumber: 1227,
+                                                            columnNumber: 27
+                                                        }, this),
+                                                        allocation.amount > 0 && allocation.amount <= tradingBalance - getOptionTotalAllocation(optionIndex) + allocation.amount && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "text-xs text-muted-foreground mt-2",
+                                                            children: [
+                                                                "Remaining VFLR: ",
+                                                                (tradingBalance - getOptionTotalAllocation(optionIndex)).toFixed(4),
+                                                                " FLR"
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                                            lineNumber: 1232,
+                                                            columnNumber: 27
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true),
+                                                placedAllocations.has(optionIndex) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "text-xs text-green-600 dark:text-green-400 mt-2 font-medium",
+                                                    children: "✓ Allocation placed successfully"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                    lineNumber: 1239,
+                                                    columnNumber: 23
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                            lineNumber: 1031,
+                                            columnNumber: 19
+                                        }, this)
+                                    ]
+                                }, optionIndex, true, {
+                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                    lineNumber: 759,
+                                    columnNumber: 15
+                                }, this);
+                            })
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/app/market/[id]/page.tsx",
+                        lineNumber: 744,
+                        columnNumber: 9
+                    }, this),
+                    totalAllocated > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mb-8 p-6 rounded-lg border border-border bg-muted/50",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                className: "text-lg font-semibold mb-4",
+                                children: "Allocation Summary"
+                            }, void 0, false, {
+                                fileName: "[project]/app/market/[id]/page.tsx",
+                                lineNumber: 1253,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "space-y-2 mb-4",
+                                children: Object.values(allocations).filter((alloc)=>alloc.selection && alloc.amount > 0).map((alloc, idx)=>{
+                                    const potentialReturn = calculatePotentialWinnings(alloc.optionIndex, alloc.selection, alloc.amount);
+                                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "space-y-1",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex items-center justify-between text-sm",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex items-center gap-2",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "text-muted-foreground",
+                                                                children: [
+                                                                    market.options[alloc.optionIndex].name,
+                                                                    " - ",
+                                                                    alloc.selection?.toUpperCase()
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/app/market/[id]/page.tsx",
+                                                                lineNumber: 1267,
+                                                                columnNumber: 27
+                                                            }, this),
+                                                            placedAllocations.has(alloc.optionIndex) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "text-xs text-green-600 dark:text-green-400 font-medium",
+                                                                children: "✓ Placed"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/market/[id]/page.tsx",
+                                                                lineNumber: 1271,
+                                                                columnNumber: 29
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/app/market/[id]/page.tsx",
+                                                        lineNumber: 1266,
+                                                        columnNumber: 25
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "font-mono",
+                                                        children: [
+                                                            "$",
+                                                            alloc.amount.toFixed(2)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/app/market/[id]/page.tsx",
+                                                        lineNumber: 1276,
+                                                        columnNumber: 25
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/app/market/[id]/page.tsx",
+                                                lineNumber: 1265,
+                                                columnNumber: 23
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex items-center justify-end text-xs text-muted-foreground",
+                                                children: [
+                                                    "Potential return: $",
+                                                    potentialReturn.toFixed(2)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/app/market/[id]/page.tsx",
+                                                lineNumber: 1280,
+                                                columnNumber: 23
+                                            }, this)
+                                        ]
+                                    }, idx, true, {
+                                        fileName: "[project]/app/market/[id]/page.tsx",
+                                        lineNumber: 1264,
+                                        columnNumber: 21
+                                    }, this);
+                                })
+                            }, void 0, false, {
+                                fileName: "[project]/app/market/[id]/page.tsx",
+                                lineNumber: 1254,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "pt-4 border-t border-border",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex items-center justify-between mb-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "font-semibold",
+                                                children: "Max Potential Return:"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/market/[id]/page.tsx",
+                                                lineNumber: 1289,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "font-mono text-lg font-semibold",
+                                                children: [
+                                                    "$",
+                                                    maxPotentialWinnings.toFixed(2)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/app/market/[id]/page.tsx",
+                                                lineNumber: 1290,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/app/market/[id]/page.tsx",
+                                        lineNumber: 1288,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-xs text-muted-foreground mt-1",
+                                        children: "Maximum return if your winning allocation succeeds"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/market/[id]/page.tsx",
+                                        lineNumber: 1294,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/app/market/[id]/page.tsx",
+                                lineNumber: 1287,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/app/market/[id]/page.tsx",
+                        lineNumber: 1252,
+                        columnNumber: 11
+                    }, this),
+                    transactions.filter((tx)=>tx.marketId === marketId).length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mb-8 p-6 rounded-lg border border-border bg-muted/30",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                className: "text-lg font-semibold mb-4",
+                                children: "Transaction History"
+                            }, void 0, false, {
+                                fileName: "[project]/app/market/[id]/page.tsx",
+                                lineNumber: 1304,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "space-y-3",
+                                children: transactions.filter((tx)=>tx.marketId === marketId).slice(0, 10) // Show last 10 transactions
+                                .map((tx)=>{
+                                    const date = new Date(tx.timestamp);
+                                    const formattedDate = date.toLocaleDateString("en-US", {
+                                        month: "short",
+                                        day: "numeric",
+                                        year: "numeric"
+                                    });
+                                    const formattedTime = date.toLocaleTimeString("en-US", {
+                                        hour: "2-digit",
+                                        minute: "2-digit"
+                                    });
+                                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "p-4 rounded-lg border border-border bg-background hover:bg-muted/50 transition-colors",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-start justify-between gap-4",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex-1",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "flex items-center gap-2 mb-2",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "text-sm font-semibold capitalize",
+                                                                    children: tx.type === "deposit" ? "Deposit" : `${tx.buySellMode === "sell" ? "Sell" : "Buy"} Bet`
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                                    lineNumber: 1329,
+                                                                    columnNumber: 29
+                                                                }, this),
+                                                                tx.status === "completed" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "flex items-center gap-1 text-xs text-green-600 dark:text-green-400 font-medium",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                                                                            size: 14
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                                                            lineNumber: 1334,
+                                                                            columnNumber: 33
+                                                                        }, this),
+                                                                        "Completed"
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                                    lineNumber: 1333,
+                                                                    columnNumber: 31
+                                                                }, this),
+                                                                tx.status === "pending" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "flex items-center gap-1 text-xs text-yellow-600 dark:text-yellow-400 font-medium",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
+                                                                            size: 14
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                                                            lineNumber: 1340,
+                                                                            columnNumber: 33
+                                                                        }, this),
+                                                                        "Pending"
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                                    lineNumber: 1339,
+                                                                    columnNumber: 31
+                                                                }, this),
+                                                                tx.status === "failed" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "flex items-center gap-1 text-xs text-red-600 dark:text-red-400 font-medium",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__XCircle$3e$__["XCircle"], {
+                                                                            size: 14
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                                                            lineNumber: 1346,
+                                                                            columnNumber: 33
+                                                                        }, this),
+                                                                        "Failed"
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                                    lineNumber: 1345,
+                                                                    columnNumber: 31
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                                            lineNumber: 1328,
+                                                            columnNumber: 27
+                                                        }, this),
+                                                        tx.type === "bet" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "text-sm text-muted-foreground space-y-1",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "font-medium",
+                                                                            children: "Option:"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                                                            lineNumber: 1355,
+                                                                            columnNumber: 33
+                                                                        }, this),
+                                                                        " ",
+                                                                        tx.optionName
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                                    lineNumber: 1354,
+                                                                    columnNumber: 31
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "font-medium",
+                                                                            children: "Selection:"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                                                            lineNumber: 1358,
+                                                                            columnNumber: 33
+                                                                        }, this),
+                                                                        " ",
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "capitalize",
+                                                                            children: tx.selection
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                                                            lineNumber: 1359,
+                                                                            columnNumber: 33
+                                                                        }, this),
+                                                                        tx.buySellMode && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "ml-2 text-xs px-2 py-0.5 rounded bg-muted",
+                                                                            children: tx.buySellMode === "buy" ? "Buy" : "Sell"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                                                            lineNumber: 1361,
+                                                                            columnNumber: 35
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                                    lineNumber: 1357,
+                                                                    columnNumber: 31
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                                            lineNumber: 1353,
+                                                            columnNumber: 29
+                                                        }, this),
+                                                        tx.type === "deposit" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "text-sm text-muted-foreground",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "font-medium",
+                                                                    children: "Market:"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                                    lineNumber: 1371,
+                                                                    columnNumber: 31
+                                                                }, this),
+                                                                " ",
+                                                                tx.marketQuestion
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                                            lineNumber: 1370,
+                                                            columnNumber: 29
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "mt-2 flex items-center gap-4 text-xs text-muted-foreground",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    children: [
+                                                                        formattedDate,
+                                                                        " at ",
+                                                                        formattedTime
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                                    lineNumber: 1376,
+                                                                    columnNumber: 29
+                                                                }, this),
+                                                                tx.txHash && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                                    href: `https://coston2-explorer.flare.network/tx/${tx.txHash}`,
+                                                                    target: "_blank",
+                                                                    rel: "noopener noreferrer",
+                                                                    className: "flex items-center gap-1 text-blue-600 dark:text-blue-400 hover:underline",
+                                                                    children: [
+                                                                        "View on Explorer",
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$external$2d$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ExternalLink$3e$__["ExternalLink"], {
+                                                                            size: 12
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                                                            lineNumber: 1385,
+                                                                            columnNumber: 33
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                                    lineNumber: 1378,
+                                                                    columnNumber: 31
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                                            lineNumber: 1375,
+                                                            columnNumber: 27
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                    lineNumber: 1327,
+                                                    columnNumber: 25
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "text-right",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "text-lg font-semibold font-mono",
+                                                            children: [
+                                                                tx.type === "deposit" ? "+" : "",
+                                                                "$",
+                                                                tx.amount.toFixed(2)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                                            lineNumber: 1392,
+                                                            columnNumber: 27
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "text-xs text-muted-foreground mt-1",
+                                                            children: tx.type === "deposit" ? "Deposited" : "Amount"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                                            lineNumber: 1395,
+                                                            columnNumber: 27
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                    lineNumber: 1391,
+                                                    columnNumber: 25
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                            lineNumber: 1326,
+                                            columnNumber: 23
+                                        }, this)
+                                    }, tx.id, false, {
+                                        fileName: "[project]/app/market/[id]/page.tsx",
+                                        lineNumber: 1322,
+                                        columnNumber: 21
+                                    }, this);
+                                })
+                            }, void 0, false, {
+                                fileName: "[project]/app/market/[id]/page.tsx",
+                                lineNumber: 1305,
+                                columnNumber: 13
+                            }, this),
+                            transactions.filter((tx)=>tx.marketId === marketId).length > 10 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "mt-4 text-center",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-xs text-muted-foreground",
+                                    children: [
+                                        "Showing last 10 transactions. Total: ",
+                                        transactions.filter((tx)=>tx.marketId === marketId).length
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                    lineNumber: 1406,
+                                    columnNumber: 17
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/app/market/[id]/page.tsx",
+                                lineNumber: 1405,
+                                columnNumber: 15
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/app/market/[id]/page.tsx",
+                        lineNumber: 1303,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex gap-3",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                onClick: async ()=>{
+                                    // Place all unplaced allocations
+                                    const unplacedOptions = Object.values(allocations).filter((alloc)=>{
+                                        if (!alloc.selection || alloc.amount <= 0 || placedAllocations.has(alloc.optionIndex)) {
+                                            return false;
+                                        }
+                                        const currentMode = alloc.buySellMode || "buy";
+                                        if (currentMode === "sell") {
+                                            // In Sell mode, check available to sell
+                                            return alloc.amount <= getAvailableToSell(alloc.optionIndex, alloc.selection);
+                                        } else {
+                                            // In Buy mode, check VUSDC (shared for Yes/No)
+                                            const availableVusdc = tradingBalance - getOptionTotalAllocation(alloc.optionIndex) + alloc.amount;
+                                            return alloc.amount <= availableVusdc;
+                                        }
+                                    });
+                                    if (unplacedOptions.length > 0) {
+                                        // Process transactions sequentially to avoid multiple MetaMask popups at once
+                                        const newSet = new Set(placedAllocations);
+                                        for (const alloc of unplacedOptions){
+                                            const currentMode = alloc.buySellMode || "buy";
+                                            // Record transaction - Scenario 2: Place Bet (this will trigger MetaMask)
+                                            const tx = await recordTransaction({
+                                                type: "bet",
+                                                marketId: marketId,
+                                                marketQuestion: market?.question,
+                                                optionName: market?.options[alloc.optionIndex]?.name,
+                                                selection: alloc.selection || undefined,
+                                                buySellMode: currentMode,
+                                                amount: alloc.amount
+                                            });
+                                            // Only update state if transaction was successful
+                                            if (tx) {
+                                                newSet.add(alloc.optionIndex);
+                                                // Track bought positions for Buy transactions
+                                                if (currentMode === "buy" && alloc.selection) {
+                                                    setBoughtPositions((prevPos)=>{
+                                                        const existing = prevPos.find((p)=>p.optionIndex === alloc.optionIndex && p.selection === alloc.selection);
+                                                        if (existing) {
+                                                            return prevPos.map((p)=>p.optionIndex === alloc.optionIndex && p.selection === alloc.selection ? {
+                                                                    ...p,
+                                                                    amount: p.amount + alloc.amount
+                                                                } : p);
+                                                        } else {
+                                                            return [
+                                                                ...prevPos,
+                                                                {
+                                                                    optionIndex: alloc.optionIndex,
+                                                                    selection: alloc.selection,
+                                                                    amount: alloc.amount
+                                                                }
+                                                            ];
+                                                        }
+                                                    });
+                                                }
+                                                // Reduce bought positions for Sell transactions
+                                                if (currentMode === "sell" && alloc.selection) {
+                                                    setBoughtPositions((prevPos)=>{
+                                                        return prevPos.map((p)=>{
+                                                            if (p.optionIndex === alloc.optionIndex && p.selection === alloc.selection) {
+                                                                const newAmount = p.amount - alloc.amount;
+                                                                return newAmount > 0 ? {
+                                                                    ...p,
+                                                                    amount: newAmount
+                                                                } : null;
+                                                            }
+                                                            return p;
+                                                        }).filter(Boolean);
+                                                    });
+                                                }
+                                            }
+                                        }
+                                        setPlacedAllocations(newSet);
+                                    }
+                                },
+                                disabled: totalAllocated === 0 || tradingBalance === 0 || Object.values(allocations).some((alloc)=>{
+                                    if (!alloc.selection || alloc.amount <= 0) return false;
+                                    const currentMode = alloc.buySellMode || "buy";
+                                    if (currentMode === "sell") {
+                                        return alloc.amount > getAvailableToSell(alloc.optionIndex, alloc.selection);
+                                    } else {
+                                        const availableVusdc = tradingBalance - getOptionTotalAllocation(alloc.optionIndex) + alloc.amount;
+                                        return alloc.amount > availableVusdc;
+                                    }
+                                }) || Object.values(allocations).every((alloc)=>!alloc.selection || alloc.amount <= 0 || placedAllocations.has(alloc.optionIndex)) || isProcessingTransaction || !authenticated || !wallet,
+                                className: `flex-1 px-6 py-3 rounded-lg font-semibold transition-all duration-200 ${totalAllocated > 0 && tradingBalance > 0 && !Object.values(allocations).some((alloc)=>{
+                                    if (!alloc.selection || alloc.amount <= 0) return false;
+                                    const currentMode = alloc.buySellMode || "buy";
+                                    if (currentMode === "sell") {
+                                        return alloc.amount > getAvailableToSell(alloc.optionIndex, alloc.selection);
+                                    } else {
+                                        const availableVusdc = tradingBalance - getOptionTotalAllocation(alloc.optionIndex) + alloc.amount;
+                                        return alloc.amount > availableVusdc;
+                                    }
+                                }) && Object.values(allocations).some((alloc)=>alloc.selection && alloc.amount > 0 && !placedAllocations.has(alloc.optionIndex)) ? "bg-foreground text-background hover:opacity-90" : "bg-muted text-muted-foreground cursor-not-allowed"}`,
+                                children: isProcessingTransaction ? "Processing Transactions..." : "Place All Remaining Allocations"
+                            }, void 0, false, {
+                                fileName: "[project]/app/market/[id]/page.tsx",
+                                lineNumber: 1416,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                onClick: ()=>router.push("/"),
+                                className: "px-6 py-3 text-sm font-medium rounded-lg hover:bg-muted transition-colors border border-border",
+                                children: "Cancel"
+                            }, void 0, false, {
+                                fileName: "[project]/app/market/[id]/page.tsx",
+                                lineNumber: 1544,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/app/market/[id]/page.tsx",
+                        lineNumber: 1415,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/app/market/[id]/page.tsx",
+                lineNumber: 686,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Dialog"], {
+                open: depositDialogOpen,
+                onOpenChange: setDepositDialogOpen,
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogContent"], {
+                    className: "sm:max-w-md",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogHeader"], {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogTitle"], {
+                                    children: "Deposit Funds for This Market"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                    lineNumber: 1557,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogDescription"], {
+                                    children: "Add funds to your trading balance for this specific market only"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                    lineNumber: 1558,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/market/[id]/page.tsx",
+                            lineNumber: 1556,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "space-y-4 py-4",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                            className: "text-sm font-medium text-muted-foreground uppercase tracking-widest block mb-2",
+                                            children: "Deposit Amount"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                            lineNumber: 1564,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-center gap-2 px-4 py-3 rounded-lg border border-border bg-muted/30",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-muted-foreground",
+                                                    children: "$"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                    lineNumber: 1568,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                    type: "number",
+                                                    value: depositAmount,
+                                                    onChange: (e)=>setDepositAmount(e.target.value),
+                                                    placeholder: "0.00",
+                                                    className: "flex-1 bg-transparent text-foreground font-mono focus:outline-none placeholder-muted-foreground/50",
+                                                    step: "0.01",
+                                                    min: "0",
+                                                    max: userBalance
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                    lineNumber: 1569,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                            lineNumber: 1567,
+                                            columnNumber: 15
+                                        }, this),
+                                        depositAmount && Number.parseFloat(depositAmount) > userBalance && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-xs text-red-600 dark:text-red-400 mt-2",
+                                            children: [
+                                                "Deposit amount exceeds your balance of ",
+                                                userBalance.toFixed(4),
+                                                " FLR"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                            lineNumber: 1581,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                    lineNumber: 1563,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "p-4 rounded-lg border border-border bg-muted/20 space-y-2",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-center justify-between",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-sm text-muted-foreground",
+                                                    children: "Your Total Balance:"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                    lineNumber: 1588,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-sm font-semibold font-mono",
+                                                    children: [
+                                                        userBalance.toFixed(4),
+                                                        " FLR"
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                    lineNumber: 1589,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                            lineNumber: 1587,
+                                            columnNumber: 15
+                                        }, this),
+                                        tradingBalance > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-center justify-between pt-2 border-t border-border/50",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-sm text-muted-foreground",
+                                                    children: "Deposited for this market:"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                    lineNumber: 1593,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-sm font-semibold font-mono text-foreground",
+                                                    children: [
+                                                        tradingBalance.toFixed(4),
+                                                        " FLR"
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                    lineNumber: 1594,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                            lineNumber: 1592,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "pt-2 border-t border-border/50",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-xs text-muted-foreground",
+                                                children: "Note: Funds deposited here are only available for trading in this specific market question."
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/market/[id]/page.tsx",
+                                                lineNumber: 1598,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                            lineNumber: 1597,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                    lineNumber: 1586,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/market/[id]/page.tsx",
+                            lineNumber: 1562,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogFooter"], {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: ()=>setDepositDialogOpen(false),
+                                    className: "px-4 py-2 text-sm font-medium rounded-lg hover:bg-muted transition-colors border border-border",
+                                    children: "Cancel"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                    lineNumber: 1605,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: async ()=>{
+                                        const amount = Number.parseFloat(depositAmount) || 0;
+                                        if (amount > 0 && amount <= userBalance) {
+                                            // Record transaction - Scenario 1: Deposit (this will trigger MetaMask)
+                                            const tx = await recordTransaction({
+                                                type: "deposit",
+                                                marketId: marketId,
+                                                marketQuestion: market?.question,
+                                                amount: amount
+                                            });
+                                            // Only update balances if transaction was successful
+                                            if (tx) {
+                                                setTradingBalance((prev)=>prev + amount);
+                                                // Deduct from wallet balance
+                                                setUserBalance((prev)=>prev - amount);
+                                                // VUSDC will be updated automatically via useEffect when tradingBalance changes
+                                                setDepositAmount("");
+                                                setDepositDialogOpen(false);
+                                            }
+                                        }
+                                    },
+                                    disabled: !depositAmount || Number.parseFloat(depositAmount) <= 0 || Number.parseFloat(depositAmount) > userBalance || isProcessingTransaction || !authenticated || !wallet,
+                                    className: `px-4 py-2 text-sm font-medium rounded-lg transition-all ${depositAmount && Number.parseFloat(depositAmount) > 0 && Number.parseFloat(depositAmount) <= userBalance && !isProcessingTransaction ? "bg-foreground text-background hover:opacity-90" : "bg-muted text-muted-foreground cursor-not-allowed"}`,
+                                    children: isProcessingTransaction ? "Processing Transaction..." : "Deposit"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                    lineNumber: 1611,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/market/[id]/page.tsx",
+                            lineNumber: 1604,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/app/market/[id]/page.tsx",
+                    lineNumber: 1555,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/app/market/[id]/page.tsx",
+                lineNumber: 1554,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Dialog"], {
+                open: editDialogOpen,
+                onOpenChange: setEditDialogOpen,
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogContent"], {
+                    className: "sm:max-w-md",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogHeader"], {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogTitle"], {
+                                    children: "Edit Trading Balance"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                    lineNumber: 1658,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogDescription"], {
+                                    children: "Update your trading balance for this market"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                    lineNumber: 1659,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/market/[id]/page.tsx",
+                            lineNumber: 1657,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "space-y-4 py-4",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                            className: "text-sm font-medium text-muted-foreground uppercase tracking-widest block mb-2",
+                                            children: "Trading Balance Amount"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                            lineNumber: 1665,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-center gap-2 px-4 py-3 rounded-lg border border-border bg-muted/30",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-muted-foreground",
+                                                    children: "$"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                    lineNumber: 1669,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                    type: "number",
+                                                    value: editAmount,
+                                                    onChange: (e)=>setEditAmount(e.target.value),
+                                                    placeholder: "0.00",
+                                                    className: "flex-1 bg-transparent text-foreground font-mono focus:outline-none placeholder-muted-foreground/50",
+                                                    step: "0.01",
+                                                    min: "0",
+                                                    max: userBalance + tradingBalance
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                    lineNumber: 1670,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                            lineNumber: 1668,
+                                            columnNumber: 15
+                                        }, this),
+                                        editAmount && Number.parseFloat(editAmount) > userBalance + tradingBalance && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-xs text-red-600 dark:text-red-400 mt-2",
+                                            children: [
+                                                "Amount exceeds available balance of ",
+                                                (userBalance + tradingBalance).toFixed(4),
+                                                " FLR"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                            lineNumber: 1682,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                    lineNumber: 1664,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "p-4 rounded-lg border border-border bg-muted/20",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex items-center justify-between",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-sm text-muted-foreground",
+                                                children: "Available Balance:"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/market/[id]/page.tsx",
+                                                lineNumber: 1689,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-sm font-semibold font-mono",
+                                                children: [
+                                                    (userBalance + tradingBalance).toFixed(4),
+                                                    " FLR"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/app/market/[id]/page.tsx",
+                                                lineNumber: 1690,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/app/market/[id]/page.tsx",
+                                        lineNumber: 1688,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                    lineNumber: 1687,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/market/[id]/page.tsx",
+                            lineNumber: 1663,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogFooter"], {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: ()=>setEditDialogOpen(false),
+                                    className: "px-4 py-2 text-sm font-medium rounded-lg hover:bg-muted transition-colors border border-border",
+                                    children: "Cancel"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                    lineNumber: 1695,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: ()=>{
+                                        const amount = Number.parseFloat(editAmount) || 0;
+                                        const currentTotal = userBalance + tradingBalance;
+                                        if (amount >= 0 && amount <= currentTotal) {
+                                            const difference = amount - tradingBalance;
+                                            setTradingBalance(amount);
+                                            // Adjust wallet balance based on difference
+                                            if (difference > 0) {
+                                                // Increasing trading balance - deduct from wallet
+                                                setUserBalance((prev)=>Math.max(0, prev - difference));
+                                            } else if (difference < 0) {
+                                                // Decreasing trading balance - add back to wallet
+                                                setUserBalance((prev)=>prev - difference);
+                                            }
+                                            // VUSDC will be updated automatically via useEffect when tradingBalance changes
+                                            setEditAmount("");
+                                            setEditDialogOpen(false);
+                                        }
+                                    },
+                                    disabled: !editAmount || Number.parseFloat(editAmount) < 0 || Number.parseFloat(editAmount) > userBalance + tradingBalance,
+                                    className: `px-4 py-2 text-sm font-medium rounded-lg transition-all ${editAmount && Number.parseFloat(editAmount) >= 0 && Number.parseFloat(editAmount) <= userBalance + tradingBalance ? "bg-foreground text-background hover:opacity-90" : "bg-muted text-muted-foreground cursor-not-allowed"}`,
+                                    children: "Save"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                    lineNumber: 1701,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/market/[id]/page.tsx",
+                            lineNumber: 1694,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/app/market/[id]/page.tsx",
+                    lineNumber: 1656,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/app/market/[id]/page.tsx",
+                lineNumber: 1655,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Dialog"], {
+                open: clearConfirmDialogOpen,
+                onOpenChange: setClearConfirmDialogOpen,
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogContent"], {
+                    className: "sm:max-w-md",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogHeader"], {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogTitle"], {
+                                    children: "Clear Deposit"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                    lineNumber: 1738,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogDescription"], {
+                                    children: "Are you sure you want to clear all deposited funds? This will reset your trading balance and all allocations."
+                                }, void 0, false, {
+                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                    lineNumber: 1739,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/market/[id]/page.tsx",
+                            lineNumber: 1737,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "space-y-4 py-4",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "p-4 rounded-lg border border-border bg-muted/20",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-center justify-between mb-2",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-sm text-muted-foreground",
+                                                    children: "Current Trading Balance:"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                    lineNumber: 1746,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-sm font-semibold font-mono",
+                                                    children: [
+                                                        tradingBalance.toFixed(4),
+                                                        " FLR"
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                    lineNumber: 1747,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                            lineNumber: 1745,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-center justify-between",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-sm text-muted-foreground",
+                                                    children: "Total Allocated:"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                    lineNumber: 1750,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-sm font-semibold font-mono",
+                                                    children: [
+                                                        "$",
+                                                        totalAllocated.toFixed(2)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                                    lineNumber: 1751,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/market/[id]/page.tsx",
+                                            lineNumber: 1749,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                    lineNumber: 1744,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-sm text-muted-foreground",
+                                    children: "This action cannot be undone. All your allocations will be reset."
+                                }, void 0, false, {
+                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                    lineNumber: 1754,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/market/[id]/page.tsx",
+                            lineNumber: 1743,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogFooter"], {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: ()=>setClearConfirmDialogOpen(false),
+                                    className: "px-4 py-2 text-sm font-medium rounded-lg hover:bg-muted transition-colors border border-border",
+                                    children: "Cancel"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                    lineNumber: 1759,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: ()=>{
+                                        // Return trading balance back to wallet
+                                        setUserBalance((prev)=>prev + tradingBalance);
+                                        setTradingBalance(0);
+                                        // Reset all allocations
+                                        const resetAllocations = {};
+                                        market.options.forEach((_, idx)=>{
+                                            resetAllocations[idx] = {
+                                                optionIndex: idx,
+                                                selection: null,
+                                                amount: 0,
+                                                buySellMode: "buy"
+                                            };
+                                        });
+                                        setAllocations(resetAllocations);
+                                        setPlacedAllocations(new Set());
+                                        // Clear bought positions
+                                        setBoughtPositions([]);
+                                        setClearConfirmDialogOpen(false);
+                                    },
+                                    className: "px-4 py-2 text-sm font-medium rounded-lg bg-red-600 dark:bg-red-500 text-white hover:opacity-90 transition-opacity",
+                                    children: "Clear Deposit"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/market/[id]/page.tsx",
+                                    lineNumber: 1765,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/market/[id]/page.tsx",
+                            lineNumber: 1758,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/app/market/[id]/page.tsx",
+                    lineNumber: 1736,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/app/market/[id]/page.tsx",
+                lineNumber: 1735,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/app/market/[id]/page.tsx",
+        lineNumber: 642,
+        columnNumber: 5
+    }, this);
+}
+}),
+];
+
+//# sourceMappingURL=_1b9d3316._.js.map

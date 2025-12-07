@@ -1,0 +1,13 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Quantum Market Logo - Design 7: Wave with Upward Trend -->
+  <defs>
+    <style>
+      .logo-path { fill: currentColor; }
+    </style>
+  </defs>
+  <!-- Quantum wave -->
+  <path class="logo-path" d="M6 20C8 20 10 18 12 18C14 18 16 20 18 20C20 20 22 18 24 18C26 18 28 20 28 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <!-- Upward trend arrow -->
+  <path class="logo-path" d="M20 12L24 8L28 12M24 8V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>
+

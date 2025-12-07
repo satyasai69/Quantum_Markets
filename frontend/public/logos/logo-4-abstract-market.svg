@@ -1,0 +1,17 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Quantum Market Logo - Design 4: Abstract Market with Quantum Elements -->
+  <defs>
+    <style>
+      .logo-path { fill: currentColor; }
+    </style>
+  </defs>
+  <!-- Abstract market structure -->
+  <path class="logo-path" d="M6 24L12 12L18 18L26 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Quantum nodes -->
+  <circle cx="12" cy="12" r="2" fill="currentColor"/>
+  <circle cx="18" cy="18" r="2" fill="currentColor"/>
+  <circle cx="26" cy="8" r="2" fill="currentColor"/>
+  <!-- Connection lines -->
+  <path d="M12 12L18 18" stroke="currentColor" stroke-width="1" stroke-dasharray="2 2" opacity="0.4" fill="none"/>
+</svg>
+

@@ -1,0 +1,1025 @@
+/* Enhanced Color Scheme - Easy to revert by commenting out or removing this file import */
+
+:root {
+  /* Enhanced Primary Colors - Blue/Purple gradient */
+  --enhanced-primary: oklch(0.55 0.2 270);
+  --enhanced-primary-light: oklch(0.65 0.18 270);
+  --enhanced-primary-dark: oklch(0.45 0.22 270);
+  
+  /* Accent Colors - Green for success, Orange for warnings */
+  --enhanced-success: oklch(0.6 0.2 145);
+  --enhanced-success-light: oklch(0.7 0.18 145);
+  --enhanced-warning: oklch(0.7 0.2 70);
+  --enhanced-info: oklch(0.6 0.2 220);
+  
+  /* Gradient backgrounds */
+  --enhanced-gradient-start: oklch(0.55 0.2 270);
+  --enhanced-gradient-end: oklch(0.6 0.18 220);
+  
+  /* Enhanced borders with subtle color */
+  --enhanced-border: oklch(0.85 0.02 270);
+  --enhanced-border-hover: oklch(0.7 0.1 270);
+  
+  /* Card backgrounds with subtle tint */
+  --enhanced-card: oklch(0.98 0.01 270);
+  --enhanced-card-hover: oklch(0.96 0.015 270);
+}
+
+.dark {
+  /* Enhanced Primary Colors for Dark Mode */
+  --enhanced-primary: oklch(0.65 0.2 270);
+  --enhanced-primary-light: oklch(0.75 0.18 270);
+  --enhanced-primary-dark: oklch(0.55 0.22 270);
+  
+  /* Accent Colors for Dark Mode - Better visibility */
+  --enhanced-success: oklch(0.7 0.18 150); /* Lighter, more vibrant green */
+  --enhanced-success-light: oklch(0.75 0.18 150);
+  --enhanced-warning: oklch(0.75 0.2 70);
+  --enhanced-info: oklch(0.7 0.18 220); /* Lighter, more vibrant blue */
+  
+  /* Gradient backgrounds for Dark Mode */
+  --enhanced-gradient-start: oklch(0.65 0.2 270);
+  --enhanced-gradient-end: oklch(0.7 0.18 220);
+  
+  /* Enhanced borders for Dark Mode */
+  --enhanced-border: oklch(0.2 0.03 270);
+  --enhanced-border-hover: oklch(0.3 0.08 270);
+  
+  /* Card backgrounds for Dark Mode */
+  --enhanced-card: oklch(0.12 0.015 270);
+  --enhanced-card-hover: oklch(0.15 0.02 270);
+}
+
+/* Apply enhanced colors to key elements */
+@layer base {
+  /* Enhanced header border - more visible and properly aligned */
+  header {
+    border-bottom: 1px solid var(--enhanced-border) !important;
+    border-bottom-color: oklch(from var(--enhanced-border) l c h) !important;
+    box-shadow: none !important;
+  }
+  
+  /* Dark mode header border - more visible */
+  .dark header {
+    border-bottom-color: oklch(0.25 0.03 270) !important;
+  }
+  
+  /* Light mode header border */
+  header:not(.dark) {
+    border-bottom-color: oklch(0.88 0.02 270) !important;
+  }
+  
+  /* Ensure header border doesn't visually overlap category filter */
+  header::after {
+    display: none;
+  }
+  
+  /* Category filter border - match header, prevent overlap */
+  .border-b.border-border\/50,
+  .border-b.border-border\/80 {
+    border-bottom: 1px solid oklch(from var(--enhanced-border) l c h / 0.5) !important;
+  }
+  
+  .dark .border-b.border-border\/50,
+  .dark .border-b.border-border\/80 {
+    border-bottom-color: oklch(0.25 0.03 270 / 0.8) !important;
+  }
+  
+  /* Ensure header border is on top and doesn't cover category filter */
+  header {
+    position: relative;
+    z-index: 50;
+  }
+  
+  /* Category filter should be just below header with proper spacing */
+  .sticky.top-\[65px\].z-40 {
+    z-index: 40;
+    margin-top: 0 !important;
+  }
+  
+  /* Ensure buttons in category filter are fully visible and above header */
+  .sticky.top-\[65px\] button {
+    position: relative;
+    z-index: 5;
+  }
+  
+  /* Category filter container should be above header border */
+  .sticky.top-\[65px\].z-40 {
+    position: relative;
+    z-index: 40;
+    background: var(--background) !important;
+    overflow: visible !important;
+  }
+  
+  /* Ensure header doesn't cover category filter buttons - lower z-index for border area */
+  header {
+    z-index: 50;
+  }
+  
+  /* Category filter section - ensure proper spacing from header */
+  .sticky.top-\[65px\].border-b {
+    background: var(--background) !important;
+  }
+  
+  /* Ensure header border doesn't visually overlap buttons - add margin to category filter */
+  .sticky.top-\[65px\].border-b > div {
+    margin-top: 8px !important; /* Space from header border */
+  }
+  
+  /* Header border should not extend into category filter area */
+  header {
+    border-bottom-width: 1px !important;
+  }
+  
+  /* Enhanced buttons - Remove gradient, use text color instead */
+  button.bg-foreground:not(.auth-button) {
+    background: transparent !important;
+    border: 1px solid oklch(0.55 0.2 270) !important;
+    color: oklch(0.55 0.2 270) !important; /* Purple text */
+    transition: all 0.3s ease;
+  }
+  
+  button.bg-foreground:not(.auth-button):hover {
+    background: oklch(0.55 0.2 270 / 0.1) !important;
+    border-color: oklch(0.55 0.2 270) !important;
+    color: oklch(0.6 0.2 270) !important; /* Lighter purple on hover */
+  }
+  
+  /* Dark mode button hover - more visible */
+  .dark button.bg-foreground:not(.auth-button) {
+    border-color: oklch(0.6 0.2 270) !important;
+    color: oklch(0.6 0.2 270) !important;
+  }
+  
+  .dark button.bg-foreground:not(.auth-button):hover {
+    background: oklch(0.6 0.2 270 / 0.2) !important;
+    border-color: oklch(0.65 0.2 270) !important;
+    color: oklch(0.65 0.2 270) !important;
+  }
+  
+  /* Button text color override - use colored text instead of background */
+  button.bg-foreground .text-background,
+  button.bg-foreground.text-background,
+  .bg-foreground.text-background {
+    color: oklch(0.55 0.2 270) !important; /* Purple text */
+    background: transparent !important;
+  }
+  
+  .dark button.bg-foreground .text-background,
+  .dark button.bg-foreground.text-background,
+  .dark .bg-foreground.text-background {
+    color: oklch(0.6 0.2 270) !important; /* Lighter purple in dark mode */
+  }
+  
+  /* Remove any background fills from category buttons */
+  .bg-foreground.text-background {
+    background: transparent !important;
+  }
+  
+  /* Ensure all clickable items have visible hover in dark mode */
+  .dark .group:hover,
+  .dark button.group:hover {
+    background: oklch(0.2 0.02 270) !important;
+  }
+  
+  /* Market card hover in dark mode */
+  .dark .group.border:hover {
+    border-color: oklch(0.35 0.05 270) !important;
+    background: oklch(0.18 0.02 270) !important;
+  }
+  
+  /* Subtle auth button styling */
+  button.bg-muted\/50.border-border {
+    background: var(--enhanced-card) !important;
+    border-color: var(--enhanced-border) !important;
+    color: oklch(from var(--foreground) calc(l * 0.9) 0.02 270) !important;
+  }
+  
+  button.bg-muted\/50.border-border:hover {
+    background: var(--enhanced-card-hover) !important;
+    border-color: var(--enhanced-border-hover) !important;
+  }
+  
+  /* Ensure hover works in dark mode - more visible */
+  .dark button.bg-muted\/50.border-border:hover,
+  .dark button.hover\:bg-muted\/80:hover {
+    background: oklch(0.25 0.02 270) !important;
+    border-color: oklch(0.35 0.05 270) !important;
+  }
+  
+  /* Light mode hover */
+  button.bg-muted\/50.border-border:hover:not(.dark button),
+  button.hover\:bg-muted\/80:hover:not(.dark button) {
+    background: oklch(0.94 0.015 270) !important;
+    border-color: oklch(0.75 0.03 270) !important;
+  }
+  
+  /* Enhanced cards with subtle tint */
+  .bg-muted\/30,
+  .bg-muted\/20,
+  .bg-muted\/50 {
+    background: var(--enhanced-card) !important;
+    border-color: var(--enhanced-border) !important;
+    transition: all 0.2s ease;
+  }
+  
+  .bg-muted\/30:hover,
+  .bg-muted\/20:hover,
+  .bg-muted\/50:hover {
+    background: var(--enhanced-card-hover) !important;
+    border-color: var(--enhanced-border-hover) !important;
+  }
+  
+  /* Enhanced borders */
+  .border-border {
+    border-color: var(--enhanced-border) !important;
+  }
+  
+  /* Success states with color */
+  .text-green-600,
+  .text-green-400 {
+    color: var(--enhanced-success) !important;
+  }
+  
+  .dark .text-green-400,
+  .dark .text-green-600 {
+    color: oklch(0.7 0.18 150) !important; /* Lighter, more vibrant green for dark mode */
+  }
+  
+  .bg-green-500\/10,
+  .bg-green-600,
+  .dark .bg-green-500 {
+    background: oklch(from var(--enhanced-success) l c h / 0.1) !important;
+    border-color: oklch(from var(--enhanced-success) l c h / 0.3) !important;
+  }
+  
+  /* Info/Blue states */
+  .text-blue-600,
+  .text-blue-400 {
+    color: var(--enhanced-info) !important;
+  }
+  
+  .dark .text-blue-600,
+  .dark .text-blue-400 {
+    color: oklch(0.7 0.18 220) !important; /* Lighter, more vibrant blue for dark mode */
+  }
+  
+  /* Enhanced balance display - Orange accent border (less blue) */
+  .bg-muted\/50.border-border\/50 {
+    background: var(--enhanced-card) !important;
+    border-color: oklch(0.65 0.15 70 / 0.3) !important; /* Orange tint */
+  }
+  
+  /* Enhanced input focus states - Purple (less blue) */
+  input:focus,
+  textarea:focus {
+    border-color: oklch(0.55 0.2 270) !important; /* Purple */
+    box-shadow: 0 0 0 3px oklch(0.55 0.2 270 / 0.1) !important;
+  }
+  
+  /* Enhanced links - Purple (less blue) */
+  a:hover {
+    color: oklch(0.55 0.2 270) !important; /* Purple */
+  }
+  
+  /* Category filter active state - Purple text, no background, visible border */
+  .bg-foreground.text-background {
+    background: transparent !important;
+    border: 2px solid oklch(0.55 0.2 270) !important;
+    color: oklch(0.55 0.2 270) !important; /* Purple text */
+    position: relative;
+    z-index: 10 !important;
+    outline: none !important;
+  }
+  
+  .dark .bg-foreground.text-background {
+    border-color: oklch(0.65 0.2 270) !important;
+    color: oklch(0.65 0.2 270) !important;
+    border-width: 2px !important;
+  }
+  
+  .bg-foreground.text-background:hover {
+    background: oklch(0.55 0.2 270 / 0.1) !important;
+    border-color: oklch(0.6 0.2 270) !important;
+  }
+  
+  .dark .bg-foreground.text-background:hover {
+    background: oklch(0.65 0.2 270 / 0.15) !important;
+    border-color: oklch(0.7 0.2 270) !important;
+  }
+  
+  /* Prevent overflow clipping on category filter container */
+  .sticky.top-\[65px\] {
+    overflow: visible !important;
+  }
+  
+  .sticky.top-\[65px\] > div {
+    overflow: visible !important;
+  }
+  
+  /* Fix flex container to show all borders */
+  .sticky.top-\[65px\] .flex {
+    overflow-x: auto !important;
+    overflow-y: visible !important;
+    min-height: 0 !important;
+  }
+  
+  /* Ensure buttons have full border visibility - no clipping */
+  .sticky.top-\[65px\] button {
+    overflow: visible !important;
+    clip-path: none !important;
+    position: relative;
+  }
+  
+  /* Ensure first button's left border is visible */
+  .sticky.top-\[65px\] .flex > button:first-child {
+    margin-left: 0 !important;
+  }
+  
+  /* Ensure last button's right border is visible */
+  .sticky.top-\[65px\] .flex > button:last-child {
+    margin-right: 0 !important;
+  }
+  
+  /* Sticky deposit bar */
+  .sticky.top-\[65px\] {
+    border-bottom-color: var(--enhanced-border);
+  }
+  
+  /* Trading balance card */
+  .bg-green-500\/10.border-green-500\/20 {
+    background: oklch(from var(--enhanced-success) l c h / 0.08) !important;
+    border-color: oklch(from var(--enhanced-success) l c h / 0.2) !important;
+  }
+  
+  /* Yes/No buttons with colors */
+  .border-green-500 {
+    border-color: var(--enhanced-success) !important;
+  }
+  
+  .bg-green-500\/10 {
+    background: oklch(from var(--enhanced-success) l c h / 0.1) !important;
+  }
+  
+  .text-green-600,
+  .dark .text-green-400 {
+    color: var(--enhanced-success) !important;
+  }
+  
+  .border-red-500 {
+    border-color: oklch(0.6 0.2 15) !important;
+  }
+  
+  .bg-red-500\/10 {
+    background: oklch(0.6 0.2 15 / 0.1) !important;
+  }
+  
+  .text-red-600,
+  .dark .text-red-400 {
+    color: oklch(0.6 0.2 15) !important;
+  }
+  
+  /* Enhanced notification badge - Orange (less blue) */
+  .bg-foreground.rounded-full {
+    background: oklch(0.65 0.2 70) !important; /* Orange */
+  }
+  
+  /* Place button success state */
+  .bg-green-600,
+  .dark .bg-green-500 {
+    background: var(--enhanced-success) !important;
+  }
+  
+  /* Enhanced dialog borders */
+  .border-border {
+    border-color: var(--enhanced-border) !important;
+  }
+  
+  /* Chart and visual elements */
+  .bg-muted\/50 {
+    background: var(--enhanced-card) !important;
+  }
+  
+  /* Enhanced hover states for interactive elements */
+  .hover\:bg-muted:hover {
+    background: var(--enhanced-card-hover) !important;
+  }
+  
+  /* Visible hover effects for all clickable items in dark mode */
+  .dark button:hover:not(:disabled),
+  .dark a:hover,
+  .dark [role="button"]:hover:not(:disabled),
+  .dark [role="link"]:hover {
+    background: oklch(0.2 0.02 270) !important;
+    transition: background 0.2s ease;
+  }
+  
+  .dark button.bg-muted:hover,
+  .dark button.hover\:bg-muted:hover {
+    background: oklch(0.25 0.02 270) !important;
+  }
+  
+  .dark button.bg-muted\/50:hover,
+  .dark button.hover\:bg-muted\/50:hover {
+    background: oklch(0.22 0.02 270) !important;
+  }
+  
+  .dark button.bg-muted\/30:hover,
+  .dark button.hover\:bg-muted\/30:hover {
+    background: oklch(0.2 0.02 270) !important;
+  }
+  
+  /* Cards and containers hover in dark mode */
+  .dark .hover\:bg-muted\/30:hover,
+  .dark .hover\:bg-muted\/50:hover {
+    background: oklch(0.2 0.02 270) !important;
+    border-color: oklch(0.3 0.05 270) !important;
+  }
+  
+  /* Border hover effects in dark mode */
+  .dark .hover\:border-foreground\/20:hover {
+    border-color: oklch(0.35 0.05 270) !important;
+  }
+  
+  /* Text hover effects in dark mode */
+  .dark .hover\:text-foreground:hover {
+    color: oklch(0.9 0 0) !important;
+  }
+  
+  /* Input hover in dark mode */
+  .dark input:hover,
+  .dark textarea:hover {
+    border-color: oklch(0.3 0.05 270) !important;
+  }
+  
+  /* Sticky bar enhancements */
+  .bg-background\/95 {
+    background: oklch(from var(--background) l c h / 0.95) !important;
+  }
+  
+  /* Enhanced backdrop blur with color tint */
+  .backdrop-blur-md {
+    backdrop-filter: blur(12px) saturate(180%);
+  }
+  
+  .backdrop-blur-sm {
+    backdrop-filter: blur(8px) saturate(180%);
+  }
+  
+  /* Enhanced Text Colors */
+  
+  /* Headings with subtle color */
+  h1, h2, h3, h4, h5, h6 {
+    color: oklch(from var(--foreground) calc(l * 0.95) 0.02 270);
+  }
+  
+  /* Main headings with more color - Purple text, no gradient */
+  h1 {
+    color: oklch(0.55 0.2 270) !important; /* Purple */
+  }
+  
+  .dark h1 {
+    color: oklch(0.65 0.2 270) !important; /* Lighter purple in dark mode */
+  }
+  
+  /* Enhanced muted text with subtle color */
+  .text-muted-foreground {
+    color: oklch(from var(--muted-foreground) l 0.03 270) !important;
+  }
+  
+  /* Numbers and amounts with accent color */
+  .font-mono {
+    color: oklch(from var(--foreground) calc(l * 0.85) 0.04 270);
+  }
+  
+  /* Balance and currency amounts - Orange (less blue) */
+  .font-mono.text-foreground,
+  .font-mono.text-sm,
+  .font-mono.text-base,
+  .font-mono.text-lg,
+  .font-mono.text-2xl {
+    color: oklch(0.65 0.2 70) !important; /* Orange */
+  }
+  
+  /* Category labels and tags - Orange (less blue) */
+  .uppercase.tracking-widest {
+    color: oklch(0.65 0.18 70) !important; /* Orange */
+    font-weight: 600;
+  }
+  
+  /* Links with purple color (less blue) */
+  a:not(.text-foreground):not(.text-muted-foreground) {
+    color: oklch(0.55 0.2 270); /* Purple */
+  }
+  
+  a:hover {
+    color: oklch(0.6 0.2 270); /* Lighter purple */
+  }
+  
+  /* Labels with subtle color */
+  label {
+    color: oklch(from var(--foreground) calc(l * 0.9) 0.02 270);
+  }
+  
+  /* Descriptions and helper text */
+  .text-sm.text-muted-foreground {
+    color: oklch(from var(--muted-foreground) l 0.04 270) !important;
+  }
+  
+  /* Status and trend indicators */
+  .text-green-600,
+  .text-green-400 {
+    color: var(--enhanced-success) !important;
+    font-weight: 500;
+  }
+  
+  .dark .text-green-400,
+  .dark .text-green-600 {
+    color: oklch(0.7 0.18 150) !important; /* Lighter, more vibrant green for dark mode */
+    font-weight: 500;
+  }
+  
+  .text-red-600,
+  .dark .text-red-400 {
+    color: oklch(0.6 0.2 15) !important;
+    font-weight: 500;
+  }
+  
+  /* Percentage and probability text */
+  .text-xs.text-muted-foreground {
+    color: oklch(from var(--muted-foreground) l 0.05 270) !important;
+  }
+  
+  /* Button text with better contrast */
+  button.bg-foreground .text-background,
+  button.bg-foreground {
+    color: white !important;
+    text-shadow: 0 1px 2px oklch(from var(--enhanced-primary) l c h / 0.3);
+  }
+  
+  /* Enhanced title text - Purple text, no gradient */
+  .text-2xl.font-semibold,
+  .text-lg.font-semibold {
+    color: oklch(0.55 0.2 270) !important; /* Purple */
+  }
+  
+  .dark .text-2xl.font-semibold,
+  .dark .text-lg.font-semibold {
+    color: oklch(0.65 0.2 270) !important; /* Lighter purple in dark mode */
+  }
+  
+  /* Market question text - Purple text, no gradient */
+  h1.text-2xl {
+    color: oklch(0.55 0.2 270) !important; /* Purple */
+  }
+  
+  .dark h1.text-2xl {
+    color: oklch(0.65 0.2 270) !important; /* Lighter purple in dark mode */
+  }
+  
+  /* Option names - already handled by option-* classes */
+  h3.text-lg.font-semibold {
+    color: inherit;
+  }
+  
+  /* Market question on home page cards - Purple text, no gradient */
+  .group h3.text-base.font-medium {
+    color: oklch(0.55 0.2 270) !important; /* Purple */
+  }
+  
+  .dark .group h3.text-base.font-medium {
+    color: oklch(0.65 0.2 270) !important; /* Lighter purple in dark mode */
+  }
+  
+  /* Option names on home page cards - use graph colors */
+  .option-0 .font-medium.text-foreground {
+    color: oklch(0.6 0.2 145) !important; /* Green */
+  }
+  
+  .dark .option-0 .font-medium.text-foreground {
+    color: oklch(0.7 0.18 150) !important; /* Lighter green for dark mode */
+  }
+  
+  .option-1 .font-medium.text-foreground {
+    color: oklch(0.55 0.2 240) !important; /* Blue */
+  }
+  
+  .dark .option-1 .font-medium.text-foreground {
+    color: oklch(0.7 0.18 220) !important; /* Lighter blue for dark mode */
+  }
+  
+  .option-2 .font-medium.text-foreground {
+    color: oklch(0.55 0.2 270) !important; /* Purple */
+  }
+  
+  .option-3 .font-medium.text-foreground {
+    color: oklch(0.65 0.2 70) !important; /* Orange */
+  }
+  
+  .option-4 .font-medium.text-foreground {
+    color: oklch(0.65 0.2 340) !important; /* Pink */
+  }
+  
+  .option-5 .font-medium.text-foreground {
+    color: oklch(0.6 0.2 200) !important; /* Cyan */
+  }
+  
+  /* Market count text - Green */
+  h2.text-lg.font-light {
+    color: oklch(0.6 0.15 145) !important; /* Green */
+  }
+  
+  .dark h2.text-lg.font-light {
+    color: oklch(0.7 0.18 150) !important; /* Lighter green for dark mode */
+  }
+  
+  /* Price and amount displays */
+  .text-xs.text-muted-foreground {
+    color: oklch(from var(--muted-foreground) l 0.06 270) !important;
+  }
+  
+  /* Potential return text - more vibrant */
+  .text-sm.text-muted-foreground {
+    color: oklch(from var(--muted-foreground) l 0.05 270) !important;
+  }
+  
+  /* Summary and totals with accent */
+  .font-semibold {
+    color: oklch(from var(--foreground) calc(l * 0.88) 0.035 270);
+  }
+  
+  /* Dialog titles */
+  .text-lg.font-semibold {
+    color: oklch(from var(--foreground) calc(l * 0.9) 0.03 270);
+  }
+  
+  /* Market metadata text */
+  .text-sm.text-muted-foreground span {
+    color: oklch(from var(--muted-foreground) l 0.045 270) !important;
+  }
+  
+  /* Enhanced section headers */
+  h2.text-lg.font-semibold {
+    color: oklch(from var(--foreground) calc(l * 0.9) 0.03 270);
+  }
+  
+  /* Button labels and text */
+  button .font-medium,
+  button .font-semibold {
+    color: inherit;
+  }
+  
+  /* Enhanced placeholder text */
+  input::placeholder,
+  textarea::placeholder {
+    color: oklch(from var(--muted-foreground) l 0.04 270) !important;
+  }
+  
+  /* Stats and numbers in cards - Orange (less blue) */
+  .text-2xl.font-bold,
+  .text-lg.font-bold {
+    color: oklch(0.65 0.2 70) !important; /* Orange */
+  }
+  
+  /* Category and tag text */
+  .text-xs.font-medium.uppercase {
+    color: oklch(from var(--muted-foreground) l 0.05 270) !important;
+    font-weight: 600;
+  }
+  
+  /* Balance amount text - Orange (less blue) */
+  .font-mono.text-foreground,
+  .font-mono.text-sm.font-semibold,
+  .font-mono.text-base.font-semibold,
+  .font-mono.text-lg.font-semibold,
+  .font-mono.text-2xl.font-bold {
+    color: oklch(0.65 0.2 70) !important; /* Orange */
+  }
+  
+  /* Description text with subtle color */
+  .text-sm.text-muted-foreground p,
+  .text-xs.text-muted-foreground p {
+    color: oklch(from var(--muted-foreground) l 0.04 270) !important;
+  }
+  
+  /* Warning and error messages */
+  .text-red-600,
+  .text-red-400,
+  .dark .text-red-400 {
+    color: oklch(0.6 0.2 15) !important;
+    font-weight: 500;
+  }
+  
+  /* Success messages */
+  .text-green-600,
+  .text-green-400,
+  .dark .text-green-400 {
+    color: var(--enhanced-success) !important;
+    font-weight: 500;
+  }
+  
+  /* Info text */
+  .text-blue-600,
+  .text-blue-400 {
+    color: var(--enhanced-info) !important;
+  }
+  
+  /* Percentage and probability displays - removed invalid :contains() selector */
+  
+  /* Enhanced title in header - Purple (less blue) */
+  .text-base.font-semibold {
+    color: oklch(0.55 0.18 270) !important; /* Purple */
+  }
+  
+  /* Option names with more color */
+  h3.text-lg.font-semibold {
+    color: oklch(from var(--foreground) calc(l * 0.88) 0.03 270);
+  }
+  
+  /* Enhanced "Placed" status text */
+  .text-xs.text-green-600,
+  .text-xs.text-green-400,
+  .dark .text-xs.text-green-400 {
+    color: var(--enhanced-success) !important;
+    font-weight: 600;
+  }
+  
+  /* Enhanced "Exceeded" warning text */
+  .text-xs.text-red-600,
+  .dark .text-xs.text-red-400 {
+    color: oklch(0.6 0.2 15) !important;
+    font-weight: 600;
+  }
+  
+  /* Graph-inspired color scheme for text elements */
+  /* Using the same colors as the graph: green, blue, purple, orange, pink, cyan */
+  /* Colors: #10b981 (green), #3b82f6 (blue), #8b5cf6 (purple), #f59e0b (orange), #ec4899 (pink), #06b6d4 (cyan) */
+  
+  /* Question/Market Title - Purple text, no gradient */
+  h1.text-2xl.font-semibold,
+  h1.text-2xl {
+    color: oklch(0.55 0.2 270) !important; /* Purple */
+  }
+  
+  .dark h1.text-2xl.font-semibold,
+  .dark h1.text-2xl {
+    color: oklch(0.65 0.2 270) !important; /* Lighter purple in dark mode */
+  }
+  
+  /* Option names - Cycle through graph colors based on order */
+  /* Option 0 - Green #10b981 */
+  .option-0 h3,
+  .option-0 h3.text-lg.font-semibold {
+    color: oklch(0.6 0.2 145) !important;
+  }
+  
+  .dark .option-0 h3,
+  .dark .option-0 h3.text-lg.font-semibold {
+    color: oklch(0.7 0.18 150) !important; /* Lighter, more vibrant green for dark mode */
+  }
+  
+  /* Option 1 - Blue #3b82f6 */
+  .option-1 h3,
+  .option-1 h3.text-lg.font-semibold {
+    color: oklch(0.55 0.2 240) !important;
+  }
+  
+  .dark .option-1 h3,
+  .dark .option-1 h3.text-lg.font-semibold {
+    color: oklch(0.7 0.18 220) !important; /* Lighter, more vibrant blue for dark mode */
+  }
+  
+  /* Option 2 - Purple #8b5cf6 */
+  .option-2 h3,
+  .option-2 h3.text-lg.font-semibold {
+    color: oklch(0.55 0.2 270) !important;
+  }
+  
+  /* Option 3 - Orange #f59e0b */
+  .option-3 h3,
+  .option-3 h3.text-lg.font-semibold {
+    color: oklch(0.65 0.2 70) !important;
+  }
+  
+  /* Option 4 - Pink #ec4899 */
+  .option-4 h3,
+  .option-4 h3.text-lg.font-semibold {
+    color: oklch(0.65 0.2 340) !important;
+  }
+  
+  /* Option 5 - Cyan #06b6d4 */
+  .option-5 h3,
+  .option-5 h3.text-lg.font-semibold {
+    color: oklch(0.6 0.2 200) !important;
+  }
+  
+  /* Continue cycling for more options */
+  .option-6 h3,
+  .option-6 h3.text-lg.font-semibold {
+    color: oklch(0.6 0.2 145) !important; /* Green */
+  }
+  
+  .option-7 h3,
+  .option-7 h3.text-lg.font-semibold {
+    color: oklch(0.55 0.2 240) !important; /* Blue */
+  }
+  
+  /* Category labels - Orange accent (less blue) */
+  .text-xs.font-medium.uppercase.tracking-widest {
+    color: oklch(0.65 0.18 70) !important; /* Orange */
+    font-weight: 600;
+  }
+  
+  /* Section headers - Green text, no gradient */
+  h2.text-lg.font-semibold {
+    color: oklch(0.6 0.2 145) !important; /* Green */
+  }
+  
+  .dark h2.text-lg.font-semibold {
+    color: oklch(0.7 0.18 150) !important; /* Lighter, more vibrant green in dark mode */
+  }
+  
+  /* Trading Balance title - Green (less blue) */
+  h3.text-lg.font-semibold {
+    color: oklch(0.6 0.2 145) !important; /* Green */
+  }
+  
+  .dark h3.text-lg.font-semibold {
+    color: oklch(0.7 0.18 150) !important; /* Lighter green for dark mode */
+  }
+  
+  /* Dialog titles - Purple text, no gradient */
+  .text-lg.font-semibold {
+    color: oklch(0.55 0.2 270) !important; /* Purple */
+  }
+  
+  .dark .text-lg.font-semibold {
+    color: oklch(0.65 0.2 270) !important; /* Lighter purple in dark mode */
+  }
+  
+  /* Labels - Pink accent (less blue) */
+  label {
+    color: oklch(0.65 0.18 340) !important; /* Pink */
+  }
+  
+  /* Summary totals - Orange (less blue) */
+  .font-semibold {
+    color: oklch(0.65 0.2 70) !important; /* Orange */
+  }
+  
+  /* Probability text in options - Match option color with lighter tint */
+  .option-0 .text-sm span:first-child {
+    color: oklch(0.6 0.15 145) !important; /* Green */
+  }
+  
+  .option-1 .text-sm span:first-child {
+    color: oklch(0.55 0.15 240) !important; /* Blue */
+  }
+  
+  .option-2 .text-sm span:first-child {
+    color: oklch(0.55 0.15 270) !important; /* Purple */
+  }
+  
+  .option-3 .text-sm span:first-child {
+    color: oklch(0.65 0.15 70) !important; /* Orange */
+  }
+  
+  .option-4 .text-sm span:first-child {
+    color: oklch(0.65 0.15 340) !important; /* Pink */
+  }
+  
+  .option-5 .text-sm span:first-child {
+    color: oklch(0.6 0.15 200) !important; /* Cyan */
+  }
+  
+  /* Bet amount text - Orange accent */
+  .text-sm span:last-child {
+    color: oklch(0.65 0.15 70) !important; /* Orange */
+  }
+  
+  /* Price displays in Yes/No buttons - Cyan tint (less blue) */
+  .text-xs.text-muted-foreground {
+    color: oklch(0.6 0.15 200) !important; /* Cyan */
+  }
+  
+  .dark .text-xs.text-muted-foreground {
+    color: oklch(0.7 0.15 200) !important; /* Lighter cyan for dark mode */
+  }
+  
+  /* Potential return text - Green */
+  .text-sm.text-muted-foreground {
+    color: oklch(0.6 0.15 145) !important; /* Green */
+  }
+  
+  .dark .text-sm.text-muted-foreground {
+    color: oklch(0.7 0.18 150) !important; /* Lighter green for dark mode */
+  }
+  
+  /* Override for option-specific probability text */
+  .option-0 .text-sm.text-muted-foreground span:first-child {
+    color: oklch(0.6 0.15 145) !important; /* Green */
+  }
+  
+  .dark .option-0 .text-sm.text-muted-foreground span:first-child {
+    color: oklch(0.7 0.18 150) !important; /* Lighter green for dark mode */
+  }
+  
+  .option-1 .text-sm.text-muted-foreground span:first-child {
+    color: oklch(0.55 0.15 240) !important; /* Blue */
+  }
+  
+  .dark .option-1 .text-sm.text-muted-foreground span:first-child {
+    color: oklch(0.7 0.18 220) !important; /* Lighter blue for dark mode */
+  }
+  
+  .option-2 .text-sm.text-muted-foreground span:first-child {
+    color: oklch(0.55 0.15 270) !important; /* Purple */
+  }
+  
+  .option-3 .text-sm.text-muted-foreground span:first-child {
+    color: oklch(0.65 0.15 70) !important; /* Orange */
+  }
+  
+  .option-4 .text-sm.text-muted-foreground span:first-child {
+    color: oklch(0.65 0.15 340) !important; /* Pink */
+  }
+  
+  .option-5 .text-sm.text-muted-foreground span:first-child {
+    color: oklch(0.6 0.15 200) !important; /* Cyan */
+  }
+  
+  /* Return displays on Yes/No buttons - Match option colors */
+  .option-0 .text-xs.font-medium.text-green-600,
+  .option-0 .text-xs.font-medium.text-green-400 {
+    color: oklch(0.6 0.2 145) !important; /* Green */
+  }
+  
+  .option-0 .dark .text-xs.font-medium.text-green-400,
+  .option-0 .dark .text-xs.font-medium.text-green-600 {
+    color: oklch(0.7 0.18 150) !important; /* Lighter green for dark mode */
+  }
+  
+  .option-1 .text-xs.font-medium.text-green-600,
+  .option-1 .text-xs.font-medium.text-green-400 {
+    color: oklch(0.55 0.2 240) !important; /* Blue */
+  }
+  
+  .option-1 .dark .text-xs.font-medium.text-green-400,
+  .option-1 .dark .text-xs.font-medium.text-green-600 {
+    color: oklch(0.7 0.18 220) !important; /* Lighter blue for dark mode */
+  }
+  
+  .option-2 .text-xs.font-medium.text-green-600,
+  .option-2 .dark .text-xs.font-medium.text-green-400 {
+    color: oklch(0.55 0.2 270) !important; /* Purple */
+  }
+  
+  .option-3 .text-xs.font-medium.text-green-600,
+  .option-3 .dark .text-xs.font-medium.text-green-400 {
+    color: oklch(0.65 0.2 70) !important; /* Orange */
+  }
+  
+  .option-4 .text-xs.font-medium.text-green-600,
+  .option-4 .dark .text-xs.font-medium.text-green-400 {
+    color: oklch(0.65 0.2 340) !important; /* Pink */
+  }
+  
+  .option-5 .text-xs.font-medium.text-green-600,
+  .option-5 .dark .text-xs.font-medium.text-green-400 {
+    color: oklch(0.6 0.2 200) !important; /* Cyan */
+  }
+  
+  /* Red for No buttons */
+  .text-xs.font-medium.text-red-600,
+  .dark .text-xs.font-medium.text-red-400 {
+    color: oklch(0.6 0.2 15) !important; /* Red */
+  }
+  
+  /* Dark mode hover effects for option cards */
+  .dark .option-0:hover,
+  .dark .option-1:hover,
+  .dark .option-2:hover,
+  .dark .option-3:hover,
+  .dark .option-4:hover,
+  .dark .option-5:hover {
+    background-color: oklch(0.2 0.02 270) !important; /* More visible hover in dark mode */
+    border-color: oklch(0.35 0.05 270) !important;
+  }
+  
+  /* Dark mode hover effects for Yes/No buttons */
+  .dark button.border-border:hover:not(.border-green-500):not(.border-red-500) {
+    border-color: oklch(0.4 0.1 270) !important; /* More visible border on hover */
+  }
+  
+  /* Yes button hover in dark mode */
+  .dark button.hover\:border-green-500\/50:hover {
+    border-color: oklch(0.6 0.2 150) !important; /* Stronger green border */
+    background-color: oklch(0.2 0.15 150 / 0.15) !important; /* More visible green background */
+  }
+  
+  /* No button hover in dark mode */
+  .dark button.hover\:border-red-500\/50:hover {
+    border-color: oklch(0.6 0.2 15) !important; /* Stronger red border */
+    background-color: oklch(0.2 0.15 15 / 0.15) !important; /* More visible red background */
+  }
+}
